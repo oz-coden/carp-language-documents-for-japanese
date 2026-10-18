@@ -14,6 +14,12 @@
       "translation": "Memory-JP.md",
       "source_blob": "f36e7a8d5529060a4b26279980ee0e86be86d8bf",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/CInterop.md",
+      "translation": "CInterop-JP.md",
+      "source_blob": "8a811383ef521768d876e48d88b6791cd77bf45a",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
