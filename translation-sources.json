@@ -8,9 +8,16 @@
       "translation": "LanguageGuide-JP.md",
       "source_blob": "49158c0f39fac4bf910cc6a39414ae9f665c7fd7",
       "initial_translation_source_commit": null
+    },
+    {
+      "source": "docs/Memory.md",
+      "translation": "Memory-JP.md",
+      "source_blob": "f36e7a8d5529060a4b26279980ee0e86be86d8bf",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
-    "http://lua-users.org/wiki/PatternsTutorial"
+    "http://lua-users.org/wiki/PatternsTutorial",
+    "https://www.rust-lang.org"
   ]
 }

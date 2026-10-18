@@ -77,6 +77,12 @@ class LinkPolicyTests(unittest.TestCase):
         self.write('Guide-JP.md', self.header + '```markdown\n[例](missing.md)\n```\n`[例](missing.md)`\n')
         self.assertEqual([], self.check())
 
+    def test_api_name_inside_link_label_is_preserved(self):
+        self.write('Guide-JP.md', self.header + f'[`drop` インターフェース(英語)]({BASE}Drop.md)')
+        self.assertEqual([], self.check())
+        self.write('Guide-JP.md', self.header + f'[`drop` インターフェース]({BASE}Drop.md)')
+        self.assertTrue(any('English document label' in e for e in self.check()))
+
     def test_japanese_link_must_not_be_marked_english(self):
         self.write('Guide-JP.md', self.header + '[ガイド(英語)](Guide-JP.md)')
         self.assertTrue(any('Japanese translation must not' in e for e in self.check()))

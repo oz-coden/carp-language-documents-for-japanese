@@ -43,6 +43,27 @@
 | indirection | 間接参照 | `Ref` 型と同一視しません |
 | linear pointer type | 線形ポインタ型 | 現行語を保持します |
 | lifetime | ライフタイム | 「生存期間」へ置換しません |
+| linear type / linear type system | 線形型 / 線形型システム | 原語を併記します。線形代数の意味とは区別します |
+| linear value / non-linear | 線形値 / 非線形 | 原語を併記します。値の種類と型の種類を文脈で区別します |
+| owner | 所有者 | 原語を併記します。値に関連付けられたメモリを所有する束縛を指します |
+| lexical scope | 字句スコープ | 原語を併記します。ライフタイムと同義にしません |
+| move / moving | ムーブ | 初出では原文の語形を併記します。単なるデータの物理的移動と断定しません |
+| transfer of ownership | 所有権の移譲 | 原語を併記します。take / give up の「取得 / 放棄」とは文法に応じて使い分けます |
+| copy / copying | コピー | 操作名として使用します。copying が概念の初出なら原語を併記します |
+| use after free / double free | 解放後の使用 / 二重解放 | 原語を併記します |
+| memory allocation | メモリの割り当て | deallocation の「解放」と対になる操作です |
+| abstract syntax tree / AST | 抽象構文木 / AST | 初出は「抽象構文木 (abstract syntax tree、AST)」とします |
+| deleter | deleter | 英語で保持します。Memory.md の実装説明では削除処理の情報を保持するデータ構造を指し、削除関数そのものとは区別します |
+| deletion function / deletion routine | 削除関数 / 削除処理 | メモリの解放を述べる場合は「解放」と訳し、値の削除と動作を区別します |
+| liveness analysis | 生存性解析 | 原語を併記します。ライフタイムの表記を「生存期間」に変更するものではありません |
+| dangling reference | ダングリング参照 | 原語を併記します |
+| source variable | 参照元の変数 | 原語を併記します。Memory.md の参照の依存関係を扱う文脈で使用します |
+| live set | 生存集合 | 原語を併記します |
+| lifetime mode / lifetime map | ライフタイムモード / ライフタイムマップ | 原語を併記します。個々の mapping は「対応付け」とします |
+| borrow checker | 借用チェッカー | 原語を併記します。原文が Rust の用語として示す文脈を保持します |
+| generic programming | ジェネリックプログラミング | 原語を併記し、既存のジェネリック関数・ジェネリック型と対応させます |
+| polymorphic function | 多相関数 | 原語を併記します |
+| memory state | メモリ状態 | 原語を併記します。識別子 `MemState` は変更しません |
 | deallocation | 解放 | 「開放」にしません |
 | primitive | プリミティブ型 | constants などの限定を省略しません |
 | data literal / type literal | データリテラル / 型リテラル | 現行語を保持します |
@@ -86,3 +107,4 @@
 
 クロージャは [Rust By Example の日本語版](https://doc.rust-lang.org/rust-by-example/ja/fn/closures.html) でも使用されている表記です。
 この資料は日本語表記の参考であり、Carp の仕様を Rust の仕様で補うためには使用しません。
+ムーブの表記は [Rust By Example の所有権とムーブ](https://doc.rust-lang.org/rust-by-example/ja/scope/move.html) も参考にしています。

@@ -23,6 +23,7 @@
 | 文書 | 原文 | 状態 |
 | --- | --- | --- |
 | [言語ガイド](LanguageGuide-JP.md) | [LanguageGuide.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/LanguageGuide.md) | 全節を翻訳し、用語・表記を校正しています。原文由来の問題には訳注を付けています |
+| [メモリ管理の詳細](Memory-JP.md) | [Memory.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Memory.md) | 所有権・借用・コピーから内部実装まで、全節を翻訳しています |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 
