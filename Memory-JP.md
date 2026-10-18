@@ -55,9 +55,9 @@ Carp のコード内で `deftype` を使って型を直接定義すると、Carp
 `Box` は線形型であり、メモリ管理の対象となるため、再帰的な構造にも所有権の規則が適用されます。
 `Ptr` はメモリ管理の対象外であり、ライフタイムと解放を明示的に処理する高度なユースケース向けです。
 
-[登録した型(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md#register-types) にも同じ条件が適用されます。
+[登録した型](CInterop-JP.md#型の登録-registering-types) にも同じ条件が適用されます。
 C で定義した外部の型を登録した場合、対応する Carp の型に `delete` の実装を用意しない限り、Carp はその型を管理しません。
-詳しくは [C との相互運用の文書(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md#register-types) を参照してください。
+詳しくは [C との相互運用の文書](CInterop-JP.md#型の登録-registering-types) を参照してください。
 
 以降の節では、メモリ管理システムの主要な操作をいくつか見ていきます。
 途中では、組み込みの線形型である `String` を使った例を通じて、線形型の値がどのように管理されるかを説明します。

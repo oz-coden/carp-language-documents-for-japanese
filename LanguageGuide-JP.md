@@ -164,7 +164,7 @@ foo ; シンボル
 そのうち最初の 3 つは、動的関数でも利用可能です。
 
 ```clojure
-(fn [<arg1> <arg2> ...] <body>) ;; ラムダ関数を作る。クロージャ (closure) とも呼ぶ
+(fn [<arg1> <arg2> ...] <body>) ;; ラムダ関数 (lambda) を作る。クロージャ (closure) とも呼ぶ
 (let [<var1> <expr1> <var2> <expr2> ...] <body>) ;; 局所的な束縛 (binding) を作る
 (do <expr1> <expr2> ... <return-expression>) ;; 副作用のある関数を実行し、その後で値を返す
 (if <expression> <true-branch> <false-branch>) ;; 分岐
@@ -554,7 +554,7 @@ Carp は、そのような変数をジェネリック型とみなしてしまう
 
 これにより、Carp コード内の型名は `SizeT` となり、生成される C コードでは代わりに `size_t` が使用されます。
 
-C との相互運用の詳細は [CInterop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md) を参照してください。
+C との相互運用の詳細は [C との相互運用](CInterop-JP.md) を参照してください。
 
 ### パターン (Patterns)
 
