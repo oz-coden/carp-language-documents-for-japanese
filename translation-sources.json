@@ -20,10 +20,29 @@
       "translation": "CInterop-JP.md",
       "source_blob": "8a811383ef521768d876e48d88b6791cd77bf45a",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Install.md",
+      "translation": "Install-JP.md",
+      "source_blob": "4fa2742ab99a3b580351a93e950844a095ff8480",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
     "http://lua-users.org/wiki/PatternsTutorial",
-    "https://www.rust-lang.org"
+    "https://www.rust-lang.org",
+    "https://github.com/carp-lang/Carp/releases",
+    "https://docs.haskellstack.org/en/stable/README/",
+    "https://scoop.sh/",
+    "https://www.libsdl.org/download-2.0.php",
+    "https://www.libsdl.org/projects/SDL_image/",
+    "https://www.libsdl.org/projects/SDL_ttf/",
+    "https://www.libsdl.org/projects/SDL_mixer/",
+    "http://www.glfw.org",
+    "https://www.freedesktop.org/wiki/Software/pkg-config/",
+    "https://gitter.im/carp-lang/Carp",
+    "https://github.com/carp-lang/Carp/issues",
+    "https://github.com/carp-lang/Carp/issues/700",
+    "https://github.com/carp-lang/Carp/issues/1323"
   ]
 }
