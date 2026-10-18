@@ -27,7 +27,17 @@ def prose_lines(text: str):
                 fence = None
             continue
         if fence is None:
-            yield number, re.sub(r'(`+).*?\1', '', line)
+            links = list(LINK.finditer(line))
+
+            def remove_inline_code(match):
+                # API names inside a link label are prose; an entire example
+                # link enclosed in inline code is not a real link.
+                if any(link.start() < match.start() and match.end() < link.end()
+                       for link in links):
+                    return match.group(2)
+                return ''
+
+            yield number, re.sub(r'(`+)(.*?)\1', remove_inline_code, line)
 
 
 def relative_path(value):
