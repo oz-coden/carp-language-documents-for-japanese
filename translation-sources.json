@@ -1,0 +1,16 @@
+{
+  "snapshot_date": "2026-10-19",
+  "upstream_repository": "carp-lang/Carp",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "documents": [
+    {
+      "source": "docs/LanguageGuide.md",
+      "translation": "LanguageGuide-JP.md",
+      "source_blob": "49158c0f39fac4bf910cc6a39414ae9f665c7fd7",
+      "initial_translation_source_commit": null
+    }
+  ],
+  "external_english_urls": [
+    "http://lua-users.org/wiki/PatternsTutorial"
+  ]
+}
