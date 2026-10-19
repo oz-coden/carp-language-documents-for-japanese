@@ -3,6 +3,8 @@
 [Carp(英語)](https://github.com/carp-lang/Carp) プログラミング言語の公式ドキュメントを日本語に翻訳する、非公式のプロジェクトです。
 原著は Carp の開発者・貢献者によるものです。このリポジトリでは、日本語訳の作成、校正、用語と表記の統一を行っています。
 
+日本語訳について気になる点があれば、[問題の報告先](#問題の報告先-reporting-problems) を確認してください。
+
 ## Carp について (About Carp)
 
 Carp は、ゲーム、音響合成 (sound synthesis)、可視化など、対話的な操作や性能が重要になる用途に適するよう設計されたプログラミング言語です。
@@ -87,6 +89,17 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 - [翻訳方針](TRANSLATION.md): 翻訳範囲、文体、表記、リンク、訳注の規則です。
 - [用語集](GLOSSARY.md): 採用語、英語で保持する語、文脈による例外をまとめています。
 - [貢献手順](CONTRIBUTING.md): 修正・新規翻訳の手順と確認方法です。
+
+## 問題の報告先 (Reporting Problems)
+
+| 問題の対象 | 報告先 |
+| --- | --- |
+| 日本語訳の誤訳、訳抜け、表現、訳語、訳注、このリポジトリの文書やリンク | [このリポジトリの Issue](https://github.com/oz-coden/carp-language-documents-for-japanese/issues) |
+| 英語原文そのもの、Carp 本体の仕様や実装 | [Carp 本家の Issue(英語)](https://github.com/carp-lang/Carp/issues) |
+
+日本語訳に関する問題は、本家の Issue、Gitter、Discord には報告せず、このリポジトリへ報告してください。原文にも同じ問題があるか判断できない場合は、まずこのリポジトリの Issue で相談してください。
+
+報告先は、報告文の言語ではなく、問題の対象によって選んでください。翻訳文書中の本家への連絡・貢献の案内は、英語原文や Carp 本体に関するものです。
 
 ## ライセンスと出典 (License and Attribution)
 

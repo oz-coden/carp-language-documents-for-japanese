@@ -78,6 +78,8 @@ macOS と Linux では、インクルードパスやリンクフラグを扱う�
 
 これらのバインディング (binding) がうまく動かない場合は、Carp の開発者に知らせてください。できる限り確実に動作するようにしていますが、依存関係の管理では特殊な条件で問題が生じることがよくあります。[Carp の Issue(英語)](https://github.com/carp-lang/Carp/issues) の作成や、[Gitter チャンネル(英語)](https://gitter.im/carp-lang/Carp) での質問も歓迎します。
 
+> 訳注: 上の案内は Carp 本体についての報告・相談先です。日本語訳や訳注の問題は、本家ではなく [このリポジトリの Issue](https://github.com/oz-coden/carp-language-documents-for-japanese/issues) へ報告してください。翻訳の問題か原文の問題か判断できない場合も、まずこちらへ相談してください。
+
 ## Windows 向けの補足 (Footnote for Windows)
 
 mingw64 を使って `clang` をインストールできますが、`clang` が正しいヘッダーを見つけられるように、シェルを起動するたびに `vcvarsall.bat amd64` または `vcvarsall.bat x86` も実行するとよいでしょう。
