@@ -70,6 +70,7 @@
 | live set | 生存集合 | 原語を併記します |
 | lifetime mode / lifetime map | ライフタイムモード / ライフタイムマップ | 原語を併記します。個々の mapping は「対応付け」とします |
 | borrow checker | 借用チェッカー | 原語を併記します。原文が Rust の用語として示す文脈を保持します |
+| borrow checking | 借用チェック | 原語を併記します。借用に関する検査処理を指し、検査する主体の「借用チェッカー」と区別します |
 | generic programming | ジェネリックプログラミング | 原語を併記し、既存のジェネリック関数・ジェネリック型と対応させます |
 | polymorphic function | 多相関数 | 原語を併記します |
 | memory state | メモリ状態 | 原語を併記します。識別子 `MemState` は変更しません |
@@ -80,12 +81,25 @@
 | function type | 関数型 | `Fn` は識別子として保持します |
 | dynamic code / dynamic function | 動的コード / 動的関数 | 動的型付けと同義にしません |
 | macro / reader macro | マクロ / リーダーマクロ | — |
+| hygienic | 衛生的 | 原語を併記します。マクロの性質を表す用語です |
+| quote / quasiquotation / quasiquoting | クォート / 準クォート | 準クォートは初出で原文の語形を併記します。識別子 `quote`、`quasiquote` は保持します |
+| macro expansion | マクロ展開 | — |
+| rest arguments | 残余引数 | 原語を併記します。残りの実引数をまとめて受け取るものを指します |
+| variadic | 可変長引数の | 残余引数の仕組みそのものとは区別します |
+| dynamic environment | 動的環境 | 原語を併記します。動的コードで使用する環境を指します |
+| primitive (evaluator form) | プリミティブ | 原語を併記します。評価器が扱う形式の分類を指し、プリミティブ型とは区別します。識別子 `Primitive` は保持します |
+| command (evaluator form) | コマンド | 原語を併記します。評価器が扱う形式の分類を指す場合に使用します |
+| lowering | 低水準化 | 原語を併記します。評価器の内部表現への変換を指す文脈で使用します |
+| context | コンテキスト | 原語を併記します。コンパイラの状態を扱う文脈で使用します。識別子 `Context` は保持します |
+| evaluation frame | 評価フレーム | 原語を併記します |
+| traceback | トレースバック | 原語を併記します。エラーに付随する評価の履歴を指します |
+| higher order function | 高階関数 | 初出では原文の語形を併記します |
 | special form / form | 特殊形式 / 形式 | form をすべて特殊形式と訳しません |
 | REPL | REPL | 大文字の英語表記を保持します |
 | prompt | プロンプト | 原語を併記します。REPL などで、入力を待っていることを示す表示を指します |
 | search path | 検索パス | Carp の設定名 `search-path` はそのまま保持します |
 | library / standard library / external library | ライブラリ / 標準ライブラリ / 外部ライブラリ | モジュールとは区別します。Core の固有名は保持します |
-| entrypoint | エントリーポイント | 原語を併記します。ライブラリを読み込む際の入口となるファイルを指す文脈で使用します |
+| entrypoint | エントリーポイント | 原語を併記します。ライブラリを読み込む際の入口となるファイルや、処理を呼び出す入口となる関数を指す文脈で使用します |
 | wrapper | ラッパー | 原語を併記します |
 | port (of a library) | 移植版 | 移植したライブラリを指す場合に使用します。通信のポートとは区別します |
 | terminal | ターミナル | REPL やシェルそのものとは区別します |
@@ -148,3 +162,6 @@
 
 - [Rust By Example: クロージャ](https://doc.rust-lang.org/rust-by-example/ja/fn/closures.html)
 - [Rust By Example: 所有権とムーブ](https://doc.rust-lang.org/rust-by-example/ja/scope/move.html)
+- [Gauche ユーザリファレンス: 衛生的マクロ](https://practical-scheme.net/gauche/man/gauche-refj/Wei-Sheng-De-makuro.html)
+- [Gauche ユーザリファレンス: 準クオート](https://practical-scheme.net/gauche/man/gauche-refj/Zhun-kuoto.html)
+- [Gauche ユーザリファレンス: 手続きを作る](https://practical-scheme.net/gauche/man/gauche-refj/Shou-Sok-kiwoZuo-ru.html)
