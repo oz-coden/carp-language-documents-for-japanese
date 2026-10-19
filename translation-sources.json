@@ -134,6 +134,18 @@
       "translation": "ReleaseChecklist-JP.md",
       "source_blob": "468106b2189d35c674fb7f4a733f0b630c657882",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/core/README.md",
+      "translation": "CoreDocs-JP.md",
+      "source_blob": "dc91647b7bb673570bf998ae5631f268c5abe3f9",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/index.md",
+      "translation": "index-JP.md",
+      "source_blob": "612196476bac721eda75a2b4b1e17a28c2e8f087",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "excluded_documents": [

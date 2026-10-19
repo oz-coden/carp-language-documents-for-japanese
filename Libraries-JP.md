@@ -12,7 +12,7 @@ Carp には Core という標準ライブラリが付属しています。[ソ�
 標準ライブラリは複数のモジュールで構成されています。
 ほとんどのモジュールについて、[オンライン(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html) と [ローカル(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/core_index.html) の両方でドキュメントを利用できます。
 
-> 訳注: 原文のローカル向けリンク先 `docs/core/core_index.html` は、固定コミットには含まれていません。ローカルで生成するドキュメントについては [生成手順(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/README.md) を参照してください。
+> 訳注: 原文のローカル向けリンク先 `docs/core/core_index.html` は、固定コミットには含まれていません。ローカルで生成するドキュメントについては [生成手順](CoreDocs-JP.md) を参照してください。
 
 大部分のモジュールは既定で読み込まれます。詳しくは [Core.carp(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Core.carp) を参照してください。
 環境変数 `CARP_DIR` が [正しく設定](Install-JP.md#carp_dir-の設定-setting-the-carp_dir) されていれば、残りのライブラリも `load` コマンドで簡単に読み込めます。例えば、`Bench` モジュールを使えるようにするには、次のようにします。
@@ -63,7 +63,7 @@ REPL で `save-docs` を実行すると、複数のモジュールの HTML ド�
 > (save-docs Int Float String)
 ```
 
-標準ライブラリ全体のドキュメントの更新については [README(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/README.md) を、ドキュメント生成ツールの設定例については [生成プログラム(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/generate_core_docs.carp) を参照してください。
+標準ライブラリ全体のドキュメントの更新については [生成手順](CoreDocs-JP.md) を、ドキュメント生成ツールの設定例については [生成プログラム(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/generate_core_docs.carp) を参照してください。
 
 ## 自動生成される API ドキュメント (Auto generated API documentation)
 
