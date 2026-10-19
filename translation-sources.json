@@ -80,9 +80,17 @@
       "translation": "Derive-JP.md",
       "source_blob": "17767d14df5af9588ed556ed327852382b2337ce",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Format_Strings.md",
+      "translation": "Format_Strings-JP.md",
+      "source_blob": "68811be9a11b27b576a717867005c123bba5dda3",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
+    "https://sourceware.org/glibc/manual/latest/html_node/Table-of-Output-Conversions.html",
+    "https://en.wikipedia.org/wiki/Printf_format_string",
     "http://lua-users.org/wiki/PatternsTutorial",
     "https://www.rust-lang.org",
     "https://github.com/carp-lang/Carp/releases",

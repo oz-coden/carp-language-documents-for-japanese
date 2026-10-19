@@ -181,6 +181,9 @@
 | linking flag | リンクフラグ | リンク時に指定するオプションを指します |
 | rendering context | レンダリングコンテキスト | 原語を併記します。一般的な「文脈」と訳しません |
 | encoding | 文字エンコーディング | ファイルの文字の符号化方式を指す場合に使用します |
+| format string | 書式指定文字列 | 原語を併記します。「フォーマット文字列」と混在させません |
+| format specifier | 書式指定子 | 原語を併記します。書式指定文字列全体と区別します |
+| directive (format string) | 変換指定 | 原語を併記します。書式指定文字列中で値の変換を指定する部分です。preprocessor directive と区別します |
 | pattern / regular expression | パターン / 正規表現 | 同一視しません |
 | backtrack | バックトラック | 原文の主張の範囲を独自に拡大しません |
 | non-greedy | 非貪欲 | — |
@@ -207,3 +210,4 @@
 - [Python 言語リファレンス: 呼び出し](https://docs.python.org/ja/3/reference/expressions.html#calls)
 - [筑波大学 ソフトウェア技法: 直積型と代数的データ型](https://www.logic.cs.tsukuba.ac.jp/~kam/lecture/fp2016/6.pdf)
 - [MDN: 関数](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions)
+- [Microsoft Learn: 書式指定構文](https://learn.microsoft.com/ja-jp/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170)
