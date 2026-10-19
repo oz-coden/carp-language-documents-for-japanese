@@ -20,6 +20,7 @@ Carp の主な特徴は、次のとおりです。
 
 ### さらに詳しく (Learn more)
 
+- [ヘルプ索引](index-JP.md): 目的に合わせて文書を探せます。
 - [コンパイラマニュアル](Manual-JP.md): コンパイラのインストール方法と使い方です。
 - [Carp 言語ガイド](LanguageGuide-JP.md): 言語の構文と意味論を説明しています。
 - [Core のドキュメント(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html): 標準ライブラリのドキュメントです。
@@ -89,6 +90,8 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 | [開発ツール](Tooling-JP.md) | [Tooling.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Tooling.md) | 全文翻訳済み |
 | [本家への貢献ガイド](Contributing-JP.md) | [Contributing.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Contributing.md) | 全文翻訳済み |
 | [リリースチェックリスト](ReleaseChecklist-JP.md) | [ReleaseChecklist.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/ReleaseChecklist.md) | 全文翻訳済み |
+| [標準ライブラリのドキュメント生成](CoreDocs-JP.md) | [docs/core/README.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/README.md) | 全文翻訳済み |
+| [ヘルプ索引](index-JP.md) | [index.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/index.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 
