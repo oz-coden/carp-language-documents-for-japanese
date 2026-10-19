@@ -20,9 +20,9 @@ Carp の主な特徴は、次のとおりです。
 
 ### さらに詳しく (Learn more)
 
-- [ヘルプ索引](index-JP.md): 目的に合わせて文書を探せます。
-- [コンパイラマニュアル](Manual-JP.md): コンパイラのインストール方法と使い方です。
-- [Carp 言語ガイド](LanguageGuide-JP.md): 言語の構文と意味論を説明しています。
+- [ヘルプ索引](docs/index-JP.md): 目的に合わせて文書を探せます。
+- [コンパイラマニュアル](docs/Manual-JP.md): コンパイラのインストール方法と使い方です。
+- [Carp 言語ガイド](docs/LanguageGuide-JP.md): 言語の構文と意味論を説明しています。
 - [Core のドキュメント(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html): 標準ライブラリのドキュメントです。
 
 ### 最小限の例 (A Very Small Example)
@@ -42,7 +42,7 @@ Carp の主な特徴は、次のとおりです。
     (SDLApp.run-with-callbacks &app SDLApp.quit-on-esc tick draw state)))
 ```
 
-Carp のコードを実行する手順は、[コードの実行方法](HowToRunCode-JP.md) を参照してください。
+Carp のコードを実行する手順は、[コードの実行方法](docs/HowToRunCode-JP.md) を参照してください。
 
 ほかの例は、[examples ディレクトリ(英語)](https://github.com/carp-lang/Carp/tree/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/examples) を参照してください。
 
@@ -68,33 +68,35 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 
 固定版の翻訳対象である Markdown 文書 25 ファイルの全文訳を掲載しています。
 
+訳文は原文と同じディレクトリ階層に配置しています。本家 README の全文訳は `Carp-JP.md`、`docs/` の文書は `docs/`、`docs/core/README.md` の訳は `docs/core/README-JP.md` にあります。翻訳方針や用語集、このリポジトリへの貢献手順はトップディレクトリに置いています。
+
 | 文書 | 原文 | 状態 |
 | --- | --- | --- |
 | [Carp の紹介](Carp-JP.md) | [README.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/README.md) | 全文翻訳済み |
-| [言語ガイド](LanguageGuide-JP.md) | [LanguageGuide.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/LanguageGuide.md) | 全文翻訳済み |
-| [メモリ管理の詳細](Memory-JP.md) | [Memory.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Memory.md) | 全文翻訳済み |
-| [C との相互運用](CInterop-JP.md) | [CInterop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md) | 全文翻訳済み |
-| [インストール](Install-JP.md) | [Install.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Install.md) | 全文翻訳済み |
-| [コードの実行方法](HowToRunCode-JP.md) | [HowToRunCode.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/HowToRunCode.md) | 全文翻訳済み |
-| [ライブラリ](Libraries-JP.md) | [Libraries.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Libraries.md) | 全文翻訳済み |
-| [コンパイラマニュアル](Manual-JP.md) | [Manual.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Manual.md) | 全文翻訳済み |
-| [マクロ](Macros-JP.md) | [Macros.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Macros.md) | 全文翻訳済み |
-| [準クォート](Quasiquotation-JP.md) | [Quasiquotation.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Quasiquotation.md) | 全文翻訳済み |
-| [動的評価器 VM](EvaluatorVM-JP.md) | [EvaluatorVM.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/EvaluatorVM.md) | 全文翻訳済み |
-| [動的意味論](DynamicSemantics-JP.md) | [DynamicSemantics.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/DynamicSemantics.md) | 全文翻訳済み |
-| [導出](Derive-JP.md) | [Derive.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Derive.md) | 全文翻訳済み |
-| [書式指定文字列](Format_Strings-JP.md) | [Format_Strings.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Format_Strings.md) | 全文翻訳済み |
-| [`drop` インターフェース](Drop-JP.md) | [Drop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Drop.md) | 全文翻訳済み |
-| [用語 (作成中)](Terminology-JP.md) | [Terminology.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Terminology.md) | 全文翻訳済み |
-| [組み込み開発](Embedded-JP.md) | [Embedded.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Embedded.md) | 全文翻訳済み |
-| [プログラミングパターン](patterns-JP.md) | [patterns.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/patterns.md) | 全文翻訳済み |
-| [マルチメディアライブラリ](Multimedia-JP.md) | [Multimedia.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Multimedia.md) | 全文翻訳済み |
-| [開発ツール](Tooling-JP.md) | [Tooling.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Tooling.md) | 全文翻訳済み |
-| [本家への貢献ガイド](Contributing-JP.md) | [Contributing.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Contributing.md) | 全文翻訳済み |
-| [リリースチェックリスト](ReleaseChecklist-JP.md) | [ReleaseChecklist.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/ReleaseChecklist.md) | 全文翻訳済み |
-| [標準ライブラリのドキュメント生成](CoreDocs-JP.md) | [docs/core/README.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/README.md) | 全文翻訳済み |
-| [ヘルプ索引](index-JP.md) | [index.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/index.md) | 全文翻訳済み |
-| [Carp コンパイラの開発](hacking-JP.md) | [hacking.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/hacking.md) | 全文翻訳済み |
+| [言語ガイド](docs/LanguageGuide-JP.md) | [LanguageGuide.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/LanguageGuide.md) | 全文翻訳済み |
+| [メモリ管理の詳細](docs/Memory-JP.md) | [Memory.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Memory.md) | 全文翻訳済み |
+| [C との相互運用](docs/CInterop-JP.md) | [CInterop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md) | 全文翻訳済み |
+| [インストール](docs/Install-JP.md) | [Install.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Install.md) | 全文翻訳済み |
+| [コードの実行方法](docs/HowToRunCode-JP.md) | [HowToRunCode.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/HowToRunCode.md) | 全文翻訳済み |
+| [ライブラリ](docs/Libraries-JP.md) | [Libraries.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Libraries.md) | 全文翻訳済み |
+| [コンパイラマニュアル](docs/Manual-JP.md) | [Manual.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Manual.md) | 全文翻訳済み |
+| [マクロ](docs/Macros-JP.md) | [Macros.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Macros.md) | 全文翻訳済み |
+| [準クォート](docs/Quasiquotation-JP.md) | [Quasiquotation.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Quasiquotation.md) | 全文翻訳済み |
+| [動的評価器 VM](docs/EvaluatorVM-JP.md) | [EvaluatorVM.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/EvaluatorVM.md) | 全文翻訳済み |
+| [動的意味論](docs/DynamicSemantics-JP.md) | [DynamicSemantics.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/DynamicSemantics.md) | 全文翻訳済み |
+| [導出](docs/Derive-JP.md) | [Derive.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Derive.md) | 全文翻訳済み |
+| [書式指定文字列](docs/Format_Strings-JP.md) | [Format_Strings.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Format_Strings.md) | 全文翻訳済み |
+| [`drop` インターフェース](docs/Drop-JP.md) | [Drop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Drop.md) | 全文翻訳済み |
+| [用語 (作成中)](docs/Terminology-JP.md) | [Terminology.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Terminology.md) | 全文翻訳済み |
+| [組み込み開発](docs/Embedded-JP.md) | [Embedded.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Embedded.md) | 全文翻訳済み |
+| [プログラミングパターン](docs/patterns-JP.md) | [patterns.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/patterns.md) | 全文翻訳済み |
+| [マルチメディアライブラリ](docs/Multimedia-JP.md) | [Multimedia.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Multimedia.md) | 全文翻訳済み |
+| [開発ツール](docs/Tooling-JP.md) | [Tooling.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Tooling.md) | 全文翻訳済み |
+| [本家への貢献ガイド](docs/Contributing-JP.md) | [Contributing.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Contributing.md) | 全文翻訳済み |
+| [リリースチェックリスト](docs/ReleaseChecklist-JP.md) | [ReleaseChecklist.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/ReleaseChecklist.md) | 全文翻訳済み |
+| [標準ライブラリのドキュメント生成](docs/core/README-JP.md) | [docs/core/README.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/README.md) | 全文翻訳済み |
+| [ヘルプ索引](docs/index-JP.md) | [index.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/index.md) | 全文翻訳済み |
+| [Carp コンパイラの開発](docs/hacking-JP.md) | [hacking.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/hacking.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 

@@ -11,145 +11,145 @@
     },
     {
       "source": "docs/LanguageGuide.md",
-      "translation": "LanguageGuide-JP.md",
+      "translation": "docs/LanguageGuide-JP.md",
       "source_blob": "49158c0f39fac4bf910cc6a39414ae9f665c7fd7",
       "initial_translation_source_commit": null
     },
     {
       "source": "docs/Memory.md",
-      "translation": "Memory-JP.md",
+      "translation": "docs/Memory-JP.md",
       "source_blob": "f36e7a8d5529060a4b26279980ee0e86be86d8bf",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/CInterop.md",
-      "translation": "CInterop-JP.md",
+      "translation": "docs/CInterop-JP.md",
       "source_blob": "8a811383ef521768d876e48d88b6791cd77bf45a",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Install.md",
-      "translation": "Install-JP.md",
+      "translation": "docs/Install-JP.md",
       "source_blob": "4fa2742ab99a3b580351a93e950844a095ff8480",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/HowToRunCode.md",
-      "translation": "HowToRunCode-JP.md",
+      "translation": "docs/HowToRunCode-JP.md",
       "source_blob": "4024008b925ef4319d6667cf45f010f017f1b5c1",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Libraries.md",
-      "translation": "Libraries-JP.md",
+      "translation": "docs/Libraries-JP.md",
       "source_blob": "f7ef44c7262645a9d6823e2cd94191f22863bf7d",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Manual.md",
-      "translation": "Manual-JP.md",
+      "translation": "docs/Manual-JP.md",
       "source_blob": "cd4b69d2de23dc4a8a5c335472407d91140a575f",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Macros.md",
-      "translation": "Macros-JP.md",
+      "translation": "docs/Macros-JP.md",
       "source_blob": "ccae5c0dd5fe8b7512bf813fab0b9909c5773952",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Quasiquotation.md",
-      "translation": "Quasiquotation-JP.md",
+      "translation": "docs/Quasiquotation-JP.md",
       "source_blob": "e87bcc6456dcf7c87a02be5db4d616905ac57636",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/EvaluatorVM.md",
-      "translation": "EvaluatorVM-JP.md",
+      "translation": "docs/EvaluatorVM-JP.md",
       "source_blob": "4d50a6bac0ad69d9d456e22ba79f16d3e47cf99f",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/DynamicSemantics.md",
-      "translation": "DynamicSemantics-JP.md",
+      "translation": "docs/DynamicSemantics-JP.md",
       "source_blob": "0904d0ca069e6c3ec852c62fa09297dbf2faf113",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Derive.md",
-      "translation": "Derive-JP.md",
+      "translation": "docs/Derive-JP.md",
       "source_blob": "17767d14df5af9588ed556ed327852382b2337ce",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Format_Strings.md",
-      "translation": "Format_Strings-JP.md",
+      "translation": "docs/Format_Strings-JP.md",
       "source_blob": "68811be9a11b27b576a717867005c123bba5dda3",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Drop.md",
-      "translation": "Drop-JP.md",
+      "translation": "docs/Drop-JP.md",
       "source_blob": "c7409bdfd4c8005762498c8a432d199a06e74094",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Terminology.md",
-      "translation": "Terminology-JP.md",
+      "translation": "docs/Terminology-JP.md",
       "source_blob": "9c3d81774bacd8de0c9f7bfef498926db612e96e",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Embedded.md",
-      "translation": "Embedded-JP.md",
+      "translation": "docs/Embedded-JP.md",
       "source_blob": "5ecee2cdddd0bcb29474bebdbf7e40dc8e76a353",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/patterns.md",
-      "translation": "patterns-JP.md",
+      "translation": "docs/patterns-JP.md",
       "source_blob": "f1bf80dac863178425e6f8b75a325469d1d8b0d0",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Multimedia.md",
-      "translation": "Multimedia-JP.md",
+      "translation": "docs/Multimedia-JP.md",
       "source_blob": "ac639cba70225a61197639d7ab62d869578c30ab",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Tooling.md",
-      "translation": "Tooling-JP.md",
+      "translation": "docs/Tooling-JP.md",
       "source_blob": "181d1d3552e88e2ce90943c81fac5cf825dc1290",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/Contributing.md",
-      "translation": "Contributing-JP.md",
+      "translation": "docs/Contributing-JP.md",
       "source_blob": "1beee0c2e48caeda8ada09ffa600a85b0e7dcb4d",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/ReleaseChecklist.md",
-      "translation": "ReleaseChecklist-JP.md",
+      "translation": "docs/ReleaseChecklist-JP.md",
       "source_blob": "468106b2189d35c674fb7f4a733f0b630c657882",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/core/README.md",
-      "translation": "CoreDocs-JP.md",
+      "translation": "docs/core/README-JP.md",
       "source_blob": "dc91647b7bb673570bf998ae5631f268c5abe3f9",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/index.md",
-      "translation": "index-JP.md",
+      "translation": "docs/index-JP.md",
       "source_blob": "612196476bac721eda75a2b4b1e17a28c2e8f087",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     },
     {
       "source": "docs/hacking.md",
-      "translation": "hacking-JP.md",
+      "translation": "docs/hacking-JP.md",
       "source_blob": "12b851df33c081cbdc9016e16006062fe026c756",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }

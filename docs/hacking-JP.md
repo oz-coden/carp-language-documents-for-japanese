@@ -4,7 +4,7 @@
 
 翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
 この文書は Carp の開発者・貢献者による英語原文を日本語に翻訳・編集した非公式の文書です。
-翻訳方針は [TRANSLATION.md](TRANSLATION.md)、採用語は [GLOSSARY.md](GLOSSARY.md) を参照してください。
+翻訳方針は [TRANSLATION.md](../TRANSLATION.md)、採用語は [GLOSSARY.md](../GLOSSARY.md) を参照してください。
 
 この文書には、Carp コンパイラに変更を加える際に役立つ、さまざまなヒントや工夫、メモ、説明、例をまとめています。網羅的なガイドではありません。今後も、過去にコンパイラを変更した人たちによるコメント、観察、ヒントを寄せ集めたものになっていくでしょう。
 
@@ -65,7 +65,7 @@ Carp コンパイラのソースコードは、`src/` ディレクトリにあ�
 - `Infer.hs`: 型推論を行う関数で、型システムへの入口です。
 - `Qualify`: 適切なモジュール名でシンボルを修飾します。
 
-> 訳注: 対象コミットに `src/Lookup.hs` は存在しません。コンテキスト内の束縛を検索する処理は、例えば [Context.hs の lookupBinderInContextEnv(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Context.hs#L353-L369) にあります。
+> 訳注: 対象コミットに `src/Lookup.hs` は存在しません。コンテキスト内の束縛を検索する処理は、例えば [Context.hs の lookupBinderInContextEnv(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Context.hs#L353-L357) にあります。
 
 型システムや借用チェックの仕組みの一部を、この一覧に加えることもできるでしょう。ただし、ここでは評価に関わる中核機能を挙げています。大まかにいえば、評価コンポーネントはコンパイルという交響曲の指揮者であり、コンパイラのほかのすべての部分をまとめて動かします。
 

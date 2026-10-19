@@ -4,7 +4,7 @@
 
 翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
 この文書は Carp の開発者・貢献者による英語原文を日本語に翻訳・編集した非公式の文書です。
-翻訳方針は [TRANSLATION.md](TRANSLATION.md)、採用語は [GLOSSARY.md](GLOSSARY.md) を参照してください。
+翻訳方針は [TRANSLATION.md](../TRANSLATION.md)、採用語は [GLOSSARY.md](../GLOSSARY.md) を参照してください。
 
 `derive` は、データ型のメンバーに基づいて、インターフェースの実装方法を自動的に決める仕組みです。このような実装の導出 (derivation) に使う独自のルールを、導出器 (deriver) として定義することもできます。
 
