@@ -18,7 +18,7 @@ Carp への貢献を検討してくださり、ありがとうございます！
 
 ## コンパイラを理解する (Understanding the Compiler)
 
-Carp コンパイラの内部をやさしく紹介する [hacking.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/hacking.md) を参照してください。
+Carp コンパイラの内部をやさしく紹介する [Carp コンパイラの開発](hacking-JP.md) を参照してください。
 
 ## リポジトリへのコミット (Committing to the repo)
 

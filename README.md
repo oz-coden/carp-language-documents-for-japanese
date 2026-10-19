@@ -66,6 +66,8 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 
 ## 翻訳文書 (Translated Documents)
 
+固定版の翻訳対象である Markdown 文書 25 ファイルの全文訳を掲載しています。
+
 | 文書 | 原文 | 状態 |
 | --- | --- | --- |
 | [Carp の紹介](Carp-JP.md) | [README.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/README.md) | 全文翻訳済み |
@@ -92,6 +94,7 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 | [リリースチェックリスト](ReleaseChecklist-JP.md) | [ReleaseChecklist.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/ReleaseChecklist.md) | 全文翻訳済み |
 | [標準ライブラリのドキュメント生成](CoreDocs-JP.md) | [docs/core/README.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/README.md) | 全文翻訳済み |
 | [ヘルプ索引](index-JP.md) | [index.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/index.md) | 全文翻訳済み |
+| [Carp コンパイラの開発](hacking-JP.md) | [hacking.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/hacking.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 

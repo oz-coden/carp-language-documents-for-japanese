@@ -42,6 +42,18 @@
 | parameter | 仮引数 | argument との区別が必要な箇所で使用します |
 | argument | 実引数 | 区別が不要な一般的説明では「引数」も使用できます |
 | static analysis | 静的解析 | — |
+| pass (compiler) | パス | 原語を併記します。コンパイラの処理段階を指し、ファイルパスと区別します |
+| parsing | 構文解析 | 原語を併記します。ソースコードを抽象構文へ変換する段階に使用します |
+| syntactic analysis | 構文の解析 | 原語を併記します。hacking.md の形式の走査・解析を説明する文脈で使用します |
+| abstract data type | 抽象データ型 | 原語を併記します。algebraic data type の「代数的データ型」と取り違えません |
+| code emission / emission | コード出力 | 初出では原文の語形を併記します。C コードを出力する段階を指します |
+| polymorphism / polymorphic type | 多相性 / 多相型 | 原語を併記し、既存の「多相関数」と対応させます |
+| unification | 単一化 | 原語を併記します。型の互換性を調べる文脈で使用します |
+| concretization | 具体化 | 原語を併記します。具体的な型への変換を指します |
+| constraint / type constraint | 制約 / 型制約 | 原語を併記します。型と型変数の間の制約を扱う文脈で使用します |
+| lifetime parameter | ライフタイムパラメーター | 原語を併記し、「ライフタイム」の表記を維持します |
+| template | テンプレート | 原語を併記します。C コード生成のための構造を指し、識別子は保持します |
+| immutable | 不変 | 原語を併記します。hacking.md では変数の更新を防ぐ目的のメタデータを扱い、その設定だけで更新が禁止されるとは訳しません |
 | type inference | 型推論 | 主体の type inferer は「型推論器」です |
 | type annotation | 型注釈 | — |
 | annotation | 注釈 | 型に限らず、メタデータを付ける文脈では「注釈」とします |

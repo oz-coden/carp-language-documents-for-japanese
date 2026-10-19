@@ -146,6 +146,12 @@
       "translation": "index-JP.md",
       "source_blob": "612196476bac721eda75a2b4b1e17a28c2e8f087",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/hacking.md",
+      "translation": "hacking-JP.md",
+      "source_blob": "12b851df33c081cbdc9016e16006062fe026c756",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "excluded_documents": [
