@@ -92,6 +92,12 @@
       "translation": "Drop-JP.md",
       "source_blob": "c7409bdfd4c8005762498c8a432d199a06e74094",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Terminology.md",
+      "translation": "Terminology-JP.md",
+      "source_blob": "9c3d81774bacd8de0c9f7bfef498926db612e96e",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
