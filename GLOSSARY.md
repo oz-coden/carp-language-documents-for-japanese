@@ -84,6 +84,9 @@
 | copy / copying | コピー | 操作名として使用します。copying が概念の初出なら原語を併記します |
 | use after free / double free | 解放後の使用 / 二重解放 | 原語を併記します |
 | memory allocation | メモリの割り当て | deallocation の「解放」と対になる操作です |
+| deterministic memory management | 決定的なメモリ管理 | 原語を併記します。原文が述べるメモリ管理の特徴を表す語です |
+| ownership tracking | 所有権の追跡 | 原語を併記します。所有権の取得・放棄とは区別します |
+| sound synthesis | 音響合成 | 原語を併記します。音声に限定せず、音を合成する文脈で使用します |
 | abstract syntax tree / AST | 抽象構文木 / AST | 初出は「抽象構文木 (abstract syntax tree、AST)」とします |
 | deleter | deleter | 英語で保持します。Memory.md の実装説明では削除処理の情報を保持するデータ構造を指し、削除関数そのものとは区別します |
 | deletion function / deletion routine | 削除関数 / 削除処理 | メモリの解放を述べる場合は「解放」と訳し、値の削除と動作を区別します |
