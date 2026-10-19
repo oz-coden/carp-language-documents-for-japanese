@@ -98,9 +98,16 @@
       "translation": "Terminology-JP.md",
       "source_blob": "9c3d81774bacd8de0c9f7bfef498926db612e96e",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Embedded.md",
+      "translation": "Embedded-JP.md",
+      "source_blob": "5ecee2cdddd0bcb29474bebdbf7e40dc8e76a353",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
+    "https://wiki.debian.org/LTO",
     "https://sourceware.org/glibc/manual/latest/html_node/Table-of-Output-Conversions.html",
     "https://en.wikipedia.org/wiki/Printf_format_string",
     "http://lua-users.org/wiki/PatternsTutorial",

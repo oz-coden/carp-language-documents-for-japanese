@@ -14,7 +14,7 @@
 - [ライブラリ](Libraries-JP.md): ライブラリとモジュールの利用方法です。
 - [マルチメディア(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Multimedia.md): グラフィックスやサウンドなどを扱います。
 - [マクロ](Macros-JP.md): Carp のマクロシステムのガイドです。
-- [組み込み開発(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Embedded.md): 組み込みシステムで Carp を使うためのヒントや工夫です。
+- [組み込み開発](Embedded-JP.md): 組み込みシステムで Carp を使うためのヒントや工夫です。
 - [用語](Terminology-JP.md): よく使う用語と、それらが意味するものを説明しています。
 
 Carp 言語やその構文、意味論について詳しく知るには、[Carp 言語ガイド](LanguageGuide-JP.md) を参照してください。
