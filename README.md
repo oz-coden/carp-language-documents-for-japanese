@@ -52,6 +52,8 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 **翻訳対象は、Carp のコミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` の英語原文に固定しています。以後の英語原文の変更には追従しません。**
 この固定版を対象に、誤訳修正、訳抜けの補完、用語・表記の改善、新たな文書の翻訳を行います。
 
+変更履歴である `CHANGELOG.md` は翻訳対象外です。
+
 | 項目 | 内容 |
 | --- | --- |
 | 原文リポジトリ | [carp-lang/Carp(英語)](https://github.com/carp-lang/Carp) |
@@ -83,6 +85,8 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 | [用語 (作成中)](Terminology-JP.md) | [Terminology.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Terminology.md) | 全文翻訳済み |
 | [組み込み開発](Embedded-JP.md) | [Embedded.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Embedded.md) | 全文翻訳済み |
 | [プログラミングパターン](patterns-JP.md) | [patterns.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/patterns.md) | 全文翻訳済み |
+| [マルチメディアライブラリ](Multimedia-JP.md) | [Multimedia.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Multimedia.md) | 全文翻訳済み |
+| [開発ツール](Tooling-JP.md) | [Tooling.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Tooling.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 

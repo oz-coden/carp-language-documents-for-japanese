@@ -110,9 +110,30 @@
       "translation": "patterns-JP.md",
       "source_blob": "f1bf80dac863178425e6f8b75a325469d1d8b0d0",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Multimedia.md",
+      "translation": "Multimedia-JP.md",
+      "source_blob": "ac639cba70225a61197639d7ab62d869578c30ab",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Tooling.md",
+      "translation": "Tooling-JP.md",
+      "source_blob": "181d1d3552e88e2ce90943c81fac5cf825dc1290",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    }
+  ],
+  "excluded_documents": [
+    {
+      "source": "CHANGELOG.md",
+      "reason": "変更履歴は翻訳対象外とします。"
     }
   ],
   "external_english_urls": [
+    "https://github.com/hellerve/carp-vim",
+    "https://github.com/carp-lang/carp-emacs",
+    "https://atom.io/packages/language-carp",
     "https://wiki.debian.org/LTO",
     "https://sourceware.org/glibc/manual/latest/html_node/Table-of-Output-Conversions.html",
     "https://en.wikipedia.org/wiki/Printf_format_string",
