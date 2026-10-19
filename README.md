@@ -29,6 +29,7 @@
 | [ライブラリ](Libraries-JP.md) | [Libraries.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Libraries.md) | 全文翻訳済み |
 | [コンパイラマニュアル](Manual-JP.md) | [Manual.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Manual.md) | 全文翻訳済み |
 | [マクロ](Macros-JP.md) | [Macros.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Macros.md) | 全文翻訳済み |
+| [準クォート](Quasiquotation-JP.md) | [Quasiquotation.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Quasiquotation.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 

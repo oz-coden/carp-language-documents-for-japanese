@@ -83,6 +83,8 @@
 | macro / reader macro | マクロ / リーダーマクロ | — |
 | hygienic | 衛生的 | 原語を併記します。マクロの性質を表す用語です |
 | quote / quasiquotation / quasiquoting | クォート / 準クォート | 準クォートは初出で原文の語形を併記します。識別子 `quote`、`quasiquote` は保持します |
+| unquote / unquoting / unquoted | アンクォート | 初出では原文の語形を併記します。クォートを解除して対象の式を評価することを指します。識別子 `unquote` は保持します |
+| splicing | スプライシング | 原語を併記します。リストの要素を入れ子にせずに差し込む操作を指します。識別子 `unquote-splicing` は保持します |
 | macro expansion | マクロ展開 | — |
 | rest arguments | 残余引数 | 原語を併記します。残りの実引数をまとめて受け取るものを指します |
 | variadic | 可変長引数の | 残余引数の仕組みそのものとは区別します |
