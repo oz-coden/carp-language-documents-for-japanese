@@ -178,6 +178,15 @@
 | build artifact | ビルド成果物 | ビルドによって生成されたものを指します |
 | target triple | ターゲットトリプル | 原語を併記します |
 | cross-compilation / cross-compiling | クロスコンパイル | 初出では原文の語形を併記します |
+| cross-compiler | クロスコンパイラ | 原語を併記します。クロスコンパイルを行うコンパイラを指します |
+| embedded device / embedded system | 組み込み機器 / 組み込みシステム | 初出では原文の語形を併記します。組み込み関数を指す built-in と区別します |
+| host system | ホストシステム | 原語を併記します。ビルドを行う環境を指し、実行対象と区別します |
+| target platform | ターゲットプラットフォーム | 原語を併記します。実行対象の環境を指します |
+| linker script | リンカースクリプト | 原語を併記します。リンカーに渡すスクリプトを指します |
+| prelude | プレリュード | 原語を併記します。Embedded.md では、標準定義を読み込む core/Core.carp を指します |
+| Link Time Optimization / LTO | リンク時最適化 / LTO | 初出は「リンク時最適化 (Link Time Optimization、LTO)」とします |
+| cache miss | キャッシュミス | 原語を併記します |
+| static array | 静的配列 | 原語を併記します。リテラル `$[]` と識別子 `StaticArray` は保持します |
 | binary | バイナリ | 実行ファイルを指す場合も、原文の executable との語の違いを保持します |
 | environment variable | 環境変数 | 変数名や設定コマンドは変更しません |
 | locale | ロケール | 原語を併記します。local の「局所」と区別します |

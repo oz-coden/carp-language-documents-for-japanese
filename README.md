@@ -81,6 +81,7 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 | [書式指定文字列](Format_Strings-JP.md) | [Format_Strings.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Format_Strings.md) | 全文翻訳済み |
 | [`drop` インターフェース](Drop-JP.md) | [Drop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Drop.md) | 全文翻訳済み |
 | [用語 (作成中)](Terminology-JP.md) | [Terminology.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Terminology.md) | 全文翻訳済み |
+| [組み込み開発](Embedded-JP.md) | [Embedded.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Embedded.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 
