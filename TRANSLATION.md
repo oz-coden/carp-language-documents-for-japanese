@@ -8,7 +8,7 @@
 - 原文パス、原文の blob SHA、訳文パスを [translation-sources.json](translation-sources.json) に記録します。初回翻訳で参照したコミットが不明な場合は `initial_translation_source_commit` を `null` とします。
 - 訳文は、原文と同じディレクトリ階層に配置します。例えば、`docs/Manual.md` は `docs/Manual-JP.md`、`docs/core/README.md` は `docs/core/README-JP.md` とします。本家 README の全文訳はトップの `Carp-JP.md` とし、このリポジトリの README、翻訳方針、用語集、貢献手順もトップに置きます。
 - 本文、見出し、コードコメント、注、リンクを翻訳・確認の対象にします。
-- 変更履歴 `CHANGELOG.md` は翻訳対象外とし、未翻訳の件数にも含めません。対象外のファイルと理由は `translation-sources.json` の `excluded_documents` に記録します。
+- 固定コミット内の `README.md`、`CHANGELOG.md`、`docs/` 以下の Markdown 文書を翻訳対象とします。変更履歴は、原文に収録された版と項目の範囲で翻訳します。
 - 翻訳文書には原文へのリンクと翻訳・編集した旨を記載し、原著の著作権・帰属表示を保持します。
 - 各翻訳文書の冒頭には「翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。」と記載します。確認日は README と `translation-sources.json` にまとめます。
 

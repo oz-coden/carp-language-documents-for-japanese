@@ -53,7 +53,7 @@ Carp のコードを実行する手順は、[コードの実行方法](docs/HowT
 **翻訳対象は、Carp のコミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` の英語原文に固定しています。以後の英語原文の変更には追従しません。**
 この固定版を対象に、誤訳修正、訳抜けの補完、用語・表記の改善、新たな文書の翻訳を行います。
 
-変更履歴である `CHANGELOG.md` は翻訳対象外です。
+参考資料として [変更履歴の日本語訳](CHANGELOG-JP.md) も掲載しています。原文の収録範囲は 0.5.1〜0.5.5 であり、固定コミットまでのすべての変更を網羅するものではありません。
 
 | 項目 | 内容 |
 | --- | --- |
@@ -66,13 +66,14 @@ Carp のコードを実行する手順は、[コードの実行方法](docs/HowT
 
 ## 翻訳文書 (Translated Documents)
 
-固定版の翻訳対象である Markdown 文書 25 ファイルの全文訳を掲載しています。
+固定版の翻訳対象である Markdown 文書 26 ファイルの全文訳を掲載しています。
 
 訳文は原文と同じディレクトリ階層に配置しています。本家 README の全文訳は `Carp-JP.md`、`docs/` の文書は `docs/`、`docs/core/README.md` の訳は `docs/core/README-JP.md` にあります。翻訳方針や用語集、このリポジトリへの貢献手順はトップディレクトリに置いています。
 
 | 文書 | 原文 | 状態 |
 | --- | --- | --- |
 | [Carp の紹介](Carp-JP.md) | [README.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/README.md) | 全文翻訳済み |
+| [変更履歴](CHANGELOG-JP.md) | [CHANGELOG.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/CHANGELOG.md) | 全文翻訳済み (0.5.1〜0.5.5) |
 | [言語ガイド](docs/LanguageGuide-JP.md) | [LanguageGuide.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/LanguageGuide.md) | 全文翻訳済み |
 | [メモリ管理の詳細](docs/Memory-JP.md) | [Memory.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Memory.md) | 全文翻訳済み |
 | [C との相互運用](docs/CInterop-JP.md) | [CInterop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md) | 全文翻訳済み |
