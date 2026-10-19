@@ -39,6 +39,14 @@
 | static analysis | 静的解析 | — |
 | type inference | 型推論 | 主体の type inferer は「型推論器」です |
 | type annotation | 型注釈 | — |
+| annotation | 注釈 | 型に限らず、メタデータを付ける文脈では「注釈」とします |
+| metadata | メタデータ | 原語を併記します |
+| doc string / docstring | ドキュメント文字列 | 初出では原文の語形を併記します |
+| dynamic evaluator | 動的評価器 | 原語を併記します。動的コードを評価するものを指します |
+| evaluator VM | 評価器 VM | 原語を併記します。VM の表記を保持します |
+| dynamic library | 動的ライブラリ | 原語を併記します。実行ファイルと区別します |
+| global variable | グローバル変数 | — |
+| child process | 子プロセス | 原語を併記します |
 | statically typed | 静的型付け | — |
 | reference / reference type | 参照 / 参照型 | 参考情報の reference とは区別します |
 | indirection | 間接参照 | `Ref` 型と同一視しません |
@@ -110,6 +118,9 @@
 | generics | ジェネリクス | ジェネリックな型や関数を扱う仕組みの総称です |
 | kebab-case | ケバブケース | 原語を併記します。ハイフンで単語を区切る識別子の表記です |
 | executable | 実行ファイル | ビルドの成果物や、実行するファイルを指す場合に使用します |
+| build artifact | ビルド成果物 | ビルドによって生成されたものを指します |
+| target triple | ターゲットトリプル | 原語を併記します |
+| cross-compilation / cross-compiling | クロスコンパイル | 初出では原文の語形を併記します |
 | binary | バイナリ | 実行ファイルを指す場合も、原文の executable との語の違いを保持します |
 | environment variable | 環境変数 | 変数名や設定コマンドは変更しません |
 | locale | ロケール | 原語を併記します。local の「局所」と区別します |
