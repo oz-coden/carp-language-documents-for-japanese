@@ -35,7 +35,7 @@ Carp には Core という標準ライブラリが付属しています。[ソ�
 (Project.config "search-path" "~/Projects/carp-ncurses")
 ```
 
-この設定を [profile.carp(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Manual.md#profile-settings) に記述すると、すべてのプロジェクトに適用できます。
+この設定を [profile.carp](Manual-JP.md#プロファイルの設定-profile-settings) に記述すると、すべてのプロジェクトに適用できます。
 
 ## Git 経由での読み込み (Loading via git)
 

@@ -38,6 +38,12 @@
       "translation": "Libraries-JP.md",
       "source_blob": "f7ef44c7262645a9d6823e2cd94191f22863bf7d",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Manual.md",
+      "translation": "Manual-JP.md",
+      "source_blob": "cd4b69d2de23dc4a8a5c335472407d91140a575f",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
