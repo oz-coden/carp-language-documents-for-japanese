@@ -4,7 +4,7 @@
 
 翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
 この文書は Carp の開発者・貢献者による英語原文を日本語に翻訳・編集した非公式の文書です。
-翻訳方針は [TRANSLATION.md](TRANSLATION.md)、採用語は [GLOSSARY.md](GLOSSARY.md) を参照してください。
+翻訳方針は [TRANSLATION.md](../TRANSLATION.md)、採用語は [GLOSSARY.md](../GLOSSARY.md) を参照してください。
 
 どの Lisp でも、マクロは特に意見が分かれる機能の 1 つです。設計にあたっては多くの選択肢があり、それぞれに支持する人と反対する人がいます。
 
@@ -98,6 +98,8 @@ eval        :: Context -> XObj -> LookupPreference -> IO (Context, Either EvalEr
 #### `XObj`
 
 `XObj` は「追加情報を持つ `Obj` (Obj with eXtras)」の略です。`Obj` は Carp の抽象構文木 (abstract syntax tree、AST) のノードを表す型で、コンパイラ全体で使われています。ただし、多くの場合は `XObj` に包まれた形で現れます。`XObj` は `Obj` に、省略可能なソース位置情報と型情報を付加します。ソース位置情報は `Maybe Info` 型の `info` フィールドに、型情報は `Maybe Ty` 型の `ty` フィールドに格納されます。どちらのフィールドも重要ですが、本書ではこれらを考慮せず、`XObj` を通常の AST ノードとして扱います。そのため、`eval` はコンテキスト (context) と AST ノードを受け取り、新しいコンテキストと、`EvalError` または新しい AST ノードとの組を返す関数と捉えられます。
+
+> 訳注: 原文ではフィールド名を `info` と `ty` としていますが、対象コミットの `XObj` のレコードフィールド名は、それぞれ `xobjInfo` と `xobjTy` です。型は本文の説明どおり `Maybe Info` と `Maybe Ty` です。[XObj の定義(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Obj.hs#L343-L347)
 
 #### `Context`
 

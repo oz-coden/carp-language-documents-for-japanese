@@ -4,7 +4,7 @@
 
 翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
 この文書は Carp の開発者・貢献者による英語原文を日本語に翻訳・編集した非公式の文書です。
-翻訳方針は [TRANSLATION.md](TRANSLATION.md)、採用語は [GLOSSARY.md](GLOSSARY.md) を参照してください。
+翻訳方針は [TRANSLATION.md](../TRANSLATION.md)、採用語は [GLOSSARY.md](../GLOSSARY.md) を参照してください。
 
 準クォート (quasiquotation) は、リストの一部をクォートしたまま、ほかの部分を評価する方法です。プログラムの動的な部分でのみ利用できます。
 

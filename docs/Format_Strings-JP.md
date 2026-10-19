@@ -4,7 +4,7 @@
 
 翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
 この文書は Carp の開発者・貢献者による英語原文を日本語に翻訳・編集した非公式の文書です。
-翻訳方針は [TRANSLATION.md](TRANSLATION.md)、採用語は [GLOSSARY.md](GLOSSARY.md) を参照してください。
+翻訳方針は [TRANSLATION.md](../TRANSLATION.md)、採用語は [GLOSSARY.md](../GLOSSARY.md) を参照してください。
 
 Carp には、文字列の書式を設定する方法が `fmt` と `fstr` の 2 つあります。この文書では、両方の関数を詳しく説明します。
 
@@ -55,7 +55,7 @@ C の [`printf`(英語)](https://en.wikipedia.org/wiki/Printf_format_string) と
 
 > 訳注: この例の `x` は整数ですが、説明文は文字列の先頭の文字を取り出す内容です。対象コミットの `fstr` のドキュメント文字列にある同様の例では、`(head y)` を使っています。ここも `(head y)` の誤記と考えられます。[実装内の使用例(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Format.carp#L97-L107)
 
-`fstr` には、構文解析できる式なら何でも埋め込めます。式は `{}` で囲みます。単独の `}` は、その文字自体として扱われます。一方、文字としての `{` は、`{{` とエスケープする必要があります。
+`fstr` には、構文解析可能な (parseable) 式なら何でも埋め込めます。式は `{}` で囲みます。単独の `}` は、その文字自体として扱われます。一方、文字としての `{` は、`{{` とエスケープする必要があります。
 
 ```clojure
 (fstr "{{}") ; => {}

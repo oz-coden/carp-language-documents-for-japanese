@@ -4,7 +4,7 @@
 
 翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
 この文書は Carp の開発者・貢献者による英語原文を日本語に翻訳・編集した非公式の文書です。
-翻訳方針は [TRANSLATION.md](TRANSLATION.md)、採用語は [GLOSSARY.md](GLOSSARY.md) を参照してください。
+翻訳方針は [TRANSLATION.md](../TRANSLATION.md)、採用語は [GLOSSARY.md](../GLOSSARY.md) を参照してください。
 
 ## ライブラリとモジュールの利用 (Working with libraries and modules)
 
@@ -12,7 +12,7 @@ Carp には Core という標準ライブラリが付属しています。[ソ�
 標準ライブラリは複数のモジュールで構成されています。
 ほとんどのモジュールについて、[オンライン(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html) と [ローカル(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/core_index.html) の両方でドキュメントを利用できます。
 
-> 訳注: 原文のローカル向けリンク先 `docs/core/core_index.html` は、固定コミットには含まれていません。ローカルで生成するドキュメントについては [生成手順](CoreDocs-JP.md) を参照してください。
+> 訳注: 原文のローカル向けリンク先 `docs/core/core_index.html` は、固定コミットには含まれていません。ローカルで生成するドキュメントについては [生成手順](core/README-JP.md) を参照してください。
 
 大部分のモジュールは既定で読み込まれます。詳しくは [Core.carp(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Core.carp) を参照してください。
 環境変数 `CARP_DIR` が [正しく設定](Install-JP.md#carp_dir-の設定-setting-the-carp_dir) されていれば、残りのライブラリも `load` コマンドで簡単に読み込めます。例えば、`Bench` モジュールを使えるようにするには、次のようにします。
@@ -63,7 +63,7 @@ REPL で `save-docs` を実行すると、複数のモジュールの HTML ド�
 > (save-docs Int Float String)
 ```
 
-標準ライブラリ全体のドキュメントの更新については [生成手順](CoreDocs-JP.md) を、ドキュメント生成ツールの設定例については [生成プログラム(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/generate_core_docs.carp) を参照してください。
+標準ライブラリ全体のドキュメントの更新については [生成手順](core/README-JP.md) を、ドキュメント生成ツールの設定例については [生成プログラム(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/generate_core_docs.carp) を参照してください。
 
 ## 自動生成される API ドキュメント (Auto generated API documentation)
 
@@ -83,3 +83,5 @@ REPL で `save-docs` を実行すると、複数のモジュールの HTML ド�
 Carp のパッケージ一覧は [Carpentry(英語)](https://github.com/carpentry-org) を参照してください。掲載数は増え続けています。
 
 ここで紹介したいライブラリがあれば、ぜひ Carp 本体に PR を送ってください。
+
+> 訳注: この呼びかけは、本家の英語原文へのライブラリ紹介の追加に関するものです。日本語訳やリンク、訳注の問題は、[このリポジトリの Issue](https://github.com/oz-coden/carp-language-documents-for-japanese/issues) へ報告してください。翻訳の問題か原文の問題か判断できない場合も、まずこちらへ相談してください。

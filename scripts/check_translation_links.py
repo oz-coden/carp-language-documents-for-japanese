@@ -81,6 +81,9 @@ def check(root: Path) -> list[str]:
             error('translation-sources.json', 1, 'invalid source/translation/blob entry')
             continue
         source, target = doc['source'], doc['translation']
+        if PurePosixPath(source).parent != PurePosixPath(target).parent:
+            error('translation-sources.json', 1,
+                  f'translation must use the source directory: {source} -> {target}')
         if source in translations or target in seen_translations:
             error('translation-sources.json', 1, 'duplicate source or translation')
         translations[source] = target

@@ -31,12 +31,12 @@ Carp の主な特徴は、次のとおりです。
 - 既存の C コードと容易に連携できます。
 - Lisp マクロ、コンパイル時のスクリプト実行、便利な REPL を備えています。
 
-> 訳注: コンパイラ内部では動的評価器 VM が使われています。[評価器 VM の説明](EvaluatorVM-JP.md#現時点で目指していないこと-current-non-goal) では、この VM は利用者のプログラムを実行する VM ではなく、Carp のコンパイル済みコードの実行モデルも変更しないとしています。
+> 訳注: コンパイラ内部では動的評価器 VM が使われています。[評価器 VM の説明](docs/EvaluatorVM-JP.md#現時点で目指していないこと-current-non-goal) では、この VM は利用者のプログラムを実行する VM ではなく、Carp のコンパイル済みコードの実行モデルも変更しないとしています。
 
 ## さらに詳しく (Learn more)
 
-- [コンパイラマニュアル](Manual-JP.md): コンパイラのインストール方法と使い方です。
-- [Carp 言語ガイド](LanguageGuide-JP.md): 言語の構文と意味論を説明しています。
+- [コンパイラマニュアル](docs/Manual-JP.md): コンパイラのインストール方法と使い方です。
+- [Carp 言語ガイド](docs/LanguageGuide-JP.md): 言語の構文と意味論を説明しています。
 - [Core のドキュメント(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html): 標準ライブラリのドキュメントです。
 
 [Gitter のチャットに参加する(英語)](https://gitter.im/eriksvedang/Carp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -60,7 +60,7 @@ Carp の主な特徴は、次のとおりです。
     (SDLApp.run-with-callbacks &app SDLApp.quit-on-esc tick draw state)))
 ```
 
-Carp のコードを実行する手順は、[コードの実行方法](HowToRunCode-JP.md) を参照してください。
+Carp のコードを実行する手順は、[コードの実行方法](docs/HowToRunCode-JP.md) を参照してください。
 
 ほかの例は、[examples ディレクトリ(英語)](https://github.com/carp-lang/Carp/tree/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/examples) を参照してください。
 
@@ -76,7 +76,7 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 
 長年にわたり Carp に貢献してくださった [すばらしい皆さん(英語)](https://github.com/carp-lang/Carp/graphs/contributors) に感謝します！
 
-いつでも協力を歓迎しています。まずは [本家への貢献ガイド](Contributing-JP.md) を参照してください。
+いつでも協力を歓迎しています。まずは [本家への貢献ガイド](docs/Contributing-JP.md) を参照してください。
 
 > 訳注: 上のガイドは Carp 本家への貢献手順です。日本語訳の修正・追加は、[このリポジトリの貢献手順](CONTRIBUTING.md) を参照してください。
 
