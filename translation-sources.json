@@ -26,6 +26,12 @@
       "translation": "Install-JP.md",
       "source_blob": "4fa2742ab99a3b580351a93e950844a095ff8480",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/HowToRunCode.md",
+      "translation": "HowToRunCode-JP.md",
+      "source_blob": "4024008b925ef4319d6667cf45f010f017f1b5c1",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
@@ -43,6 +49,7 @@
     "https://gitter.im/carp-lang/Carp",
     "https://github.com/carp-lang/Carp/issues",
     "https://github.com/carp-lang/Carp/issues/700",
-    "https://github.com/carp-lang/Carp/issues/1323"
+    "https://github.com/carp-lang/Carp/issues/1323",
+    "https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"
   ]
 }

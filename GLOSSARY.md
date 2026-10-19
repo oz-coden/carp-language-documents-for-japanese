@@ -74,6 +74,10 @@
 | macro / reader macro | マクロ / リーダーマクロ | — |
 | special form / form | 特殊形式 / 形式 | form をすべて特殊形式と訳しません |
 | REPL | REPL | 大文字の英語表記を保持します |
+| prompt | プロンプト | 原語を併記します。REPL などで、入力を待っていることを示す表示を指します |
+| search path | 検索パス | Carp の設定名 `search-path` はそのまま保持します |
+| terminal | ターミナル | REPL やシェルそのものとは区別します |
+| top-level | トップレベル | top-level expression は「トップレベルの式」とします |
 | mutual recursion | 相互再帰 | — |
 | tail position | 末尾位置 | — |
 | self-recursive | 自己再帰 | — |
