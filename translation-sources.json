@@ -74,6 +74,12 @@
       "translation": "DynamicSemantics-JP.md",
       "source_blob": "0904d0ca069e6c3ec852c62fa09297dbf2faf113",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Derive.md",
+      "translation": "Derive-JP.md",
+      "source_blob": "17767d14df5af9588ed556ed327852382b2337ce",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
