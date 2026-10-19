@@ -86,6 +86,12 @@
       "translation": "Format_Strings-JP.md",
       "source_blob": "68811be9a11b27b576a717867005c123bba5dda3",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Drop.md",
+      "translation": "Drop-JP.md",
+      "source_blob": "c7409bdfd4c8005762498c8a432d199a06e74094",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [

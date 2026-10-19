@@ -77,6 +77,7 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 | [動的意味論](DynamicSemantics-JP.md) | [DynamicSemantics.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/DynamicSemantics.md) | 全文翻訳済み |
 | [導出](Derive-JP.md) | [Derive.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Derive.md) | 全文翻訳済み |
 | [書式指定文字列](Format_Strings-JP.md) | [Format_Strings.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Format_Strings.md) | 全文翻訳済み |
+| [`drop` インターフェース](Drop-JP.md) | [Drop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Drop.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 

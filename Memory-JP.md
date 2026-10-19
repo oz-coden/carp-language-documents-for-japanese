@@ -659,7 +659,7 @@ C で定義した型には、`delete` 関数は自動生成されません。
 ある型に `delete` が実装されているかどうかは、`Dynamic.managed?` で確認できます。
 
 `delete` インターフェースはメモリ解放を担当するため、その実装を上書きするのは **安全ではありません**。
-値がスコープを抜けるときに、ソケットやファイルハンドルなど、メモリ以外のリソースを解放したい場合は、代わりに [`drop` インターフェース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Drop.md) を使用してください。
+値がスコープを抜けるときに、ソケットやファイルハンドルなど、メモリ以外のリソースを解放したい場合は、代わりに [`drop` インターフェース](Drop-JP.md) を使用してください。
 
 C で定義した型に削除関数を追加する例を見てみます。
 
@@ -701,4 +701,4 @@ void f() {
 
 ### 関連文書 (Related pages)
 
-- [Drop(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Drop.md): `drop` インターフェースの詳細です。
+- [`drop` インターフェース](Drop-JP.md): `drop` インターフェースの詳細です。
