@@ -26,7 +26,9 @@
 
 ## 4. 変更履歴を更新する (4. Update the changelog)
 
-[CHANGELOG.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/CHANGELOG.md) を参照してください。
+原文参照: [CHANGELOG.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/CHANGELOG.md)
+
+日本語訳は [変更履歴](../CHANGELOG-JP.md) を参照してください。
 
 ## 5. master でコミットを作成する (5. Make a commit on master)
 
