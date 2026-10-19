@@ -104,6 +104,12 @@
       "translation": "Embedded-JP.md",
       "source_blob": "5ecee2cdddd0bcb29474bebdbf7e40dc8e76a353",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/patterns.md",
+      "translation": "patterns-JP.md",
+      "source_blob": "f1bf80dac863178425e6f8b75a325469d1d8b0d0",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
