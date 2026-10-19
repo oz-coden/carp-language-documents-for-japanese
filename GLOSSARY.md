@@ -44,6 +44,22 @@
 | doc string / docstring | ドキュメント文字列 | 初出では原文の語形を併記します |
 | dynamic evaluator | 動的評価器 | 原語を併記します。動的コードを評価するものを指します |
 | evaluator VM | 評価器 VM | 原語を併記します。VM の表記を保持します |
+| bytecode | バイトコード | 原語を併記します。評価器内部で実行する命令を指す文脈で使用します |
+| intermediate representation / IR | 中間表現 / IR | 初出は「中間表現 (IR)」とします。識別子 `EvalIR` は保持します |
+| callable | 呼び出し可能オブジェクト | 原語を併記します。関数だけに限定せず、呼び出せる対象の総称として使用します |
+| raising | 復元 | 原語を併記します。評価器の内部表現を構文表現に戻す文脈で使用します。識別子 `raiseExpr` は保持します |
+| resolver handle | 名前解決ハンドル | 原語を併記します。識別子 `ResolverHandle` は保持します |
+| dispatch | ディスパッチ | 原語を併記します。呼び出しや命令の処理先を選ぶ文脈で使用します |
+| opcode | オペコード | 原語を併記します。個々の命令名は保持します |
+| frame | フレーム | 原語を併記します。VM の実行処理におけるフレームを指します |
+| code-store | コードストア | 原語を併記します。VM の実行用コードを格納する仕組みを指します |
+| slot / local slot | スロット / 局所スロット | 初出で「局所スロット (local slot)」とします。局所変数へのアクセスに使う格納位置を指す文脈で使用します |
+| slot lowering | スロットへの低水準化 | 原語を併記します。仮引数や局所変数への参照をスロットへの参照に変換する文脈で使用します |
+| bound reference | 束縛参照 | 原語を併記します。名前の束縛を扱う参照表現を指し、すべての名前解決が完了していることは意味しません |
+| hot path | ホットパス | 原語を併記します。頻繁に実行される処理経路を指します |
+| transparent / transparency | 透過的 / 透過性 | 原語を併記します。内部実装の違いが言語の意味論に影響しないという文脈で使用します |
+| invariant | 不変条件 | 原語を併記します。変更時にも維持する必要がある条件を指します |
+| error surface | 外部に見えるエラーの振る舞い | 原語を併記します。内部実装だけを変更する際に保持する対象を指します |
 | dynamic library | 動的ライブラリ | 原語を併記します。実行ファイルと区別します |
 | global variable | グローバル変数 | — |
 | child process | 子プロセス | 原語を併記します |
@@ -167,3 +183,4 @@
 - [Gauche ユーザリファレンス: 衛生的マクロ](https://practical-scheme.net/gauche/man/gauche-refj/Wei-Sheng-De-makuro.html)
 - [Gauche ユーザリファレンス: 準クオート](https://practical-scheme.net/gauche/man/gauche-refj/Zhun-kuoto.html)
 - [Gauche ユーザリファレンス: 手続きを作る](https://practical-scheme.net/gauche/man/gauche-refj/Shou-Sok-kiwoZuo-ru.html)
+- [Python 言語リファレンス: 呼び出し](https://docs.python.org/ja/3/reference/expressions.html#calls)
