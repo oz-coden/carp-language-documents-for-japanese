@@ -10,9 +10,9 @@
 
 - [インストール](Install-JP.md): Carp コンパイラの入手方法と設定方法です。
 - [コードの実行方法](HowToRunCode-JP.md): `.carp` ファイルをコンパイルして実行する方法です。
-- [開発ツール(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Tooling.md): 対応するエディターを紹介しています。
+- [開発ツール](Tooling-JP.md): 対応するエディターを紹介しています。
 - [ライブラリ](Libraries-JP.md): ライブラリとモジュールの利用方法です。
-- [マルチメディア(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Multimedia.md): グラフィックスやサウンドなどを扱います。
+- [マルチメディア](Multimedia-JP.md): グラフィックスやサウンドなどを扱います。
 - [マクロ](Macros-JP.md): Carp のマクロシステムのガイドです。
 - [組み込み開発](Embedded-JP.md): 組み込みシステムで Carp を使うためのヒントや工夫です。
 - [用語](Terminology-JP.md): よく使う用語と、それらが意味するものを説明しています。

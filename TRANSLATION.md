@@ -7,6 +7,7 @@
 - 翻訳元は [Carp(英語)](https://github.com/carp-lang/Carp/tree/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5) のコミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` に固定します。以後の英語原文・実装の変更には追従せず、この固定版に対する訳の改善と新規翻訳を行います。
 - 原文パス、原文の blob SHA、訳文パスを [translation-sources.json](translation-sources.json) に記録します。初回翻訳で参照したコミットが不明な場合は `initial_translation_source_commit` を `null` とします。
 - 本文、見出し、コードコメント、注、リンクを翻訳・確認の対象にします。
+- 変更履歴 `CHANGELOG.md` は翻訳対象外とし、未翻訳の件数にも含めません。対象外のファイルと理由は `translation-sources.json` の `excluded_documents` に記録します。
 - 翻訳文書には原文へのリンクと翻訳・編集した旨を記載し、原著の著作権・帰属表示を保持します。
 - 各翻訳文書の冒頭には「翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。」と記載します。確認日は README と `translation-sources.json` にまとめます。
 
