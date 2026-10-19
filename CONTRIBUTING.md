@@ -5,7 +5,7 @@
 
 ## 固定した原文を確認する (Check the Source Snapshot)
 
-翻訳対象は 2026-10-19 確認時点の原文コミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
+翻訳元は Carp のコミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` に固定しています。
 以後の英語原文や実装への追従を目的とする変更は対象外です。
 [translation-sources.json](translation-sources.json) で原文と訳文の対応を確認してください。
 
@@ -23,7 +23,7 @@
 ## 新しく翻訳する (Translate a New Document)
 
 1. 固定コミットに対象ファイルが存在することを確認します。
-2. 訳文を作成し、タイトル直後に固定版の英語原文へのリンクと、翻訳・編集した旨を記載します。
+2. 訳文を作成し、タイトル直後に固定版の英語原文へのリンクを記載します。続けて、翻訳元のコミットと翻訳・編集した旨を記載します。コミットの表記は [翻訳方針](TRANSLATION.md) に従ってください。
 3. `translation-sources.json` の `documents` に原文パス `source`、訳文パス `translation`、原文ファイルの blob SHA `source_blob` を追加します。初回翻訳で参照したコミットは `initial_translation_source_commit` に記録します。
 4. 未翻訳参照は `XXX(英語)` とします。日本語訳がある参照は相対リンクにします。
 5. 既存の翻訳文書から新しい訳文へのリンクも更新します。原文そのものを示すリンクは英語のまま保持します。
