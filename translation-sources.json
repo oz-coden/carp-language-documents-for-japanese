@@ -122,6 +122,18 @@
       "translation": "Tooling-JP.md",
       "source_blob": "181d1d3552e88e2ce90943c81fac5cf825dc1290",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Contributing.md",
+      "translation": "Contributing-JP.md",
+      "source_blob": "1beee0c2e48caeda8ada09ffa600a85b0e7dcb4d",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/ReleaseChecklist.md",
+      "translation": "ReleaseChecklist-JP.md",
+      "source_blob": "468106b2189d35c674fb7f4a733f0b630c657882",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "excluded_documents": [
@@ -131,6 +143,7 @@
     }
   ],
   "external_english_urls": [
+    "https://www.conventionalcommits.org",
     "https://github.com/hellerve/carp-vim",
     "https://github.com/carp-lang/carp-emacs",
     "https://atom.io/packages/language-carp",

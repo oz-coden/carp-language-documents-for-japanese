@@ -76,7 +76,7 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 
 長年にわたり Carp に貢献してくださった [すばらしい皆さん(英語)](https://github.com/carp-lang/Carp/graphs/contributors) に感謝します！
 
-いつでも協力を歓迎しています。まずは [本家への貢献ガイド(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Contributing.md) を参照してください。
+いつでも協力を歓迎しています。まずは [本家への貢献ガイド](Contributing-JP.md) を参照してください。
 
 > 訳注: 上のガイドは Carp 本家への貢献手順です。日本語訳の修正・追加は、[このリポジトリの貢献手順](CONTRIBUTING.md) を参照してください。
 

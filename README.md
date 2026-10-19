@@ -87,6 +87,8 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 | [プログラミングパターン](patterns-JP.md) | [patterns.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/patterns.md) | 全文翻訳済み |
 | [マルチメディアライブラリ](Multimedia-JP.md) | [Multimedia.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Multimedia.md) | 全文翻訳済み |
 | [開発ツール](Tooling-JP.md) | [Tooling.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Tooling.md) | 全文翻訳済み |
+| [本家への貢献ガイド](Contributing-JP.md) | [Contributing.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Contributing.md) | 全文翻訳済み |
+| [リリースチェックリスト](ReleaseChecklist-JP.md) | [ReleaseChecklist.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/ReleaseChecklist.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 
