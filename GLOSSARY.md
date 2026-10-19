@@ -25,6 +25,8 @@
 | unmanaged | メモリ管理の対象外 | 原語を併記します。参照型かどうかとは別の分類です |
 | borrow / borrowing | 借用する / 借用 | 文脈により「貸し出す (借用させる)」と説明できます |
 | ownership | 所有権 | give up は「放棄」、take は「取得」とします |
+| owning function | 所有権を取得する関数 | 原語を併記します。渡された値の所有権を取得することを指します |
+| borrowing function | 借用する関数 | 原語を併記します。所有権を取得しないことを指し、値を変更できないという意味には置き換えません |
 | generic function | ジェネリック関数 | 原語を併記します。一般的という意味の generic には適用しません |
 | generic type | ジェネリック型 | ジェネリック関数と対応させます |
 | pattern matching | パターンマッチング | 構文・操作の名称です |
@@ -77,6 +79,9 @@
 | lexical scope | 字句スコープ | 原語を併記します。ライフタイムと同義にしません |
 | dynamic scope | 動的スコープ | 原語を併記します。動的なコードを評価すること自体とは区別します |
 | mutable / mutation | 変更可能 / 変更 | 質問文では「変更できますか」と訳せます |
+| mutating function | 値を変更する関数 | 原語を併記します。本家の Terminology.md では呼び名と意味を検討中であることを保持します |
+| transforming function | 値を変換する関数 | 原語を併記します。本家の Terminology.md の見出しの訳です。endo-functions は英語で保持し、命名が検討中であることを保持します |
+| unsafe function | 安全でない関数 | 原語を併記します。`unsafe-` は任意の命名規則であることを保持します |
 | functional | 関数型の | プログラミング言語の性質を表す語です。`function type` が指す型とは区別します |
 | GC / GC'ed | GC / GC によるメモリ管理を行う | GC の英語表記を保持します。動的 Carp の説明と、コンパイルされる Carp のメモリ管理を混同しません |
 | move / moving | ムーブ | 初出では原文の語形を併記します。所有権の移譲を表す操作に使用します |
