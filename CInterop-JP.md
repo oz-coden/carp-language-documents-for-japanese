@@ -2,7 +2,7 @@
 
 原文: [CInterop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md)
 
-翻訳対象は 2026-10-19 確認時点の原文です。対象コミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
+翻訳元のコミットは `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` です。
 この文書は Carp の開発者・貢献者による英語原文を日本語に翻訳・編集した非公式の文書です。
 翻訳方針は [TRANSLATION.md](TRANSLATION.md)、採用語は [GLOSSARY.md](GLOSSARY.md) を参照してください。
 
