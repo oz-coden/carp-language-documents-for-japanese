@@ -23,7 +23,7 @@
 - [動的評価器の意味論に関する過去のメモ](DynamicSemantics-JP.md)
 - [組み込み機器 (embedded device) 向けのプログラミング](Embedded-JP.md)
 - [`(fmt)` と `(fstr)` による書式付き出力](Format_Strings-JP.md)
-- [コンパイラ自体の開発(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/hacking.md)
+- [コンパイラ自体の開発](hacking-JP.md)
 - [REPL の使い方](HowToRunCode-JP.md)
 - [Carp のインストールと設定](Install-JP.md)
 - [マクロの使い方](Macros-JP.md)
