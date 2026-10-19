@@ -10,6 +10,8 @@
 
 公式 Discord サーバーができました ([招待リンク(英語)](https://discord.gg/yyjnBcMqYM))。今後、言語に関する議論は主にこちらで行われることになりそうです。ぜひ参加してください！
 
+> 訳注: この Discord は Carp 本家のコミュニティです。日本語訳や訳注の問題は、本家ではなく [このリポジトリの Issue](https://github.com/oz-coden/carp-language-documents-for-japanese/issues) へ報告してください。翻訳の問題か原文の問題か判断できない場合も、まずこちらへ相談してください。
+
 [Linux CI(英語)](https://github.com/carp-lang/Carp/actions?query=workflow%3A%22Linux+CI%22) · [MacOS CI(英語)](https://github.com/carp-lang/Carp/actions?query=workflow%3A%22MacOS+CI%22) · [Windows CI(英語)](https://github.com/carp-lang/Carp/actions?query=workflow%3A%22Windows+CI%22)
 
 *警告！ これは研究プロジェクトです。ここにある情報の多くは、説明もなく古くなり、誤解を招くものになる可能性があります。重要な用途には、まだ使わないでください！*
@@ -38,6 +40,8 @@ Carp の主な特徴は、次のとおりです。
 - [Core のドキュメント(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html): 標準ライブラリのドキュメントです。
 
 [Gitter のチャットに参加する(英語)](https://gitter.im/eriksvedang/Carp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+> 訳注: この Gitter は Carp 本家のチャットです。日本語訳に関する報告・相談は、[このリポジトリの Issue](https://github.com/oz-coden/carp-language-documents-for-japanese/issues) へお願いします。
 
 ## 最小限の例 (A Very Small Example)
 
@@ -73,6 +77,8 @@ Carp のコードを実行する手順は、[コードの実行方法](HowToRunC
 長年にわたり Carp に貢献してくださった [すばらしい皆さん(英語)](https://github.com/carp-lang/Carp/graphs/contributors) に感謝します！
 
 いつでも協力を歓迎しています。まずは [本家への貢献ガイド(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Contributing.md) を参照してください。
+
+> 訳注: 上のガイドは Carp 本家への貢献手順です。日本語訳の修正・追加は、[このリポジトリの貢献手順](CONTRIBUTING.md) を参照してください。
 
 ## ライセンス (License)
 

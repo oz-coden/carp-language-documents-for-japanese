@@ -12,6 +12,8 @@
 
 この文書への Pull Request は大歓迎です。足りないものがあれば、[Gitter チャンネル(英語)](https://gitter.im/eriksvedang/Carp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) で教えてください。
 
+> 訳注: この呼びかけは、本家の英語原文への貢献・報告に関するものです。日本語訳や訳語、訳注の問題は、本家ではなく [このリポジトリの Issue](https://github.com/oz-coden/carp-language-documents-for-japanese/issues) へ報告してください。翻訳の問題か原文の問題か判断できない場合も、まずこちらへ相談してください。日本語訳の修正案は、このリポジトリへの Pull Request で受け付けます。
+
 ### 値を変更する関数 (Mutating function)
 
 この呼び名は、正確には何を意味する言葉にするべきでしょうか。理想的には、値を変更する関数 (mutating function) という呼び名は、名前が `!` で終わり、`()` を返す関数にだけ使うべきです。「外部を変更する関数 (externally mutating function)」と呼ぶほうがよいでしょうか。それとも「exo-functions」でしょうか :)
