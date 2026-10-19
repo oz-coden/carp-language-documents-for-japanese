@@ -62,6 +62,12 @@
       "translation": "EvaluatorVM-JP.md",
       "source_blob": "4d50a6bac0ad69d9d456e22ba79f16d3e47cf99f",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/DynamicSemantics.md",
+      "translation": "DynamicSemantics-JP.md",
+      "source_blob": "0904d0ca069e6c3ec852c62fa09297dbf2faf113",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
@@ -93,6 +99,16 @@
     "https://github.com/carpentry-org",
     "https://github.com/carpentry-org/snippets/blob/master/build_system.carp",
     "https://stackage.org",
-    "https://gitter.im/carp-lang/carp"
+    "https://gitter.im/carp-lang/carp",
+    "https://github.com/carp-lang/Carp/issues/560",
+    "https://github.com/carp-lang/Carp/issues/555",
+    "https://github.com/carp-lang/Carp/issues/545",
+    "https://github.com/carp-lang/Carp/issues/476",
+    "https://github.com/carp-lang/Carp/issues/556",
+    "https://github.com/carp-lang/Carp/issues/659",
+    "https://github.com/carp-lang/Carp/issues/660",
+    "https://github.com/carp-lang/Carp/issues/453",
+    "https://gist.github.com/sdilts/73a811a633bb0ef3dd7e31b84a138a5a",
+    "https://en.wikipedia.org/wiki/First-class_citizen"
   ]
 }
