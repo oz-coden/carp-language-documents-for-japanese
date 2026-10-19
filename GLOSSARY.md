@@ -9,7 +9,10 @@
 | 英語 | 採用語 | 初出での英語併記・留意点 |
 | --- | --- | --- |
 | runtime semantics | 実行時の意味論 | 原語を併記します。解釈実行と混同しません |
+| dynamic semantics | 動的意味論 | `DynamicSemantics.md` の文書名に使用します。本文では、動的評価器に関する過去の設計目標という位置づけを保持します |
+| Static Carp / Dynamic Carp | 静的 Carp / 動的 Carp | `DynamicSemantics.md` が定義する、コンパイルされる版と解釈実行される版の呼称です。初出で原語を併記します |
 | sumtype | 直和型 | `直和型 (sumtype)` とします。集合型とは訳しません |
+| product type | 直積型 | 原語を併記します。直和型と区別します |
 | variant | バリアント | 原語を併記します。型・値・コンストラクタを区別します |
 | constructor | コンストラクタ | 型コンストラクタとの区別が必要なら「値コンストラクタ」と明記します |
 | type constructor variable | 型コンストラクタ変数 | 原語を併記します |
@@ -72,6 +75,10 @@
 | linear value / non-linear | 線形値 / 非線形 | 原語を併記します。値の種類と型の種類を文脈で区別します |
 | owner | 所有者 | 原語を併記します。値に関連付けられたメモリを所有する束縛を指します |
 | lexical scope | 字句スコープ | 原語を併記します。ライフタイムと同義にしません |
+| dynamic scope | 動的スコープ | 原語を併記します。動的なコードを評価すること自体とは区別します |
+| mutable / mutation | 変更可能 / 変更 | 質問文では「変更できますか」と訳せます |
+| functional | 関数型の | プログラミング言語の性質を表す語です。`function type` が指す型とは区別します |
+| GC / GC'ed | GC / GC によるメモリ管理を行う | GC の英語表記を保持します。動的 Carp の説明と、コンパイルされる Carp のメモリ管理を混同しません |
 | move / moving | ムーブ | 初出では原文の語形を併記します。所有権の移譲を表す操作に使用します |
 | transfer of ownership | 所有権の移譲 | 原語を併記します。take / give up の「取得 / 放棄」とは文法に応じて使い分けます |
 | copy / copying | コピー | 操作名として使用します。copying が概念の初出なら原語を併記します |
@@ -108,9 +115,14 @@
 | primitive (evaluator form) | プリミティブ | 原語を併記します。評価器が扱う形式の分類を指し、プリミティブ型とは区別します。識別子 `Primitive` は保持します |
 | command (evaluator form) | コマンド | 原語を併記します。評価器が扱う形式の分類を指す場合に使用します |
 | lowering | 低水準化 | 原語を併記します。評価器の内部表現への変換を指す文脈で使用します |
-| context | コンテキスト | 原語を併記します。コンパイラの状態を扱う文脈で使用します。識別子 `Context` は保持します |
+| context | コンテキスト | 原語を併記します。コンパイラの状態や、動的・静的などのコードを評価する文脈を指します。識別子 `Context` は保持します |
 | evaluation frame | 評価フレーム | 原語を併記します |
 | traceback | トレースバック | 原語を併記します。エラーに付随する評価の履歴を指します |
+| stack trace | スタックトレース | 原語を併記します。原文の traceback との語の違いを保持します |
+| reserved name | 予約名 | 初出では原文の語形を併記します。キーワードという別の分類と同一視しません |
+| namespace | 名前空間 | 原語を併記します。スコープと区別します |
+| reflection | リフレクション | 初出では原文の語形を併記します |
+| first-class citizen / first class citizens | 第一級オブジェクト | 初出では原文の語形を併記します |
 | higher order function | 高階関数 | 初出では原文の語形を併記します |
 | special form / form | 特殊形式 / 形式 | form をすべて特殊形式と訳しません |
 | REPL | REPL | 大文字の英語表記を保持します |
@@ -184,3 +196,5 @@
 - [Gauche ユーザリファレンス: 準クオート](https://practical-scheme.net/gauche/man/gauche-refj/Zhun-kuoto.html)
 - [Gauche ユーザリファレンス: 手続きを作る](https://practical-scheme.net/gauche/man/gauche-refj/Shou-Sok-kiwoZuo-ru.html)
 - [Python 言語リファレンス: 呼び出し](https://docs.python.org/ja/3/reference/expressions.html#calls)
+- [筑波大学 ソフトウェア技法: 直積型と代数的データ型](https://www.logic.cs.tsukuba.ac.jp/~kam/lecture/fp2016/6.pdf)
+- [MDN: 関数](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions)
