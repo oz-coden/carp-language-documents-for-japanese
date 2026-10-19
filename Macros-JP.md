@@ -19,7 +19,7 @@ Carp で採用したマクロシステムは、比較的単純です。次の特
 - 比較的単純な `defmacro` ベースの構文でマクロを定義し、コンパイル時の関数や動的関数もサポートします。この点について詳しくは、後述の [マクロの使い方](#マクロの使い方-working-with-macros) を参照してください。
 - 動的環境 (dynamic environment) を、マクロ展開によってコードを生成するだけの環境ではなく、ソースについての追加情報をコンパイラに伝える場所としても扱います。例えば、動的関数 `Project.config` では、使用する C コンパイラ、コンパイルしたプロジェクトの名前、出力ディレクトリなどを設定できます。実際の例として、動的環境で複数のコンパイラを使う単純な Carp のビルドシステムを実装した [Carp のコード例(英語)](https://github.com/carpentry-org/snippets/blob/master/build_system.carp) を参照してください。
 
-> 訳注: 準クォートが未実装であるという説明は原文の記述です。同じ固定コミットの [Quasiquotation.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Quasiquotation.md) には、動的コードで使用できる機能として `quasiquote`、`unquote`、`unquote-splicing` の使い方が記載されています。ここでは原文同士の記述の違いを示しています。
+> 訳注: 翻訳元のコミットでは、標準のコアライブラリを読み込んだ動的コードで準クォートを利用できます。本節の「未実装」という説明は、この版の [準クォートの実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Quasiquote.carp#L35-L90) と一致しません。使い方は、同じ固定版の [Quasiquotation.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Quasiquotation.md) を参照してください。
 
 ## マクロの使い方 (Working with Macros)
 
@@ -119,6 +119,8 @@ Carp の動的評価器は、評価だけでなく、定義などのメタレベ
 - プリミティブ: 実引数を評価しない、通常の Carp の形式です。Haskell で実装された組み込みマクロに似ています。`defmacro`、`defn`、`quote` がこの分類に当たります。
 - コマンド (commands): これらも通常の Carp の形式です。実引数を評価し、組み込み関数のように振る舞います。`Project.config`、`car`、`cons` がこの分類に当たります。
 
+> 訳注: 翻訳元のコミットの `defn` は、専用の `Defn` 表現を持つ特殊形式です。実引数を通常の関数のように事前評価しない点は共通ですが、[初期環境への登録(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/StartingEnv.hs#L479-L505) では `Defn Nothing` として登録されます。そのため、本節の実装上の分類で、[`defmacro`・`quote`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/StartingEnv.hs#L299-L324) と同じ `Primitive` の例に挙げる説明は不正確です。
+
 プリミティブは主に [`src/Primitives.hs`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Primitives.hs) で定義され、コマンドは [`src/Commands.hs`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs) にあります。特殊形式は、評価器の低水準化・実行処理 (`EvalIR` / `EvalVM`) で扱われます。
 
 これらは [`src/StartingEnv.hs`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/StartingEnv.hs) で環境に登録され、名前が付けられます。
@@ -141,5 +143,3 @@ Carp の動的評価器は、評価だけでなく、定義などのメタレベ
 - `let`: 局所変数の定義。
 - `the`: 型注釈。
 - `fn`: 関数リテラル。
-
-> 訳注: 原文では、上の分類で `defn` をプリミティブの例に挙げる一方、この一覧では特殊形式に含めています。ここでは原文の分類を保持しています。
