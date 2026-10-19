@@ -32,6 +32,12 @@
       "translation": "HowToRunCode-JP.md",
       "source_blob": "4024008b925ef4319d6667cf45f010f017f1b5c1",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Libraries.md",
+      "translation": "Libraries-JP.md",
+      "source_blob": "f7ef44c7262645a9d6823e2cd94191f22863bf7d",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
@@ -50,6 +56,16 @@
     "https://github.com/carp-lang/Carp/issues",
     "https://github.com/carp-lang/Carp/issues/700",
     "https://github.com/carp-lang/Carp/issues/1323",
-    "https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"
+    "https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop",
+    "http://carp-lang.github.io/carp-docs/core/core_index.html",
+    "http://carp-lang.github.io/carp-docs/sdl/SDL_index.html",
+    "https://github.com/hellerve/anima",
+    "https://github.com/hellerve/stdint",
+    "https://github.com/hellerve/socket",
+    "https://github.com/hellerve/physics",
+    "https://github.com/eriksvedang/carp-ncurses",
+    "https://www.gnu.org/software/ncurses/",
+    "https://github.com/eriksvedang/carp-curl",
+    "https://github.com/carpentry-org"
   ]
 }

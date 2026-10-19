@@ -26,6 +26,7 @@
 | [C との相互運用](CInterop-JP.md) | [CInterop.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/CInterop.md) | 全文翻訳済み |
 | [インストール](Install-JP.md) | [Install.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Install.md) | 全文翻訳済み |
 | [コードの実行方法](HowToRunCode-JP.md) | [HowToRunCode.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/HowToRunCode.md) | 全文翻訳済み |
+| [ライブラリ](Libraries-JP.md) | [Libraries.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Libraries.md) | 全文翻訳済み |
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 
