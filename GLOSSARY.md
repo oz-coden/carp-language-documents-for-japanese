@@ -76,6 +76,10 @@
 | REPL | REPL | 大文字の英語表記を保持します |
 | prompt | プロンプト | 原語を併記します。REPL などで、入力を待っていることを示す表示を指します |
 | search path | 検索パス | Carp の設定名 `search-path` はそのまま保持します |
+| library / standard library / external library | ライブラリ / 標準ライブラリ / 外部ライブラリ | モジュールとは区別します。Core の固有名は保持します |
+| entrypoint | エントリーポイント | 原語を併記します。ライブラリを読み込む際の入口となるファイルを指す文脈で使用します |
+| wrapper | ラッパー | 原語を併記します |
+| port (of a library) | 移植版 | 移植したライブラリを指す場合に使用します。通信のポートとは区別します |
 | terminal | ターミナル | REPL やシェルそのものとは区別します |
 | top-level | トップレベル | top-level expression は「トップレベルの式」とします |
 | mutual recursion | 相互再帰 | — |

@@ -32,7 +32,7 @@ Evaluate (help) for more information.
 鲤 (load "some_file.carp")
 ```
 
-ファイルへのパスは、`carp` を起動した場所からの相対パスで指定します。または、そのファイルが [検索パス `search-path`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Libraries.md) から見つかる場所にある必要があります。
+ファイルへのパスは、`carp` を起動した場所からの相対パスで指定します。または、そのファイルが [検索パス `search-path`](Libraries-JP.md#ライブラリとモジュールの利用-working-with-libraries-and-modules) から見つかる場所にある必要があります。
 コードのまとまりを REPL に貼り付けることもできます。複数のトップレベルの式を含んでいても構いません。
 
 ビルドして実行するには、まず次を実行します。
