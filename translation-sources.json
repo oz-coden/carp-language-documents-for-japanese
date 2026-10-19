@@ -50,6 +50,12 @@
       "translation": "Macros-JP.md",
       "source_blob": "ccae5c0dd5fe8b7512bf813fab0b9909c5773952",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/Quasiquotation.md",
+      "translation": "Quasiquotation-JP.md",
+      "source_blob": "e87bcc6456dcf7c87a02be5db4d616905ac57636",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [

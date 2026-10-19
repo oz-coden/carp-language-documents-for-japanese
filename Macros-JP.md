@@ -19,7 +19,7 @@ Carp で採用したマクロシステムは、比較的単純です。次の特
 - 比較的単純な `defmacro` ベースの構文でマクロを定義し、コンパイル時の関数や動的関数もサポートします。この点について詳しくは、後述の [マクロの使い方](#マクロの使い方-working-with-macros) を参照してください。
 - 動的環境 (dynamic environment) を、マクロ展開によってコードを生成するだけの環境ではなく、ソースについての追加情報をコンパイラに伝える場所としても扱います。例えば、動的関数 `Project.config` では、使用する C コンパイラ、コンパイルしたプロジェクトの名前、出力ディレクトリなどを設定できます。実際の例として、動的環境で複数のコンパイラを使う単純な Carp のビルドシステムを実装した [Carp のコード例(英語)](https://github.com/carpentry-org/snippets/blob/master/build_system.carp) を参照してください。
 
-> 訳注: 翻訳元のコミットでは、標準のコアライブラリを読み込んだ動的コードで準クォートを利用できます。本節の「未実装」という説明は、この版の [準クォートの実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Quasiquote.carp#L35-L90) と一致しません。使い方は、同じ固定版の [Quasiquotation.md(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Quasiquotation.md) を参照してください。
+> 訳注: 翻訳元のコミットでは、標準のコアライブラリを読み込んだ動的コードで準クォートを利用できます。本節の「未実装」という説明は、この版の [準クォートの実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Quasiquote.carp#L35-L90) と一致しません。使い方は、同じ固定版の [準クォート](Quasiquotation-JP.md) を参照してください。
 
 ## マクロの使い方 (Working with Macros)
 
