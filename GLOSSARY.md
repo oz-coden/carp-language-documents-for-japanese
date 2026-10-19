@@ -148,6 +148,11 @@
 | recursive type | 再帰型 | — |
 | module / symbol / scope | モジュール / シンボル / スコープ | local は「局所」を基本とします |
 | interface / implementation | インターフェース / 実装 | 識別子は翻訳しません |
+| derivation / automatic derivation | 導出 / 自動導出 | 原語を併記します。API 名の `derive` は保持します |
+| deriver | 導出器 | 原語を併記します。型からインターフェースの実装を生成するルールを指します |
+| concrete (type) | 具体的な型 | 原文の形容詞 concrete を初出で併記します。Derive.md では、型変数を含まない型という定義を保持します |
+| unary interface | 単項インターフェース | 原語を併記します。引数を 1 つ受け取るインターフェースを指します |
+| boilerplate | 定型コード | 原語を併記します。実装本体を囲む定型的なコードを指す文脈で使用します |
 | type signature | 型シグネチャ | 単に「シグネチャ」と短縮せず統一します |
 | ambiguity | 曖昧性 | 「曖昧さ」の方が文脈上自然な場合はその表現も使用できます |
 | C interop | C との相互運用 | — |
@@ -195,6 +200,7 @@
 
 - [Rust By Example: クロージャ](https://doc.rust-lang.org/rust-by-example/ja/fn/closures.html)
 - [Rust By Example: 所有権とムーブ](https://doc.rust-lang.org/rust-by-example/ja/scope/move.html)
+- [Rust By Example: 導出](https://doc.rust-jp.rs/rust-by-example-ja/trait/derive.html)
 - [Gauche ユーザリファレンス: 衛生的マクロ](https://practical-scheme.net/gauche/man/gauche-refj/Wei-Sheng-De-makuro.html)
 - [Gauche ユーザリファレンス: 準クオート](https://practical-scheme.net/gauche/man/gauche-refj/Zhun-kuoto.html)
 - [Gauche ユーザリファレンス: 手続きを作る](https://practical-scheme.net/gauche/man/gauche-refj/Shou-Sok-kiwoZuo-ru.html)
