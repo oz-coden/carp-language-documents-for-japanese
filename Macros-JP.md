@@ -79,7 +79,7 @@ Carp のコンパイラはいくつかの段階に分かれています。次の
 - [`src/EvalIR.hs`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/EvalIR.hs) の低水準化 (lowering)。
 - [`src/EvalVM.hs`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/EvalVM.hs) の VM 実行。
 
-アーキテクチャの簡潔な概要については、[動的評価器 VM(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/EvaluatorVM.md) を参照してください。
+アーキテクチャの簡潔な概要については、[動的評価器 VM](EvaluatorVM-JP.md) を参照してください。
 
 ### データ構造 (Data Structures)
 

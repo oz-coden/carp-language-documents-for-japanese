@@ -56,6 +56,12 @@
       "translation": "Quasiquotation-JP.md",
       "source_blob": "e87bcc6456dcf7c87a02be5db4d616905ac57636",
       "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
+    },
+    {
+      "source": "docs/EvaluatorVM.md",
+      "translation": "EvaluatorVM-JP.md",
+      "source_blob": "4d50a6bac0ad69d9d456e22ba79f16d3e47cf99f",
+      "initial_translation_source_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5"
     }
   ],
   "external_english_urls": [
