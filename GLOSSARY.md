@@ -25,7 +25,7 @@
 | unmanaged | メモリ管理の対象外 | 原語を併記します。参照型かどうかとは別の分類です |
 | borrow / borrowing | 借用する / 借用 | 文脈により「貸し出す (借用させる)」と説明できます |
 | ownership | 所有権 | give up は「放棄」、take は「取得」とします |
-| owning function | 所有権を取得する関数 | 原語を併記します。渡された値の所有権を取得することを指します |
+| owning function / ownership-taking function | 所有権を取得する関数 | 初出では原文の語形を併記します。渡された値の所有権を取得することを指します |
 | borrowing function | 借用する関数 | 原語を併記します。所有権を取得しないことを指し、値を変更できないという意味には置き換えません |
 | generic function | ジェネリック関数 | 原語を併記します。一般的という意味の generic には適用しません |
 | generic type | ジェネリック型 | ジェネリック関数と対応させます |
@@ -100,7 +100,7 @@
 | source variable | 参照元の変数 | 原語を併記します。Memory.md の参照の依存関係を扱う文脈で使用します |
 | live set | 生存集合 | 原語を併記します |
 | lifetime mode / lifetime map | ライフタイムモード / ライフタイムマップ | 原語を併記します。個々の mapping は「対応付け」とします |
-| borrow checker | 借用チェッカー | 原語を併記します。原文が Rust の用語として示す文脈を保持します |
+| borrow checker | 借用チェッカー | 原語を併記します。Carp と Rust のどちらの説明かを文脈で区別します |
 | borrow checking | 借用チェック | 原語を併記します。借用に関する検査処理を指し、検査する主体の「借用チェッカー」と区別します |
 | generic programming | ジェネリックプログラミング | 原語を併記し、既存のジェネリック関数・ジェネリック型と対応させます |
 | polymorphic function | 多相関数 | 原語を併記します |
@@ -199,6 +199,7 @@
 | format specifier | 書式指定子 | 原語を併記します。書式指定文字列全体と区別します |
 | directive (format string) | 変換指定 | 原語を併記します。書式指定文字列中で値の変換を指定する部分です。preprocessor directive と区別します |
 | pattern / regular expression | パターン / 正規表現 | 同一視しません |
+| programming pattern | プログラミングパターン | 原語を併記します。プログラムの書き方を指し、パターンマッチングや文字列のパターンと区別します |
 | backtrack | バックトラック | 原文の主張の範囲を独自に拡大しません |
 | non-greedy | 非貪欲 | — |
 | list / array | リスト / 配列 | `list` 関数や `Array` 型の名前は保持します |
