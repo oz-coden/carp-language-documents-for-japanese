@@ -84,6 +84,10 @@ foo ; シンボル
 (defmodule <name> <definition1> <definition2> ...) ;; プログラムを分割して整理するための主な方法
 ```
 
+> 訳注: `defn` の「REPL では呼び出せない」というコメントは、翻訳元のコミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` の挙動と一致しません。同コミットを無変更でビルドした Windows 11 環境では、`(defn probe [] (println* "REPL_PROBE_OK"))` の後に `(probe)` を入力すると、明示的にビルド・実行を指示せずに `REPL_PROBE_OK` が出力されることが、端末を接続した REPL とパイプ入力の REPL の両方で確認されています。
+>
+> 固定版の [REPL 呼び出しの処理(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Eval.hs#L168-L199) では、静的な関数呼び出しを検出すると、呼び出しを `main` に包んでビルド・実行します。[ビルド・実行の処理(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L175-L258) では、生成した C コードを外部の C コンパイラでコンパイルし、実行ファイルを子プロセス (child process) として起動します。これは動的評価器 (dynamic evaluator) が `defn` の本体を直接実行するという意味ではありません。この例の実行結果は、[コンパイラマニュアル](Manual-JP.md) の説明と整合します。
+
 トップレベルの `defn` および `def` 形式は、ファイル内での定義順序に関係なく互いに参照し合うことができます。
 つまり、関数が定義される前にそれを呼び出すことが可能であり、相互再帰関数も特別な宣言なしに動作します：
 
