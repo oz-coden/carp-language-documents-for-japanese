@@ -1,0 +1,90 @@
+{
+  "module": "Bool",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "original": "is the basic boolean data type, inhabited by the values represented\nby the literals `true` and `false`.",
+    "source": "core/BoolExtras.carp",
+    "line": 2,
+    "translation": "リテラル `true` と `false` で表される値を持つ、基本的な真偽値のデータ型です。",
+    "source_html_sha256": "462d0c2b9cee4386955c1257cb1365df0f43d6ddbb065ce73a8c3c559ec4087c"
+  },
+  "entries": {
+    "=": {
+      "original": "",
+      "source": "core/Bool.carp",
+      "line": 4,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "and": {
+      "original": "",
+      "source": "core/Bool.carp",
+      "line": 10,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "blit": {
+      "original": "",
+      "source": "core/Blitable.carp",
+      "line": 21,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "copy": {
+      "original": "",
+      "source": "core/Bool.carp",
+      "line": 6,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "hash": {
+      "original": "",
+      "source": "core/Map.carp",
+      "line": 24,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "not": {
+      "original": "",
+      "source": "core/Bool.carp",
+      "line": 9,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "or": {
+      "original": "",
+      "source": "core/Bool.carp",
+      "line": 11,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "prn": {
+      "original": "",
+      "source": "core/String.carp",
+      "line": 437,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "str": {
+      "original": "Converts a boolean to a string.",
+      "source": "core/String.carp",
+      "line": 307,
+      "translation": "真偽値を文字列に変換します。",
+      "source_html_sha256": "54a704795b9ae413fc856caaa4759d5e21cabc88e8d82e1d170f3086ab919f3a"
+    },
+    "unsafe-format": {
+      "original": "Formats a boolean. Unchecked: `s` must hold exactly one format directive. Prefer `fmt`, which checks that at compile time.",
+      "source": "core/String.carp",
+      "line": 310,
+      "translation": "真偽値の書式を設定します。検査は行われません。`s` には変換指定 (format directive) がちょうど 1 つ含まれている必要があります。コンパイル時にこれを検査する [`fmt`](../../docs/Format_Strings-JP.html) の使用を推奨します。",
+      "source_html_sha256": "fd4336f3d026c9f5ce846f3a0d5061bbfed631ec1d02efba6f9ea1c8f1ad669c"
+    },
+    "zero": {
+      "original": "",
+      "source": "core/Bool.carp",
+      "line": 13,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    }
+  }
+}

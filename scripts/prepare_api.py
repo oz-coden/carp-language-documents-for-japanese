@@ -123,12 +123,35 @@ def examples(markdown):
         r'^\s*`{3,}[^\n]*\n(.*?)^\s*`{3,}\s*$', markdown, re.M | re.S)]
 
 
+def load_index(root, manifest):
+    info = manifest['index']
+    snapshot = (root / info['snapshot']).read_bytes()
+    if digest(snapshot) != info['snapshot_sha256']:
+        raise ValueError('Core index: generated snapshot checksum mismatch')
+    document = Document(snapshot.decode())
+    heading = next(node for node in document.root.all() if node.tag == 'h1')
+    paragraph = next(node for node in document.root.all()
+                     if node.tag == 'p' and node.start > heading.end)
+    original = document.inner(paragraph)
+    record = json.loads((root / info['translation']).read_text())
+    if record['upstream_commit'] != manifest['upstream_commit']:
+        raise ValueError('Core index: translation targets a different snapshot')
+    if digest(original.encode()) != record['source_html_sha256']:
+        raise ValueError('Core index: original description checksum mismatch')
+    if record['source'] not in manifest['source_files'] or not record['translation']:
+        raise ValueError('Core index: missing source or translation')
+    if examples(record['original']) != examples(record['translation']):
+        raise ValueError('Core index: a translated code example differs from its source')
+    return record, original
+
+
 def load(root):
     manifest = json.loads((root / 'api/snapshot.json').read_text())
     translation_manifest = json.loads((root / 'translation-sources.json').read_text())
     commit = manifest['upstream_commit']
     if commit != translation_manifest['upstream_commit']:
         raise ValueError('API and document snapshots must use the same commit')
+    load_index(root, manifest)
     modules = {}
     for name, info in manifest['modules'].items():
         snapshot = (root / info['snapshot']).read_bytes()
@@ -209,14 +232,21 @@ def stage(root, destination, baseurl):
                 f'<div class="content"><header class="api-banner">{navigation}{notice}</header>'
                 f'{sidebar}<main class="module">{content}</main></div></body></html>\n')
 
-    index = ('<h1>標準ライブラリ API リファレンス</h1>'
-             '<p>モジュールを選択して、各 API の型・使用形式・日本語の説明を参照できます。</p>'
+    index_record, index_original = load_index(root, manifest)
+    index = ('<h1>Core — 標準ライブラリ API リファレンス</h1>'
+             '<div class="index-description">' + markdown(index_record['translation'], 'core_index') + '</div>'
+             '<p class="source-link">狭い画面では、モジュール一覧は上部に表示されます。</p>'
+             '<details class="original" lang="en"><summary lang="ja">Core の案内文の原文</summary>'
+             + literal(index_original) + '</details>'
+             '<h2>日本語で参照できるモジュール</h2>'
              '<ul>' + ''.join(f'<li><a href="{quote(name)}.html">{html.escape(name)}</a>'
                              f' — {len(data[2])} 項目（説明文のある項目は翻訳済み）</li>'
                              for name, data in modules.items()) + '</ul>'
              '<p>現在の日本語訳は上記のモジュールを対象としています。'
-             'ほかのモジュールへの参照は、固定コミットの英語ソースへ案内します。</p>')
-    (target / 'index.html').write_text(wrap('API 索引', index))
+             'ほかのモジュールへの参照は、固定コミットの英語ソースへ案内します。</p>'
+             f'<p class="source-link"><a href="{github}{index_record["source"]}#L{index_record["line"]}">'
+             '固定版の案内文・生成対象(英語)</a></p>')
+    (target / 'index.html').write_text(wrap('Core API 索引', index))
 
     for name, (info, overview, entries, translations) in modules.items():
         body = f'<h1>{html.escape(name)}</h1><div class="module-description">'

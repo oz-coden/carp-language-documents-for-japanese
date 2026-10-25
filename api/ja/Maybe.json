@@ -1,0 +1,226 @@
+{
+  "module": "Maybe",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "original": "is a data type to represent optional values. It has two\nconstructors, `(Just <value>)` and `Nothing`, and provides many functions to\nwrap and unwrap values.",
+    "source": "core/Maybe.carp",
+    "line": 5,
+    "translation": "値の有無を表すデータ型です。`(Just <value>)` と `Nothing` の 2 つのコンストラクタを持ち、値を包んだり、中の値を取り出したりするための関数を数多く提供します。",
+    "source_html_sha256": "a9b8fb492bacc470b714a4113df6438e19b7d5b2249ca18eb19fb2db44c4f12a"
+  },
+  "entries": {
+    "=": {
+      "original": "equality is defined as the equality of both the constructor and the contained value, i.e. `(Just 1)` and `(Just 1)` are the same, but `(Just 1)` and `(Just 2)` are not.",
+      "source": "core/Maybe.carp",
+      "line": 49,
+      "translation": "等しいかどうかは、コンストラクタと中の値の両方が等しいかどうかで決まります。例えば、`(Just 1)` と `(Just 1)` は等しいですが、`(Just 1)` と `(Just 2)` は等しくありません。",
+      "source_html_sha256": "8c8814dddd0976126a818125e693990f8140d1c4d31f0f631a3f55148b28d4a2"
+    },
+    "Just": {
+      "original": "creates a `Just`.",
+      "source": "src/Sumtypes.hs",
+      "line": 146,
+      "translation": "`Just` を作成します。",
+      "source_html_sha256": "ba0c1f6a1d4453fbf87e75376aa18a159311fbf9a74a86c532a7ac9d1f84966f"
+    },
+    "Nothing": {
+      "original": "creates a `Nothing`.",
+      "source": "src/Sumtypes.hs",
+      "line": 146,
+      "translation": "`Nothing` を作成します。",
+      "source_html_sha256": "732700d4b27a74a89529823aea0ddb0f546466d4d2207bf26abeb7adcc8018c8"
+    },
+    "and-then": {
+      "original": "takes a `Maybe` and applies a function `f` to it if it is a `Just`. The function must itself return a `Maybe`. If the value is `Nothing`, it is returned as is.\n\nIt is similar to [`map`](#map), but the function `f` is expected to return a `Maybe` rather than a plain value, avoiding a nested `(Just (Just ...))`.",
+      "source": "core/Maybe.carp",
+      "line": 79,
+      "translation": "`Maybe` を受け取り、`Just` であれば中の値に関数 `f` を適用します。この関数自体も `Maybe` を返す必要があります。値が `Nothing` であれば、そのまま返します。\n\n[`map`](#map) と似ていますが、関数 `f` は通常の値ではなく `Maybe` を返すことが想定されています。これにより、`(Just (Just ...))` のような入れ子を避けられます。",
+      "source_html_sha256": "e01603563e8500b8643f6ba5d2d08eab59999e0e9e1380a1e5d83235d6cacb2d"
+    },
+    "apply": {
+      "original": "applies a function to the value inside `a` if it is a `Just`, and wraps it up again. If it is `Nothing`, it is just returned.",
+      "source": "core/Maybe.carp",
+      "line": 9,
+      "translation": "`a` が `Just` であれば、中の値に関数を適用し、その結果を再び包みます。`Nothing` であれば、そのまま返します。",
+      "source_html_sha256": "3d2fdf02e5fe0e32d6519b8f7229537e4a315bdbd2159a698a7a7e677c40da14"
+    },
+    "copy": {
+      "original": "copies a `Maybe`.",
+      "source": "src/Sumtypes.hs",
+      "line": 238,
+      "translation": "`Maybe` をコピーします。",
+      "source_html_sha256": "713d8cc0242c9daf361b0b7a4785fd2f6930e5aa13467bcd6671382ef2c59ac6"
+    },
+    "delete": {
+      "original": "deletes a `Maybe`. This should usually not be called manually.",
+      "source": "src/Sumtypes.hs",
+      "line": 211,
+      "translation": "`Maybe` を削除します。通常、この関数を手動で呼び出す必要はありません。",
+      "source_html_sha256": "f68f113adf45b054480779b6e12d4e9ad2e77e657485c63d528b510c50b06e3f"
+    },
+    "expect": {
+      "original": "unwraps a `Maybe` value, or aborts with `msg` if it is `Nothing`.",
+      "source": "core/Maybe.carp",
+      "line": 113,
+      "translation": "`Maybe` の中の値を取り出します。`Nothing` であれば、`msg` とともに異常終了します。",
+      "source_html_sha256": "f28e55e0cfe8edb8aef31468d9b7addd08a8623dcdca1b2aea3e77d3824645dc"
+    },
+    "filter": {
+      "original": "takes a `Maybe` and a predicate `f`. If the value is a `Just` and the predicate returns true, the value is returned unchanged. Otherwise `Nothing` is returned.",
+      "source": "core/Maybe.carp",
+      "line": 101,
+      "translation": "`Maybe` と述語 (predicate) `f` を受け取ります。値が `Just` であり、述語が真を返す場合、その値を変更せずに返します。それ以外の場合は `Nothing` を返します。",
+      "source_html_sha256": "6860b2e1a1ae61fa416aeb128101600d182040426027130cfb7e64b1226b043c"
+    },
+    "flatten": {
+      "original": "flattens a nested `Maybe` value.",
+      "source": "core/Maybe.carp",
+      "line": 107,
+      "translation": "入れ子になった `Maybe` の値を平坦化します。",
+      "source_html_sha256": "e01b13b1c8d95507db6a987d8e3d977f6be1484c539bf9334f015b3e3b72f549"
+    },
+    "from": {
+      "original": "is an unwrapper that will get the value from a `Just`, or a default value if a `Nothing` is passed.",
+      "source": "core/Maybe.carp",
+      "line": 20,
+      "translation": "`Just` の中の値を取り出します。`Nothing` が渡された場合は、既定値を返します。",
+      "source_html_sha256": "9063a5b5b696898a16bef2613146e67918fb9b21f045008d1be7d7c8349939ea"
+    },
+    "from-ptr": {
+      "original": "Creates a `(Maybe a)` from a `(Ptr a)`. If the `Ptr` was\n`NULL`, this function will return `Nothing`.",
+      "source": "core/Maybe.carp",
+      "line": 66,
+      "translation": "`(Ptr a)` から `(Maybe a)` を作成します。`Ptr` が `NULL` であれば、`Nothing` を返します。",
+      "source_html_sha256": "25943846825931c0f628e12574afe8b6223fa9b7f86be4511e7956aa9e9a93cf"
+    },
+    "get-tag": {
+      "original": "Gets the tag from a `Maybe`.",
+      "source": "src/Sumtypes.hs",
+      "line": 172,
+      "translation": "`Maybe` からタグ (tag) を取得します。",
+      "source_html_sha256": "4b9f4c1b2c74555329ad04378e16774560573bfe7077897a0c5cf9710c74e2db"
+    },
+    "inspect": {
+      "original": "applies a side-effecting function `f` to the value inside `a` if it is a `Just`, and returns `a` unchanged.",
+      "source": "core/Maybe.carp",
+      "line": 120,
+      "translation": "`a` が `Just` であれば、中の値に副作用のある関数 `f` を適用し、`a` を変更せずに返します。",
+      "source_html_sha256": "e6ca9b60b1c0a821797c3fae7a3624d68bd11cd3c13befb0903901f93a3ffde8"
+    },
+    "just?": {
+      "original": "checks whether the given value `a` is a `Just`.\n\nIt is the inverse of [`nothing?`](#nothing?).",
+      "source": "core/Maybe.carp",
+      "line": 33,
+      "translation": "渡された値 `a` が `Just` かどうかを調べます。\n\n[`nothing?`](#nothing?) の判定結果を反転したものです。",
+      "source_html_sha256": "3d6f382f31c6e5e966a099780cfda3705b64c8b777fb01aa7781afdcc7aa3875"
+    },
+    "map": {
+      "original": "takes a `Maybe` and applies a function `f` to it if it is a `Just`, and wraps the result back up. If it is `Nothing`, it is returned as is.",
+      "source": "core/Maybe.carp",
+      "line": 73,
+      "translation": "`Maybe` を受け取り、`Just` であれば中の値に関数 `f` を適用し、その結果を再び包みます。`Nothing` であれば、そのまま返します。",
+      "source_html_sha256": "eaa9418b24bc6616579b7d303a90d3d415530fcbb60abcf7b87622d25c6928aa"
+    },
+    "map-or": {
+      "original": "applies a function `f` to the value inside `a` if it is a `Just`, otherwise returns `dflt`.",
+      "source": "core/Maybe.carp",
+      "line": 128,
+      "translation": "`a` が `Just` であれば、中の値に関数 `f` を適用します。それ以外の場合は `dflt` を返します。",
+      "source_html_sha256": "f685cd48362f97aa73e8411190b4e63705c45ab4bc23fc81f5c02bd9a7ca1d96"
+    },
+    "map-or-else": {
+      "original": "applies a function `f` to the value inside `a` if it is a `Just`, otherwise returns the result of `dflt-f`.",
+      "source": "core/Maybe.carp",
+      "line": 134,
+      "translation": "`a` が `Just` であれば、中の値に関数 `f` を適用します。それ以外の場合は `dflt-f` の結果を返します。",
+      "source_html_sha256": "8bce1b92b3e22e88b535ed179f5f937b9d43b7760314e2a9e8d7aafe85f240e7"
+    },
+    "nothing?": {
+      "original": "checks whether the given value `a` is a `Nothing`.\n\nIt is the inverse of [`just?`](#just?).",
+      "source": "core/Maybe.carp",
+      "line": 41,
+      "translation": "渡された値 `a` が `Nothing` かどうかを調べます。\n\n[`just?`](#just?) の判定結果を反転したものです。",
+      "source_html_sha256": "68d7d5cb902b69cf877248d7931826271ca351ae0a707fbf599579f68349a045"
+    },
+    "or-else": {
+      "original": "takes a `Maybe` and applies a function `f` to it if it is `Nothing`. If it is a `Just`, it is returned as is.\n\nIt is the inverse of [`and-then`](#and-then).",
+      "source": "core/Maybe.carp",
+      "line": 87,
+      "translation": "`Maybe` を受け取り、`Nothing` であれば関数 `f` を呼び出します。`Just` であれば、そのまま返します。\n\n[`and-then`](#and-then) とは、関数を呼び出す条件が逆です。",
+      "source_html_sha256": "2cfe202ebbae3bb56f3bb58f88caad2926d20c5cf91fae8eb8c94ce0bf0f9e12"
+    },
+    "or-zero": {
+      "original": "is an unwrapper that will get the value from a `Just`, or build\na value using `zero` if a `Nothing` is passed.",
+      "source": "core/Maybe.carp",
+      "line": 26,
+      "translation": "`Just` の中の値を取り出します。`Nothing` が渡された場合は、`zero` を使って値を作成します。",
+      "source_html_sha256": "f1b63c22105bc38a103aa522038e35dba1d4e78c68b1226495dea5a84b454265"
+    },
+    "prn": {
+      "original": "converts a `Maybe` to a string.",
+      "source": "src/Sumtypes.hs",
+      "line": 181,
+      "translation": "`Maybe` を文字列に変換します。",
+      "source_html_sha256": "903fb1d8b3a8c39f3a42120642a6fc48821f8ec3565e9525e4a95814a7490827"
+    },
+    "str": {
+      "original": "converts a `Maybe` to a string.",
+      "source": "src/Sumtypes.hs",
+      "line": 181,
+      "translation": "`Maybe` を文字列に変換します。",
+      "source_html_sha256": "903fb1d8b3a8c39f3a42120642a6fc48821f8ec3565e9525e4a95814a7490827"
+    },
+    "to-result": {
+      "original": "is a function that will convert a `Maybe` to a `Result`, where a `Just` becomes a `Success` and a `Nothing` becomes an `Error`.\n\nYou’ll also need to provide an error message `error` that is given to the `Error` constructor if necessary.",
+      "source": "core/Result.carp",
+      "line": 158,
+      "translation": "`Maybe` を [`Result`](./Result.html) に変換します。`Just` は `Success` に、`Nothing` は `Error` になります。\n\n必要に応じて `Error` コンストラクタへ渡すエラーメッセージ `error` も指定する必要があります。",
+      "source_html_sha256": "2b0b5072b9d53f8961ccca2a13f4b9e1cd95bcfe5af1708d1e635cd4e607118f",
+      "notes": [
+        "原文は `error` をエラーメッセージと呼んでいますが、固定版の型シグネチャでは `String` に限定されず、`Result` のエラー側の型の値を受け取ります。この注記は型シグネチャの確認に基づきます。"
+      ]
+    },
+    "unsafe-from": {
+      "original": "is an unsafe unwrapper that will get the value from a `Just`. If `a` is `Nothing`, a runtime error will be generated.",
+      "source": "core/Maybe.carp",
+      "line": 15,
+      "translation": "`Just` の中の値を取り出す、安全でない関数です。`a` が `Nothing` であれば、実行時エラーが発生します。",
+      "source_html_sha256": "e7663dd9e34e2428cc2cdfb07a59360e7d546a750edb3567933f4ea989fcdb1c"
+    },
+    "unsafe-ptr": {
+      "original": "Creates a `(Ptr a)` from a `(Maybe a)`. If the `Maybe` was\n`Nothing`, this function will return a `NULL` value.",
+      "source": "core/Maybe.carp",
+      "line": 59,
+      "translation": "`(Maybe a)` から `(Ptr a)` を作成します。`Maybe` が `Nothing` であれば、`NULL` 値を返します。",
+      "source_html_sha256": "7033dc80ad20fef9c5e46cfa907f934e58954549d1ce732bac76cd587694a343"
+    },
+    "unwrap-or-else": {
+      "original": "takes a `Maybe` and either unwraps it if it is a `Just`, or calls a function `f` to produce a default value.",
+      "source": "core/Maybe.carp",
+      "line": 95,
+      "translation": "`Maybe` を受け取り、`Just` であれば中の値を取り出します。それ以外の場合は、関数 `f` を呼び出して既定値を生成します。",
+      "source_html_sha256": "30d3581dd08d88f0688e8add3d499e1314b8a29c26155e1eb1051e0e33240d2d"
+    },
+    "zero": {
+      "original": "returns `Nothing`.",
+      "source": "core/Maybe.carp",
+      "line": 140,
+      "translation": "`Nothing` を返します。",
+      "source_html_sha256": "4ddfd8c2f8f94b17a4ca6decdd594df56c3574c71e085ba03768cf9425e1d71c"
+    },
+    "zip": {
+      "original": "",
+      "source": "core/Binary.carp",
+      "line": 16,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "zip-": {
+      "original": "",
+      "source": "core/Binary.carp",
+      "line": 8,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    }
+  }
+}

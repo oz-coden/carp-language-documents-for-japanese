@@ -1,0 +1,209 @@
+{
+  "module": "Result",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "original": "is a data type for computations that might fail with an error. It\nhas two constructors, `(Success <value>)` and `(Error <value>)`, and provides\nmany functions for working with, combining, and wrapping and unwrapping\nvalues.",
+    "source": "core/Result.carp",
+    "line": 5,
+    "translation": "エラーによって失敗する可能性のある計算を表すデータ型です。`(Success <value>)` と `(Error <value>)` の 2 つのコンストラクタを持ち、値の操作、組み合わせ、値を包む操作や中の値を取り出す操作のための関数を数多く提供します。",
+    "source_html_sha256": "d4dec1e9f1f12fbfa56f849c17b76ced9b8f4c0c7e3c3fa797ff91ee987e848a"
+  },
+  "entries": {
+    "=": {
+      "original": "equality is defined as the equality of both the constructor and the contained value, i.e. `(Success 1)` and `(Success 1)` are the same, but `(Success 1)` and `(Success 2)` are not.",
+      "source": "core/Result.carp",
+      "line": 143,
+      "translation": "等しいかどうかは、コンストラクタと中の値の両方が等しいかどうかで決まります。例えば、`(Success 1)` と `(Success 1)` は等しいですが、`(Success 1)` と `(Success 2)` は等しくありません。",
+      "source_html_sha256": "6bb68a304fe528c716b37aabf5ec3f93e4743f607810007c73b01fa2adf2b778"
+    },
+    "Error": {
+      "original": "creates a `Error`.",
+      "source": "src/Sumtypes.hs",
+      "line": 146,
+      "translation": "`Error` を作成します。",
+      "source_html_sha256": "e601359a68599b6b4719799fff71762e44095901532291d05e866d5329f36285"
+    },
+    "Success": {
+      "original": "creates a `Success`.",
+      "source": "src/Sumtypes.hs",
+      "line": 146,
+      "translation": "`Success` を作成します。",
+      "source_html_sha256": "25bfbac4c633037548fa26c00b1377495be94f94524a0e9746bdff9ea89e7666"
+    },
+    "and-then": {
+      "original": "takes a `Result` and applies a function `f` to it if it is a `Success` type. In the case that it is an `Error`, it is returned as is.\n\nIt is thus quite similar to [`map`](#map), but it will unwrap the value.",
+      "source": "core/Result.carp",
+      "line": 28,
+      "translation": "`Result` を受け取り、`Success` 型であれば中の値に関数 `f` を適用します。`Error` であれば、そのまま返します。\n\n[`map`](#map) とよく似ていますが、包まれた値を取り出して扱います。",
+      "source_html_sha256": "1bf4f00e4d21a707b0100be2dc7f63070f72146fe99ce2afc0141cf111cb2182"
+    },
+    "apply": {
+      "original": "takes a `Result` `a` and applies functions to them, one in the case that it is an `Error`, one in the case that it is a `Success`.",
+      "source": "core/Result.carp",
+      "line": 10,
+      "translation": "`Result` の値 `a` を受け取り、`Error` の場合と `Success` の場合で、それぞれに対応する関数を適用します。",
+      "source_html_sha256": "8cf8d4f5f2e787da35928823bdeacc27d313f9c3d03704fdd47d49d96d374388"
+    },
+    "copy": {
+      "original": "copies a `Result`.",
+      "source": "src/Sumtypes.hs",
+      "line": 238,
+      "translation": "`Result` をコピーします。",
+      "source_html_sha256": "0e0a57bf2cd62ebb94c586e9972aaa1e75c5ee82d61c6133d36e9e7e8fbb2278"
+    },
+    "delete": {
+      "original": "deletes a `Result`. This should usually not be called manually.",
+      "source": "src/Sumtypes.hs",
+      "line": 211,
+      "translation": "`Result` を削除します。通常、この関数を手動で呼び出す必要はありません。",
+      "source_html_sha256": "cc026c28fe5312385cd61bdbd808b62a8b0b4b49bc7c5c9cd1a8268f257afe93"
+    },
+    "error?": {
+      "original": "checks whether the given value `a` is an `Error`.\n\nIt is the inverse of [`success?`](#success?).",
+      "source": "core/Result.carp",
+      "line": 94,
+      "translation": "渡された値 `a` が `Error` かどうかを調べます。\n\n[`success?`](#success?) の判定結果を反転したものです。",
+      "source_html_sha256": "aa0c4f8b6c82d364d2d1a3101676636adc2c7d8d750cd2393ae67a25c4a6e2cb"
+    },
+    "expect": {
+      "original": "unwraps a `Result` success value, or aborts with `msg` if it is an `Error`.",
+      "source": "core/Result.carp",
+      "line": 108,
+      "translation": "`Result` の成功時の値を取り出します。`Error` であれば、`msg` とともに異常終了します。",
+      "source_html_sha256": "a8f6e7b6b019499458ca2a6058d57c561f45079be5e306abcdcdfa975f93e580"
+    },
+    "flatten": {
+      "original": "flattens a nested `Result` value.",
+      "source": "core/Result.carp",
+      "line": 102,
+      "translation": "入れ子になった `Result` の値を平坦化します。",
+      "source_html_sha256": "f4d0f4b36a9aee58544c551853ca53ad45194911a8882e79e7f2b847e2ab0f9b"
+    },
+    "from-error": {
+      "original": "is an unwrapper that will get the value from an `Error`. If `a` is a `Success`, a default value will be returned.",
+      "source": "core/Result.carp",
+      "line": 72,
+      "translation": "`Error` の中の値を取り出します。`a` が `Success` であれば、既定値を返します。",
+      "source_html_sha256": "a9b540619e83deb4cf13c6b3d5e08b78feae77078e9940ac618c2036a8ea9a62"
+    },
+    "from-success": {
+      "original": "is an unwrapper that will get the value from a `Success`. If `a` is an `Error`, a default value will be returned.",
+      "source": "core/Result.carp",
+      "line": 61,
+      "translation": "`Success` の中の値を取り出します。`a` が `Error` であれば、既定値を返します。",
+      "source_html_sha256": "b04b694d628c201d4b3d988d4760a513aec4efd877a773ca51d7d090c86a3208"
+    },
+    "get-tag": {
+      "original": "Gets the tag from a `Result`.",
+      "source": "src/Sumtypes.hs",
+      "line": 172,
+      "translation": "`Result` からタグ (tag) を取得します。",
+      "source_html_sha256": "d475cc61e278ab2e31f34aa399b555f468b1aa9bad279e8702bff1494135b6f4"
+    },
+    "inspect": {
+      "original": "applies a side-effecting function `f` to the value inside `a` if it is a `Success`, and returns `a` unchanged.",
+      "source": "core/Result.carp",
+      "line": 115,
+      "translation": "`a` が `Success` であれば、中の値に副作用のある関数 `f` を適用し、`a` を変更せずに返します。",
+      "source_html_sha256": "af2c9816e8ad3d65fc50e797f0df1e5abec7316f3bb6b6d6eb02c0bd814ec4e3"
+    },
+    "inspect-error": {
+      "original": "applies a side-effecting function `f` to the error inside `a` if it is an `Error`, and returns `a` unchanged.",
+      "source": "core/Result.carp",
+      "line": 123,
+      "translation": "`a` が `Error` であれば、中のエラー値に副作用のある関数 `f` を適用し、`a` を変更せずに返します。",
+      "source_html_sha256": "563465ed9e3f8e48b65b310239e063595d015e3422fd074fb7d97b632eb813bf"
+    },
+    "map": {
+      "original": "takes a `Result` and applies a function `f` to it if it is a `Success` type, and wraps it back up. In the case that it is an `Error`, it is returned as is.",
+      "source": "core/Result.carp",
+      "line": 16,
+      "translation": "`Result` を受け取り、`Success` 型であれば中の値に関数 `f` を適用し、その結果を再び包みます。`Error` であれば、そのまま返します。",
+      "source_html_sha256": "2e7a41da9a6e444d3beee991d1245b3c370156ce5ff40eacb959746eb74ef43d"
+    },
+    "map-error": {
+      "original": "takes a `Result` and applies a function `f` to it if it is an `Error` type, and wraps it back up. In the case that it is a `Success`, it is returned as is.",
+      "source": "core/Result.carp",
+      "line": 22,
+      "translation": "`Result` を受け取り、`Error` 型であれば中の値に関数 `f` を適用し、その結果を再び包みます。`Success` であれば、そのまま返します。",
+      "source_html_sha256": "df1bef82e507afadaca185e8efb204d946184aaf8893b3e2ac22a45ec47e3815"
+    },
+    "map-or": {
+      "original": "applies a function `f` to the value inside `a` if it is a `Success`, otherwise returns `dflt`.",
+      "source": "core/Result.carp",
+      "line": 131,
+      "translation": "`a` が `Success` であれば、中の値に関数 `f` を適用します。それ以外の場合は `dflt` を返します。",
+      "source_html_sha256": "135af14784dc8b69a8e1d44db1f1045b1839a05155706f8881e7e202bc9ab277"
+    },
+    "map-or-else": {
+      "original": "applies a function `f` to the value inside `a` if it is a `Success`, otherwise returns the result of `dflt-f`.",
+      "source": "core/Result.carp",
+      "line": 137,
+      "translation": "`a` が `Success` であれば、中の値に関数 `f` を適用します。それ以外の場合は `dflt-f` の結果を返します。",
+      "source_html_sha256": "0ffdbfd12834c8eb438836ab4e4893c2bbb17f1e9e3da324218ac01d2732d4c3"
+    },
+    "or-else": {
+      "original": "takes a `Result` and applies a function `f` to it if it is an `Error` type. In the case that it is a `Success`, it is returned as is.\n\nIt is the inverse of [`and-then`](#and-then).",
+      "source": "core/Result.carp",
+      "line": 42,
+      "translation": "`Result` を受け取り、`Error` 型であれば中の値に関数 `f` を適用します。`Success` であれば、そのまま返します。\n\n[`and-then`](#and-then) とは、関数を適用する条件が逆です。",
+      "source_html_sha256": "fd0e00c7bffcc432efaeecea1c5682b992eaa4a2248b175a807cc4498a416bdb"
+    },
+    "prn": {
+      "original": "converts a `Result` to a string.",
+      "source": "src/Sumtypes.hs",
+      "line": 181,
+      "translation": "`Result` を文字列に変換します。",
+      "source_html_sha256": "c9c173405fe8b71628fd68b7c83d28807f90005c306d43048f79f2e842ef0609"
+    },
+    "str": {
+      "original": "converts a `Result` to a string.",
+      "source": "src/Sumtypes.hs",
+      "line": 181,
+      "translation": "`Result` を文字列に変換します。",
+      "source_html_sha256": "c9c173405fe8b71628fd68b7c83d28807f90005c306d43048f79f2e842ef0609"
+    },
+    "success?": {
+      "original": "checks whether the given value `a` is a `Success`.\n\nIt is the inverse of [`error?`](#error?).",
+      "source": "core/Result.carp",
+      "line": 86,
+      "translation": "渡された値 `a` が `Success` かどうかを調べます。\n\n[`error?`](#error?) の判定結果を反転したものです。",
+      "source_html_sha256": "5cfa779dd81b87f6221ac8568447139742779869c14da590f80dbb2e2c8a0471"
+    },
+    "to-maybe": {
+      "original": "is a function that will convert a `Result` to a `Maybe`, where a `Success` becomes a `Just` and an `Error` becomes a `Nothing`.\n\nThe error value is thrown away.",
+      "source": "core/Result.carp",
+      "line": 78,
+      "translation": "`Result` を [`Maybe`](./Maybe.html) に変換します。`Success` は `Just` に、`Error` は `Nothing` になります。\n\nエラー値は破棄されます。",
+      "source_html_sha256": "48b8ea60e2453bfa2992fc09b21def58e3e5ed9e311b3ded8d1e110b2cdc1ff6"
+    },
+    "unsafe-from-error": {
+      "original": "is an unsafe unwrapper that will get the value from an `Error`. If `a` is a `Success`, a runtime error will be generated.",
+      "source": "core/Result.carp",
+      "line": 67,
+      "translation": "`Error` の中の値を取り出す、安全でない関数です。`a` が `Success` であれば、実行時エラーが発生します。",
+      "source_html_sha256": "478ee51750fa55c32b4b5b94f0af292c66ea861bf6e8a756fa8cf25dee0f93b2"
+    },
+    "unsafe-from-success": {
+      "original": "is an unsafe unwrapper that will get the value from a `Success`. If `a` is an `Error`, a runtime error will be generated.",
+      "source": "core/Result.carp",
+      "line": 56,
+      "translation": "`Success` の中の値を取り出す、安全でない関数です。`a` が `Error` であれば、実行時エラーが発生します。",
+      "source_html_sha256": "51a507af08da298d193d9b34412144edd7b133e1e3b659eceaa09a5376ab7fda"
+    },
+    "unwrap-or-else": {
+      "original": "takes a `Result` and either unwraps it if it is a `Success`, or calls a function `f` on the value contained in the `Error`.",
+      "source": "core/Result.carp",
+      "line": 50,
+      "translation": "`Result` を受け取り、`Success` であれば中の値を取り出します。それ以外の場合は、`Error` の中の値を実引数として関数 `f` を呼び出します。",
+      "source_html_sha256": "f371f93f932a8a055735924687cc5a04a8cbb4be4b874c013fd0fa700b6d6dc5"
+    },
+    "unwrap-or-zero": {
+      "original": "takes a `Result` and either unwraps it if it is a `Success`, or calls `zero`. `zero` must be defined on the `Success` type.",
+      "source": "core/Result.carp",
+      "line": 36,
+      "translation": "`Result` を受け取り、`Success` であれば中の値を取り出します。それ以外の場合は `zero` を呼び出します。`Success` 側の値の型に対して、`zero` が定義されている必要があります。",
+      "source_html_sha256": "fb35928a4e67438a725ab54a31c6a9b0361b6a6cceeecf1e60995500f6f3610f"
+    }
+  }
+}

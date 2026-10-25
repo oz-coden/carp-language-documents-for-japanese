@@ -12,13 +12,23 @@
   "source_files": {
     "core/Array.carp": "6d36c2d2ee0e4cb6f97cdc7cdabd1ff7533edf9c",
     "core/ArrayExt.carp": "a802e284376983d60d6e0ef6a1a2b6f26eb1a540",
+    "core/Binary.carp": "ea33d6873d59f4b8ca93295e067db3feabd831a1",
+    "core/Blitable.carp": "50c3836afefa793d504b6c1e0fa21d77abfcf31d",
+    "core/Bool.carp": "6d6a816b75b0d7edd3bbd78d3162676aa921760f",
+    "core/BoolExtras.carp": "603965b065f79bd6b7101f57511d79deb1c4896c",
+    "core/Control.carp": "8de7ddc08fb5cb0b63e388f26a4b8f89d5f4e736",
+    "core/Function.carp": "75acae7db397a9be0509ce8bd39a2595f3e2dc4f",
+    "core/Map.carp": "859f4ca860d11051269537293416be40193ffb50",
+    "core/Maybe.carp": "e73cae51252b8100e4378c66086c50130aea1b43",
+    "core/Result.carp": "4a402f185a76c16d981204d8595d959b570dca4e",
     "core/Sort.carp": "813de0dd3e72eb8a53a1fc097fc230730cd80029",
     "core/String.carp": "29691bb9fadfbf899ded4dd0e30b49baa43e7407",
     "docs/core/carp_style.css": "0ed34680f8e0c08dba0d6a30f4a5aba53dc03366",
     "docs/core/generate_core_docs.carp": "26c20d0f1a032ce4d6b5f6fb3bee0873d112958f",
     "docs/core/logo.png": "44aa36cd7278d90170ae0c3ade124c13fc1fa42d",
     "src/ArrayTemplates.hs": "2927c96296b05666840fdd88ba16c677ed2ac5ca",
-    "src/RenderDocs.hs": "092002e51df8cc2541fe8c3b34960e229eb07cd9"
+    "src/RenderDocs.hs": "092002e51df8cc2541fe8c3b34960e229eb07cd9",
+    "src/Sumtypes.hs": "d7dbf01921ef6fcf2b674b42ffe99d1ad1640da2"
   },
   "modules": {
     "Array": {
@@ -28,6 +38,31 @@
       "anchor_aliases": {
         "aset-uninitialized": "aset-uninitialized!"
       }
+    },
+    "Bool": {
+      "snapshot": "api/upstream/Bool.html",
+      "snapshot_sha256": "3fbdb124d672b97475c872e82d4c8987643b1666cf417685c3568d720e0b1021",
+      "translation": "api/ja/Bool.json"
+    },
+    "Control": {
+      "snapshot": "api/upstream/Control.html",
+      "snapshot_sha256": "d766cfcc9f6bc21b432dcedb9e8db35dd59a249f71cd740e38f1264b8cfcf55c",
+      "translation": "api/ja/Control.json"
+    },
+    "Function": {
+      "snapshot": "api/upstream/Function.html",
+      "snapshot_sha256": "1bdcc073393efb9fa1bc35dc8ac13f2eed386adead809de98573bb90749abf56",
+      "translation": "api/ja/Function.json"
+    },
+    "Maybe": {
+      "snapshot": "api/upstream/Maybe.html",
+      "snapshot_sha256": "8cc3b79621143fedd909afb3c8f664bd47c54adb05df5f03999a1a73fffa14cb",
+      "translation": "api/ja/Maybe.json"
+    },
+    "Result": {
+      "snapshot": "api/upstream/Result.html",
+      "snapshot_sha256": "6e244e82b4dd51798d0552b60581e3dde74ded3f74862322234fe9b793b2d119",
+      "translation": "api/ja/Result.json"
     }
   },
   "stylesheet": {
@@ -37,5 +72,10 @@
   "logo_url": "https://raw.githubusercontent.com/carp-lang/Carp/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/logo.png",
   "english_source_fallbacks": {
     "StaticArray.html": "core/StaticArray.carp"
+  },
+  "index": {
+    "snapshot": "api/upstream/core_index.html",
+    "snapshot_sha256": "953488fa8c39e2229578733914bafeee83e313b962113e4e343fdacf45b4df2d",
+    "translation": "api/ja/core_index.json"
   }
 }

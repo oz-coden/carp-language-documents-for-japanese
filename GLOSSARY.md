@@ -98,6 +98,9 @@
 | borrow checker | 借用チェッカー | 原語を併記します |
 | heapsort | ヒープソート | 原語を併記します |
 | comparison function | 比較関数 | 原語を併記します |
+| control flow | 制御フロー | 原語を併記します |
+| tag (sum type) | タグ | 原語を併記します。直和型のバリアントを識別する値を指します |
+| fixed point / fix point | 不動点 | 初出で原文の語形を併記します。原文の執筆メモにある語も保持します |
 | linear type / linear type system | 線形型 / 線形型システム | 原語を併記します |
 | linear value / non-linear | 線形値 / 非線形 | 原語を併記します。値の種類と型の種類を文脈で区別します |
 | owner | 所有者 | 原語を併記します。値に関連付けられたメモリを所有する束縛を指します |

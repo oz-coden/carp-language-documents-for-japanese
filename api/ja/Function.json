@@ -1,0 +1,27 @@
+{
+  "module": "Function",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "original": "provides operations on functions.",
+    "source": "core/Function.carp",
+    "line": 1,
+    "translation": "関数に対する操作を提供します。",
+    "source_html_sha256": "2c9c2d752334fc2923ddd5e37e9ab06e6f391f24f73fcc873777d81071fbaf83"
+  },
+  "entries": {
+    "unsafe-env-ptr": {
+      "original": "returns  void pointer to the environment captured by a lambda.\n\n  This is unsafe as unsafe-env-ptr can't check the value passed in is a function.\n\n  It is the responsibility of the caller to ensure that the lifetime of the pointer\n  does not exceed the lifetime of the function it's used on.",
+      "source": "core/Function.carp",
+      "line": 11,
+      "translation": "ラムダ (lambda) がキャプチャした環境への `void` ポインタを返します。\n\n渡された値が関数かどうかを `unsafe-env-ptr` は検査できないため、この操作は安全ではありません。\n\nポインタのライフタイムが、対象の関数のライフタイムを超えないようにする責任は、呼び出し元にあります。",
+      "source_html_sha256": "c1d342cbd6c000fb099468663f65a45053a71af509b414b7fab81716b23a8b76"
+    },
+    "unsafe-ptr": {
+      "original": "returns a void pointer to the function passed in.\n\n  This is unsafe as unsafe-ptr can't check the value passed in is a function.\n\n  It is the responsibility of the caller to ensure that the lifetime of the pointer\n  does not exceed the lifetime of the function it's used on.",
+      "source": "core/Function.carp",
+      "line": 3,
+      "translation": "渡された関数への `void` ポインタを返します。\n\n渡された値が関数かどうかを `unsafe-ptr` は検査できないため、この操作は安全ではありません。\n\nポインタのライフタイムが、対象の関数のライフタイムを超えないようにする責任は、呼び出し元にあります。",
+      "source_html_sha256": "15672805f40a358d68656d496c100deedefd643768333a0db8b681f26b0695ba"
+    }
+  }
+}

@@ -3,8 +3,19 @@
 [日本語 API リファレンス](https://github.oz-coden.com/carp-language-documents-for-japanese/api/core/index.html) は、Carp の固定コミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` を対象としています。
 翻訳対象の版・用語・訳注は、[翻訳方針](../TRANSLATION.md) と [用語集](../GLOSSARY.md) に従います。
 
-現在は `Array` モジュールを対象とし、概要と、説明文のある 86 項目を翻訳しています。掲載する API は全 87 項目です。
-`prn` は原文に説明文がないため、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、説明文に含まれるコード例も保持しています。
+Core の索引の案内文と、次の 6 モジュールの概要・説明文を翻訳しています。
+
+| モジュール | 掲載項目 | 説明文の翻訳 |
+| --- | --- | --- |
+| `Array` | 87 | 86 |
+| `Bool` | 11 | 2 |
+| `Control` | 6 | 6 |
+| `Function` | 2 | 2 |
+| `Maybe` | 30 | 28 |
+| `Result` | 28 | 28 |
+| 合計 | 164 | 152 |
+
+原文に説明文がない 12 項目は、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、説明文に含まれるコード例 13 件も保持しています。
 
 ## 原典と生成元 (Sources and Generation)
 
@@ -18,17 +29,20 @@
 | --- | --- |
 | `api/snapshot.json` | 対象コミット、原典の blob SHA、生成記録、HTML・CSS の SHA-256、モジュールの対応 |
 | `api/upstream/Array.html` | 固定版から生成した、変更していない英語の API 文書 |
+| `api/upstream/core_index.html` | 固定版から生成した、変更していない Core の索引 |
 | `api/ja/Array.json` | API ごとの原文・日本語訳・原典の位置・訳注・説明文のチェックサム |
+| `api/ja/core_index.json` | Core の案内文の原文・日本語訳・原典の位置・チェックサム |
 | `api/assets/carp_style.css` | 固定版の API 文書の CSS |
 | `api/assets/japanese.css` | 日本語表示と画面幅に合わせた調整 |
 | `scripts/prepare_api.py` | 対応関係の検査、Pages 用の生成、公開後の API 情報の検査 |
 
 原典は [RenderDocs.hs(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/RenderDocs.hs) によって HTML 化されます。
+各モジュールの生成済み HTML と訳文データは、それぞれ `api/upstream/<モジュール名>.html` と `api/ja/<モジュール名>.json` に保存します。
 日本語版はこの出力の構成・CSS を使い、原文を開いて確認できる表示を加えています。未翻訳のモジュールへの参照は、固定版の英語ソースへ案内します。
 
 ## 訳文の更新と検査 (Updating and Checking Translations)
 
-1. `api/ja/Array.json` の対象項目を確認します。`source` と `line` が原典を示します。
+1. `api/ja/<モジュール名>.json` の対象項目を確認します。`source` と `line` が原典を示します。
 2. `translation` を Markdown として修正します。補足は `notes` に記載し、原文と区別します。
 3. 原文に含まれるコード例を保持し、原典を変更する場合は固定版と対応関係を再確認します。
 4. 次の検査を実行します。

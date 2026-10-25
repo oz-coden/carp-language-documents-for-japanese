@@ -1,0 +1,58 @@
+{
+  "module": "Control",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "original": "contains functions that deal with functions, control flow, and\nother higher order concepts.",
+    "source": "core/Control.carp",
+    "line": 3,
+    "translation": "関数、制御フロー (control flow)、その他の高階の概念を扱う関数を提供します。",
+    "source_html_sha256": "9f1d875219ac598f1bd0f76f2202518a8cf5e00ec2c5e6e780ae87304d528af8"
+  },
+  "entries": {
+    "iterate": {
+      "original": "Apply function `f` `n` times, first to `start` and then to the result of `f`. TODO: Mention fix points.",
+      "source": "core/Control.carp",
+      "line": 7,
+      "translation": "関数 `f` を `n` 回適用します。最初は `start` に適用し、次からは `f` の結果に適用します。TODO: 不動点 (fix points) について説明する。",
+      "source_html_sha256": "ebbec5fcf924a32a5cd1d13d20ca05589d73d32f9384787629b5d2db0e7c28bc",
+      "notes": [
+        "「TODO: 不動点について説明する」は、原文に含まれる執筆メモです。"
+      ]
+    },
+    "iterate-until": {
+      "original": "Like `iterate`, but f is applied repeatedly until the predicate `pred` is true.",
+      "source": "core/Control.carp",
+      "line": 15,
+      "translation": "`iterate` と同様ですが、述語 (predicate) `pred` が真になるまで、`f` を繰り返し適用します。",
+      "source_html_sha256": "a3bed748e3e8a4c6a5b177476e58a183c3b500c6cba15dbe3a7df2a4ea0476a9"
+    },
+    "when-error": {
+      "original": "Executes a side effect, `f`, when `result` is `Error`oneus.\n```\n(def suc (the (Result Int Int) (Result.Success 0)))\n(def err (the (Result Int Int) (Result.Error 0)))\n\n(when-error &(fn [] (IO.println \"error!\")) err)\n=> error!\n(when-error &(fn [] (IO.println \"error!\")) suc)\n=> \n```",
+      "source": "core/Control.carp",
+      "line": 40,
+      "translation": "`result` が `Error` である場合に、副作用を伴う関数 `f` を実行します。\n\n```\n(def suc (the (Result Int Int) (Result.Success 0)))\n(def err (the (Result Int Int) (Result.Error 0)))\n\n(when-error &(fn [] (IO.println \"error!\")) err)\n=> error!\n(when-error &(fn [] (IO.println \"error!\")) suc)\n=> \n```",
+      "source_html_sha256": "0598ba63bfce71b9560e3f304698c3a91e92b31c0650a83fc6c9151df23c0ef9"
+    },
+    "when-just": {
+      "original": "Executes a side-effect, `f`, when `maybe` is `Just`.\n```\n(def just (Maybe.Just 2))\n(def nothing (the (Maybe Int) (Maybe.Nothing)))\n\n(when-just &(fn [] (IO.println \"just!\")) just)\n=> just!\n(when-just &(fn [] (IO.println \"just!\")) nothing)\n=> \n```",
+      "source": "core/Control.carp",
+      "line": 57,
+      "translation": "`maybe` が `Just` である場合に、副作用を伴う関数 `f` を実行します。\n\n```\n(def just (Maybe.Just 2))\n(def nothing (the (Maybe Int) (Maybe.Nothing)))\n\n(when-just &(fn [] (IO.println \"just!\")) just)\n=> just!\n(when-just &(fn [] (IO.println \"just!\")) nothing)\n=> \n```",
+      "source_html_sha256": "5cbcb978d2c467bf3d549d09de79e2a4b503e0e5dd440caee9dbe9caa4f0c5f4"
+    },
+    "when-nothing": {
+      "original": "Executes a side-effect, `f`, when `maybe` is `Nothing`.\n```\n(def just (Maybe.Just 2))\n(def nothing (the (Maybe Int) (Maybe.Nothing)))\n\n(when-nothing &(fn [] (IO.println \"nothing!\")) nothing)\n=> nothing!\n(when-nothing &(fn [] (IO.println \"nothing!\")) just)\n=> \n```",
+      "source": "core/Control.carp",
+      "line": 74,
+      "translation": "`maybe` が `Nothing` である場合に、副作用を伴う関数 `f` を実行します。\n\n```\n(def just (Maybe.Just 2))\n(def nothing (the (Maybe Int) (Maybe.Nothing)))\n\n(when-nothing &(fn [] (IO.println \"nothing!\")) nothing)\n=> nothing!\n(when-nothing &(fn [] (IO.println \"nothing!\")) just)\n=> \n```",
+      "source_html_sha256": "d69063203cd7bbf0103322b29992dc6050c2df04d9fd9dd7ce0307230caa1e64"
+    },
+    "when-success": {
+      "original": "Executes a side effect, `f`, when `result` is `Success`ful.\n```\n(def suc (the (Result Int Int) (Result.Success 0)))\n(def err (the (Result Int Int) (Result.Error 0)))\n\n(when-success &(fn [] (IO.println \"success!\")) suc)\n=> success!\n(when-success &(fn [] (IO.println \"success!\")) err)\n=> \n```",
+      "source": "core/Control.carp",
+      "line": 23,
+      "translation": "`result` が `Success` である場合に、副作用を伴う関数 `f` を実行します。\n\n```\n(def suc (the (Result Int Int) (Result.Success 0)))\n(def err (the (Result Int Int) (Result.Error 0)))\n\n(when-success &(fn [] (IO.println \"success!\")) suc)\n=> success!\n(when-success &(fn [] (IO.println \"success!\")) err)\n=> \n```",
+      "source_html_sha256": "8c1ce4c1ac02973f3f34cbc48fb6ca7f8979b230a6da9b805c2f84b7987d6fe3"
+    }
+  }
+}

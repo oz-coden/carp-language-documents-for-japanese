@@ -76,7 +76,7 @@ class APIReferenceTests(unittest.TestCase):
 
     def test_staging_keeps_types_usage_and_pinned_source_fallbacks(self):
         output = self.root / 'pages'
-        self.assertEqual(2, api.stage(self.root, output, '/test'))
+        self.assertEqual(7, api.stage(self.root, output, '/test'))
         page = (output / 'api/core/Array.html').read_text()
         self.assertIn('/test/GLOSSARY.html', page)
         self.assertIn('id="aset-uninitialized"', page)
@@ -91,6 +91,34 @@ class APIReferenceTests(unittest.TestCase):
         (output / 'api/core/Array.html').write_text(broken)
         with self.assertRaisesRegex(ValueError, 'signature changed'):
             api.check_metadata('Array', original, api.parse_reference(broken)[1])
+
+    def test_batch_coverage_and_core_index_source_are_complete(self):
+        manifest, modules = api.load(self.root)
+        self.assertEqual({'Array', 'Bool', 'Control', 'Function', 'Maybe', 'Result'}, set(modules))
+        self.assertEqual(164, sum(len(data[2]) for data in modules.values()))
+        self.assertEqual(152, sum(bool(record['translation']) for data in modules.values()
+                                  for record in data[3]['entries'].values()))
+        self.assertEqual(13, sum(len(api.examples(record['original'])) for data in modules.values()
+                                 for record in data[3]['entries'].values()))
+        record, _ = api.load_index(self.root, manifest)
+        self.assertIn('標準ライブラリ', record['translation'])
+        record['upstream_commit'] = 'a' * 40
+        (self.root / 'api/ja/core_index.json').write_text(json.dumps(record))
+        with self.assertRaisesRegex(ValueError, 'Core index: translation targets a different snapshot'):
+            api.load(self.root)
+
+    def test_module_navigation_and_cross_module_links_are_staged(self):
+        output = self.root / 'pages'
+        api.stage(self.root, output, '/test')
+        index = (output / 'api/core/index.html').read_text()
+        self.assertIn('Core — 標準ライブラリ API リファレンス', index)
+        for name in ('Array', 'Bool', 'Control', 'Function', 'Maybe', 'Result'):
+            self.assertIn(f'href="{name}.html"', index)
+            self.assertTrue((output / f'api/core/{name}.html').is_file())
+        maybe = (output / 'api/core/Maybe.html').read_text()
+        result = (output / 'api/core/Result.html').read_text()
+        self.assertIn('(./Result.html)', maybe)
+        self.assertIn('(./Maybe.html)', result)
 
 
 if __name__ == '__main__':

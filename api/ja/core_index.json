@@ -1,0 +1,8 @@
+{
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "original": "Welcome to the documentation for the Carp standard library. Please select a library from the menu on the right to browse its documentation. Carp is available for download [here](https://github.com/carp-lang/carp).",
+  "translation": "Carp 標準ライブラリのドキュメントへようこそ。右側のメニューからライブラリを選択すると、そのドキュメントを参照できます。Carp は[こちら(英語)](https://github.com/carp-lang/carp)からダウンロードできます。",
+  "source": "docs/core/generate_core_docs.carp",
+  "line": 6,
+  "source_html_sha256": "8b15ff4180c7de2e3ec0ae789bf85b407fc0bd4bc4d8d817f7032b54cf180dda"
+}
