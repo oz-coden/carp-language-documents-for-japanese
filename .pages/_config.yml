@@ -1,0 +1,17 @@
+title: Carp 日本語ドキュメント
+description: Carp プログラミング言語の非公式日本語訳。原文の対象版を固定して公開しています。
+lang: ja
+locale: ja_JP
+theme: jekyll-theme-primer
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: document
+exclude:
+  - Gemfile
+  - Gemfile.lock

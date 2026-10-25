@@ -108,7 +108,7 @@ def check(root: Path) -> list[str]:
             source_headers[target] = nonempty[1][0]
 
     for path in sorted(root.rglob('*.md')):
-        if '.git' in path.relative_to(root).parts:
+        if {'.git', '.pages-source', '_site'} & set(path.relative_to(root).parts):
             continue
         relative = path.relative_to(root).as_posix()
         for line_no, line in prose_lines(path.read_text()):

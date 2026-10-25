@@ -1,0 +1,42 @@
+---
+layout: null
+---
+@import "jekyll-theme-primer";
+
+.markdown-body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.markdown-body pre {
+  overflow-wrap: normal;
+}
+
+.document-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1.25em;
+  margin-bottom: 1em;
+}
+
+.snapshot-notice {
+  color: #586069;
+  font-size: 0.875em;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 1em;
+  margin-bottom: 2em !important;
+}
+
+.document-footer {
+  border-top: 1px solid #eaecef;
+  margin-top: 3em;
+  padding-top: 1em;
+  font-size: 0.875em;
+}
+
+a:focus-visible {
+  outline: 2px solid #0366d6;
+  outline-offset: 3px;
+}

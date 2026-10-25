@@ -65,6 +65,18 @@ GitHub Actions でもリンク検査・テスト・差分の空白検査を実�
 自動検査はリポジトリ内のファイルと対応表を使用します。リンク先の本文・言語・アンカー、原文パスと blob SHA、訳文の意味は手動で確認してください。
 コード例の動作確認は、リンク検査とは別に行います。
 
+## Web 版の公開 (Publishing the Website)
+
+Web 版は既存の Markdown を編集元とし、GitHub Actions で Jekyll と Primer テーマを使って生成します。
+`main` への変更を検査・ビルドした後、GitHub Pages に公開します。Pull Request では検査とビルドのみを実行します。
+
+`scripts/prepare_pages.py` は、訳文と案内文書を `.pages-source/` に複製し、ページ情報の付加と文書リンクの HTML 向け変換を行います。
+ヘルプ索引をトップページとしても使用します。翻訳本文の修正は元の Markdown に行ってください。
+レイアウトと日本語表示の調整は `.pages/` にあります。生成先の `.pages-source/` と `_site/` はコミットしません。
+
+公開前に `scripts/check_pages.py` が、生成された全対象ページ、CSS、ローカルリンク、見出し・脚注への参照を検査します。
+公開先のドメインとパスは GitHub Pages の設定から取得します。リポジトリの Pages の公開元には GitHub Actions を指定してください。
+
 ## レビュー内容 (Review Checklist)
 
 - 否定・条件・限定・時点・所有権・返り値が原文と一致していますか。

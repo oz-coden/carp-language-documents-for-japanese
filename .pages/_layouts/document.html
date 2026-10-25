@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<nav class="document-nav" aria-label="ドキュメントの案内">
+  <a href="{{ '/' | relative_url }}">ヘルプ索引</a>
+  <a href="{{ '/Carp-JP.html' | relative_url }}">Carp の紹介</a>
+  <a href="{{ '/GLOSSARY.html' | relative_url }}">用語集</a>
+  <a href="{{ '/README.html' | relative_url }}">この翻訳について</a>
+</nav>
+<p class="snapshot-notice">非公式日本語訳 · 翻訳対象は原文の固定コミット <code>{{ site.upstream_commit | slice: 0, 8 }}</code> です。</p>
+
+<main id="main-content">
+{{ content }}
+</main>
+
+<footer class="document-footer">
+  <a href="{{ site.source_repository }}/blob/main/{{ page.source_path | escape }}">このページの Markdown</a>
+  · <a href="{{ site.source_repository }}/issues">日本語訳の問題を報告</a>
+  · <a href="{{ '/TRANSLATION.html' | relative_url }}">翻訳方針</a>
+</footer>
