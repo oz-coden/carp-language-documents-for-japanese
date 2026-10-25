@@ -16,6 +16,11 @@ LINK = re.compile(r'(?<!!)\[([^\]\n]+)\]\(([^\s)]+)\)')
 INLINE_CODE = re.compile(r'(`+)(.*?)\1')
 
 
+def escape_liquid(text: str) -> str:
+    """Keep source examples containing Liquid delimiters literal in Jekyll."""
+    return re.sub(r'\{\{|\{%', lambda match: "{{ '" + match.group() + "' }}", text)
+
+
 def rewrite_links(text: str, source: str, pages: set[str]) -> str:
     """Rewrite local document links, retaining examples, URLs and fragments."""
     result = []
@@ -74,7 +79,7 @@ def stage(root: Path, destination: Path, baseurl: str, url: str) -> int:
         title = original.splitlines()[0].lstrip('# ').strip().replace('`', '')
         front = ('---\n' + f'title: {json.dumps(title, ensure_ascii=False)}\n'
                  + f'source_path: {json.dumps(source)}\n' + '---\n')
-        content = front + rewrite_links(original, source, pages)
+        content = front + rewrite_links(escape_liquid(original), source, pages)
         output = destination / source
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(content)

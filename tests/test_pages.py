@@ -19,6 +19,10 @@ checker = load('check_pages')
 
 
 class PublicationTests(unittest.TestCase):
+    def test_format_string_delimiters_are_literal_in_jekyll(self):
+        self.assertEqual("(fstr \"{{ '{{' }}{}\" 1) {{ '{%' }} tag %}",
+                         prepare.escape_liquid('(fstr "{{{}" 1) {% tag %}'))
+
     def test_nested_links_keep_queries_fragments_and_api_labels(self):
         original = '[`API`](../Guide.md?view=1#日本語) [外部](https://example.com/a.md#x)'
         actual = prepare.rewrite_links(original, 'docs/core/README-JP.md', {'docs/Guide.md'})
@@ -44,6 +48,7 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual((destination / 'index.md').read_text(),
                              (destination / 'docs/index-JP.md').read_text())
             self.assertIn('/docs/Manual-JP.html', (destination / 'index.md').read_text())
+            self.assertIn("{{ '{{' }}", (destination / 'docs/Format_Strings-JP.md').read_text())
             self.assertFalse((destination / 'scripts').exists())
             self.assertFalse((destination / '.github').exists())
 

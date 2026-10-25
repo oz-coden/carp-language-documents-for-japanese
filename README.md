@@ -3,7 +3,7 @@
 [Carp(英語)](https://github.com/carp-lang/Carp) プログラミング言語の公式ドキュメントを日本語に翻訳する、非公式のプロジェクトです。
 原著は Carp の開発者・貢献者によるものです。このリポジトリでは、日本語訳の作成、校正、用語と表記の統一を行っています。
 
-[Web 版の日本語ドキュメント](https://oz-coden.github.io/carp-language-documents-for-japanese/) では、ヘルプ索引から各文書を参照できます。
+[Web 版の日本語ドキュメント](https://github.oz-coden.com/carp-language-documents-for-japanese/) では、ヘルプ索引から各文書を参照できます。
 
 日本語訳について気になる点があれば、[問題の報告先](#問題の報告先-reporting-problems) を確認してください。
 
