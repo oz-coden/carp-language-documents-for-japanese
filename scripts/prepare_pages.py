@@ -68,7 +68,7 @@ def stage(root: Path, destination: Path, baseurl: str, url: str) -> int:
     pages = {entry['translation'] for entry in manifest['documents']}
     pages.update({'README.md', 'GLOSSARY.md', 'TRANSLATION.md', 'CONTRIBUTING.md'})
     shutil.copytree(root / '.pages', destination)
-    config = {'baseurl': baseurl.rstrip('/'), 'url': url.rstrip('/'),
+    config = {'baseurl': baseurl.rstrip('/'), 'url': url.rstrip('/').replace('http://', 'https://', 1),
               'upstream_commit': manifest['upstream_commit'],
               'source_repository': 'https://github.com/oz-coden/carp-language-documents-for-japanese'}
     with (destination / '_config.yml').open('a') as stream:
