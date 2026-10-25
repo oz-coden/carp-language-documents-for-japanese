@@ -78,7 +78,7 @@ class Document(HTMLParser):
         return self.source[node.inner_start:node.inner_end]
 
 
-def text(source):
+def text(source, strip=True):
     class Text(HTMLParser):
         def __init__(self):
             super().__init__(convert_charrefs=True)
@@ -88,7 +88,8 @@ def text(source):
             self.parts.append(data)
     parser = Text()
     parser.feed(source)
-    return ''.join(parser.parts).strip()
+    value = ''.join(parser.parts)
+    return value.strip() if strip else value
 
 
 def parse_reference(source):
@@ -107,7 +108,7 @@ def parse_reference(source):
             'signature': text(document.inner(binder.by_class('sig'))),
             'usage': text(document.inner(usage)) if usage else '',
             'documentation': document.inner(binder.by_class('doc')),
-            'code_examples': [textwrap.dedent(text(document.inner(node))).strip('\n')
+            'code_examples': [textwrap.dedent(text(document.inner(node), strip=False)).strip('\n')
                               for node in binder.by_class('doc').all() if node.tag == 'pre'],
         }
     return document.inner(document.root.by_class('module-description')), entries

@@ -1,0 +1,2 @@
+# Preserve compiler-generated reference snapshots byte for byte.
+api/upstream/*.html -text -whitespace

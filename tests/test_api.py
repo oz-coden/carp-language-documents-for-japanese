@@ -13,6 +13,13 @@ spec.loader.exec_module(api)
 
 
 class APIReferenceTests(unittest.TestCase):
+    def test_rendered_examples_normalize_common_indentation_as_a_block(self):
+        page = ('<div class="module-description"></div><section class="binder">'
+                '<h3 id="sample">sample</h3><div class="description">defn</div>'
+                '<p class="sig">()</p><div class="doc"><pre><code>'
+                '    first\n    second\n</code></pre></div></section>')
+        self.assertEqual(['first\nsecond'], api.parse_reference(page)[1]['sample']['code_examples'])
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
