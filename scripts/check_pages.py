@@ -82,8 +82,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
     data = json.loads((ROOT / 'translation-sources.json').read_text())
     sources = {entry['translation'] for entry in data['documents']}
-    sources.update({'README.md', 'GLOSSARY.md', 'TRANSLATION.md', 'CONTRIBUTING.md', 'index.md'})
+    sources.update({'README.md', 'GLOSSARY.md', 'TRANSLATION.md', 'CONTRIBUTING.md', 'index.md', 'api/README.md'})
     expected = {str(Path(source).with_suffix('.html')) for source in sources}
+    api = json.loads((ROOT / 'api/snapshot.json').read_text())
+    expected.add('api/core/index.html')
+    expected.update(f'api/core/{name}.html' for name in api['modules'])
     problems = check(args.destination, args.baseurl, expected)
     if problems:
         raise SystemExit('\n'.join(problems))

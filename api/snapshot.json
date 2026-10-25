@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "carp-lang/Carp",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "generation": {
+    "workflow_run": "https://github.com/oz-coden/carp-language-documents-for-japanese/actions/runs/40210703403",
+    "ghc": "9.6.6",
+    "resolver": "lts-22.44",
+    "command": "stack exec -- carp docs/core/generate_core_docs.carp",
+    "artifact_sha256": "61ba4620b8e523df178baf1b35bcf4a54527b54b2cadd39514c2d1e8d2783f31"
+  },
+  "source_files": {
+    "core/Array.carp": "6d36c2d2ee0e4cb6f97cdc7cdabd1ff7533edf9c",
+    "core/ArrayExt.carp": "a802e284376983d60d6e0ef6a1a2b6f26eb1a540",
+    "core/Sort.carp": "813de0dd3e72eb8a53a1fc097fc230730cd80029",
+    "core/String.carp": "29691bb9fadfbf899ded4dd0e30b49baa43e7407",
+    "docs/core/carp_style.css": "0ed34680f8e0c08dba0d6a30f4a5aba53dc03366",
+    "docs/core/generate_core_docs.carp": "26c20d0f1a032ce4d6b5f6fb3bee0873d112958f",
+    "docs/core/logo.png": "44aa36cd7278d90170ae0c3ade124c13fc1fa42d",
+    "src/ArrayTemplates.hs": "2927c96296b05666840fdd88ba16c677ed2ac5ca",
+    "src/RenderDocs.hs": "092002e51df8cc2541fe8c3b34960e229eb07cd9"
+  },
+  "modules": {
+    "Array": {
+      "snapshot": "api/upstream/Array.html",
+      "snapshot_sha256": "609edacac3cd404838c4ee8fa0029320579e988e1f6e4d48aa54764ab0ea5a6d",
+      "translation": "api/ja/Array.json",
+      "anchor_aliases": {
+        "aset-uninitialized": "aset-uninitialized!"
+      }
+    }
+  },
+  "stylesheet": {
+    "path": "api/assets/carp_style.css",
+    "sha256": "cc1c99b5555f8d0618d3b70f84bdc43496fefc4a4f7f3c7cbc5404f9ab954d99"
+  },
+  "logo_url": "https://raw.githubusercontent.com/carp-lang/Carp/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/logo.png",
+  "english_source_fallbacks": {
+    "StaticArray.html": "core/StaticArray.carp"
+  }
+}

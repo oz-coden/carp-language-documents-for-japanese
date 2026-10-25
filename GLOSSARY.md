@@ -92,6 +92,12 @@
 | indirection | 間接参照 | `Ref` 型と同一視しません |
 | linear pointer type | 線形ポインタ型 | — |
 | lifetime | ライフタイム | — |
+| predicate / predicate function | 述語 / 述語関数 | 初出で原語を併記します。要素が条件を満たすかどうかを判定する関数を指します |
+| accumulator | アキュムレーター | 原語を併記します。畳み込みの途中結果を保持する値を指します |
+| raw pointer | 生ポインタ | 原語を併記します。Carp の `Ref` 型の参照と区別します |
+| borrow checker | 借用チェッカー | 原語を併記します |
+| heapsort | ヒープソート | 原語を併記します |
+| comparison function | 比較関数 | 原語を併記します |
 | linear type / linear type system | 線形型 / 線形型システム | 原語を併記します |
 | linear value / non-linear | 線形値 / 非線形 | 原語を併記します。値の種類と型の種類を文脈で区別します |
 | owner | 所有者 | 原語を併記します。値に関連付けられたメモリを所有する束縛を指します |

@@ -74,6 +74,8 @@ Web 版は既存の Markdown を編集元とし、GitHub Actions で Jekyll と 
 ヘルプ索引をトップページとしても使用します。翻訳本文の修正は元の Markdown に行ってください。
 レイアウトと日本語表示の調整は `.pages/` にあります。生成先の `.pages-source/` と `_site/` はコミットしません。
 
+API 文書は、`scripts/prepare_api.py` が保存済みの固定版 HTML と訳文データから生成します。説明文の翻訳やモジュールの追加は、[API 文書の翻訳・生成方針](api/README.md) に従ってください。
+
 公開前に `scripts/check_pages.py` が、生成された全対象ページ、CSS、ローカルリンク、見出し・脚注への参照を検査します。
 公開先のドメインとパスは GitHub Pages の設定から取得します。リポジトリの Pages の公開元には GitHub Actions を指定してください。
 

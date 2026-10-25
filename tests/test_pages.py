@@ -43,7 +43,7 @@ class PublicationTests(unittest.TestCase):
             sources = list(ROOT.glob('*.md')) + list((ROOT / 'docs').rglob('*.md'))
             before = {path: path.read_bytes() for path in sources}
             destination = Path(temp) / 'pages'
-            self.assertEqual(31, prepare.stage(ROOT, destination, '/test', 'https://example.com'))
+            self.assertEqual(32, prepare.stage(ROOT, destination, '/test', 'https://example.com'))
             self.assertEqual(before, {path: path.read_bytes() for path in sources})
             self.assertEqual((destination / 'index.md').read_text(),
                              (destination / 'docs/index-JP.md').read_text())

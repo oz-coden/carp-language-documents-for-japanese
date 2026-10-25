@@ -1,0 +1,628 @@
+{
+  "module": "Array",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "original": "is the indexable collection data structure.\n\nIts literal uses brackets, so an array of integers would look like this:\n`[1 2 3]`. It provides both a functional and an imperative API, and is one of\nthe core data structures of Carp. It is heap-allocated, for a stack-allocated\nvariant you might want to check out [`StaticArray`](./StaticArray.html).",
+    "source": "core/Array.carp",
+    "line": 21,
+    "translation": "インデックスで要素にアクセスできるコレクション型のデータ構造です。\n\n配列リテラルには角括弧を使います。例えば、整数の配列は `[1 2 3]` と記述します。関数型と命令型の両方の API を備えており、Carp の主要なデータ構造の一つです。ヒープに割り当てられます。スタックに割り当てるものが必要な場合は、[`StaticArray`(英語)](./StaticArray.html) も参照してください。",
+    "source_html_sha256": "8bf551487ef8f7cc98e3320907de804e45a8a3137962b45fb066eb1042c75ef7"
+  },
+  "entries": {
+    "=": {
+      "original": "compares two arrays.",
+      "source": "core/Array.carp",
+      "line": 172,
+      "translation": "2 つの配列を比較します。",
+      "source_html_sha256": "562f985075b2a3b817eedcf14c0af36cece1bc19360f88f69c826f88fc426048"
+    },
+    "all?": {
+      "original": "checks whether all of the elements in `a` match the function `f`.",
+      "source": "core/Array.carp",
+      "line": 85,
+      "translation": "配列 `a` のすべての要素が、関数 `f` の条件を満たすかどうかを調べます。",
+      "source_html_sha256": "8d65fc991d0080b1761590daae2bb4511a649e714c7572342990b2c17d68d051"
+    },
+    "allocate": {
+      "original": "allocates an uninitialized array. You can initialize members using [`aset-uninitialized`](#aset-uninitialized).",
+      "source": "src/ArrayTemplates.hs",
+      "line": 479,
+      "translation": "未初期化の配列を割り当てます。要素の初期化には [`aset-uninitialized`](#aset-uninitialized!) を使用できます。",
+      "notes": [
+        "原文のリンク先 `aset-uninitialized` は固定版には存在しません。要素の初期化を行う `aset-uninitialized!` の項目にリンクしています。"
+      ],
+      "source_html_sha256": "05373927b0a919db68bde0621f249918ffe98dbd4a09d69829ebd4c220888085"
+    },
+    "any?": {
+      "original": "checks whether any of the elements in `a` match the function `f`.",
+      "source": "core/Array.carp",
+      "line": 75,
+      "translation": "配列 `a` のいずれかの要素が、関数 `f` の条件を満たすかどうかを調べます。",
+      "source_html_sha256": "89798b47ebed54eb6b24b4b83f86904571f7296ea327260df02900dc0ebc645d"
+    },
+    "aset": {
+      "original": "sets an array element at the index `n` to a new value.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 344,
+      "translation": "インデックス `n` にある配列の要素を、新しい値に設定します。",
+      "source_html_sha256": "e77adfa9ff226b12b9b4af16d899770f68f388846b653c8c058ee373be814aad"
+    },
+    "aset!": {
+      "original": "sets an array element at the index `n` to a new value in place.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 385,
+      "translation": "インデックス `n` にある配列の要素を、その場で新しい値に設定します。",
+      "source_html_sha256": "d55a57e0c15374d39611d76244b1768a3edabe191368e7170c3d9ca396e0c5a2"
+    },
+    "aset-uninitialized!": {
+      "original": "sets an uninitialized array member. The old member will not be deleted.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 427,
+      "translation": "配列の未初期化の要素に値を設定します。古い要素は削除されません。",
+      "source_html_sha256": "4fc1f3c79c6fee78aad393d1b5a09ac5ab4cdc700d9745845327e5a8e458b7b6"
+    },
+    "aupdate": {
+      "original": "transmutes (i.e. updates) the element at index `i` of an array `a` using the function `f`.",
+      "source": "core/Array.carp",
+      "line": 296,
+      "translation": "関数 `f` を使って、配列 `a` のインデックス `i` にある要素を変換、つまり更新します。",
+      "source_html_sha256": "6cbab33d2225149cd8afb860a9dcebcd86e044da11f623233414592c753509e3"
+    },
+    "aupdate!": {
+      "original": "transmutes (i.e. updates) the element at index `i` of an array `a` using the function `f` in place.",
+      "source": "core/Array.carp",
+      "line": 302,
+      "translation": "関数 `f` を使って、配列 `a` のインデックス `i` にある要素をその場で変換、つまり更新します。",
+      "source_html_sha256": "8b547bdae1686375fcee22aa401947bfc8b512671094f01a8a7ce11c04fab9b3"
+    },
+    "concat": {
+      "original": "returns a new array which is the concatenation of the provided nested array `xs`.",
+      "source": "core/Array.carp",
+      "line": 381,
+      "translation": "入れ子になった配列 `xs` を連結した、新しい配列を返します。",
+      "source_html_sha256": "ade44a01d27e75ab7e2233c99fa935d41f89ef80a4974f3294a2122d8e44a67f"
+    },
+    "contains?": {
+      "original": "checks wether an element exists in the array.",
+      "source": "core/Array.carp",
+      "line": 436,
+      "translation": "配列に要素が存在するかどうかを調べます。",
+      "source_html_sha256": "e9d557065c364e654b5eb4291efd28fd3700688f0544d6b9d078778ebfef64ea"
+    },
+    "copy": {
+      "original": "copies an array.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 580,
+      "translation": "配列をコピーします。",
+      "source_html_sha256": "90e5b51363960b0ef283215f6c3b5f6470ccc45bb0b85f88e8a4e710ae55a867"
+    },
+    "copy-filter": {
+      "original": "filters the elements in an array.\n\nIt will create a copy. If you want to avoid that, consider using [`endo-filter`](#endo-filter) instead.",
+      "source": "core/Array.carp",
+      "line": 431,
+      "translation": "配列の要素を条件で絞り込みます。\n\nコピーを作成します。コピーを避けたい場合は、代わりに [`endo-filter`](#endo-filter) の使用を検討してください。",
+      "source_html_sha256": "744f7fc3f1abed67884cc221a9e4eeafb89cc24cb098df4e9f37ddeb6f50b03e"
+    },
+    "copy-map": {
+      "original": "maps over an array `a` using the function `f`.\n\nThis function copies the array. If you don’t want that, use [`endo-map`](#endo-map).",
+      "source": "core/Array.carp",
+      "line": 332,
+      "translation": "関数 `f` を使って、配列 `a` の各要素を変換します。\n\nこの関数は配列をコピーします。コピーを避けたい場合は、[`endo-map`](#endo-map) を使用してください。",
+      "source_html_sha256": "613ea66613032cb4cc880cd953f6838b1c9c5baeb5d9926582ac7ef46b1564db"
+    },
+    "dedup": {
+      "original": "removes consecutive duplicates from an array. (The elements must support `=`).",
+      "source": "core/Array.carp",
+      "line": 459,
+      "translation": "配列内で連続する重複要素を取り除きます。要素は `=` をサポートしている必要があります。",
+      "source_html_sha256": "4a7e91204a8f4849631c612b53ea10b2b321ad288bf349c711e2540d484ea657"
+    },
+    "delete": {
+      "original": "deletes an array. This function should usually not be called manually.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 513,
+      "translation": "配列を削除します。通常、この関数を手動で呼び出す必要はありません。",
+      "source_html_sha256": "9fca57e125398825825dc74ca22f1a3a34ab088a1d4b8c40d62d40e0153b1f1a"
+    },
+    "drop": {
+      "original": "drops the first `n` elements from an array.",
+      "source": "core/Array.carp",
+      "line": 237,
+      "translation": "配列の先頭から `n` 個の要素を取り除きます。",
+      "source_html_sha256": "97ce0a1f4292bf435f9ee865c743eefe9a1a3ac21e301fa4cc59125e4ea3aeb7"
+    },
+    "drop-while": {
+      "original": "Drops elements from the array `a` as long as the predicate `f` returns true.\nReturns a new array starting from the first element that fails the predicate.\n\nExample:\n```clojure\n(Array.drop-while &(fn [x] (< @x 4)) &[1 2 3 4 5])\n; => [4 5]\n```",
+      "source": "core/Array.carp",
+      "line": 565,
+      "translation": "述語 (predicate) `f` が真を返す間、配列 `a` の先頭から要素を取り除きます。\n述語の条件を最初に満たさなくなった要素から始まる、新しい配列を返します。\n\n例を示します。\n\n```clojure\n(Array.drop-while &(fn [x] (< @x 4)) &[1 2 3 4 5])\n; => [4 5]\n```",
+      "source_html_sha256": "8c3a8c7760a802ab78451ee4520bd934e3a9ee7a51c090b947172cfd313cd660"
+    },
+    "element-count": {
+      "original": "counts the occurrences of element `e` in an array.",
+      "source": "core/Array.carp",
+      "line": 281,
+      "translation": "配列内に要素 `e` が出現する回数を数えます。",
+      "source_html_sha256": "26c65dc103ef763850f868141641ee70f68b0e23ae4efcc7f811af98c23cfba2"
+    },
+    "empty?": {
+      "original": "checks whether the array `a` is empty.",
+      "source": "core/Array.carp",
+      "line": 70,
+      "translation": "配列 `a` が空かどうかを調べます。",
+      "source_html_sha256": "5dd64b3427ed172d4fa19e7641eb054854210c89698e550022aab59a4dcb478b"
+    },
+    "endo-filter": {
+      "original": "filters array members using a function. This function takes ownership.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 79,
+      "translation": "関数を使って、配列の要素を条件で絞り込みます。この関数は所有権を取得します。",
+      "source_html_sha256": "dd21f3f9b89a44e9c25f66a474ec4d966f23eb8585a4f999f137397ffd551efc"
+    },
+    "endo-map": {
+      "original": "applies a function `f` to an array `a`. The type of the elements cannot change.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 32,
+      "translation": "配列 `a` の各要素に関数 `f` を適用します。要素の型は変更できません。",
+      "source_html_sha256": "c9dbf54e04e197fc521e59bd6d3f6c6444d971cfeb1b95be322d06f5e5839dfd"
+    },
+    "endo-scan": {
+      "original": "Like `Array.scan`, but uses the first element of the array as the starting value.\nAlso does not create a new array, but reuses the initial one instead (by taking ownership over `xs`.)\n\nFor example, an endo-scan using `Int.+` over the array [1 1 1 1 1] will return [1 2 3 4 5]",
+      "source": "core/Array.carp",
+      "line": 59,
+      "translation": "`Array.scan` と同様ですが、配列の最初の要素を開始値として使用します。\nまた、新しい配列を作らず、`xs` の所有権を取得して、元の配列を再利用します。\n\n例えば、配列 `[1 1 1 1 1]` に `Int.+` を使って endo-scan を行うと、`[1 2 3 4 5]` を返します。",
+      "source_html_sha256": "50fde3d3d3dc8c8e4154b1482b0c3b6e3d9886961600e4f71ac7e9220d330eb5"
+    },
+    "enumerated": {
+      "original": "creates a new array of `Pair`s where the first position is the index and the second position is the element from the original array `xs`.",
+      "source": "core/Array.carp",
+      "line": 398,
+      "translation": "`Pair` の配列を作成します。各 `Pair` の第 1 要素はインデックス、第 2 要素は元の配列 `xs` の要素です。",
+      "source_html_sha256": "cd0ffefc3050689d1d817d2a7ae556741725bd4528560ddc105e542c12dc9103"
+    },
+    "find": {
+      "original": "finds an element in `a` that matches the function `f` and wraps it in a `Just`.\n\nIf it doesn’t find an element, `Nothing` will be returned.",
+      "source": "core/Array.carp",
+      "line": 95,
+      "translation": "配列 `a` から、関数 `f` の条件を満たす要素を探し、`Just` に包んで返します。\n\n要素が見つからなければ、`Nothing` を返します。",
+      "source_html_sha256": "718bcdbc8b59ec6665cde366a072e8decd617c78f137f916dbc99e6f59532f33"
+    },
+    "find-index": {
+      "original": "finds the index of the first element in `a` that matches the function `f` and wraps it in a `Just`.\n\nIf it doesn’t find an index, `Nothing` will be returned.",
+      "source": "core/Array.carp",
+      "line": 107,
+      "translation": "配列 `a` から、関数 `f` の条件を満たす最初の要素のインデックスを探し、`Just` に包んで返します。\n\nインデックスが見つからなければ、`Nothing` を返します。",
+      "source_html_sha256": "62630a8a51ffa408ac964ef39ec1cef8414dd898c40d8f987076425c7be7acb7"
+    },
+    "find-last": {
+      "original": "finds the last element in `a` that matches the function `f` and wraps it in a `Just`.\n\nIf it doesn’t find an element, `Nothing` will be returned.",
+      "source": "core/Array.carp",
+      "line": 119,
+      "translation": "配列 `a` から、関数 `f` の条件を満たす最後の要素を探し、`Just` に包んで返します。\n\n要素が見つからなければ、`Nothing` を返します。",
+      "source_html_sha256": "df40e29372bca8f49193ed2e14a9c8152f39b7e9ff971508a380e863199526f7"
+    },
+    "find-last-index": {
+      "original": "finds the index of the last element in `a` that matches the function `f` and wraps it in a `Just`.\n\nIf it doesn’t find an index, `Nothing` will be returned.",
+      "source": "core/Array.carp",
+      "line": 131,
+      "translation": "配列 `a` から、関数 `f` の条件を満たす最後の要素のインデックスを探し、`Just` に包んで返します。\n\nインデックスが見つからなければ、`Nothing` を返します。",
+      "source_html_sha256": "47248f3a31d42735cb85833e28c8965bfadf4a5e8a6763673d13a27664ed0401"
+    },
+    "first": {
+      "original": "takes the first element of an array and returns a `Just`.\n\nReturns `Nothing` if the array is empty.",
+      "source": "core/Array.carp",
+      "line": 149,
+      "translation": "配列の最初の要素を取り出し、`Just` に包んで返します。\n\n配列が空であれば、`Nothing` を返します。",
+      "source_html_sha256": "aabd58462ce284099acdb7414d02fbbf78c68984687d31b6ac24f995e81bfc2a"
+    },
+    "flat-map": {
+      "original": "maps over an array `a` using a function `f` that returns an array,\nthen concatenates all results into a single flat array.\n\nExample:\n```\n(Array.flat-map &(fn [x] [@x @x]) &[1 2 3])\n; => [1 1 2 2 3 3]\n```",
+      "source": "core/Array.carp",
+      "line": 579,
+      "translation": "配列を返す関数 `f` を使って、配列 `a` の各要素を変換し、すべての結果を連結して単一の平坦な配列にします。\n\n例を示します。\n\n```\n(Array.flat-map &(fn [x] [@x @x]) &[1 2 3])\n; => [1 1 2 2 3 3]\n```",
+      "source_html_sha256": "b3685a4d5ee2a5338c98c59f1ba11317e6538b36ddb3ffc191b7e3c0a1234983"
+    },
+    "from-static": {
+      "original": "Turns a `StaticArray` into an `Array`. Copies elements.",
+      "source": "core/Array.carp",
+      "line": 518,
+      "translation": "`StaticArray` を `Array` に変換します。要素をコピーします。",
+      "source_html_sha256": "bb4cf3601fb5e1d517ade5cd10419935487d9e438f6b59f1aae5fcb04196d606"
+    },
+    "index-of": {
+      "original": "gets the index of element `e` in an array and wraps it on a `Just`.\n\nIf the element is not found, returns `Nothing`",
+      "source": "core/Array.carp",
+      "line": 269,
+      "translation": "配列内の要素 `e` のインデックスを取得し、`Just` に包んで返します。\n\n要素が見つからなければ、`Nothing` を返します。",
+      "source_html_sha256": "e6af173cd17da11d0902ff2d9bc86d05ce66ac10aa82c5dcf0b792d72b212b71"
+    },
+    "interleave": {
+      "original": "interleaves two arrays. The resulting array will be as long as twice the length of the shortest input array.",
+      "source": "core/Array.carp",
+      "line": 446,
+      "translation": "2 つの配列の要素を交互に並べます。結果の配列の長さは、入力配列のうち短い方の長さの 2 倍になります。",
+      "source_html_sha256": "61bcfa1596578e33e20644b5e0579ccc7c147d0e73f29a53f5d0f3538c6a798a"
+    },
+    "intersperse": {
+      "original": "creates a new array with the separator `sep` placed between each element of `xs`.\n\nExample:\n```\n(Array.intersperse &[1 2 3] 0)\n; => [1 0 2 0 3]\n```",
+      "source": "core/Array.carp",
+      "line": 611,
+      "translation": "`xs` の各要素の間に区切りの値 `sep` を挿入した、新しい配列を作成します。\n\n例を示します。\n\n```\n(Array.intersperse &[1 2 3] 0)\n; => [1 0 2 0 3]\n```",
+      "source_html_sha256": "676823ded6c2e383245954ea3abd5daf8c661f7ccbdebf4ea32a360b7935e458"
+    },
+    "last": {
+      "original": "takes the last element of an array and returns a `Just`.\n\nReturns `Nothing` if the array is empty.",
+      "source": "core/Array.carp",
+      "line": 164,
+      "translation": "配列の最後の要素を取り出し、`Just` に包んで返します。\n\n配列が空であれば、`Nothing` を返します。",
+      "source_html_sha256": "ddc2092d717736d8fa66aa1795b772682b44dcd41f5cb360fad809a5579b507d"
+    },
+    "length": {
+      "original": "gets the length of the array.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 461,
+      "translation": "配列の長さを取得します。",
+      "source_html_sha256": "d43fde7d16be563f08634e1f3dee2a1b2ccbca9a604c994ae36bdaad2d6a5b3e"
+    },
+    "map-reduce": {
+      "original": "reduces an array `a` by invoking the function `f` on each\nelement, while keeping an accumulator and a list.\n\nReturns a `Pair` where the first element is the mapped array and the second one\nis the final accumulator.\n\nThe function `f` receives two arguments: the first one is the accumulator, and\nthe second one is the element. `f` must return `(Pair accumulator result)`.\n\nExample:\n```\n(map-reduce &(fn [acc x] (Pair.init (+ @x @acc) (* @x 2))) 0 &[1 2 3])\n; => (Pair 6 [2 4 6])\n```",
+      "source": "core/Array.carp",
+      "line": 525,
+      "translation": "アキュムレーター (accumulator) とリストを保持しながら、配列 `a` の各要素に関数 `f` を適用して畳み込みます。\n\n第 1 要素が変換結果の配列、第 2 要素が最終的なアキュムレーターである `Pair` を返します。\n\n関数 `f` は、第 1 実引数にアキュムレーター、第 2 実引数に要素を受け取ります。`f` は `(Pair accumulator result)` を返す必要があります。\n\n例を示します。\n\n```\n(map-reduce &(fn [acc x] (Pair.init (+ @x @acc) (* @x 2))) 0 &[1 2 3])\n; => (Pair 6 [2 4 6])\n```",
+      "source_html_sha256": "a4d2e63548fa382f170dc8edc4d972f12c9cdcc9b1f632d6fef6c2804a7ca467"
+    },
+    "maximum": {
+      "original": "gets the maximum in an array (elements must support `<`) and wraps it in a `Just`.\n\nIf the array is empty, it returns `Nothing`.",
+      "source": "core/Array.carp",
+      "line": 185,
+      "translation": "配列内の最大値を取得し、`Just` に包んで返します。要素は `<` をサポートしている必要があります。\n\n配列が空であれば、`Nothing` を返します。",
+      "source_html_sha256": "6f6a0822bde1aa9ec8e516225b6f2424748fc998b67d1e8619957851923ef52e"
+    },
+    "minimum": {
+      "original": "gets the minimum in an array (elements must support `>`) and wraps it in a `Just`.\n\nIf the array is empty, returns `Nothing`",
+      "source": "core/Array.carp",
+      "line": 199,
+      "translation": "配列内の最小値を取得し、`Just` に包んで返します。要素は `>` をサポートしている必要があります。\n\n配列が空であれば、`Nothing` を返します。",
+      "source_html_sha256": "c5423033697cd6326ed2a1f96b589b0d772112b2d795f3d4587d95f685bcbe91"
+    },
+    "nth": {
+      "original": "gets a reference to the `n`th element from an array `arr` wrapped on a `Maybe`.\n\nIf the `index` is out of bounds, return `Maybe.Nothing`",
+      "source": "core/Array.carp",
+      "line": 408,
+      "translation": "配列 `arr` の `n` 番目の要素への参照を取得し、`Maybe` に包んで返します。\n\n`index` が範囲外であれば、`Maybe.Nothing` を返します。",
+      "source_html_sha256": "ab6abd2fb124764793afe4555767e342eb1442fb8165eff61ca56ba25f572893"
+    },
+    "partition": {
+      "original": "Partitions an array `arr` into an array of arrays of length `n`\n    sequentially filled with the `arr`'s original values.\n\n    This function will fill partitions until `arr` is exhuasted.\n\n    If `n` is greater than or equal to the length of `arr`, the result of this\n    function is an array containing a single array of length `n`.\n\n    For example:\n\n    ```clojure\n    (Array.partition &[1 2 3 4] 2)\n    => [[1 2] [3 4]]\n    (Array.partition &[1 2 3 4] 3)\n    => [[1 2 3] [4]]\n    (Array.partition &[1 2 3 4] 6)\n    => [[1 2 3 4]]\n    ```",
+      "source": "core/Array.carp",
+      "line": 483,
+      "translation": "配列 `arr` を、元の値を順に詰めた長さ `n` の配列に分割し、それらを配列として返します。\n\n`arr` の要素をすべて使い切るまで、分割先の配列に値を詰めます。\n\n`n` が `arr` の長さ以上であれば、長さ `n` の配列を 1 つ含む配列を返します。\n\n例を示します。\n\n```clojure\n    (Array.partition &[1 2 3 4] 2)\n    => [[1 2] [3 4]]\n    (Array.partition &[1 2 3 4] 3)\n    => [[1 2 3] [4]]\n    (Array.partition &[1 2 3 4] 6)\n    => [[1 2 3 4]]\n```",
+      "notes": [
+        "原文は、`n` が入力配列の長さ以上の場合、内側の配列の長さが `n` になると説明しています。しかし、掲載例では `n = 6` に対して長さ 4 の配列を返しています。固定版の実装も、終端インデックスを入力配列の長さに制限しています。この注記はソース照合に基づきます。"
+      ],
+      "source_html_sha256": "8e7369ff32d92c1c0e3de2e37ad22654be6acf166058217b87aadf8d9042b95e"
+    },
+    "pop-back": {
+      "original": "removes the last element of an array and returns the new array.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 211,
+      "translation": "配列の最後の要素を取り除き、新しい配列を返します。",
+      "source_html_sha256": "508660cb5d2411381b4f9601d87489b634ff20ff5aadb3d9344efa1975a835a1"
+    },
+    "pop-back!": {
+      "original": "removes an element `value` from the end of an array `a` in-place and returns it.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 246,
+      "translation": "配列 `a` の末尾から要素 `value` をその場で取り除き、その要素を返します。",
+      "source_html_sha256": "041dd058196886bbbfd29a52c152f015b6e05bc88f5489fa8edd3e7bbd8e2eae"
+    },
+    "predicate-count": {
+      "original": "counts the number of elements satisfying the predicate function `pred` in an array.",
+      "source": "core/Array.carp",
+      "line": 288,
+      "translation": "配列内で述語関数 (predicate function) `pred` の条件を満たす要素の数を数えます。",
+      "source_html_sha256": "f1fa765d457b18c925e02110dea6457416096de4b612c6f3d80f22d1292a0c00"
+    },
+    "prefix": {
+      "original": "gets a prefix array to `end-index`.",
+      "source": "core/Array.carp",
+      "line": 225,
+      "translation": "`end-index` までの、配列の先頭部分を取得します。",
+      "source_html_sha256": "a50a3b5540c6aaa32a72ae1333bf39f633a93b71db093289276b4ac5ce9e4dac"
+    },
+    "prn": {
+      "original": "",
+      "source": "core/String.carp",
+      "line": 487,
+      "translation": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00"
+    },
+    "push-back": {
+      "original": "adds an element `value` to the end of an array `a`.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 126,
+      "translation": "配列 `a` の末尾に要素 `value` を追加します。",
+      "source_html_sha256": "734b0ca10333236bffdf145d28c84a9f62880ab5fd4e3858798e95a239ba5bd2"
+    },
+    "push-back!": {
+      "original": "adds an element `value` to the end of an array `a` in-place.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 170,
+      "translation": "配列 `a` の末尾に要素 `value` をその場で追加します。",
+      "source_html_sha256": "e8e78e478c81666302323187a030295688a9ed96d96f3b41adb7414390b12ed8"
+    },
+    "range": {
+      "original": "creates an array from `start` to `end` with `step` between them\n(the elements must support `<`, `<=`, `>=`, and `to-int`).\n\nIt returns a `Result.Success` if the input was right, and a `Result.Error` if\nthe input given was wrong, containing an error message.",
+      "source": "core/ArrayExt.carp",
+      "line": 3,
+      "translation": "`start` から `end` まで、`step` の間隔で要素を並べた配列を作成します。要素は `<`、`<=`、`>=`、`to-int` をサポートしている必要があります。\n\n入力が適切であれば `Result.Success` を返します。入力が不適切であれば、エラーメッセージを含む `Result.Error` を返します。",
+      "source_html_sha256": "3919beec6bdbf2e133ab296c03137c9901222fb74f8a72f020b6321f8af4a9a2"
+    },
+    "range-or-default": {
+      "original": "is a version of [`range`](#range) that returns an empty\narray on failure.",
+      "source": "core/ArrayExt.carp",
+      "line": 27,
+      "translation": "失敗時に空の配列を返す、[`range`](#range) の別形式です。",
+      "source_html_sha256": "7fda2e6ebf9bd69030192ed479f2251113be1514bf941a81b250e0bbd6dba744"
+    },
+    "raw": {
+      "original": "returns an array `a` as a raw pointer—useful for interacting with C.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 307,
+      "translation": "配列 `a` を生ポインタ (raw pointer) として返します。C との相互運用に役立ちます。",
+      "source_html_sha256": "34976b6ece49b5a16a98f8e4813aa6777db1b2d356df888a3fd11f8185324071"
+    },
+    "reduce": {
+      "original": "will reduce an array `xs` into a single value using a function `f` that takes the reduction thus far and the next value. The initial reduction value is `x`.\n\nAs an example, consider this definition of `sum` based on `reduce`:\n\n```\n(defn sum [x]\n  (reduce &(fn [x y] (+ x @y)) 0 x))\n```\n\nIt will sum the previous sum with each new value, starting at `0`.",
+      "source": "core/Array.carp",
+      "line": 29,
+      "translation": "これまでの畳み込み結果と次の値を受け取る関数 `f` を使い、配列 `xs` を単一の値に畳み込みます。畳み込み結果の初期値は `x` です。\n\n例として、`reduce` を使った次の `sum` の定義を考えます。\n\n```\n(defn sum [x]\n  (reduce &(fn [x y] (+ x @y)) 0 x))\n```\n`0` から開始し、これまでの合計に次の値を加えていきます。",
+      "source_html_sha256": "15b6512480be17aa8a34bca52568592443e2192d54d7f928fbc279443bc4d04b"
+    },
+    "remove": {
+      "original": "removes all occurrences of the element `el` in the array `arr`, in place.",
+      "source": "core/Array.carp",
+      "line": 416,
+      "translation": "配列 `arr` から、要素 `el` と一致するすべての要素をその場で取り除きます。",
+      "source_html_sha256": "0bcd39122a3728ea2f9c1d3c9055e1e58a10879b35776b970db7a1784695db8f"
+    },
+    "remove-nth": {
+      "original": "removes element at index `idx` from the array `arr`.",
+      "source": "core/Array.carp",
+      "line": 421,
+      "translation": "配列 `arr` から、インデックス `idx` の要素を取り除きます。",
+      "source_html_sha256": "fc319fdd6fe0fadbbe41958a8a2bb5bfe16f25951823b0d921cbceceb0a63f4e"
+    },
+    "repeat": {
+      "original": "repeats the function `f` `n` times and stores the results in an array.",
+      "source": "core/Array.carp",
+      "line": 312,
+      "translation": "関数 `f` を `n` 回呼び出し、その結果を配列に格納します。",
+      "source_html_sha256": "6eb0bd8dd272e0bedd68419308ec25f94693a31eaddffa9469b614fb1786ed77"
+    },
+    "repeat-indexed": {
+      "original": "repeats function `f` `n` times and stores the results in an array.\n\nThis is similar to [`repeat`](#repeat), but the function `f` will be supplied with the index of the element.",
+      "source": "core/Array.carp",
+      "line": 318,
+      "translation": "関数 `f` を `n` 回呼び出し、その結果を配列に格納します。\n\n[`repeat`](#repeat) と似ていますが、関数 `f` は整数のインデックスを実引数として受け取ります。",
+      "source_html_sha256": "1bac3582ceb8be55dcbfbfc429b6454b22a519d305ac03dab514e4275d7c9e56"
+    },
+    "replicate": {
+      "original": "repeats element `e` `n` times and stores the results in an array.",
+      "source": "core/Array.carp",
+      "line": 326,
+      "translation": "要素 `e` を `n` 回繰り返し、配列に格納します。",
+      "source_html_sha256": "722aa95a6a52e187bbcbb97fe278352ff244ad177a9b5f8a0357d4093a23d1b6"
+    },
+    "rest": {
+      "original": "gets all but the first element from the array.",
+      "source": "core/Array.carp",
+      "line": 241,
+      "translation": "配列から、最初の要素を除いたすべての要素を取得します。",
+      "source_html_sha256": "a2f0613fdb75c7853808123faca3cd4084ccea9c4feedb39b1951cb65ce37007"
+    },
+    "reverse": {
+      "original": "reverses an array.",
+      "source": "core/Array.carp",
+      "line": 258,
+      "translation": "配列の要素の順序を反転します。",
+      "source_html_sha256": "cbd68c1439983e7ba73c26433314f19e2d333d4bef046524300a5b5aa05c2bfe"
+    },
+    "scan": {
+      "original": "Similar to `Array.reduce`, but instead returns an array with the starting element,\nand then all intermediate values.\n\nFor example, a scan using `Int.+` over the array [1 1 1 1 1] (starting at 0) will return [0 1 2 3 4 5].",
+      "source": "core/Array.carp",
+      "line": 46,
+      "translation": "`Array.reduce` と似ていますが、開始要素と、それに続く途中の計算結果をすべて含む配列を返します。\n\n例えば、配列 `[1 1 1 1 1]` に `Int.+` を使い、`0` を開始値として scan を行うと、`[0 1 2 3 4 5]` を返します。",
+      "source_html_sha256": "5ee012fae8b719afd53ca24e4427d881c277dc99cbee99b0c69916fca6f80171"
+    },
+    "slice": {
+      "original": "gets a subarray from `start-index` to `end-index`.",
+      "source": "core/Array.carp",
+      "line": 217,
+      "translation": "`start-index` から `end-index` までの部分配列を取得します。",
+      "source_html_sha256": "ef8581e884869df44b2ae81b398e7dbc7b6fea772fb7c73ec7c5360cede6fcf4"
+    },
+    "sort": {
+      "original": "Perform an in-place heapsort of a given owned array.",
+      "source": "core/Sort.carp",
+      "line": 10,
+      "translation": "所有権を取得した配列を、その場でヒープソート (heapsort) します。",
+      "source_html_sha256": "cbcc4ccc38792ea1ddcc18ee1409515560af560ec05ef3c170e0a0adee88dd51"
+    },
+    "sort!": {
+      "original": "Perform an in-place heapsort of a given array.",
+      "source": "core/Sort.carp",
+      "line": 2,
+      "translation": "配列をその場でヒープソートします。",
+      "source_html_sha256": "45cc6f667a7aedf362b2490ce5e9eac1dcc22e41a604f0279dad225d376f8830"
+    },
+    "sort-by": {
+      "original": "Perform an in-place heapsort of a given owned array by a comparison function.",
+      "source": "core/Sort.carp",
+      "line": 22,
+      "translation": "比較関数 (comparison function) を使って、所有権を取得した配列をその場でヒープソートします。",
+      "source_html_sha256": "42818971d31b4773e1a85ab69b0d8b82133785dd9750e41a0119de6d24c88d98"
+    },
+    "sort-by!": {
+      "original": "Perform an in-place heapsort of a given array by a comparison function.",
+      "source": "core/Sort.carp",
+      "line": 14,
+      "translation": "比較関数を使って、配列をその場でヒープソートします。",
+      "source_html_sha256": "4e4fcfa53a5496ac1d10257926099a2799d2724fda52c5bf2bcd0bfb7d3511da"
+    },
+    "sorted": {
+      "original": "Perform a heapsort in a new copy of given array.",
+      "source": "core/Sort.carp",
+      "line": 6,
+      "translation": "配列の新しいコピーを作成し、ヒープソートします。",
+      "source_html_sha256": "f4d43ffb805df55f3981c091b6904b84615a754efeeb20c83708d20ed14bcbd2"
+    },
+    "sorted-by": {
+      "original": "Perform a heapsort in a new copy of given array by a comparison function.",
+      "source": "core/Sort.carp",
+      "line": 18,
+      "translation": "配列の新しいコピーを作成し、比較関数を使ってヒープソートします。",
+      "source_html_sha256": "3ae22287bed67235ff94fa9b9db6998067a9a1e5c8bfe8c7e8bb9d2ba26b39d2"
+    },
+    "split-by-predicate": {
+      "original": "splits an array `a` into two arrays: those that satisfy the predicate `f` and those that do not.\nReturns a `Pair` of arrays.",
+      "source": "core/Array.carp",
+      "line": 631,
+      "translation": "配列 `a` を、述語 `f` の条件を満たす要素の配列と、満たさない要素の配列に分けます。\n配列の組を `Pair` として返します。",
+      "source_html_sha256": "a25605610d923df9f39f6de3e32ee6cba0d7d33c0cb802370e6534fef4fd9519"
+    },
+    "str": {
+      "original": "converts an array to a string.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 663,
+      "translation": "配列を文字列に変換します。",
+      "source_html_sha256": "f565af5a23ab043925cfe7cc9afce9205d3edb520e16b71864ec51612be3b9bb"
+    },
+    "suffix": {
+      "original": "gets a suffix array from `start-index`.",
+      "source": "core/Array.carp",
+      "line": 229,
+      "translation": "`start-index` から始まる、配列の末尾部分を取得します。",
+      "source_html_sha256": "b120da0ebcf4cdfeccd661a0d7db8d0c18930f2c4393751a9ef6a11bbbd9c698"
+    },
+    "sum": {
+      "original": "sums an array (elements must support `+` and `zero`).",
+      "source": "core/Array.carp",
+      "line": 213,
+      "translation": "配列の要素の合計を求めます。要素は `+` と `zero` をサポートしている必要があります。",
+      "source_html_sha256": "2d7616bcc07d340073738db16f83aec30cce24687fa276e8d24a44a3f0738e1e"
+    },
+    "sum-length": {
+      "original": "returns the sum of lengths from a nested array `xs`.",
+      "source": "core/Array.carp",
+      "line": 369,
+      "translation": "入れ子になった配列 `xs` の長さの合計を返します。",
+      "source_html_sha256": "bd18a3e676f003744ea41eaf584c7f9f7758c7e6ed76d5524d135d77a077de60"
+    },
+    "swap": {
+      "original": "swaps the indices `i` and `j` of an array `a`.",
+      "source": "core/Array.carp",
+      "line": 306,
+      "translation": "配列 `a` のインデックス `i` と `j` にある要素を入れ替えます。",
+      "source_html_sha256": "fa48e7774047209e57b2dc81a0e194ed278f5c14399189d5a025dd830e37fc80"
+    },
+    "swap!": {
+      "original": "swaps the indices `i` and `j` of an array `a` in place.",
+      "source": "core/Array.carp",
+      "line": 250,
+      "translation": "配列 `a` のインデックス `i` と `j` にある要素を、その場で入れ替えます。",
+      "source_html_sha256": "e8553ce370a8859e6e08eee601daf6f59c7e7ae0330c89de4d8acd4087be44a1"
+    },
+    "take": {
+      "original": "takes the first `n` elements from an array.",
+      "source": "core/Array.carp",
+      "line": 233,
+      "translation": "配列の先頭から `n` 個の要素を取得します。",
+      "source_html_sha256": "916e0a6f8053d03478a31b14fb028321b27d9e1441c6af34a4876625583ba965"
+    },
+    "take-while": {
+      "original": "Takes elements from the array `a` as long as the predicate `f` returns true.\nReturns a new array of all leading elements that satisfy the predicate.\n\nExample:\n```clojure\n(Array.take-while &(fn [x] (< @x 4)) &[1 2 3 4 5])\n; => [1 2 3]\n```",
+      "source": "core/Array.carp",
+      "line": 548,
+      "translation": "述語 `f` が真を返す間、配列 `a` の先頭から要素を取得します。\n述語の条件を満たす先頭の要素すべてを含む、新しい配列を返します。\n\n例を示します。\n\n```clojure\n(Array.take-while &(fn [x] (< @x 4)) &[1 2 3 4 5])\n; => [1 2 3]\n```",
+      "source_html_sha256": "f1e308b12aac9a8bbcd977aa28ea65c2e8e3360fda90698821d46832d9803dd7"
+    },
+    "unique": {
+      "original": "removes all duplicates from an array. (The elements must support `=`).",
+      "source": "core/Array.carp",
+      "line": 472,
+      "translation": "配列内の重複要素をすべて取り除きます。要素は `=` をサポートしている必要があります。",
+      "source_html_sha256": "5b557beabf9f8c96e0cc269a15bd5a22c16af1c31c5e442c56485470ca206c69"
+    },
+    "unreduce": {
+      "original": "creates an array by producing values using `step` until they\nno longer satisfy `test`. The initial value is `start`.\n\nExample:\n```\n; if we didn’t have Array.range, we could define it like this:\n(defn range [start end step]\n  (unreduce start &(fn [x] (< x (+ step end))) &(fn [x] (+ x step)))\n)\n```",
+      "source": "core/Array.carp",
+      "line": 341,
+      "translation": "`start` を初期値とし、`step` で値を生成して、`test` の条件を満たさなくなるまで配列を作成します。\n\n例を示します。\n\n```\n; if we didn’t have Array.range, we could define it like this:\n(defn range [start end step]\n  (unreduce start &(fn [x] (< x (+ step end))) &(fn [x] (+ x step)))\n)\n```",
+      "source_html_sha256": "83df3d79c838007c8affe9bd13481ba79f7adb9d84761cf8f0b3cd919fb25559"
+    },
+    "unsafe-first": {
+      "original": "takes the first element of an array.\n\nGenerates a runtime error if the array is empty.",
+      "source": "core/Array.carp",
+      "line": 143,
+      "translation": "配列の最初の要素を取得します。\n\n配列が空であれば、実行時エラーが発生します。",
+      "source_html_sha256": "5449e27fb340f8be48a65498b1a8066349b77d97e605c67058acc4b979e546cf"
+    },
+    "unsafe-last": {
+      "original": "takes the last element of an array.\n\nGenerates a runtime error if the array is empty.",
+      "source": "core/Array.carp",
+      "line": 157,
+      "translation": "配列の最後の要素を取得します。\n\n配列が空であれば、実行時エラーが発生します。",
+      "source_html_sha256": "5c5bdabc6deffb3d3ae31641812244ee2360c6c4ea6fac0767f8f56407dbc9c6"
+    },
+    "unsafe-nth": {
+      "original": "gets a reference to the `n`th element from an array `a`.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 285,
+      "translation": "配列 `a` の `n` 番目の要素への参照を取得します。",
+      "source_html_sha256": "5acb69b4a48193b4e7c5f591ee1b388b308fd269e4f463034f37dfc131766d40"
+    },
+    "unsafe-nth-value": {
+      "original": "returns the value at index `i` of an array `a` (just like [unsafe-nth](#unsafe-nth)) but does not take its reference, and does *not* copy the value. Should only be used for optimizations and when you know what you're doing, circumvents the borrow checker!",
+      "source": "core/Array.carp",
+      "line": 245,
+      "translation": "配列 `a` のインデックス `i` にある値を、[unsafe-nth](#unsafe-nth) と同様に取得します。ただし、参照を取得せず、値のコピーも**行いません**。借用チェッカー (borrow checker) を迂回するため、十分に理解したうえで、最適化が必要な場合にのみ使用してください。",
+      "source_html_sha256": "7b33d89fafe01bd7b09b5edf9bbbdd39272e9b3b4f24b843f3dde5616f44f179"
+    },
+    "unsafe-raw": {
+      "original": "returns an array `a` as a raw pointer—useful for interacting with C.",
+      "source": "src/ArrayTemplates.hs",
+      "line": 320,
+      "translation": "配列 `a` を生ポインタとして返します。C との相互運用に役立ちます。",
+      "source_html_sha256": "34976b6ece49b5a16a98f8e4813aa6777db1b2d356df888a3fd11f8185324071"
+    },
+    "windows": {
+      "original": "returns an array of all contiguous subarrays of length `n` from array `xs`.\n\nIf `n` is greater than the length of `xs`, an empty array is returned.\n\nExample:\n```\n(Array.windows &[1 2 3 4 5] 2)\n; => [[1 2] [2 3] [3 4] [4 5]]\n(Array.windows &[1 2 3 4 5] 3)\n; => [[1 2 3] [2 3 4] [3 4 5]]\n```",
+      "source": "core/Array.carp",
+      "line": 591,
+      "translation": "配列 `xs` から、長さ `n` の連続する部分配列をすべて取り出し、それらを配列として返します。\n\n`n` が `xs` の長さより大きければ、空の配列を返します。\n\n例を示します。\n\n```\n(Array.windows &[1 2 3 4 5] 2)\n; => [[1 2] [2 3] [3 4] [4 5]]\n(Array.windows &[1 2 3 4 5] 3)\n; => [[1 2 3] [2 3 4] [3 4 5]]\n```",
+      "source_html_sha256": "8b7a94d263193c4638fd6b1b3d2b976fc2ee0c0ac413094d58ffa0b8626b6db1"
+    },
+    "zero": {
+      "original": "returns the empty array.",
+      "source": "core/Array.carp",
+      "line": 377,
+      "translation": "空の配列を返します。",
+      "source_html_sha256": "0db2c09c1365b786c8fa97950f038b3e3f19c817746de50e322ebc2e9f6c36aa"
+    },
+    "zip": {
+      "original": "maps over two arrays using a function `f` that takes two arguments. It will produces a new array with the length of the shorter input.\n\nThe trailing elements of the longer array will be discarded.",
+      "source": "core/Array.carp",
+      "line": 359,
+      "translation": "2 つの実引数を受け取る関数 `f` を使って、2 つの配列の要素を対応付けて変換します。入力配列のうち短い方と同じ長さの、新しい配列を作成します。\n\n長い方の配列の末尾に余った要素は破棄されます。",
+      "source_html_sha256": "98f228027ce793da65fd5b4f7b3ae7e62eeae050d749e8b51ee832edaf857056"
+    },
+    "zip-n": {
+      "original": "takes a function `f` and any number of arrays, and zips them into a new array.\nThe length of the resulting array is the length of the shortest input array.",
+      "source": "core/Array.carp",
+      "line": 644,
+      "translation": "関数 `f` と任意の個数の配列を受け取り、要素を対応付けて新しい配列にまとめます。\n結果の配列の長さは、入力配列のうち最も短い配列の長さになります。",
+      "source_html_sha256": "d9f13589df065e05d5729f77b09c50c31469dad5f4975caadc5600fd26ff8a0d"
+    }
+  }
+}

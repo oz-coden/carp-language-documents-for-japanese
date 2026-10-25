@@ -103,6 +103,12 @@ Carp のコードを実行する手順は、[コードの実行方法](docs/HowT
 
 未翻訳の参考文書へのリンクは省略せず、`文書名(英語)` と明記して英語原文へ案内します。
 
+## 標準ライブラリ API (Standard Library API)
+
+[日本語 API リファレンス](https://github.oz-coden.com/carp-language-documents-for-japanese/api/core/index.html) も公開しています。
+現在は `Array` の概要と、説明文のある 86 項目を翻訳済みです。原文に説明文がない `prn` を含め、全 87 項目の型と使用形式を掲載しています。
+API 文書も同じ固定コミットを対象とし、[API 文書の翻訳・生成方針](api/README.md) に従って管理します。
+
 ## 方針と貢献 (Policy and Contributions)
 
 - [翻訳方針](TRANSLATION.md): 翻訳範囲、文体、表記、リンク、訳注の規則です。

@@ -66,7 +66,7 @@ def stage(root: Path, destination: Path, baseurl: str, url: str) -> int:
         raise ValueError(f'destination already exists: {destination}')
     manifest = json.loads((root / 'translation-sources.json').read_text())
     pages = {entry['translation'] for entry in manifest['documents']}
-    pages.update({'README.md', 'GLOSSARY.md', 'TRANSLATION.md', 'CONTRIBUTING.md'})
+    pages.update({'README.md', 'GLOSSARY.md', 'TRANSLATION.md', 'CONTRIBUTING.md', 'api/README.md'})
     shutil.copytree(root / '.pages', destination)
     config = {'baseurl': baseurl.rstrip('/'), 'url': url.rstrip('/').replace('http://', 'https://', 1),
               'upstream_commit': manifest['upstream_commit'],
