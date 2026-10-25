@@ -1,0 +1,52 @@
+name: Generate pinned API snapshot
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/api-snapshot.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: carp-lang/Carp
+          ref: 9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5
+          persist-credentials: false
+      - name: Set up the snapshot compiler
+        uses: haskell-actions/setup@v2
+        with:
+          ghc-version: '9.6.6'
+          enable-stack: true
+          cabal-update: false
+      - name: Cache Haskell dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.stack
+            .stack-work
+          key: carp-docs-${{ runner.os }}-9f6fa9c1-lts-22.44
+      - name: Build the unchanged pinned source
+        run: stack build --system-ghc --fast
+      - name: Generate the standard library reference
+        env:
+          CARP_DIR: ${{ github.workspace }}
+        run: stack exec -- carp docs/core/generate_core_docs.carp
+      - name: Record provenance
+        run: |
+          git rev-parse HEAD > docs/core/upstream-commit.txt
+          sha256sum docs/core/*.html > docs/core/generated-sha256.txt
+      - name: Upload the generated API reference
+        uses: actions/upload-artifact@v4
+        with:
+          name: carp-api-9f6fa9c1
+          path: docs/core/
+          retention-days: 30
+          if-no-files-found: error
