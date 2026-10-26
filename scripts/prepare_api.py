@@ -276,7 +276,7 @@ def stage(root, destination, baseurl):
               '<p>型と使用形式は、この固定版を無変更でビルドして生成しています。'
               f'<a href="{prefix}/TRANSLATION.html">翻訳方針</a>・'
               f'<a href="{prefix}/api/README.html">API 文書の原典と生成方法</a>を参照してください。</p>')
-    sidebar = ('<aside class="logo" aria-label="モジュール一覧">'
+    sidebar = ('<aside class="logo" aria-label="API 文書一覧">'
                f'<img src="{manifest["logo_url"]}" alt="Carp のロゴ">'
                '<p class="title">Core API · 日本語</p><div class="index"><ul>'
                + ''.join(f'<li><a href="{quote(name)}.html">{html.escape(name)}</a></li>'
@@ -295,15 +295,16 @@ def stage(root, destination, baseurl):
     index_record, index_original = load_index(root, manifest)
     index = ('<h1>Core — 標準ライブラリ API リファレンス</h1>'
              '<div class="index-description">' + markdown(index_record['translation'], 'core_index') + '</div>'
-             '<p class="source-link">狭い画面では、モジュール一覧は上部に表示されます。</p>'
+             '<p class="source-link">狭い画面では、API 文書一覧は上部に表示されます。</p>'
              '<details class="original" lang="en"><summary lang="ja">Core の案内文の原文</summary>'
              + literal(index_original) + '</details>'
-             '<h2>日本語で参照できるモジュール</h2>'
+             '<h2>日本語で参照できる API 文書</h2>'
              '<ul>' + ''.join(f'<li><a href="{quote(name)}.html">{html.escape(name)}</a>'
                              f' — {len(data[2])} 項目（説明文のある項目は翻訳済み）</li>'
                              for name, data in modules.items()) + '</ul>'
-             '<p>現在の日本語訳は上記のモジュールを対象としています。'
-             'ほかのモジュールへの参照は、固定コミットの英語ソースへ案内します。</p>'
+             '<p>固定版の標準生成スクリプトが出力する 48 モジュールと、'
+             'グローバル定義 2 ページの説明文を翻訳しています。'
+             '原文に説明文がない項目は、その旨を表示します。</p>'
              f'<p class="source-link"><a href="{github}{index_record["source"]}#L{index_record["line"]}">'
              '固定版の案内文・生成対象(英語)</a></p>')
     (target / 'index.html').write_text(wrap('Core API 索引', index))
@@ -382,7 +383,7 @@ def check_built(root, destination):
                     if n.attrs.get('name') == 'carp-upstream-commit')
         if meta.attrs['content'] != manifest['upstream_commit']:
             raise ValueError(f'{name}: published commit does not match the source')
-    print(f'Published API metadata: {len(modules)} modules, identifiers/types/usage unchanged')
+    print(f'Published API metadata: {len(modules)} API pages, identifiers/types/usage unchanged')
 
 
 if __name__ == '__main__':

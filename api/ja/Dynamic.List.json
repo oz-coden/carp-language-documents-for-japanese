@@ -1,0 +1,69 @@
+{
+  "module": "Dynamic.List",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Macros.carp",
+    "line": 50,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "find": {
+      "source": "core/List.carp",
+      "line": 367,
+      "original": "finds the first element in the list `l` that matches `pred`.\n\nReturns `nil` on failure",
+      "source_html_sha256": "4b1b35d175c199c39df5db998a9ee7fe8dc0a7565910dedf0d70f6d8b87cc881",
+      "translation": "リスト `l` の中で `pred` を満たす最初の要素を見つけます。見つからなければ `nil` を返します。"
+    },
+    "find-index": {
+      "source": "core/List.carp",
+      "line": 377,
+      "original": "like [`find](#find), but returns the index instead.\n\nReturns `nil` on failure",
+      "source_html_sha256": "322e2fb34c10bef0f772fbc0b47ceb91d52fa4e326441a727d85f34641cb72e3",
+      "translation": "[`find`](#find) と同様ですが、要素の代わりにインデックスを返します。見つからなければ `nil` を返します。"
+    },
+    "in?": {
+      "source": "core/Macros.carp",
+      "line": 52,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "nth": {
+      "source": "core/List.carp",
+      "line": 342,
+      "original": "gets the nth element of the list `l`.",
+      "source_html_sha256": "c6b29f66e6391223634e1c7b80f291aa42d70fb2877e2a6f5a70171b06afdf4a",
+      "translation": "リスト `l` の n 番目の要素を取得します。"
+    },
+    "pairs": {
+      "source": "core/List.carp",
+      "line": 335,
+      "original": "makes a list of pairs out of a list `l`. If the number of\nelements is uneven, the trailing element will be discarded.",
+      "source_html_sha256": "2601b6f86b8fbf8d55c061384b43a72e840baa2412d802330a88a4fac2a2f9be",
+      "translation": "リスト `l` からペアのリストを作成します。要素数が奇数の場合、末尾の要素は破棄します。"
+    },
+    "remove-nth": {
+      "source": "core/List.carp",
+      "line": 349,
+      "original": "removes the nth element from the list `l`.",
+      "source_html_sha256": "5b66d59341e9059d2e2e1862abee7a1d48e15cc274f0ed6c9fae28b2c0a618e4",
+      "translation": "リスト `l` の n 番目の要素を削除します。"
+    },
+    "set-nth": {
+      "source": "core/List.carp",
+      "line": 363,
+      "original": "sets the nth element of the list `l` to the value `v`.",
+      "source_html_sha256": "02de38472732b1e75f7a4949e8527827ea55c3f24447f22a3ed1e9abed57249d",
+      "translation": "リスト `l` の n 番目の要素を値 `v` に設定します。"
+    },
+    "update-nth": {
+      "source": "core/List.carp",
+      "line": 356,
+      "original": "updates the nth element of the list `l` using the function `f`.",
+      "source_html_sha256": "3c5b7ba2a0a1464569029bc734fda20531eb2f497587357eb0745a0025e4aa47",
+      "translation": "関数 `f` を使って、リスト `l` の n 番目の要素を更新します。"
+    }
+  }
+}

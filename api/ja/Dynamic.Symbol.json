@@ -1,0 +1,41 @@
+{
+  "module": "Dynamic.Symbol",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "src/StartingEnv.hs",
+    "line": 343,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "concat": {
+      "source": "src/StartingEnv.hs",
+      "line": 415,
+      "original": "concatenates a list of symbols together.\n\nExample Usage:\n```\n(Symbol.concat ['x 'y 'z]) ; => 'xyz\n```",
+      "source_html_sha256": "04f338fbbcf50cafdbfb54190222d15053d1b843138c25816b7bb81aeae3fa0d",
+      "translation": "シンボルのリストを連結します。\n\n例えば、次のように記述します。\n\n```carp\n(Symbol.concat ['x 'y 'z]) ; => 'xyz\n```"
+    },
+    "from": {
+      "source": "src/StartingEnv.hs",
+      "line": 416,
+      "original": "converts a variety of types to a symbol.\n\nExample Usage:\n```\n(Symbol.from true) ; => True\n```",
+      "source_html_sha256": "7ca5f47d1614c2fe37ebc268456735844fd0c10729c0ea57abfc9a6a5a19c42a",
+      "translation": "さまざまな型の値をシンボルに変換します。\n\n例えば、次のように記述します。\n\n```carp\n(Symbol.from true) ; => True\n```"
+    },
+    "prefix": {
+      "source": "src/StartingEnv.hs",
+      "line": 421,
+      "original": "prefixes a symbol with a module.\n\nExample Usage:\n```\n(Symbol.prefix 'Module 'fun) ; => Module.fun\n```",
+      "source_html_sha256": "58e94d4126891187e488d4a4ee37c45af4cbf1a4551de210d8a632e73fc3620a",
+      "translation": "シンボルにモジュールを接頭辞として付けます。\n\n例えば、次のように記述します。\n\n```carp\n(Symbol.prefix 'Module 'fun) ; => Module.fun\n```"
+    },
+    "str": {
+      "source": "src/StartingEnv.hs",
+      "line": 417,
+      "original": "converts a symbol to a string.\n\nExample Usage:\n```\n(Symbol.str 'x) ; => \"x\"\n```",
+      "source_html_sha256": "a9dd4741ad7e6ff2bb91f4f1be7f4305fba5eff627b85bb629136508c0045d16",
+      "translation": "シンボルを文字列に変換します。\n\n例えば、次のように記述します。\n\n```carp\n(Symbol.str 'x) ; => \"x\"\n```"
+    }
+  }
+}

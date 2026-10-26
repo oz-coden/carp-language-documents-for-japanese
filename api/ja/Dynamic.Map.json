@@ -1,0 +1,184 @@
+{
+  "module": "Dynamic.Map",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Map.carp",
+    "line": 675,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "=": {
+      "source": "core/Map.carp",
+      "line": 819,
+      "original": "checks whether two maps `m1` and `m2` are equal.",
+      "source_html_sha256": "d958eebaca2611794aec2b11654cb4d6a9109deae338e253a5d2a497c7fd27b2",
+      "translation": "2 つのマップ `m1` と `m2` が等しいかどうかを調べます。"
+    },
+    "all?": {
+      "source": "core/Map.carp",
+      "line": 812,
+      "original": "checks whether all key value pairs in `m` satisfy the predicate\n`pred`. `pred` takes the pair `(k v)` as its sole argument.",
+      "source_html_sha256": "109280d79a7f2c0cfd20d9029a3bbe6a64efba4d79864bdca835d9b18e5dd8ce",
+      "translation": "`m` のすべてのキーと値のペアが述語 (predicate) `pred` を満たすかどうかを調べます。`pred` は、ペア `(k v)` を唯一の引数として受け取ります。"
+    },
+    "contains?": {
+      "source": "core/Map.carp",
+      "line": 715,
+      "original": "checks whether the dynamic map `m` contains the key `k`.",
+      "source_html_sha256": "c1fee33120360e8e0e7127c0e0de6d3f35d30d80252242fab42b679a3b2efab9",
+      "translation": "動的マップ `m` がキー `k` を含むかどうかを調べます。"
+    },
+    "create": {
+      "source": "core/Map.carp",
+      "line": 684,
+      "original": "makes a dynamic map.",
+      "source_html_sha256": "43e9aa2e358c8316c695c2e20cb349cf14c4aee7b55ab09aa886687021df0630",
+      "translation": "動的マップを作成します。"
+    },
+    "empty?": {
+      "source": "core/Map.carp",
+      "line": 770,
+      "original": "checks whether the map `m` is empty.",
+      "source_html_sha256": "7d0d977eba1a3cebfa050879831d41be26e2be9cd0d0e879a6b285ce4046ee5b",
+      "translation": "マップ `m` が空かどうかを調べます。"
+    },
+    "from-array": {
+      "source": "core/Map.carp",
+      "line": 841,
+      "original": "creates a map from an array of key-value pairs `a`.",
+      "source_html_sha256": "52d263ceaccab0ca28bbd3ee007dd2f7b159c1e95f51d4fdff47bb6410949ad4",
+      "translation": "キーと値のペアの配列 `a` からマップを作成します。"
+    },
+    "get": {
+      "source": "core/Map.carp",
+      "line": 739,
+      "original": "gets the value under the key `k`. If `k` doesn’t exist in the\nmap, `nil` is returned.",
+      "source_html_sha256": "d1b5e191bd24d3619ba31b0a1005864da330e76a5fd6499439a4be54e8536500",
+      "translation": "キー `k` に対応する値を取得します。マップに `k` が存在しなければ `nil` を返します。"
+    },
+    "get-with-default": {
+      "source": "core/Map.carp",
+      "line": 730,
+      "original": "gets the value under the key `k`. If `k` doesn’t\nexist in the map, the default value is returned.",
+      "source_html_sha256": "85ad119ded98bfb04524c461adc0bb167b98dd040486212ba3d4560c78baaf24",
+      "translation": "キー `k` に対応する値を取得します。マップに `k` が存在しなければ既定値を返します。"
+    },
+    "grow": {
+      "source": "core/Map.carp",
+      "line": 706,
+      "original": "grows a dynamic map.",
+      "source_html_sha256": "7e76faae13cd7e0b8eeccc4ef8322d0a14bf0aca99890969b8db4e8bea794fe8",
+      "translation": "動的マップを拡張します。"
+    },
+    "keys": {
+      "source": "core/Map.carp",
+      "line": 774,
+      "original": "returns the key in the map `m`.",
+      "source_html_sha256": "cf3a76cbedcc085c3fb9c11dbe40e84c4e7edc8e55bb27c4c4cb8ff116741894",
+      "translation": "マップ `m` のキーを返します。"
+    },
+    "kv-reduce": {
+      "source": "core/Map.carp",
+      "line": 830,
+      "original": "reduces the map `m` using the function `f` and the initial\nvalue `init`. `f` takes the accumulator and the pair `(k v)` as its arguments\nand is expected to return a new accumulator.",
+      "source_html_sha256": "ce28fb0231774ff6f4a9f120f9e4ab4eac39bf6c04a4f92557aa4d091e4d0979",
+      "translation": "関数 `f` と初期値 `init` を使ってマップ `m` を畳み込みます。`f` は、アキュムレーター (accumulator) とペア `(k v)` を引数として受け取り、新しいアキュムレーターを返すことが期待されます。"
+    },
+    "len": {
+      "source": "core/Map.carp",
+      "line": 766,
+      "original": "returns the length of the map `m`.",
+      "source_html_sha256": "ed7e59e0b417a948355c54a25ee82ff3560024ffc726d7110b9a2f2966c84363",
+      "translation": "マップ `m` の長さを返します。"
+    },
+    "map": {
+      "source": "core/Map.carp",
+      "line": 824,
+      "original": "maps the function `f` over all pairs in the map `m`. `f` takes\nthe pair `(k v)` as its sole argument and is expected to return a new value\nunder `v`.",
+      "source_html_sha256": "05de1dd3bd64382f69b3b365a94a3765d137bb7ff4a673fb7b34b018366ce0a3",
+      "translation": "マップ `m` のすべてのペアに関数 `f` を適用します。`f` は、ペア `(k v)` を唯一の引数として受け取り、`v` に対応する新しい値を返すことが期待されます。"
+    },
+    "merge": {
+      "source": "core/Map.carp",
+      "line": 836,
+      "original": "merges to maps `m1` and `m2`. Values in `m1` are preferred on\ncollision.",
+      "source_html_sha256": "3569cefe81c656fd8f788782589bc978f84246135e6dcb3f75972d5b757a1ad6",
+      "translation": "2 つのマップ `m1` と `m2` をマージします。キーが衝突した場合は `m1` の値を優先します。",
+      "notes": [
+        "原文は衝突時に `m1` の値を優先すると説明しています。固定版の実装は `m1` を初期値にして `m2` を畳み込み、各ペアを `Map.put` で書き込む形です。`Map.put` は既存のキーの値を更新するため、原文の説明と食い違います。これはソースの確認によるもので、実行結果ではありません。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Map.carp#L839)"
+      ]
+    },
+    "put": {
+      "source": "core/Map.carp",
+      "line": 720,
+      "original": "adds a value `v` under the key `k` into the map. If `k` already\nexists in the map, it is updated.",
+      "source_html_sha256": "924e2cf238f7787d09a4b17af0ec4f13da2c191bdbd04859d5a4e90f6a0200b9",
+      "translation": "キー `k` に対応する値 `v` をマップに追加します。マップに `k` がすでに存在する場合は、その値を更新します。"
+    },
+    "remove": {
+      "source": "core/Map.carp",
+      "line": 804,
+      "original": "removes the pair under the key `k` from the map `m`. If it\ndoesn’t exist, the map is returned unchanged.",
+      "source_html_sha256": "fdb80a76144af01a13cf555aab9530d0f112940e064dc4d1523bbae72372da8d",
+      "translation": "マップ `m` からキー `k` に対応するペアを削除します。存在しなければ、マップを変更せずに返します。"
+    },
+    "resize": {
+      "source": "core/Map.carp",
+      "line": 701,
+      "original": "resizes a dynamic map to size `s`.",
+      "source_html_sha256": "e226c99b9a4085af79b3e4d78ac32aabb900f99e9b65dbf9bb9e85b28cc7d58c",
+      "translation": "動的マップのサイズを `s` に変更します。"
+    },
+    "reverse": {
+      "source": "core/Map.carp",
+      "line": 782,
+      "original": "reverses the key-value pairs in the map `m`.",
+      "source_html_sha256": "49e57a4b508cddaea3cd938e970d12ec92843059478afd582c099fa360a29300",
+      "translation": "マップ `m` のキーと値のペアを逆にします。"
+    },
+    "shrink": {
+      "source": "core/Map.carp",
+      "line": 708,
+      "original": "shrinks dynamic map.",
+      "source_html_sha256": "3c373fe9c1bfaeb1a77f1364966f6a067de970e18b43a94246c472aec88578ed",
+      "translation": "動的マップを縮小します。"
+    },
+    "str": {
+      "source": "core/Map.carp",
+      "line": 788,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "to-array": {
+      "source": "core/Map.carp",
+      "line": 845,
+      "original": "creates an array of key-value pairs from the map `m`.",
+      "source_html_sha256": "cdc4c3c050ba5b02dbceef11e1f9b2a6cb952387075fd7f453aaeac3430366b8",
+      "translation": "マップ `m` から、キーと値のペアの配列を作成します。"
+    },
+    "update": {
+      "source": "core/Map.carp",
+      "line": 744,
+      "original": "updates the value under the key `k` using the function `f`. If\n`k` doesn’t exist in the map, it is returned unchanged.",
+      "source_html_sha256": "4e1739fbd1e642025af3327bf45742da8cff18652b386526d75e91f5b84bb334",
+      "translation": "関数 `f` を使って、キー `k` に対応する値を更新します。マップに `k` が存在しなければ、マップを変更せずに返します。"
+    },
+    "update-with-default": {
+      "source": "core/Map.carp",
+      "line": 755,
+      "original": "updates the value under the key `k` using the\nfunction `f`. If `k` doesn’t exist in the map, it is set to `(f v)`.",
+      "source_html_sha256": "de5c1bcb473fddff00f751700fdae460d003444c44b47c45b74790323cfba607",
+      "translation": "関数 `f` を使って、キー `k` に対応する値を更新します。マップに `k` が存在しなければ、その値を `(f v)` に設定します。"
+    },
+    "vals": {
+      "source": "core/Map.carp",
+      "line": 778,
+      "original": "returns the values in the map `m`.",
+      "source_html_sha256": "856adae9e45270a3e7d7d54fd40b791cf49062ce6b3a6a48bf6f5a2eb9eb02ab",
+      "translation": "マップ `m` の値を返します。"
+    }
+  }
+}

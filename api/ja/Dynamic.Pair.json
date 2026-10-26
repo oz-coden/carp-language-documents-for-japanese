@@ -1,0 +1,20 @@
+{
+  "module": "Dynamic.Pair",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Map.carp",
+    "line": 671,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "init": {
+      "source": "core/Map.carp",
+      "line": 672,
+      "original": "creates a dynamic pair, i.e. a list with two elements.",
+      "source_html_sha256": "3aea0380744ff73b95de9fa8a9a1248230e348570856f43db60e8fcbe96671d8",
+      "translation": "動的なペア、つまり要素を 2 つ持つリストを作成します。"
+    }
+  }
+}

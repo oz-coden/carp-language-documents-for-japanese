@@ -1,0 +1,1170 @@
+{
+  "module": "Dynamic",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Dynamic.carp",
+    "line": 1,
+    "original": "This module contains dynamic functions which are used in the Carp repl and during compilation. They are not available in compiled code. Read more about dynamic functions in the [Language Guide](https://github.com/carp-lang/Carp/blob/master/docs/LanguageGuide.md#dynamic-functions).",
+    "source_html_sha256": "de1395f7631db00adb9485b24c7ff061849b9b5af71fad2de13e99d3760f13d8",
+    "translation": "このモジュールは、Carp の REPL とコンパイル時に使用する動的関数を含みます。これらはコンパイル済みのコードでは利用できません。動的関数の詳細は、[言語ガイド](../../docs/LanguageGuide-JP.html#動的関数-dynamic-functions) を参照してください。"
+  },
+  "entries": {
+    "*": {
+      "source": "src/StartingEnv.hs",
+      "line": 281,
+      "original": "multiplies its two arguments.\n\nExample Usage:\n```\n(* 2 3) ; => 6\n```",
+      "source_html_sha256": "cf7e58cbc0ecd0b957ca459776842c2ae6bf589dfb54e8609dfd77037e876c5a",
+      "translation": "2 つの引数を乗算します。\n\n例えば、次のように記述します。\n\n```carp\n(* 2 3) ; => 6\n```"
+    },
+    "+": {
+      "source": "src/StartingEnv.hs",
+      "line": 278,
+      "original": "adds its two arguments.\n\nExample Usage:\n```\n(+ 1 2) ; => 3\n```",
+      "source_html_sha256": "4aa7e89dd6d8156b006c453948e4b563fc2bb54dbb6fc27869d42ab54daebf90",
+      "translation": "2 つの引数を加算します。\n\n例えば、次のように記述します。\n\n```carp\n(+ 1 2) ; => 3\n```"
+    },
+    "-": {
+      "source": "src/StartingEnv.hs",
+      "line": 279,
+      "original": "subtracts its second argument from its first.\n\nExample Usage:\n```\n(- 1 2) ; => -1\n```",
+      "source_html_sha256": "9ba19f6fb26874558cc4cfd30fb9946af430da465d56bac58c18a4e43ae8a838",
+      "translation": "第 1 引数から第 2 引数を減算します。\n\n例えば、次のように記述します。\n\n```carp\n(- 1 2) ; => -1\n```"
+    },
+    "/": {
+      "source": "src/StartingEnv.hs",
+      "line": 280,
+      "original": "divides its first argument by its second.\n\nExample Usage:\n```\n(/ 4 2) ; => 2\n```",
+      "source_html_sha256": "9a760d2943f70a1d07ab7c7a091dbd75fcb26a43258f9cb974330beae01d28fe",
+      "translation": "第 1 引数を第 2 引数で除算します。\n\n例えば、次のように記述します。\n\n```carp\n(/ 4 2) ; => 2\n```"
+    },
+    "/=": {
+      "source": "core/Macros.carp",
+      "line": 19,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "<": {
+      "source": "src/StartingEnv.hs",
+      "line": 276,
+      "original": "checks whether its first argument is less than its second.\n\nExample Usage:\n```\n(< 1 2) ; => true\n```",
+      "source_html_sha256": "75f9e8ed49f875e31348e392a2414c753de600af6e8e607d88361cabb18486d0",
+      "translation": "第 1 引数が第 2 引数より小さいかどうかを調べます。\n\n例えば、次のように記述します。\n\n```carp\n(< 1 2) ; => true\n```"
+    },
+    "=": {
+      "source": "src/StartingEnv.hs",
+      "line": 275,
+      "original": "compares its arguments for equality.\n\nExample Usage:\n```\n(= 1 2) ; => false\n```",
+      "source_html_sha256": "27ff325b306b7d14f636f94a54352c2da2288c86185be5d106e28bb6839eadc0",
+      "translation": "引数が等しいかどうかを比較します。\n\n例えば、次のように記述します。\n\n```carp\n(= 1 2) ; => false\n```"
+    },
+    ">": {
+      "source": "src/StartingEnv.hs",
+      "line": 277,
+      "original": "checks whether its first argument is greater than its second.\n\nExample Usage:\n```\n(> 1 2) ; => false\n```",
+      "source_html_sha256": "0b3d9d43748fa3f5695e106b8d6edf2cf6d68fe11d91a14a6a6461904544c31d",
+      "translation": "第 1 引数が第 2 引数より大きいかどうかを調べます。\n\n例えば、次のように記述します。\n\n```carp\n(> 1 2) ; => false\n```"
+    },
+    "Debug": {
+      "source": "core/Dynamic.carp",
+      "line": 77,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "List": {
+      "source": "core/Macros.carp",
+      "line": 50,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "Map": {
+      "source": "core/Map.carp",
+      "line": 675,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "Pair": {
+      "source": "core/Map.carp",
+      "line": 671,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "Path": {
+      "source": "src/StartingEnv.hs",
+      "line": 345,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "Project": {
+      "source": "core/Dynamic.carp",
+      "line": 52,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "Random": {
+      "source": "core/Random.carp",
+      "line": 40,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "String": {
+      "source": "core/String.carp",
+      "line": 657,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "Symbol": {
+      "source": "src/StartingEnv.hs",
+      "line": 343,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "all-but-last": {
+      "source": "src/StartingEnv.hs",
+      "line": 255,
+      "original": "gets all elements except for the last one of a list or array.\n\nExample Usage:\n```\n(all-but-last '(1 2 3)) ; => '(1 2)\n```",
+      "source_html_sha256": "84b9a0fdd439d7d2c8642aa76a772b68046662934044e21b4bc359609bdf4c23",
+      "translation": "リストまたは配列の、最後の要素を除くすべての要素を取得します。\n\n例えば、次のように記述します。\n\n```carp\n(all-but-last '(1 2 3)) ; => '(1 2)\n```"
+    },
+    "all?": {
+      "source": "core/List.carp",
+      "line": 173,
+      "original": "Checks whether all of the elements in `xs` conform to the predicate\nfunction `f`.\n\n```\n(all? (fn [x] (< 1 x)) '(2 3 4))\n=> true\n(all? (fn [x] (< 1 x)) '(-1 0 1))\n=> false\n```",
+      "source_html_sha256": "6a32604c0c7b0491db22686134f90af5c94699fff24287c46fdef404a6472567",
+      "translation": "`xs` のすべての要素が述語関数 (predicate function) `f` を満たすかどうかを調べます。\n\n例えば、次のように記述します。\n\n```carp\n(all? (fn [x] (< 1 x)) '(2 3 4))\n=> true\n(all? (fn [x] (< 1 x)) '(-1 0 1))\n=> false\n```"
+    },
+    "any?": {
+      "source": "core/List.carp",
+      "line": 160,
+      "original": "Checks whether any of the elements in `xs` conforms to the predicate\nfunction `f`.\n\n```\n(any? (fn [x] (= 'a x)) '(a b c))\n=> true\n(any? (fn [x] (= 'a x)) '(e f g))\n=> false\n```",
+      "source_html_sha256": "9ddfa7b6b68f547e0d655bd6330fc4defc6f0a10aa9c31cbec159e1e4e43198e",
+      "translation": "`xs` のいずれかの要素が述語関数 `f` を満たすかどうかを調べます。\n\n例えば、次のように記述します。\n\n```carp\n(any? (fn [x] (= 'a x)) '(a b c))\n=> true\n(any? (fn [x] (= 'a x)) '(e f g))\n=> false\n```"
+    },
+    "append": {
+      "source": "src/StartingEnv.hs",
+      "line": 274,
+      "original": "appends two lists or arrays.\n\nExample Usage:\n```\n(append '(1 2) '(3 4)) ; => '(1 2 3 4)\n```",
+      "source_html_sha256": "d852077ba3b332a2606d1b06e66fb2861968fe6967d2a8be3291e4eeb33b241c",
+      "translation": "2 つのリストまたは配列を連結します。\n\n例えば、次のように記述します。\n\n```carp\n(append '(1 2) '(3 4)) ; => '(1 2 3 4)\n```"
+    },
+    "apply": {
+      "source": "core/List.carp",
+      "line": 133,
+      "original": "Applies the function `f` to the provided argument list, passing each value\nin the list as an argument to the function.",
+      "source_html_sha256": "f3a009d75003dd5cfa06bbb136c54c2a6d43e9696361c0ab22ca3306677ba500",
+      "translation": "渡された引数リストに関数 `f` を適用します。リスト内の各値を、関数の引数として渡します。"
+    },
+    "array": {
+      "source": "src/StartingEnv.hs",
+      "line": 288,
+      "original": "creates an array from a collection of elements.\n\nExample Usage:\n```\n(array 1 2 3) ; => [1 2 3]\n```",
+      "source_html_sha256": "aa3e8f9b9728a04afdcda606e1ccc20c9e44479e08fa4e7413344ae57944711e",
+      "translation": "要素の集まりから配列を作成します。\n\n例えば、次のように記述します。\n\n```carp\n(array 1 2 3) ; => [1 2 3]\n```"
+    },
+    "array?": {
+      "source": "core/Macros.carp",
+      "line": 68,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "build": {
+      "source": "src/StartingEnv.hs",
+      "line": 297,
+      "original": "builds the current code to an executable. Optionally takes a boolean that, when true, silences the output.\n\nExample Usage:\n```\n(build)\n```",
+      "source_html_sha256": "f509a541cb82d0b169b8212040a40080bd01ec5ecd3058c890697029da31d835",
+      "translation": "現在のコードをビルドして実行ファイルを生成します。省略可能な真偽値の引数を受け取り、`true` の場合は出力を抑制します。\n\n例えば、次のように記述します。\n\n```carp\n(build)\n```"
+    },
+    "c": {
+      "source": "src/StartingEnv.hs",
+      "line": 258,
+      "original": "prints the C code emitted for a binding.\n\nExample Usage:\n```\n(c '(+ 2 3)) ; => int _3 = Int__PLUS_(2, 3);\n```",
+      "source_html_sha256": "bc962cd24d5dfc8e46894bb0f4ef83cd9695babbb34ae0e5218506922c9f8009",
+      "translation": "束縛 (binding) に対して生成される C コードを表示します。\n\n例えば、次のように記述します。\n\n```carp\n(c '(+ 2 3)) ; => int _3 = Int__PLUS_(2, 3);\n```"
+    },
+    "caaaar": {
+      "source": "core/Macros.carp",
+      "line": 33,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caaadr": {
+      "source": "core/Macros.carp",
+      "line": 34,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caaar": {
+      "source": "core/Macros.carp",
+      "line": 25,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caadar": {
+      "source": "core/Macros.carp",
+      "line": 35,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caaddr": {
+      "source": "core/Macros.carp",
+      "line": 36,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caadr": {
+      "source": "core/Macros.carp",
+      "line": 26,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caar": {
+      "source": "core/Macros.carp",
+      "line": 21,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cadaar": {
+      "source": "core/Macros.carp",
+      "line": 37,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cadadr": {
+      "source": "core/Macros.carp",
+      "line": 38,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cadar": {
+      "source": "core/Macros.carp",
+      "line": 27,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caddar": {
+      "source": "core/Macros.carp",
+      "line": 39,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cadddr": {
+      "source": "core/Macros.carp",
+      "line": 40,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "caddr": {
+      "source": "core/Macros.carp",
+      "line": 29,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cadr": {
+      "source": "core/Macros.carp",
+      "line": 22,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "car": {
+      "source": "src/StartingEnv.hs",
+      "line": 252,
+      "original": "gets the head of a list or array.\n\nExample Usage:\n```\n(car '(1 2 3)) ; => 1\n```",
+      "source_html_sha256": "0376f76e791729346c519159c2532bd2cb2f614b1c543ff153e4140b03dcdf1e",
+      "translation": "リストまたは配列の先頭要素を取得します。\n\n例えば、次のように記述します。\n\n```carp\n(car '(1 2 3)) ; => 1\n```"
+    },
+    "cat": {
+      "source": "src/StartingEnv.hs",
+      "line": 239,
+      "original": "spits out the generated C code.\n\nExample Usage:\n```\n(cat)\n```",
+      "source_html_sha256": "c35f8a3abdfb0aa8f5f89af8c3c3903abf99f42c6c0b7ce453855e15ea741ba5",
+      "translation": "生成された C コードを出力します。\n\n例えば、次のように記述します。\n\n```carp\n(cat)\n```"
+    },
+    "cdaaar": {
+      "source": "core/Macros.carp",
+      "line": 41,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdaadr": {
+      "source": "core/Macros.carp",
+      "line": 42,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdaar": {
+      "source": "core/Macros.carp",
+      "line": 28,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdadar": {
+      "source": "core/Macros.carp",
+      "line": 43,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdaddr": {
+      "source": "core/Macros.carp",
+      "line": 44,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdadr": {
+      "source": "core/Macros.carp",
+      "line": 30,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdar": {
+      "source": "core/Macros.carp",
+      "line": 23,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cddaar": {
+      "source": "core/Macros.carp",
+      "line": 45,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cddadr": {
+      "source": "core/Macros.carp",
+      "line": 46,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cddar": {
+      "source": "core/Macros.carp",
+      "line": 31,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdddar": {
+      "source": "core/Macros.carp",
+      "line": 47,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cddddr": {
+      "source": "core/Macros.carp",
+      "line": 48,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdddr": {
+      "source": "core/Macros.carp",
+      "line": 32,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cddr": {
+      "source": "core/Macros.carp",
+      "line": 24,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "cdr": {
+      "source": "src/StartingEnv.hs",
+      "line": 253,
+      "original": "gets the tail of a list or array.\n\nExample Usage:\n```\n(cdr '(1 2 3)) ; => '(2 3)\n```",
+      "source_html_sha256": "f98df20b03f47a85ff3a2edf3ba613c212e622bf9be359da32c7d17495a6b3ad",
+      "translation": "リストまたは配列の先頭要素を除いた残りを取得します。\n\n例えば、次のように記述します。\n\n```carp\n(cdr '(1 2 3)) ; => '(2 3)\n```"
+    },
+    "collect-into": {
+      "source": "core/List.carp",
+      "line": 38,
+      "original": "Transforms a dynamic data literal into another, preserving order",
+      "source_html_sha256": "23faf7a3c562770b4f8d366abceefd0f3de44ffaeb3c2c93f526e3250cef43ee",
+      "translation": "動的データリテラルを、順序を保持したまま別の動的データリテラルへ変換します。"
+    },
+    "column": {
+      "source": "src/StartingEnv.hs",
+      "line": 334,
+      "original": "returns the column a symbol was defined on.\n\nExample Usage:\n```\n(column mysymbol)\n```",
+      "source_html_sha256": "ee7940e012f4f8d0acefe8b1c796a77990df544bfb1376e1a0e30e310aac92f6",
+      "translation": "シンボルが定義された列を返します。\n\n例えば、次のように記述します。\n\n```carp\n(column mysymbol)\n```"
+    },
+    "compose": {
+      "source": "core/ControlMacros.carp",
+      "line": 228,
+      "original": "Returns the composition of two functions `f` and `g` for functions of any\narity; concretely, returns a function accepting the correct number of\narguments for `g`, applies `g` to those arguments, then applies `f` to the\nresult.\n\nIf you only need to compose functions that take a single argument (unary arity)\nsee `comp`. Comp also generates the form that corresponds to the composition,\ncompose contrarily evaluates 'eagerly' and returns a computed symbol.\n```\n;; a silly composition\n((compose empty take) 3 [1 2 3 4 5])\n;; => []\n\n(String.join (collect-into ((compose reverse map) Symbol.str '(p r a c)) array))\n;; => 'carp'\n\n;; comp for comparison\n((comp (curry + 1) (curry + 2)) 4)\n;; => (+ 1 (+ 2 4))\n```",
+      "source_html_sha256": "bd6c265e6d38ff85e04e46083934eceda0db4264c2ff7e1b294e78a13e6a332a",
+      "translation": "任意の引数の数 (arity) を持つ 2 つの関数 `f` と `g` の合成を返します。具体的には、`g` に必要な数の引数を受け取り、それらの引数に `g` を適用し、その結果に `f` を適用する関数を返します。\n\n引数を 1 つ取る関数 (単項関数) だけを合成する場合は、[`comp`](./Globals%20in%20ControlMacros.carp.html#comp) を参照してください。`comp` は合成に対応する形式を生成します。一方、`compose` は「即時に」評価し、計算済みのシンボルを返します。\n\n例えば、次のように記述します。\n\n```carp\n;; ちょっとした関数合成\n((compose empty take) 3 [1 2 3 4 5])\n;; => []\n\n(String.join (collect-into ((compose reverse map) Symbol.str '(p r a c)) array))\n;; => 'carp'\n\n;; 比較用の comp\n((comp (curry + 1) (curry + 2)) 4)\n;; => (+ 1 (+ 2 4))\n```",
+      "code_comment_translations": {
+        ";; a silly composition": ";; ちょっとした関数合成",
+        ";; comp for comparison": ";; 比較用の comp"
+      }
+    },
+    "cons": {
+      "source": "src/StartingEnv.hs",
+      "line": 272,
+      "original": "adds an element to the front of an array or list\n\nExample Usage:\n```\n(cons 1 '(2 3)) ; => '(1 2 3)\n```",
+      "source_html_sha256": "c769233ae4b0722a9203cc451637ebcf3b9d2c513ce2a6e7d31a0b5ae3df45fd",
+      "translation": "配列またはリストの先頭に要素を追加します。\n\n例えば、次のように記述します。\n\n```carp\n(cons 1 '(2 3)) ; => '(1 2 3)\n```"
+    },
+    "cons-last": {
+      "source": "src/StartingEnv.hs",
+      "line": 273,
+      "original": "adds an element to the back of an array or list\n\nExample Usage:\n```\n(cons-last 3 '(1 2)) ; => '(1 2 3)\n```",
+      "source_html_sha256": "4ea7f751d9726e824097568ba1357341ec90f63bb353c38960f0d565a4be4fd9",
+      "translation": "配列またはリストの末尾に要素を追加します。\n\n例えば、次のように記述します。\n\n```carp\n(cons-last 3 '(1 2)) ; => '(1 2 3)\n```"
+    },
+    "curry": {
+      "source": "core/ControlMacros.carp",
+      "line": 271,
+      "original": "Returns a curried function accepting a single argument, that applies `f` to `x`\nand then to the following argument.\n\n```\n(map (curry Symbol.prefix 'Foo) '(bar baz))\n=> (Foo.bar Foo.baz)\n```",
+      "source_html_sha256": "05e50b703ed2fbcbbe4ed2ad38644a4ee4d5053ff5bb9c1da4d40f1f59ce39b5",
+      "translation": "引数を 1 つ受け取るカリー化 (currying) された関数を返します。この関数は、`f` を `x` と、その後に渡される引数に適用します。\n\n例えば、次のように記述します。\n\n```carp\n(map (curry Symbol.prefix 'Foo) '(bar baz))\n=> (Foo.bar Foo.baz)\n```"
+    },
+    "curry*": {
+      "source": "core/ControlMacros.carp",
+      "line": 283,
+      "original": "Curry functions of any arity.\n\n```\n(map (curry* Dynamic.zip + '(1 2 3)) '((4 5) (6)))\n=> (((+ 1 4) (+ 2 5)) ((+ 1 6)))\n\n((curry* Dynamic.zip cons '(1 2 3)) '((4 5) (6)))\n=> ((cons 1 (4 5)) (cons (2 (6))))\n\n(defndynamic add-em-up [x y z] (+ (+ x y) z))\n(map (curry* add-em-up 1 2) '(1 2 3))\n=> (4 5 6)\n```",
+      "source_html_sha256": "d0dde078f53c0255a789dc381d19fd2c1dbdd0269bc52a7adebf4a39feda87b9",
+      "translation": "任意の引数の数を持つ関数をカリー化します。\n\n例えば、次のように記述します。\n\n```carp\n(map (curry* Dynamic.zip + '(1 2 3)) '((4 5) (6)))\n=> (((+ 1 4) (+ 2 5)) ((+ 1 6)))\n\n((curry* Dynamic.zip cons '(1 2 3)) '((4 5) (6)))\n=> ((cons 1 (4 5)) (cons (2 (6))))\n\n(defndynamic add-em-up [x y z] (+ (+ x y) z))\n(map (curry* add-em-up 1 2) '(1 2 3))\n=> (4 5 6)\n```"
+    },
+    "cxr": {
+      "source": "core/List.carp",
+      "line": 3,
+      "original": "takes a specification of a traversal in `a` (head) and `d` (tail)\nsymbols and a list `pair` to traverse.\n\nExample:\n```\n(cxr '(1 a 1 d) '(1 2 3)) ; => 2\n\n(cxr '(1 a 1 d 1 a 4 d) '(1 2 3 4 (5 6 7))) ; => 6\n```",
+      "source_html_sha256": "e725f8825a923258d4486569a6d645c0cf5990a5df77dff25336251e56cf3e14",
+      "translation": "`a` (先頭) と `d` (先頭を除いた残り) のシンボルで表した走査の指定と、走査対象のリスト `pair` を受け取ります。\n\n例えば、次のように記述します。\n\n```carp\n(cxr '(1 a 1 d) '(1 2 3)) ; => 2\n\n(cxr '(1 a 1 d 1 a 4 d) '(1 2 3 4 (5 6 7))) ; => 6\n```"
+    },
+    "dec": {
+      "source": "core/Dynamic.carp",
+      "line": 23,
+      "original": "decrements a number.",
+      "source_html_sha256": "ece0f51601c4dad420ff505fe8a4655082b137ccc25bd171b57dfe382124e469",
+      "translation": "数値を 1 減らします。"
+    },
+    "defdynamic": {
+      "source": "src/StartingEnv.hs",
+      "line": 315,
+      "original": "defines a new dynamic value, i.e. a value available at compile time.\n\nExample Usage:\n```\n(defdynamic name value)\n```",
+      "source_html_sha256": "ddc14b07c816f152c682690bf8d842921e11ad1718709ffd1b8bc42291cc51c0",
+      "translation": "新しい動的な値、つまりコンパイル時に利用できる値を定義します。\n\n例えば、次のように記述します。\n\n```carp\n(defdynamic name value)\n```"
+    },
+    "defined?": {
+      "source": "src/StartingEnv.hs",
+      "line": 308,
+      "original": "checks whether a symbol is defined.\n\nExample Usage:\n```\n(defined? mysymbol)\n```",
+      "source_html_sha256": "776d67515a1dfe6639340757683583eb3b6a3419a5adb3046998ce16618e5aa5",
+      "translation": "シンボルが定義されているかどうかを調べます。\n\n例えば、次のように記述します。\n\n```carp\n(defined? mysymbol)\n```"
+    },
+    "definterface": {
+      "source": "src/StartingEnv.hs",
+      "line": 317,
+      "original": "defines a new interface (which could be a function or symbol).\n\nExample Usage:\n```\n(definterface mysymbol MyType)\n```",
+      "source_html_sha256": "d1849da473948c608be622a104eba4c1cf3714c65ee1b298af7fa350ab78d209",
+      "translation": "新しいインターフェースを定義します。これは関数またはシンボルになり得ます。\n\n例えば、次のように記述します。\n\n```carp\n(definterface mysymbol MyType)\n```"
+    },
+    "defmacro": {
+      "source": "src/StartingEnv.hs",
+      "line": 322,
+      "original": "defines a new macro.\n\nExample Usage:\n```\n(defmacro name [args :rest restargs] body)\n```",
+      "source_html_sha256": "658ac2be7ad51a2105e5281c0834e52f76cce66b092919735a74f57e3e496ce6",
+      "translation": "新しいマクロを定義します。\n\n例えば、次のように記述します。\n\n```carp\n(defmacro name [args :rest restargs] body)\n```"
+    },
+    "defmodule": {
+      "source": "src/StartingEnv.hs",
+      "line": 336,
+      "original": "defines a new module in which `expressions` are defined.\n\nExample Usage:\n```\n(defmodule MyModule <expressions>)\n```",
+      "source_html_sha256": "97b0b7a9903d195231d96577de13a703825b0e69cd68272b4083bf2a8871d752",
+      "translation": "`expressions` を内部で定義する新しいモジュールを定義します。\n\n例えば、次のように記述します。\n\n```carp\n(defmodule MyModule <expressions>)\n```"
+    },
+    "defndynamic": {
+      "source": "src/StartingEnv.hs",
+      "line": 323,
+      "original": "defines a new dynamic function, i.e. a function available at compile time.\n\nExample Usage:\n```\n(defndynamic name [args] body)\n```",
+      "source_html_sha256": "ce07dea619296eb58efa822a45e86f80c95c418a481119e5df55e1d5122c0940",
+      "translation": "新しい動的関数、つまりコンパイル時に利用できる関数を定義します。\n\n例えば、次のように記述します。\n\n```carp\n(defndynamic name [args] body)\n```"
+    },
+    "deftemplate": {
+      "source": "src/StartingEnv.hs",
+      "line": 328,
+      "original": "defines a new C template.\n\nExample Usage:\n```\n(deftemplate symbol Type declString defString)\n```",
+      "source_html_sha256": "5d5185d7bdbb11301bbb300d35d6b17a710ce9effca9a67e77c07be9038b9a5d",
+      "translation": "新しい C テンプレート (template) を定義します。\n\n例えば、次のように記述します。\n\n```carp\n(deftemplate symbol Type declString defString)\n```"
+    },
+    "deftuple": {
+      "source": "core/Tuples.carp",
+      "line": 74,
+      "original": "defines a tuple type.\n\nFor example:\n```\n; is the definition of Pair in the stdlib\n(deftuple Pair a b)\n```",
+      "source_html_sha256": "4aacf5eb6d661d85531f9b004cb06708251599cfbfba52df9a980beea8afa215",
+      "translation": "タプル型を定義します。\n\n例えば、次のように記述します。\n\n```carp\n; 標準ライブラリの Pair の定義\n(deftuple Pair a b)\n```",
+      "code_comment_translations": {
+        "; is the definition of Pair in the stdlib": "; 標準ライブラリの Pair の定義"
+      }
+    },
+    "deftype": {
+      "source": "src/StartingEnv.hs",
+      "line": 338,
+      "original": "defines a new sumtype or struct.\n\nExample Usage:\n```\n(deftype Name <members>)\n```",
+      "source_html_sha256": "c7fadbab241270f23e6f1f43b4d5c9d8287710cba1761a4d333c3685994be462",
+      "translation": "新しい直和型 (sumtype) または構造体を定義します。\n\n例えば、次のように記述します。\n\n```carp\n(deftype Name <members>)\n```"
+    },
+    "dynamic-type": {
+      "source": "src/StartingEnv.hs",
+      "line": 268,
+      "original": "Gets the dynamic type as a string.\n\nExample Usage:\n```\n(dynamic-type '()) ; => \"list\"\n```",
+      "source_html_sha256": "87ae98f7227b1f2c0f8233d8dd49cd1c80036f579d9154155654dc2d2e1744a7",
+      "translation": "動的な型を文字列として取得します。\n\n例えば、次のように記述します。\n\n```carp\n(dynamic-type '()) ; => \"list\"\n```",
+      "notes": [
+        "原文は型を文字列として取得すると説明し、例も `\"list\"` を示しています。固定版の `commandType` は型名からシンボル (`Sym`) を構築しています。これはソースの確認によるもので、例の実行結果ではありません。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L857)"
+      ]
+    },
+    "empty": {
+      "source": "core/List.carp",
+      "line": 104,
+      "original": "Returns the empty form of `xs`.\n\n```\n(empty '(1 2 3 4))\n=> ()\n(empty '[1 2 3 4])\n=> []\n```",
+      "source_html_sha256": "68de44254c75630d12eb7a6e5055ae2e3b84e9e10e45eb711c2ccb7f90c1c928",
+      "translation": "`xs` の空の形式を返します。\n\n例えば、次のように記述します。\n\n```carp\n(empty '(1 2 3 4))\n=> ()\n(empty '[1 2 3 4])\n=> []\n```"
+    },
+    "empty?": {
+      "source": "core/List.carp",
+      "line": 43,
+      "original": "Returns true if the provided data literal is empty, false otherwise.",
+      "source_html_sha256": "6a07e975248cb1b3e8c605122fdcf53a59f93dc5e872de23f35dacd049e08890",
+      "translation": "渡されたデータリテラルが空なら `true`、そうでなければ `false` を返します。"
+    },
+    "env": {
+      "source": "src/StartingEnv.hs",
+      "line": 242,
+      "original": "lists all current bindings.\n\nExample Usage:\n```\n(env)\n```",
+      "source_html_sha256": "2a53872bb6fc9d4a147e51869f2c67f84f70879b13b930194c72f265586e9e50",
+      "translation": "現在のすべての束縛を一覧表示します。\n\n例えば、次のように記述します。\n\n```carp\n(env)\n```"
+    },
+    "eval": {
+      "source": "src/StartingEnv.hs",
+      "line": 307,
+      "original": "evaluates a list.\n\nExample Usage:\n```\n(eval mycode)\n```",
+      "source_html_sha256": "34a8b1fb742b5fc87aecba72257effae2a4a22acd42772cfa4590964b9a6e2ad",
+      "translation": "リストを評価します。\n\n例えば、次のように記述します。\n\n```carp\n(eval mycode)\n```"
+    },
+    "even?": {
+      "source": "core/Dynamic.carp",
+      "line": 46,
+      "original": "checks whether the number `n` is even.",
+      "source_html_sha256": "4c428f6f3a835a2c5d5b735074276058b89f50e52aecf97803623f8e1aefb419",
+      "translation": "数値 `n` が偶数かどうかを調べます。"
+    },
+    "expand": {
+      "source": "src/StartingEnv.hs",
+      "line": 259,
+      "original": "expands a macro and prints the result.\n\nExample Usage:\n```\n(expand '(when true 1)) ; => (if true 1 ())\n```",
+      "source_html_sha256": "76518b5fce65f691bca208be59eb24ce40522633cc610be435eaf1fcb25575b9",
+      "translation": "マクロを展開し、結果を表示します。\n\n例えば、次のように記述します。\n\n```carp\n(expand '(when true 1)) ; => (if true 1 ())\n```"
+    },
+    "expand-compiled": {
+      "source": "src/StartingEnv.hs",
+      "line": 260,
+      "original": "expands and desugars the code.\n\nExample Usage:\n```\n(expand-compiled '(+ 2 3)) ; => (Int.+ 2 3)\n```",
+      "source_html_sha256": "ec3d92c7566c8519c64beb907479e55dfaa39efc319fec8b2b71a7f5e653078f",
+      "translation": "コードを展開し、糖衣構文を取り除きます。\n\n例えば、次のように記述します。\n\n```carp\n(expand-compiled '(+ 2 3)) ; => (Int.+ 2 3)\n```"
+    },
+    "file": {
+      "source": "src/StartingEnv.hs",
+      "line": 332,
+      "original": "returns the file a symbol was defined in.\n\nExample Usage:\n```\n(file mysymbol)\n```",
+      "source_html_sha256": "e36f637dfeea3e6b5f4c56b4e9eac94f07ca6cd9a2ac5db5d9847689b5238e17",
+      "translation": "シンボルが定義されたファイルを返します。\n\n例えば、次のように記述します。\n\n```carp\n(file mysymbol)\n```"
+    },
+    "filter": {
+      "source": "core/List.carp",
+      "line": 80,
+      "original": "Returns a list containing only the elements of `xs` that satisify\npredicate `p`.\n\n```\n(filter (fn [x] (= 'a x)) '(a b a b a b a b))\n=> (a a a a)\n```",
+      "source_html_sha256": "a354af72a631bacf28a0a7b7942e07fec1e36a7e2343b62af1d0f8fe5f15d3e0",
+      "translation": "`xs` の要素のうち、述語 (predicate) `p` を満たす要素だけを含むリストを返します。\n\n例えば、次のように記述します。\n\n```carp\n(filter (fn [x] (= 'a x)) '(a b a b a b a b))\n=> (a a a a)\n```"
+    },
+    "flatten": {
+      "source": "core/List.carp",
+      "line": 237,
+      "original": "Flattens a list recursively.\n\n```\n(flatten '(1 2 (3 (4))))\n=> '(1 2 3 4)\n```",
+      "source_html_sha256": "9a7af1551c03ac9bc0876f9874813996d35bc0fd143bf3bf0f7ecb0c0ab98ac0",
+      "translation": "リストを再帰的に平坦化します。\n\n例えば、次のように記述します。\n\n```carp\n(flatten '(1 2 (3 (4))))\n=> '(1 2 3 4)\n```"
+    },
+    "flip": {
+      "source": "core/ControlMacros.carp",
+      "line": 214,
+      "original": "Flips the arguments of a function `f`.\n```\n((flip Symbol.prefix) 'Bar 'Foo)\n=> (Foo.Bar)\n```",
+      "source_html_sha256": "0e58cc888261d8d6e24588f3c5d208db4f4ae31ad821c03bdbfbba372d894cbb",
+      "translation": "関数 `f` の引数を入れ替えます。\n\n例えば、次のように記述します。\n\n```carp\n((flip Symbol.prefix) 'Bar 'Foo)\n=> (Foo.Bar)\n```"
+    },
+    "get-env": {
+      "source": "src/StartingEnv.hs",
+      "line": 264,
+      "original": "gets an environment variable. The result will be `()` if it isn’t set.\n\nExample Usage:\n```\n(read-file \"CARP_DIR\")\n```",
+      "source_html_sha256": "d5b9291bc230750cc57572faa546af1d145aa22de942325e8fb2610c428c1600",
+      "translation": "環境変数を取得します。設定されていなければ、結果は `()` になります。\n\n例えば、次のように記述します。\n\n```carp\n(read-file \"CARP_DIR\")\n```",
+      "notes": [
+        "原文のコード例は `get-env` ではなく `read-file` を呼び出しています。例は原文を保持しています。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/StartingEnv.hs#L264)"
+      ]
+    },
+    "hash": {
+      "source": "src/StartingEnv.hs",
+      "line": 266,
+      "original": "calculates the hash associated with a value.\n\nExample Usage:\n```\n(hash '('my 'value)) ; => 3175346968842793108\n```",
+      "source_html_sha256": "04b546e8b2ecf79a8114d0cb49894db93163b7fe018e1aebcf6986cdf4364a01",
+      "translation": "値に対応するハッシュを計算します。\n\n例えば、次のように記述します。\n\n```carp\n(hash '('my 'value)) ; => 3175346968842793108\n```"
+    },
+    "help": {
+      "source": "src/StartingEnv.hs",
+      "line": 339,
+      "original": "prints help.\n\nExample Usage:\n```\n(help)\n```",
+      "source_html_sha256": "3fb5dcc98878912def034e4bda25670fa2d45c76438dde93bbb1d9ff8a6c2ce8",
+      "translation": "ヘルプを表示します。\n\n例えば、次のように記述します。\n\n```carp\n(help)\n```"
+    },
+    "host-arch": {
+      "source": "src/StartingEnv.hs",
+      "line": 244,
+      "original": "prints the host architecture (as returned by the Haskell function `System.Info.arch`).\n\nExample Usage:\n```\n(host-arch)\n```",
+      "source_html_sha256": "ba7b98985e86e6bbde0812ceae356cce1d200db289bbc242ff4891faad59945e",
+      "translation": "ホストのアーキテクチャを表示します。Haskell の関数 `System.Info.arch` が返す値です。\n\n例えば、次のように記述します。\n\n```carp\n(host-arch)\n```"
+    },
+    "host-bit-width": {
+      "source": "src/StartingEnv.hs",
+      "line": 246,
+      "original": "gets the bit width of the host platform.\n\nExample Usage:\n```\n(host-bit-width) ; => your host machine’s bit width, e.g. 32 or 64\n```",
+      "source_html_sha256": "59eef33dcc60e2dfb8c2fcc1a76a5ab6599dc3c087cd8c2abbfb5eeed0b7b63d",
+      "translation": "ホストプラットフォームのビット幅を取得します。\n\n例えば、次のように記述します。\n\n```carp\n(host-bit-width) ; => your host machine’s bit width, e.g. 32 or 64\n```"
+    },
+    "host-os": {
+      "source": "src/StartingEnv.hs",
+      "line": 245,
+      "original": "prints the host operating system (as returned by the Haskell function `System.Info.os`).\n\nExample Usage:\n```\n(host-os)\n```",
+      "source_html_sha256": "38d9d4a35a92ef4073d84aa9552f1a307d610a9c99c17c10a278774b9f99c9a5",
+      "translation": "ホストのオペレーティングシステムを表示します。Haskell の関数 `System.Info.os` が返す値です。\n\n例えば、次のように記述します。\n\n```carp\n(host-os)\n```"
+    },
+    "imod": {
+      "source": "core/Dynamic.carp",
+      "line": 41,
+      "original": "implements modulo on integers, and is much faster than\n[`mod](#mod).",
+      "source_html_sha256": "e7ebdda876b42e02f91843fdb63871a883ad8a592d14452c22b39155b168a058",
+      "translation": "整数の剰余演算を実装します。[`mod`](#mod) よりも大幅に高速です。"
+    },
+    "implements": {
+      "source": "src/StartingEnv.hs",
+      "line": 318,
+      "original": "designates a function as an implementation of an interface.\n\nExample Usage:\n```\n(implements zero Maybe.zero)\n```",
+      "source_html_sha256": "75d1f3f232b8a28a6d42733341d092a3c706a6a21ee2164b69bb4f7fa2df22c5",
+      "translation": "関数を、インターフェースの実装として指定します。\n\n例えば、次のように記述します。\n\n```carp\n(implements zero Maybe.zero)\n```"
+    },
+    "inc": {
+      "source": "core/Dynamic.carp",
+      "line": 19,
+      "original": "increments a number.",
+      "source_html_sha256": "d4635c7a22dc7bf7675b409dca1c5d373b9c971a3d18a7119ac7e7df946ddbdc",
+      "translation": "数値を 1 増やします。"
+    },
+    "info": {
+      "source": "src/StartingEnv.hs",
+      "line": 302,
+      "original": "prints all information associated with a symbol.\n\nExample Usage:\n```\n(info mysymbol)\n```",
+      "source_html_sha256": "8ddcc0345784019612c674b4fb1574091294611cff1cb3c29bfa4a87d9f2d029",
+      "translation": "シンボルに対応するすべての情報を表示します。\n\n例えば、次のように記述します。\n\n```carp\n(info mysymbol)\n```"
+    },
+    "kind": {
+      "source": "src/StartingEnv.hs",
+      "line": 310,
+      "original": "prints the kind of a symbol.\n\nExample Usage:\n```\n(kind mysymbol)\n```",
+      "source_html_sha256": "b0bf30d0270bd5529381a8559c046beb5f2ae2058c15a364db19d8cf43451444",
+      "translation": "シンボルのカインド (kind) を表示します。\n\n例えば、次のように記述します。\n\n```carp\n(kind mysymbol)\n```"
+    },
+    "last": {
+      "source": "src/StartingEnv.hs",
+      "line": 254,
+      "original": "gets the last element of a list or array.\n\nExample Usage:\n```\n(last '(1 2 3)) ; => 3\n```",
+      "source_html_sha256": "3c83af260834333a49f42e05f6c52a4059df77ee49501f4230801be3c413f576",
+      "translation": "リストまたは配列の最後の要素を取得します。\n\n例えば、次のように記述します。\n\n```carp\n(last '(1 2 3)) ; => 3\n```"
+    },
+    "length": {
+      "source": "src/StartingEnv.hs",
+      "line": 251,
+      "original": "returns the length of the argument (must be an array, string or list).\n\nExample Usage:\n```\n(length '(1 2 3)) ; => 3\n```",
+      "source_html_sha256": "2ea216e21650f669c41a2fa111f77fe8a2b87b05ff516a5a16f51dfcde7789c2",
+      "translation": "引数の長さを返します。引数は配列、文字列、リストのいずれかである必要があります。\n\n例えば、次のように記述します。\n\n```carp\n(length '(1 2 3)) ; => 3\n```",
+      "notes": [
+        "原文は配列・文字列・リストを受け取ると説明していますが、固定版の `commandLength` が処理するのは `Arr` と `Lst` です。文字列用には `Dynamic.String.length` も定義されています。これはソースの確認によるものです。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L381)"
+      ]
+    },
+    "line": {
+      "source": "src/StartingEnv.hs",
+      "line": 333,
+      "original": "returns the line a symbol was defined on.\n\nExample Usage:\n```\n(line mysymbol)\n```",
+      "source_html_sha256": "c9c72cdf35a830cfebd95d4108cd128308284ffc884e92284be2336ae68b35b3",
+      "translation": "シンボルが定義された行を返します。\n\n例えば、次のように記述します。\n\n```carp\n(line mysymbol)\n```"
+    },
+    "list": {
+      "source": "src/StartingEnv.hs",
+      "line": 291,
+      "original": "creates an array from a collection of elements.\n\nExample Usage:\n```\n(list 1 2 3) ; => (1 2 3)\n```",
+      "source_html_sha256": "b0e95a518c05cefa58686dcb00d5d3ea480a0622656f93dbae70bb3ae1a5dfa8",
+      "translation": "要素の集まりから配列を作成します。\n\n例えば、次のように記述します。\n\n```carp\n(list 1 2 3) ; => (1 2 3)\n```",
+      "notes": [
+        "原文は「配列を作成する」と説明していますが、固定版の `commandList` はリスト (`Lst`) を構築しています。説明とコード例は原文を保持しています。これはソースの確認によるものです。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L376)"
+      ]
+    },
+    "list?": {
+      "source": "core/Macros.carp",
+      "line": 65,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "load": {
+      "source": "src/StartingEnv.hs",
+      "line": 295,
+      "original": "loads a file into the current environment.\n\nExample Usage:\n```\n(load \"myfile.carp\")\n(load \"myrepo@version\" \"myfile\")\n```",
+      "source_html_sha256": "09b16755013ac0f0f38e4b17cc9a91e0c113fdcef7797448d1bd5c7c99c7f4a0",
+      "translation": "現在の環境にファイルを読み込みます。\n\n例えば、次のように記述します。\n\n```carp\n(load \"myfile.carp\")\n(load \"myrepo@version\" \"myfile\")\n```"
+    },
+    "load-once": {
+      "source": "src/StartingEnv.hs",
+      "line": 296,
+      "original": "loads a file and prevents it from being reloaded (see `reload`).\n\nExample Usage:\n```\n(load-once \"myfile.carp\")\n(load \"myrepo@version\" \"myfile\")\n```",
+      "source_html_sha256": "09314cbb49388262bcb87930f0b1be8a8b254241fe02880738aa404f17e3f974",
+      "translation": "ファイルを読み込み、再読み込みを防ぎます。[`reload`](#reload) を参照してください。\n\n例えば、次のように記述します。\n\n```carp\n(load-once \"myfile.carp\")\n(load \"myrepo@version\" \"myfile\")\n```",
+      "notes": [
+        "原文の 2 行目のコード例は `load-once` ではなく `load` を呼び出しています。例は原文を保持しています。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/StartingEnv.hs#L295)"
+      ]
+    },
+    "macro-error": {
+      "source": "src/StartingEnv.hs",
+      "line": 256,
+      "original": "logs an error and errors out of a macro.\n\nExample Usage:\n```\n(macro-error \"this is wrong\")\n```",
+      "source_html_sha256": "40cc467cb367d45ea135268d276ea9697c1697653f063ca5dfb8e8c9847b901e",
+      "translation": "エラーを記録し、エラーによってマクロの処理を終了します。\n\n例えば、次のように記述します。\n\n```carp\n(macro-error \"this is wrong\")\n```"
+    },
+    "macro-log": {
+      "source": "src/StartingEnv.hs",
+      "line": 292,
+      "original": "logs a message in a macro.\n\nExample Usage:\n```\n(macro-log \"this will be printed at compile time\")\n```",
+      "source_html_sha256": "0d1069873755c41f1d95e374a3bd186416754f3a2aa88211ba86c961f21df028",
+      "translation": "マクロ内でメッセージを記録します。\n\n例えば、次のように記述します。\n\n```carp\n(macro-log \"this will be printed at compile time\")\n```"
+    },
+    "managed?": {
+      "source": "src/StartingEnv.hs",
+      "line": 304,
+      "original": "checks whether a type is managed by Carp by checking whether `delete` was implemented for it. For an explanation of memory management, you can reference [this document](https://carp-lang.github.io/carp-docs/Memory.html).\n\nExample Usage:\n```\n(register-type Unmanaged \"void*\")\n(managed? Unmanaged) ; => false\n```",
+      "source_html_sha256": "5fee2cff3a94a17725b4a8a9e6d7afe16f393f954dc783b9b546c0ea7ddcbe29",
+      "translation": "型に `delete` が実装されているかどうかを調べることで、その型が Carp によるメモリ管理の対象かどうかを調べます。メモリ管理の説明は、[メモリ管理の文書](../../docs/Memory-JP.html) を参照してください。\n\n例えば、次のように記述します。\n\n```carp\n(register-type Unmanaged \"void*\")\n(managed? Unmanaged) ; => false\n```"
+    },
+    "map": {
+      "source": "core/List.carp",
+      "line": 223,
+      "original": "Applies a function `f` to each element in the list or array `xs` and\nreturns a list dynamic data literal containing the result of the function\napplications.\n\n```\n'(map symbol? '(a b c))\n=> (true true true)\n'(map (curry + 1) '(1 2 3))\n=> (2 3 4)\n```",
+      "source_html_sha256": "aa569e9b5aa4b66537d4240336df98bd0c78719536a4e41e3736bb875a5a1f27",
+      "translation": "リストまたは配列 `xs` の各要素に関数 `f` を適用し、その結果を含むリスト形式の動的データリテラルを返します。\n\n例えば、次のように記述します。\n\n```carp\n'(map symbol? '(a b c))\n=> (true true true)\n'(map (curry + 1) '(1 2 3))\n=> (2 3 4)\n```"
+    },
+    "members": {
+      "source": "src/StartingEnv.hs",
+      "line": 305,
+      "original": "returns the members of a type as an array.\n\nExample Usage:\n```\n(members MyType)\n```",
+      "source_html_sha256": "0f62197546f046614cf6ba60a019b2a969cac8d2edcb65c0c85593ccd0ad5848",
+      "translation": "型のメンバーを配列として返します。\n\n例えば、次のように記述します。\n\n```carp\n(members MyType)\n```"
+    },
+    "meta": {
+      "source": "src/StartingEnv.hs",
+      "line": 316,
+      "original": "gets the value under `\"mykey\"` in the meta map associated with a symbol. It returns `()` if the key isn’t found.\n\nExample Usage:\n```\n(meta mysymbol \"mykey\")\n```",
+      "source_html_sha256": "2d3572233832286658e551cc25b62cdf9e718b67bd951079f53e0d6ea5ad4cc4",
+      "translation": "シンボルに対応するメタデータ (metadata) のマップから、`\"mykey\"` に対応する値を取得します。キーが見つからなければ `()` を返します。\n\n例えば、次のように記述します。\n\n```carp\n(meta mysymbol \"mykey\")\n```"
+    },
+    "meta-set!": {
+      "source": "src/StartingEnv.hs",
+      "line": 324,
+      "original": "sets a new key and value pair on the meta map associated with a symbol.\n\nExample Usage:\n```\n(meta-set! mysymbol \"mykey\" \"myval\")\n```",
+      "source_html_sha256": "72d34952586b34d2715e755a7bccf8593f5f1ea1db5916fdc33de4de3b1a83a1",
+      "translation": "シンボルに対応するメタデータのマップに、新しいキーと値のペアを設定します。\n\n例えば、次のように記述します。\n\n```carp\n(meta-set! mysymbol \"mykey\" \"myval\")\n```"
+    },
+    "mod": {
+      "source": "core/Dynamic.carp",
+      "line": 31,
+      "original": "implements modulo, is slower than modulo specialized on\nintegers [`imod`](#imod).",
+      "source_html_sha256": "b5cf00158850099d60ed618aa676e9e014cacbc1a35305eb318c6d6ef440c333",
+      "translation": "剰余演算を実装します。整数に特化した剰余演算 [`imod`](#imod) よりも低速です。"
+    },
+    "n-times": {
+      "source": "core/Map.carp",
+      "line": 665,
+      "original": "make a list by executing `f` `n` times.",
+      "source_html_sha256": "96893b679a7f9f2ad19ce577ae4925298e87e86729ab99d200c3be6e0805d7b1",
+      "translation": "`f` を `n` 回実行してリストを作成します。"
+    },
+    "neg": {
+      "source": "core/Dynamic.carp",
+      "line": 27,
+      "original": "negates a number.",
+      "source_html_sha256": "d7f43d6277382be1a39fb737fd53e4f02b2f1c6b56d7db055dcbc561b2805168",
+      "translation": "数値の符号を反転します。"
+    },
+    "nil": {
+      "source": "core/Dynamic.carp",
+      "line": 12,
+      "original": "is the value `nil`, i.e. the empty list.",
+      "source_html_sha256": "da93f294027f58197ef69d2128039ced6a1e84599c148a379e93a85b775a9c78",
+      "translation": "値 `nil`、つまり空のリストです。"
+    },
+    "nil?": {
+      "source": "core/Dynamic.carp",
+      "line": 15,
+      "original": "checks whether a value is nil, i.e. the empty list.",
+      "source_html_sha256": "9c354fc11c4757e2182d6e5ecc404cdd5efe556c30e6786f4d091bed2dbcc6b4",
+      "translation": "値が `nil`、つまり空のリストかどうかを調べます。"
+    },
+    "not": {
+      "source": "src/StartingEnv.hs",
+      "line": 257,
+      "original": "negates its boolean argument.\n\nExample Usage:\n```\n(not false) ; => true\n```",
+      "source_html_sha256": "6aa8ac1a37cb61d54047e5ad2ab0631b87b3d43d31665a837c0fb4a6dbeab6ca",
+      "translation": "真偽値の引数を否定します。\n\n例えば、次のように記述します。\n\n```carp\n(not false) ; => true\n```"
+    },
+    "nthcar": {
+      "source": "core/List.carp",
+      "line": 28,
+      "original": "takes the `n`th head or `car` of the list `pair`.",
+      "source_html_sha256": "361a224d488fbbeefb86295cd655e2dd7224a302bce0f2364c6bbd20dbc5bd1a",
+      "translation": "リスト `pair` の、`n` 番目の先頭要素、つまり `car` を取得します。"
+    },
+    "nthcdr": {
+      "source": "core/List.carp",
+      "line": 24,
+      "original": "takes the `n`th tail or `cdr` of the list `pair`.",
+      "source_html_sha256": "3151402b6301f42a1d144fb617d0ede7b2c7db67d3e48a9fcdff264553d2c57c",
+      "translation": "リスト `pair` の、`n` 番目の先頭を除いた残り、つまり `cdr` を取得します。"
+    },
+    "number?": {
+      "source": "core/Macros.carp",
+      "line": 71,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "odd?": {
+      "source": "core/Dynamic.carp",
+      "line": 49,
+      "original": "checks whether the number `n` is odd.",
+      "source_html_sha256": "6715d9f8a11d666c00f4a2158d0e4d57e2d4317a99fed01da9a946605bfd0a89",
+      "translation": "数値 `n` が奇数かどうかを調べます。"
+    },
+    "parse": {
+      "source": "src/StartingEnv.hs",
+      "line": 250,
+      "original": "parses a string into an expression\n\nExample Usage:\n```\n(parse \"(+ 1 2)\") ; => (+ 1 2)\n```",
+      "source_html_sha256": "91e41ad6422714f202ecfd94542b9244a30b286823f3bb622af0ca9af088389c",
+      "translation": "文字列を構文解析 (parse) して式に変換します。\n\n例えば、次のように記述します。\n\n```carp\n(parse \"(+ 1 2)\") ; => (+ 1 2)\n```"
+    },
+    "postwalk": {
+      "source": "core/List.carp",
+      "line": 268,
+      "original": "Performs a depth-first, post-order traversal of `form` and\ncalls `f` on each subform, collecting the result.\n\nExample:\n```\n; note: this could be achieved using `walk-replace` as well\n(postwalk (fn [x]\n            (cond\n              (= x '+) '*\n              (= x '-) '/\n              x))\n          '(+ 1 (- 2 3))) ; => (* 1 (/ 2 3))\n```",
+      "source_html_sha256": "bac8736757e99dbc97ae4f372742ed2e4873365c9148c224597dd053c8ffaa7a",
+      "translation": "`form` を深さ優先・後順 (post-order) で走査し、各部分形式に `f` を適用して結果を集めます。\n\n例えば、次のように記述します。\n\n```carp\n; 注意: これは `walk-replace` でも実現できる\n(postwalk (fn [x]\n            (cond\n              (= x '+) '*\n              (= x '-) '/\n              x))\n          '(+ 1 (- 2 3))) ; => (* 1 (/ 2 3))\n```",
+      "code_comment_translations": {
+        "; note: this could be achieved using `walk-replace` as well": "; 注意: これは `walk-replace` でも実現できる"
+      }
+    },
+    "prewalk": {
+      "source": "core/List.carp",
+      "line": 284,
+      "original": "behaves like [`postwalk`](#postwalk), but does pre-order\ntraversal.\n\nExample:\n```\n(prewalk (fn [x] (if (number? x) (* x 4) x)) '(+ 1 (- 2 3))) ; => (+ 4 (- 8 12))\n```",
+      "source_html_sha256": "9a1d0ccd43ffa7bfbdcd659575ea4ef68c6628b33c1ffe59db1cb9686a9642e3",
+      "translation": "[`postwalk`](#postwalk) と同様に動作しますが、前順 (pre-order) で走査します。\n\n例えば、次のように記述します。\n\n```carp\n(prewalk (fn [x] (if (number? x) (* x 4) x)) '(+ 1 (- 2 3))) ; => (+ 4 (- 8 12))\n```"
+    },
+    "proc?": {
+      "source": "core/Dynamic.carp",
+      "line": 5,
+      "original": "checks whether `x` is callable.",
+      "source_html_sha256": "0d51f811e923263629584e4e43de3a3ab922bed88ff5936cb3022bb4b1839823",
+      "translation": "`x` が呼び出し可能 (callable) かどうかを調べます。"
+    },
+    "project": {
+      "source": "src/StartingEnv.hs",
+      "line": 243,
+      "original": "prints the current project state.\n\nExample Usage:\n```\n(project)\n```",
+      "source_html_sha256": "ac785643d774ba95ad8ca8cd09eabdd75cb22b251299ec24d5b42199ab406b31",
+      "translation": "現在のプロジェクトの状態を表示します。\n\n例えば、次のように記述します。\n\n```carp\n(project)\n```"
+    },
+    "quit": {
+      "source": "src/StartingEnv.hs",
+      "line": 238,
+      "original": "quits the program.\n\nExample Usage:\n```\n(quit)\n```",
+      "source_html_sha256": "b914cd50a8163cfefcda53b201475e3278f2623b87fefe21855f3a206e1f3abf",
+      "translation": "プログラムを終了します。\n\n例えば、次のように記述します。\n\n```carp\n(quit)\n```"
+    },
+    "quote": {
+      "source": "src/StartingEnv.hs",
+      "line": 301,
+      "original": "quotes any value.\n\nExample Usage:\n```\n(quote x) ; where x is an actual symbol\n```",
+      "source_html_sha256": "f5577b9c3ac94548d69ac73f2968dc4daaff8e5d319fdef0fad7b0e922327663",
+      "translation": "任意の値をクォートします。\n\n例えば、次のように記述します。\n\n```carp\n(quote x) ; x は実際のシンボル\n```",
+      "code_comment_translations": {
+        "; where x is an actual symbol": "; x は実際のシンボル"
+      }
+    },
+    "quoted": {
+      "source": "core/Macros.carp",
+      "line": 16,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "read-file": {
+      "source": "src/StartingEnv.hs",
+      "line": 263,
+      "original": "reads a file into a string.\n\nExample Usage:\n```\n(read-file \"myfile.txt\")\n```",
+      "source_html_sha256": "324446c45d8a4a7d97e9d82e487f3da1bb071adc15f3ca1a7163041daef7fe2f",
+      "translation": "ファイルを文字列として読み込みます。\n\n例えば、次のように記述します。\n\n```carp\n(read-file \"myfile.txt\")\n```"
+    },
+    "recursive": {
+      "source": "src/StartingEnv.hs",
+      "line": 311,
+      "original": "marks a type as a heap indirection that may appear in otherwise by-value-recursive member positions. The author vouches that the type's copy/delete own its contents correctly.\n\nExample Usage:\n```\n(recursive MyRc)\n```",
+      "source_html_sha256": "8ad09f70276f4d9cdd3ed13f056faf6ef75c7cec5737622c492ae925541684ce",
+      "translation": "型をヒープ上の間接参照 (indirection) としてマークします。この型は、それ以外では値による再帰になってしまうメンバーの位置に現れることができます。その型の `copy` と `delete` が内容の所有権を適切に扱うことは、作成者が保証します。\n\n例えば、次のように記述します。\n\n```carp\n(recursive MyRc)\n```"
+    },
+    "reduce": {
+      "source": "core/List.carp",
+      "line": 48,
+      "original": "Reduces or 'folds' a data literal, such as a list or array, into a single\nvalue through successive applications of `f`.",
+      "source_html_sha256": "1173c93a93bb567751f10effa232c2754c238c5f38aebec3672ea2cb4bf47814",
+      "translation": "リストや配列などのデータリテラルに `f` を繰り返し適用し、単一の値へ畳み込みます。"
+    },
+    "register": {
+      "source": "src/StartingEnv.hs",
+      "line": 337,
+      "original": "registers a new function. This is used to define C functions and other symbols that will be available at link time.\n\nExample Usage:\n```\n(register name <signature> <optional: override>)\n```",
+      "source_html_sha256": "97cb7bd85b8eb5df570f0cdc3c1f8c51c44903887ef95319dff8f0137144cd11",
+      "translation": "新しい関数を登録します。リンク時に利用できる C の関数や、その他のシンボルを定義するために使用します。\n\n例えば、次のように記述します。\n\n```carp\n(register name <signature> <optional: override>)\n```"
+    },
+    "register-type": {
+      "source": "src/StartingEnv.hs",
+      "line": 335,
+      "original": "registers a new type from C.\n\nExample Usage:\n```\n(register-type Name <optional: c-name> <optional: members>)\n```",
+      "source_html_sha256": "e7277e22ab6698b19d104b34ceb5971f82164ab97404e4d1d7deaad94fad227c",
+      "translation": "C の新しい型を登録します。\n\n例えば、次のように記述します。\n\n```carp\n(register-type Name <optional: c-name> <optional: members>)\n```"
+    },
+    "relative-include": {
+      "source": "src/StartingEnv.hs",
+      "line": 262,
+      "original": "adds a relative include, i.e. a C `include` with quotes. It also prepends the current directory.\n\nExample Usage:\n```\n(relative-include \"myheader.h\")\n```",
+      "source_html_sha256": "00c253f056f1886753e7d1a1ac6050ba1656150301097135b6262fa61bce13a2",
+      "translation": "相対インクルード、つまり引用符を使う C の `include` を追加します。また、先頭に現在のディレクトリを付けます。\n\n例えば、次のように記述します。\n\n```carp\n(relative-include \"myheader.h\")\n```"
+    },
+    "reload": {
+      "source": "src/StartingEnv.hs",
+      "line": 241,
+      "original": "reloads all currently loaded files that weren’t marked as only loading once (see `load` and `load-once`).\n\nExample Usage:\n```\n(reload)\n```",
+      "source_html_sha256": "150ffeaab23207ce0f160509b41426bbe1e0e0417041ea7475e953415be5b8eb",
+      "translation": "現在読み込まれているファイルのうち、1 回だけ読み込むようにマークされていないファイルをすべて再読み込みします。[`load`](#load) と [`load-once`](#load-once) を参照してください。\n\n例えば、次のように記述します。\n\n```carp\n(reload)\n```"
+    },
+    "reverse": {
+      "source": "core/List.carp",
+      "line": 92,
+      "original": "Reverses the order of elements in an array or list.\n\n```\n(reverse [1 2 3 4])\n=> [4 3 2 1]\n```",
+      "source_html_sha256": "76caefd0283b94fbca16e51bbb9c0aadfeb992c1238ffe3c278703f0d5223c01",
+      "translation": "配列またはリストの要素の順序を反転します。\n\n例えば、次のように記述します。\n\n```carp\n(reverse [1 2 3 4])\n=> [4 3 2 1]\n```"
+    },
+    "round": {
+      "source": "src/StartingEnv.hs",
+      "line": 267,
+      "original": "rounds its numeric argument.\n\nExample Usage:\n```\n(round 2.4) ; => 2\n```",
+      "source_html_sha256": "c699e48f867ecb150cd77894861728c72b463811a7e8c641f6920a3afa2693da",
+      "translation": "数値の引数を丸めます。\n\n例えば、次のように記述します。\n\n```carp\n(round 2.4) ; => 2\n```"
+    },
+    "run": {
+      "source": "src/StartingEnv.hs",
+      "line": 240,
+      "original": "runs the built executable.\n\nExample Usage:\n```\n(run)\n```",
+      "source_html_sha256": "2995c45c59bb594fa728e06197cc68dd78e1688a26e448f1526ce1d7475ad609",
+      "translation": "ビルドされた実行ファイルを実行します。\n\n例えば、次のように記述します。\n\n```carp\n(run)\n```"
+    },
+    "run-exe-with-args": {
+      "source": "src/StartingEnv.hs",
+      "line": 290,
+      "original": "runs an executable with arguments.\n\nExample Usage:\n```\n(run-exe-with-args \"path-to-executable\" 1 2 3)\n```",
+      "source_html_sha256": "1967617d2e5eedae85e5be72ad2f2f0c9fbfd60d77bfe9091ad04039cc8711fd",
+      "translation": "実行ファイルを、引数を渡して実行します。\n\n例えば、次のように記述します。\n\n```carp\n(run-exe-with-args \"path-to-executable\" 1 2 3)\n```"
+    },
+    "run-with-args": {
+      "source": "src/StartingEnv.hs",
+      "line": 289,
+      "original": "runs the built executable with arguments.\n\nExample Usage:\n```\n(run-with-args 1 2 3)\n```",
+      "source_html_sha256": "749a6c15e115772fba333e4ecf983d10f18412f650d2a7e9dc2434d51550084d",
+      "translation": "ビルドされた実行ファイルを、引数を渡して実行します。\n\n例えば、次のように記述します。\n\n```carp\n(run-with-args 1 2 3)\n```"
+    },
+    "s-expr": {
+      "source": "src/StartingEnv.hs",
+      "line": 294,
+      "original": "returns the s-expression associated with a binding. When the binding is a type, the deftype form is returned instead of the type's module by default. Pass an optional bool argument to explicitly request the module for a type instead of its definition form. If the bool is true, the module for the type will be returned. Returns an error when no definition is found for the binding.\n\nExample Usage:\n```\n(s-expr foo), (s-expr foo true)\n```",
+      "source_html_sha256": "2223d04fd25ba2e11b30c78bf0ef645865023f1db6a9ba2b42fac2e87742d61e",
+      "translation": "束縛に対応する S 式 (s-expression) を返します。束縛が型の場合、既定では型のモジュールではなく `deftype` 形式を返します。型の定義形式の代わりにモジュールを明示的に要求するには、省略可能な真偽値の引数を渡します。これが `true` なら、型のモジュールを返します。束縛の定義が見つからない場合はエラーを返します。\n\n例えば、次のように記述します。\n\n```carp\n(s-expr foo), (s-expr foo true)\n```"
+    },
+    "save-docs-ex": {
+      "source": "src/StartingEnv.hs",
+      "line": 284,
+      "original": "takes two arrays, one with paths to modules (as symbols), and one with filenames (as strings). The filenames are used to emit global symbols in those files into a 'Global' module.\n\nExample Usage:\n```\n(save-docs-internal '(ModuleA ModuleB) '(\"globals.carp\"))\n```",
+      "source_html_sha256": "9d234268812c5ac68b0e33b50f0d20c42cb56d47a8f67cf54e9779eb9a656679",
+      "translation": "2 つの配列を受け取ります。一方はシンボルとして表したモジュールへのパス、もう一方は文字列として表したファイル名を含みます。これらのファイル名を使い、各ファイル内のグローバルシンボルを「Global」モジュールへ出力します。\n\n例えば、次のように記述します。\n\n```carp\n(save-docs-internal '(ModuleA ModuleB) '(\"globals.carp\"))\n```",
+      "notes": [
+        "原文の例は `save-docs-internal` という名前と、クォートしたリストを使っています。固定版では `save-docs-ex` として登録され、`commandSaveDocsEx` は 2 つの配列 (`Arr`) を受け取る形で実装されています。例は原文を保持しています。これはソースの確認によるもので、例の実行結果ではありません。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L680)"
+      ]
+    },
+    "set-env": {
+      "source": "src/StartingEnv.hs",
+      "line": 283,
+      "original": "sets an environment variable.\n\nExample Usage:\n```\n(set-env \"CARP_WAS_HERE\" \"true\")\n```",
+      "source_html_sha256": "318284a809dca6d3d7b46c70bcdd8b071a46f633015a48eca318e7e89bb07afc",
+      "translation": "環境変数を設定します。\n\n例えば、次のように記述します。\n\n```carp\n(set-env \"CARP_WAS_HERE\" \"true\")\n```"
+    },
+    "shell": {
+      "source": "src/StartingEnv.hs",
+      "line": 265,
+      "original": "runs a shell command string.\n\nExample Usage:\n```\n(shell \"echo hello\")\n```",
+      "source_html_sha256": "e35f6cea02f63f0d10f76f54a864b47c5c6874c54a4490e5c8507d02369337ae",
+      "translation": "文字列で指定されたシェルコマンドを実行します。\n\n例えば、次のように記述します。\n\n```carp\n(shell \"echo hello\")\n```"
+    },
+    "sort": {
+      "source": "core/List.carp",
+      "line": 316,
+      "original": "Sorts a list using the provided predicate. It is not a stable sort.\nExample:\n```\n(sort '(1 3 4 2 5 4) <) ; => (1 2 3 4 4 5)\n(sort '(1 3 4 2 5 4) >) ; => (5 4 4 3 2 1)\n(sort '(\"one\" \"two---\" \"three\" \"four\") (fn [a b] (< (String.length a) (String.length b)))) ; => (\"one\" \"four\" \"three\" \"two---\")\n```",
+      "source_html_sha256": "ea3663f21a3ad177848d367fb12ee0933cbf4bc993c67ffb589f7b39d3efe9a2",
+      "translation": "渡された述語を使ってリストをソートします。安定ソートではありません。\n\n例えば、次のように記述します。\n\n```carp\n(sort '(1 3 4 2 5 4) <) ; => (1 2 3 4 4 5)\n(sort '(1 3 4 2 5 4) >) ; => (5 4 4 3 2 1)\n(sort '(\"one\" \"two---\" \"three\" \"four\") (fn [a b] (< (String.length a) (String.length b)))) ; => (\"one\" \"four\" \"three\" \"two---\")\n```"
+    },
+    "str": {
+      "source": "src/StartingEnv.hs",
+      "line": 293,
+      "original": "stringifies its arguments.\n\nExample Usage:\n```\n(str 1 \" \" 2 \" \" 3) ; => \"1 2 3\"\n```",
+      "source_html_sha256": "e7d5055c0fd51bccf955c8bcba182e9bcc7cdbd06d70c0dc1748360d7f3b5ed2",
+      "translation": "引数を文字列に変換します。\n\n例えば、次のように記述します。\n\n```carp\n(str 1 \" \" 2 \" \" 3) ; => \"1 2 3\"\n```"
+    },
+    "string?": {
+      "source": "core/Macros.carp",
+      "line": 59,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "structured-info": {
+      "source": "src/StartingEnv.hs",
+      "line": 303,
+      "original": "gets all information associated with a symbol as a list of the form `(type|(), info|(), metadata)`.\n\nExample Usage:\n```\n(structured-info mysymbol)\n```",
+      "source_html_sha256": "b7f40996b77845fe6bbf7e438a2fde471bc221e5917f93a92c80a009cd25f10d",
+      "translation": "シンボルに対応するすべての情報を、`(type|(), info|(), metadata)` という形式のリストとして取得します。\n\n例えば、次のように記述します。\n\n```carp\n(structured-info mysymbol)\n```"
+    },
+    "symbol?": {
+      "source": "core/Macros.carp",
+      "line": 62,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "system-include": {
+      "source": "src/StartingEnv.hs",
+      "line": 261,
+      "original": "adds a system include, i.e. a C `#include` with angle brackets (`<>`).\n\nExample Usage:\n```\n(system-include \"stdint.h\")\n```",
+      "source_html_sha256": "fc60941183fe34c00951ee2caf96aed77e01be8647ec0cacd497596d4cc2e4e3",
+      "translation": "システムインクルード、つまり山括弧 (`<>`) を使う C の `#include` を追加します。\n\n例えば、次のように記述します。\n\n```carp\n(system-include \"stdint.h\")\n```"
+    },
+    "take": {
+      "source": "core/List.carp",
+      "line": 118,
+      "original": "Returns a list containing the first `n` elements of a list.\n\n```\n(take 3 '(1 2 3 4 5))\n=> (1 2 3)\n```",
+      "source_html_sha256": "4c28f61d7b3dc12b03a98272b03a22513361cd41d20af73f98854cb48704dc60",
+      "translation": "リストの最初の `n` 個の要素を含むリストを返します。\n\n例えば、次のように記述します。\n\n```carp\n(take 3 '(1 2 3 4 5))\n=> (1 2 3)\n```"
+    },
+    "type": {
+      "source": "src/StartingEnv.hs",
+      "line": 309,
+      "original": "prints the type of a symbol.\n\nExample Usage:\n```\n(type mysymbol)\n```",
+      "source_html_sha256": "12ab8f35bb7ff6fd9912ca1e47d8a314571147d465c74ecdf4edff95888fb9de",
+      "translation": "シンボルの型を表示します。\n\n例えば、次のように記述します。\n\n```carp\n(type mysymbol)\n```"
+    },
+    "unreduce": {
+      "source": "core/List.carp",
+      "line": 68,
+      "original": "Applies `f` to a starting value `x`, then generates a sequence of values\nby successively applying `f` to the result `lim-1` times.\nCollects results in the structure given by `acc`.\n\n```\n(unreduce (curry + 1) 0 10 (list))\n=> (1 2 3 4 5 6 7 8 9 10)\n```",
+      "source_html_sha256": "2372f37cf812df09a36a62a78b33e65f165b85668357b6b2c553f4ad4c0a65e6",
+      "translation": "開始値 `x` に `f` を適用し、その結果に `f` を順次 `lim-1` 回適用して値の列を生成します。結果は `acc` で指定された構造に集めます。\n\n例えば、次のように記述します。\n\n```carp\n(unreduce (curry + 1) 0 10 (list))\n=> (1 2 3 4 5 6 7 8 9 10)\n```"
+    },
+    "use": {
+      "source": "src/StartingEnv.hs",
+      "line": 306,
+      "original": "uses a module, i.e. imports the symbols inside that module into the current module.\n\nExample Usage:\n```\n(use MyModule)\n```",
+      "source_html_sha256": "dafcf00260093e30f2a8d75e203d6ef1b2982c21268fc995beee44c8e6067c46",
+      "translation": "モジュールを使用します。つまり、そのモジュール内のシンボルを現在のモジュールにインポートします。\n\n例えば、次のように記述します。\n\n```carp\n(use MyModule)\n```"
+    },
+    "walk": {
+      "source": "core/List.carp",
+      "line": 252,
+      "original": "traverses `form`, an arbitrary data structure, using the functions\n`inner` and `outer`. It will apply `inner` to each element of `form`, building\nup a data structure of the same type, then applies `outer` to the result. It\nrecognizes arrays and lists. Other data structures will just be passed to\n`outer`.\n\nExample:\n```\n(walk car reverse [[1 2] [3 4] [5 6]]) ; => [5 3 1]\n```",
+      "source_html_sha256": "1038a19fc2021b02262f0054124a36a26678228ed212fb04442736bb7c860c62",
+      "translation": "任意のデータ構造 `form` を、関数 `inner` と `outer` を使って走査します。`form` の各要素に `inner` を適用して同じ型のデータ構造を組み立て、その結果に `outer` を適用します。配列とリストを認識し、それ以外のデータ構造はそのまま `outer` に渡します。\n\n例えば、次のように記述します。\n\n```carp\n(walk car reverse [[1 2] [3 4] [5 6]]) ; => [5 3 1]\n```"
+    },
+    "walk-replace": {
+      "source": "core/List.carp",
+      "line": 303,
+      "original": "Performs a depth-first, pre-order traversal of `form` and\nfinds a matching replacement for each subform in the replacement pairs `pairs`,\nif applicable, collecting the result.\n\nExample:\n```\n(walk-replace '((+ *) (- /)) '(+ 1 (- 2 3))) ; => (* 1 (/ 2 3))\n```",
+      "source_html_sha256": "55f2a496e68870704f63f7bb47aaba4f30c136307939d4e2eddc752144f23de4",
+      "translation": "`form` を深さ優先・前順で走査します。各部分形式について、置換用のペア `pairs` に対応する置換があればそれを見つけ、結果を集めます。\n\n例えば、次のように記述します。\n\n```carp\n(walk-replace '((+ *) (- /)) '(+ 1 (- 2 3))) ; => (* 1 (/ 2 3))\n```"
+    },
+    "write-file": {
+      "source": "src/StartingEnv.hs",
+      "line": 282,
+      "original": "writes a string to a file.\n\nExample Usage:\n```\n(write-file \"myfile\" \"hello there!\")\n```",
+      "source_html_sha256": "591e3e657b5d1f3ff6f73acb367e5ead6725c0baff42773cb586efeab8002049",
+      "translation": "文字列をファイルに書き込みます。\n\n例えば、次のように記述します。\n\n```carp\n(write-file \"myfile\" \"hello there!\")\n```"
+    },
+    "zip": {
+      "source": "core/List.carp",
+      "line": 196,
+      "original": "Returns the *form* that results from applying  a function `f` to each of\nthe values supplied in `forms`.\nIf the members of a single form are exhuasted, the result of the\napplications thus far is returned, and any remaining members in the other\nforms are ignored.\n\n```\n(zip + '(1 2 3) '(4 5 6))\n=> ((+ 1 4) (+ 2 5) (+ 3 6))\n```\n\nIt's important to note that zip operates on forms, and that the form\nreturned by zip may not be evaluable by itself. For instance, to actually\ntransform the result in the example above into something Carp can\nevaluate, we need to wrap each member of the list in a `do`:\n\n```\n(append (list 'do) (zip + '(1 2 3) '(4 5 6)))\n=> (do (+ 1 4) (+ 2 5) (+ 3 6))\n(eval (append (list 'do) (zip + '(1 2 3) '(4 5 6))))\n=> 9 ;; do returns the value of the last form in its body\n```",
+      "source_html_sha256": "e91df9e6316b12396562333cc4a8078686b3b0814d2f1cb9ad0b813538bbdb67",
+      "translation": "`forms` で渡された各値に関数 `f` を適用して得られる *形式* を返します。いずれか 1 つの形式の要素を使い切ると、それまでの適用結果を返し、ほかの形式に残っている要素は無視します。\n\n例えば、次のように記述します。\n\n```carp\n(zip + '(1 2 3) '(4 5 6))\n=> ((+ 1 4) (+ 2 5) (+ 3 6))\n```\n\n`zip` が形式を操作することと、返された形式がそれだけでは評価できない場合があることに注意してください。例えば、上の例の結果を実際に Carp が評価できる形式へ変換するには、リストの各要素を `do` で囲む必要があります。\n\n```carp\n(append (list 'do) (zip + '(1 2 3) '(4 5 6)))\n=> (do (+ 1 4) (+ 2 5) (+ 3 6))\n(eval (append (list 'do) (zip + '(1 2 3) '(4 5 6))))\n=> 9 ;; do は本体の最後の形式の値を返す\n```",
+      "code_comment_translations": {
+        ";; do returns the value of the last form in its body": ";; do は本体の最後の形式の値を返す"
+      },
+      "notes": [
+        "原文はリストの各要素を `do` で囲むと説明していますが、掲載例が組み立てるのは、すべての式を 1 つの `do` に含めた形式です。説明と例は原文を保持しています。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/List.carp#L196)"
+      ]
+    }
+  }
+}

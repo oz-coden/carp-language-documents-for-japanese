@@ -1,0 +1,20 @@
+{
+  "module": "Dynamic.Debug",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Dynamic.carp",
+    "line": 77,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "trace": {
+      "source": "core/Dynamic.carp",
+      "line": 78,
+      "original": "prints the value of an expression to `stdout`, then returns its value.",
+      "source_html_sha256": "347a7fae4c14347c04a367048e49579bad07ff16709ad74c0add22c728d4bee7",
+      "translation": "式の値を `stdout` に表示し、その値を返します。"
+    }
+  }
+}

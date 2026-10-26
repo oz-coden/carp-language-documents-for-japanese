@@ -1,0 +1,30 @@
+{
+  "module": "Dynamic.Path",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "src/StartingEnv.hs",
+    "line": 345,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "absolute": {
+      "source": "src/StartingEnv.hs",
+      "line": 466,
+      "original": "converts a filepath to absolute.\n\nExample Usage:\n```\n(Path.absolute \"dir/file\") ; => \"/home/foo/dir/file\"\n```",
+      "source_html_sha256": "bf13848b53f675416d1916b2b4da34b8598ab9e9478b7fa1994e8d12eb9ee42e",
+      "translation": "ファイルパスを絶対パスに変換します。\n\n例えば、次のように記述します。\n\n```carp\n(Path.absolute \"dir/file\") ; => \"/home/foo/dir/file\"\n```"
+    },
+    "directory": {
+      "source": "src/StartingEnv.hs",
+      "line": 465,
+      "original": "takes the basename of a string taken to be a filepath.\n\nHistorical note: this is a command because it used to power one of the `include` macros.\n\nExample Usage:\n```\n(Path.directory \"dir/file\") ; => \"dir\"\n```",
+      "source_html_sha256": "99a441dc01423e5dd4577e7fbf222b9391fbbfc31c5198a1c7d4c51be15d1ea5",
+      "translation": "ファイルパスとみなした文字列のベース名 (basename) を取得します。\n\n歴史的な補足として、これがコマンドなのは、以前は `include` マクロの 1 つで使用されていたためです。\n\n例えば、次のように記述します。\n\n```carp\n(Path.directory \"dir/file\") ; => \"dir\"\n```",
+      "notes": [
+        "原文は「ベース名 (basename)」と説明していますが、固定版の実装が使用するのは `takeDirectory` です。掲載例もファイル名ではなくディレクトリ部分の `\"dir\"` を示しています。説明は原文を保持しています。これはソースの確認によるものです。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L582)"
+      ]
+    }
+  }
+}

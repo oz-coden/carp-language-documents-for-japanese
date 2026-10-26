@@ -3,9 +3,9 @@
 [日本語 API リファレンス](https://github.oz-coden.com/carp-language-documents-for-japanese/api/core/index.html) は、Carp の固定コミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` を対象としています。
 翻訳対象の版・用語・訳注は、[翻訳方針](../TRANSLATION.md) と [用語集](../GLOSSARY.md) に従います。
 
-Core の索引の案内文と、次の 38 モジュールの概要・説明文を翻訳しています。
+Core の索引の案内文と、固定版の標準生成スクリプトが出力する 48 モジュール・グローバル定義 2 ページすべての概要・説明文を翻訳しています。翻訳範囲は、この標準生成スクリプトの生成対象に対応します。
 
-| モジュール | 掲載項目 | 説明文の翻訳 |
+| API 文書 | 掲載項目 | 説明文の翻訳 |
 | --- | --- | --- |
 | `Array` | 87 | 86 |
 | `Bench` | 2 | 2 |
@@ -16,9 +16,21 @@ Core の索引の案内文と、次の 38 モジュールの概要・説明文�
 | `Debug` | 9 | 6 |
 | `Derive` | 5 | 5 |
 | `Double` | 61 | 55 |
+| `Dynamic` | 160 | 116 |
+| `Dynamic.Debug` | 1 | 1 |
+| `Dynamic.List` | 8 | 7 |
+| `Dynamic.Map` | 24 | 23 |
+| `Dynamic.Pair` | 1 | 1 |
+| `Dynamic.Path` | 2 | 2 |
+| `Dynamic.Project` | 3 | 3 |
+| `Dynamic.Random` | 1 | 1 |
+| `Dynamic.String` | 13 | 11 |
+| `Dynamic.Symbol` | 4 | 4 |
 | `Float` | 55 | 50 |
 | `Function` | 2 | 2 |
 | `Geometry` | 2 | 2 |
+| `Globals in ControlMacros.carp` | 22 | 19 |
+| `Globals in Macros.carp` | 37 | 37 |
 | `IO` | 16 | 16 |
 | `IO.Raw` | 31 | 31 |
 | `Int` | 44 | 39 |
@@ -45,9 +57,9 @@ Core の索引の案内文と、次の 38 モジュールの概要・説明文�
 | `Vector2` | 39 | 28 |
 | `Vector3` | 42 | 29 |
 | `VectorN` | 32 | 23 |
-| 合計 | 983 | 777 |
+| 合計 | 1,259 | 1,002 |
 
-原文に説明文がない 206 項目は、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、概要・説明文に含まれるコード例 24 件の実行コードと出力例も保持しています。英語の説明コメントは日本語に翻訳しています。
+原文に説明文がない 257 項目は、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、概要・説明文に含まれるコード例 148 件の実行コードと出力例も保持しています。英語の説明コメントは日本語に翻訳しています。
 
 ## 原典と生成元 (Sources and Generation)
 
@@ -69,9 +81,9 @@ Core の索引の案内文と、次の 38 モジュールの概要・説明文�
 | `scripts/prepare_api.py` | 対応関係の検査、Pages 用の生成、公開後の API 情報の検査 |
 
 原典は [RenderDocs.hs(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/RenderDocs.hs) によって HTML 化されます。
-各モジュールの生成済み HTML と訳文データは、それぞれ `api/upstream/<モジュール名>.html` と `api/ja/<モジュール名>.json` に保存します。
+各 API ページの生成済み HTML と訳文データは、それぞれ `api/upstream/<ページ名>.html` と `api/ja/<ページ名>.json` に保存します。グローバル定義のページ名も、生成結果の `Globals in Macros.carp` などを保持します。
 日本語版はこの出力の構成・CSS を使い、原文を開いて確認できる表示を加えています。
-原文のページ内リンクが別のモジュールの項目を指している場合や、識別子と大文字・小文字が異なる場合は、`api/snapshot.json` の `link_rewrites` に参照先を記録します。保存した原典 HTML は変更せず、日本語版の本文と展開表示のリンクを生成時に補正します。未翻訳のモジュールへの参照は、固定版の英語ソースへ案内します。
+原文のページ内リンクが別のモジュールの項目を指している場合や、識別子と大文字・小文字が異なる場合は、`api/snapshot.json` の `link_rewrites` に参照先を記録します。保存した原典 HTML は変更せず、日本語版の本文と展開表示のリンクを生成時に補正します。日本語訳がある参照先は日本語版へ案内し、原文そのものを示す参照先は固定版の英語ソースを保持します。
 
 ## 訳文の更新と検査 (Updating and Checking Translations)
 

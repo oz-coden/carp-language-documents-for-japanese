@@ -21,16 +21,20 @@
     "core/Char.carp": "25adfd6756a5dc30dd12e26bfcc7bc6754c136ab",
     "core/Color.carp": "cd0ae661da4713b5f20fea60c1302c76165bf036",
     "core/Control.carp": "8de7ddc08fb5cb0b63e388f26a4b8f89d5f4e736",
+    "core/ControlMacros.carp": "a10881438e52615530b99e144da6fcc48fece916",
     "core/Debug.carp": "a32b1affe1ba1014d84fbab61aee48316e4d1163",
     "core/Derive.carp": "b830bc3cdad638dcee1903d844e12065cf06d59e",
     "core/Double.carp": "4e0f1fae514b7f73b3581493d0d765dc3aa24af7",
+    "core/Dynamic.carp": "ff72b7efdb4d01dd14d85f26fd474bae6f378c75",
     "core/Float.carp": "d6b988c9ecfa6ea262d1a2cb3e5eb6c7c21e2cc2",
     "core/Function.carp": "75acae7db397a9be0509ce8bd39a2595f3e2dc4f",
     "core/Geometry.carp": "07f429cce5a70f78591b781cca6397940a9354d0",
     "core/IO.carp": "7307d77ef0a4c024239bb3f326b54201bf57e402",
     "core/Int.carp": "695b30771e5af4aa5f0b6c61b57fb4e7ed1756ff",
     "core/Introspect.carp": "8d9b3e5608bee9b5931dc3abc901e72d8b715d0d",
+    "core/List.carp": "11401990aee33eec75f01386eb8f602602bed5c0",
     "core/Long.carp": "1e16cd891d79af094baf538c9f36bf9ffa168e83",
+    "core/Macros.carp": "6a646cc18cc39a5a8d2f74f8f86d4700acac5249",
     "core/Map.carp": "859f4ca860d11051269537293416be40193ffb50",
     "core/Maybe.carp": "e73cae51252b8100e4378c66086c50130aea1b43",
     "core/Opaque.carp": "eaef1103d494eef50c4411df09dd3fd8e577d5e2",
@@ -56,7 +60,9 @@
     "docs/core/generate_core_docs.carp": "26c20d0f1a032ce4d6b5f6fb3bee0873d112958f",
     "docs/core/logo.png": "44aa36cd7278d90170ae0c3ade124c13fc1fa42d",
     "src/ArrayTemplates.hs": "2927c96296b05666840fdd88ba16c677ed2ac5ca",
+    "src/Commands.hs": "2c080e0d72f3fd512b82e97af536816eea63af52",
     "src/Deftype.hs": "8e4f4786f5b28c45bb80db83cd65eb4648f2ba7e",
+    "src/Primitives.hs": "02a31070d640cd539972df66cd6bd9cd634f5c71",
     "src/RenderDocs.hs": "092002e51df8cc2541fe8c3b34960e229eb07cd9",
     "src/StartingEnv.hs": "efb7309ee8c1f8e7f2f7cab4e4d6912b46da5abb",
     "src/StaticArrayTemplates.hs": "8aa625a8ac1525ad2becd762712c1f4cea7fe169",
@@ -114,6 +120,60 @@
       "snapshot_sha256": "5088dcf1ee45acb9f89b7b71e3174f2b7a7acc616cacffc2c4cb4de1ce3f0294",
       "translation": "api/ja/Double.json"
     },
+    "Dynamic": {
+      "snapshot": "api/upstream/Dynamic.html",
+      "snapshot_sha256": "bc2ddf3df0292bd604820f50d96cb828ac8160d7c1ed61d82862d89f9bcfdfc0",
+      "translation": "api/ja/Dynamic.json",
+      "link_rewrites": {
+        "https://github.com/carp-lang/Carp/blob/master/docs/LanguageGuide.md#dynamic-functions": "https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/LanguageGuide.md#dynamic-functions",
+        "https://carp-lang.github.io/carp-docs/Memory.html": "https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Memory.md"
+      }
+    },
+    "Dynamic.Debug": {
+      "snapshot": "api/upstream/Dynamic.Debug.html",
+      "snapshot_sha256": "58200c0b72a4962a606975d79a07e1c6ff6fe721bce7e6e8193aac998dc90b7b",
+      "translation": "api/ja/Dynamic.Debug.json"
+    },
+    "Dynamic.List": {
+      "snapshot": "api/upstream/Dynamic.List.html",
+      "snapshot_sha256": "bed2bb758b1074fd39e91c3ef1953bc515451344fe79cd93803548fb48d8dfd8",
+      "translation": "api/ja/Dynamic.List.json"
+    },
+    "Dynamic.Map": {
+      "snapshot": "api/upstream/Dynamic.Map.html",
+      "snapshot_sha256": "68f26452a6a72a08324dbbcaafee61656672cc81c512e32e234cbbf183d8ce00",
+      "translation": "api/ja/Dynamic.Map.json"
+    },
+    "Dynamic.Pair": {
+      "snapshot": "api/upstream/Dynamic.Pair.html",
+      "snapshot_sha256": "2ae26c1b6d79d6a7bd94630eb706ce8ba5e330a37d6ac055c0b1e1828ff365ea",
+      "translation": "api/ja/Dynamic.Pair.json"
+    },
+    "Dynamic.Path": {
+      "snapshot": "api/upstream/Dynamic.Path.html",
+      "snapshot_sha256": "0520756fb952ea602e20f280cd93bd13fc1012584cc1b852f8a136021c2bb694",
+      "translation": "api/ja/Dynamic.Path.json"
+    },
+    "Dynamic.Project": {
+      "snapshot": "api/upstream/Dynamic.Project.html",
+      "snapshot_sha256": "a9249fbe9c33923e9c5c92d838cedd8e8b6e3537880d378a7d799b4da0bc4bb0",
+      "translation": "api/ja/Dynamic.Project.json"
+    },
+    "Dynamic.Random": {
+      "snapshot": "api/upstream/Dynamic.Random.html",
+      "snapshot_sha256": "bd2086990d48394f1ab02d441760804078cd0599719fcd08d05e05e4924cb799",
+      "translation": "api/ja/Dynamic.Random.json"
+    },
+    "Dynamic.String": {
+      "snapshot": "api/upstream/Dynamic.String.html",
+      "snapshot_sha256": "37b1f99d81f843ce62144e32b87238d215554c0506e811dc102625b17fde79e5",
+      "translation": "api/ja/Dynamic.String.json"
+    },
+    "Dynamic.Symbol": {
+      "snapshot": "api/upstream/Dynamic.Symbol.html",
+      "snapshot_sha256": "f50815b2db7230a44b3a394bba95a573defba6ef98dac068e3f218123b372e15",
+      "translation": "api/ja/Dynamic.Symbol.json"
+    },
     "Float": {
       "snapshot": "api/upstream/Float.html",
       "snapshot_sha256": "cff6514e5806007827c66374454ca48055b19feda18a701020894e113d17ce32",
@@ -128,6 +188,16 @@
       "snapshot": "api/upstream/Geometry.html",
       "snapshot_sha256": "f40044e34ccd3707bd2fa63c2789fb813af6c7ba150e60630851fb0b07d88a00",
       "translation": "api/ja/Geometry.json"
+    },
+    "Globals in ControlMacros.carp": {
+      "snapshot": "api/upstream/Globals in ControlMacros.carp.html",
+      "snapshot_sha256": "d6ef77013abcd6e6180e985efc488c5b992633ded45b86bf109f63bf60aed53a",
+      "translation": "api/ja/Globals in ControlMacros.carp.json"
+    },
+    "Globals in Macros.carp": {
+      "snapshot": "api/upstream/Globals in Macros.carp.html",
+      "snapshot_sha256": "a7aae27f878979f2ab85c52ff5c728eae6421c61c4d4e6f37f6556c33863aa1c",
+      "translation": "api/ja/Globals in Macros.carp.json"
     },
     "IO": {
       "snapshot": "api/upstream/IO.html",

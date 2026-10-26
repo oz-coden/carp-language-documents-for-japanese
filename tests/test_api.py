@@ -107,7 +107,7 @@ class APIReferenceTests(unittest.TestCase):
         manifest['english_source_fallbacks']['StaticArray.html'] = 'core/StaticArray.carp'
         manifest_path.write_text(json.dumps(manifest))
         output = self.root / 'pages'
-        self.assertEqual(39, api.stage(self.root, output, '/test'))
+        self.assertEqual(51, api.stage(self.root, output, '/test'))
         page = (output / 'api/core/Array.html').read_text()
         self.assertIn('/test/GLOSSARY.html', page)
         self.assertIn('id="aset-uninitialized"', page)
@@ -131,11 +131,14 @@ class APIReferenceTests(unittest.TestCase):
              'Int', 'Introspect', 'Long', 'Map', 'Maybe', 'Opaque', 'Pair',
              'Pattern', 'Pattern.MatchResult', 'Phantom', 'Pointer', 'Quadruple', 'Quasiquote', 'Result',
              'StaticArray', 'Statistics', 'String', 'System', 'Test', 'Triple', 'Unit',
-             'Vector2', 'Vector3', 'VectorN'}, set(modules))
-        self.assertEqual(983, sum(len(data[2]) for data in modules.values()))
-        self.assertEqual(777, sum(bool(record['translation']) for data in modules.values()
+             'Vector2', 'Vector3', 'VectorN',
+             'Dynamic', 'Dynamic.Debug', 'Dynamic.List', 'Dynamic.Map', 'Dynamic.Pair',
+             'Dynamic.Path', 'Dynamic.Project', 'Dynamic.Random', 'Dynamic.String', 'Dynamic.Symbol',
+             'Globals in Macros.carp', 'Globals in ControlMacros.carp'}, set(modules))
+        self.assertEqual(1259, sum(len(data[2]) for data in modules.values()))
+        self.assertEqual(1002, sum(bool(record['translation']) for data in modules.values()
                                   for record in data[3]['entries'].values()))
-        self.assertEqual(24, sum(len(api.examples(record['original'])) for data in modules.values()
+        self.assertEqual(148, sum(len(api.examples(record['original'])) for data in modules.values()
                                  for record in [data[3]['module_documentation'],
                                                 *data[3]['entries'].values()]))
         record, _ = api.load_index(self.root, manifest)
@@ -165,6 +168,22 @@ class APIReferenceTests(unittest.TestCase):
         self.assertIn('(./Maybe.html)', result)
         self.assertNotIn('モジュール概要の原文',
                          (output / 'api/core/Pattern.MatchResult.html').read_text())
+
+    def test_global_pages_use_encoded_links_and_preserve_native_names(self):
+        output = self.root / 'pages'
+        api.stage(self.root, output, '/test')
+        index = (output / 'api/core/index.html').read_text()
+        for name in ('Macros', 'ControlMacros'):
+            title = f'Globals in {name}.carp'
+            self.assertIn(f'href="Globals%20in%20{name}.carp.html"', index)
+            page = (output / f'api/core/{title}.html').read_text()
+            self.assertIn(f'<h1>{title}</h1>', page)
+            self.assertNotIn('モジュール概要の原文', page)
+        dynamic = (output / 'api/core/Dynamic.html').read_text()
+        self.assertIn('(./Globals%20in%20ControlMacros.carp.html#comp)', dynamic)
+        self.assertIn('LanguageGuide-JP.html#動的関数-dynamic-functions', dynamic)
+        self.assertNotIn('/blob/master/', dynamic)
+        self.assertNotIn('href="https://carp-lang.github.io/carp-docs/Memory.html"', dynamic)
 
     def test_io_references_reach_the_correct_module_or_pinned_type_source(self):
         output = self.root / 'pages'

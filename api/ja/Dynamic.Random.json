@@ -1,0 +1,20 @@
+{
+  "module": "Dynamic.Random",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Random.carp",
+    "line": 40,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "gen-seed-at-startup?": {
+      "source": "core/Random.carp",
+      "line": 41,
+      "original": "checks whether the random number generator will be reseeded at startup.",
+      "source_html_sha256": "883bdc215305040e95cc8a051333e9bebcb43e3d3aab33f16224e2d48d9b27ea",
+      "translation": "乱数生成器のシードを起動時に再設定するかどうかを調べます。"
+    }
+  }
+}

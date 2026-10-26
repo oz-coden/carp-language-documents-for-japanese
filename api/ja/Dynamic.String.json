@@ -1,0 +1,110 @@
+{
+  "module": "Dynamic.String",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/String.carp",
+    "line": 657,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "char-at": {
+      "source": "src/StartingEnv.hs",
+      "line": 371,
+      "original": "gets the nth character of a string.\n\nExample Usage:\n```\n(String.char-at \"hi\" 1) ; => \\i\n```",
+      "source_html_sha256": "ed3ae5b53efeb40ac0ca0c984c8f3f15f511490cf191f5da2d7e50418efe9a51",
+      "translation": "文字列の n 番目の文字を取得します。\n\n例えば、次のように記述します。\n\n```carp\n(String.char-at \"hi\" 1) ; => \\i\n```"
+    },
+    "concat": {
+      "source": "src/StartingEnv.hs",
+      "line": 367,
+      "original": "concatenates a list of strings together.\n\nExample Usage:\n```\n(String.concat [\"hi \" \"there\"]) ; => \"hi there\"\n```",
+      "source_html_sha256": "188d143d833d434c286ccb6a154e7771b1d9ba1d00b8cde903d51691395f0bf6",
+      "translation": "文字列のリストを連結します。\n\n例えば、次のように記述します。\n\n```carp\n(String.concat [\"hi \" \"there\"]) ; => \"hi there\"\n```"
+    },
+    "empty?": {
+      "source": "core/String.carp",
+      "line": 658,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "head": {
+      "source": "core/Dynamic.carp",
+      "line": 68,
+      "original": "takes the head of the string `s` as a one-character string.",
+      "source_html_sha256": "4306ca1ff07c48feb96bab21c23936defb9826a96e43cc2961996e0c42eec993",
+      "translation": "文字列 `s` の先頭を、1 文字の文字列として取得します。"
+    },
+    "index-of": {
+      "source": "src/StartingEnv.hs",
+      "line": 372,
+      "original": "gets the index of a character in a string (or returns `-1` if the character is not found).\n\nExample Usage:\n```\n(index-of \"hi\" \\i) ; => 1\n```",
+      "source_html_sha256": "8aa56ec4da1e50d24e7a71b93f2edf608d7de7aa5feccf30506c0cace7866f00",
+      "translation": "文字列内の文字のインデックスを取得します。文字が見つからなければ `-1` を返します。\n\n例えば、次のように記述します。\n\n```carp\n(index-of \"hi\" \\i) ; => 1\n```"
+    },
+    "length": {
+      "source": "src/StartingEnv.hs",
+      "line": 366,
+      "original": "gets the length of a string.\n\nExample Usage:\n```\n(String.length \"hi\") ; => 2\n```",
+      "source_html_sha256": "c7fb00d91b08e86fb3ac4d78d3a705fd6cc877e9f60143e23dec9bdea40a1ce2",
+      "translation": "文字列の長さを取得します。\n\n例えば、次のように記述します。\n\n```carp\n(String.length \"hi\") ; => 2\n```"
+    },
+    "prefix": {
+      "source": "core/Dynamic.carp",
+      "line": 60,
+      "original": "takes the prefix of the string `s` up to the index `to`.",
+      "source_html_sha256": "ae96f5b7409b8270c55a38c898d047284713dbf96e6a0de1f4d2038e5e18834b",
+      "translation": "文字列 `s` の、インデックス `to` までの接頭部分を取得します。"
+    },
+    "slice": {
+      "source": "src/StartingEnv.hs",
+      "line": 377,
+      "original": "creates a substring from a beginning index to an end index.\n\nExample Usage:\n```\n(String.slice \"hello\" 1 3) ; => \"ell\"\n```",
+      "source_html_sha256": "ba303858fc2a950f28c14e50b72926b3aba010a7ae7c9979749dd92458adb8a6",
+      "translation": "開始インデックスから終了インデックスまでの部分文字列を作成します。\n\n例えば、次のように記述します。\n\n```carp\n(String.slice \"hello\" 1 3) ; => \"ell\"\n```",
+      "notes": [
+        "原文の例は結果を `\"ell\"` としています。固定版の実装は `take (t - f) (drop f s)` を使うため、例の `f = 1`、`t = 3` からは `\"el\"` になると読み取れます。例は原文を保持しています。これはソースの確認によるもので、例の実行結果ではありません。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L507)"
+      ]
+    },
+    "split-on": {
+      "source": "src/StartingEnv.hs",
+      "line": 373,
+      "original": "split a string at separator.\n\nExample Usage:\n```\n(String.split-on \"-\" \"hi-there\") ; => [\"hi \" \"there\"]\n```",
+      "source_html_sha256": "4477419bd22291ec680fe30147c6d1767c382e2ffc850c232e4a5ecf55612fcf",
+      "translation": "区切りで文字列を分割します。\n\n例えば、次のように記述します。\n\n```carp\n(String.split-on \"-\" \"hi-there\") ; => [\"hi \" \"there\"]\n```",
+      "notes": [
+        "原文の例では先頭の要素が `\"hi \"` とされ、空白を含んでいます。固定版の実装は区切り文字で `splitOn` を適用しており、この入力から空白を追加する処理はありません。例は原文を保持しています。これはソースの確認によるもので、例の実行結果ではありません。 [固定版の該当ソース(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/src/Commands.hs#L536)"
+      ]
+    },
+    "suffix": {
+      "source": "core/Dynamic.carp",
+      "line": 64,
+      "original": "takes the suffix of the string `s` from the index `from`.",
+      "source_html_sha256": "216016a503f7aa7dd57386e7206cd5042157e86b02c8d3b61237121c473e4788",
+      "translation": "文字列 `s` の、インデックス `from` からの接尾部分を取得します。"
+    },
+    "tail": {
+      "source": "core/Dynamic.carp",
+      "line": 72,
+      "original": "takes the tail of the string `s`.",
+      "source_html_sha256": "fcf7060bde5fa9dc221e9fc81658cceb7620095dfad017bd7fe7286679126db1",
+      "translation": "文字列 `s` の先頭を除いた残りを取得します。"
+    },
+    "to-array": {
+      "source": "core/String.carp",
+      "line": 666,
+      "original": "Converts a string to an array of strings of each of its characters.",
+      "source_html_sha256": "cda13477226300925cf21331278c73b1dad0569817c2095577680a90d279b6eb",
+      "translation": "文字列を、その各文字を文字列にした配列へ変換します。"
+    },
+    "to-list": {
+      "source": "core/String.carp",
+      "line": 661,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}

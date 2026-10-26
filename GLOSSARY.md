@@ -105,6 +105,10 @@
 | normalized fraction | 正規化された仮数部 | 原語を併記します。`frexp` が浮動小数点数を分解して得る仮数部を指し、`modf` の小数部と区別します |
 | linear interpolation | 線形補間 | 原語を併記します。`lerp` が係数に応じて 2 つの値の間を補間する操作を指します |
 | s-expression | S 式 | 原語を併記します。束縛に関連付けられた構文情報を指す文脈でも使用します |
+| kind | カインド | 原語を併記します。`Dynamic.kind` が表示する型の分類を指します |
+| currying / curry | カリー化 / カリー化する | 原語を併記します。`curry`、`curry*` の識別子は保持します |
+| pre-order / post-order | 前順 / 後順 | 原語を併記します。木や入れ子の形式の走査順序を指します |
+| basename | ベース名 | 原語を併記します。原文の `Dynamic.Path.directory` の説明と実装の相違は訳注で区別します |
 | arity | 引数の数 | 原語を併記します。`Introspect.arity` の構造体・直和型に対する返り値は、各項目の説明に従います |
 | uninhabited type | 値を持たない型 | 原語を併記します。C の不透明な型と混同せず、`Opaque` の説明に使用します |
 | free type variable | 自由型変数 | 原語を併記します。型変数が現れることと、実行時の値の有無を区別します |

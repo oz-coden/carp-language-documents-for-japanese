@@ -1,0 +1,34 @@
+{
+  "module": "Dynamic.Project",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Dynamic.carp",
+    "line": 52,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "config": {
+      "source": "src/StartingEnv.hs",
+      "line": 445,
+      "original": "sets a project config key.\n\nExample Usage:\n```\n(Project.config \"paren-balance-hints\" false)\n```",
+      "source_html_sha256": "6d148dc547ea82b23f52c83a90efdb37bb226ecdf549d4d356575ab719d84520",
+      "translation": "プロジェクト設定のキーを設定します。\n\n例えば、次のように記述します。\n\n```carp\n(Project.config \"paren-balance-hints\" false)\n```"
+    },
+    "get-config": {
+      "source": "src/StartingEnv.hs",
+      "line": 441,
+      "original": "gets a project config value under a key.\n\nExample Usage:\n```\n(Project.get-config \"paren-balance-hints\")\n```",
+      "source_html_sha256": "b220da1a029dda880226e57847e0ba047f1b23ca9b221096683eb22e1de9d6f1",
+      "translation": "キーに対応するプロジェクト設定の値を取得します。\n\n例えば、次のように記述します。\n\n```carp\n(Project.get-config \"paren-balance-hints\")\n```"
+    },
+    "no-echo": {
+      "source": "core/Dynamic.carp",
+      "line": 53,
+      "original": "Turn off debug printing in the compiler.",
+      "source_html_sha256": "6c2bc83d45110ff7dec265f2ba7247a11eeab5350f3ab7d7e68a400c6fd9b191",
+      "translation": "コンパイラのデバッグ出力を無効にします。"
+    }
+  }
+}

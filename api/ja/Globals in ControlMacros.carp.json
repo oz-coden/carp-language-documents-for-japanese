@@ -1,0 +1,167 @@
+{
+  "module": "Globals in ControlMacros.carp",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/ControlMacros.carp",
+    "line": 1,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "-->": {
+      "source": "core/ControlMacros.carp",
+      "line": 49,
+      "original": "threads the first form through the following ones, making it the last\nargument.\n\nExample:\n\n```\n(--> 1\n    (- 10)\n    (/ 45)\n) ; => 5\n```",
+      "source_html_sha256": "006789458589d06bcfc6afc873274d1c783f4a3b7bbca4b6105c26a708a1baf4",
+      "translation": "最初の形式を、後続の各形式の最後の引数として順に渡します。\n\n例えば、次のように記述します。\n\n```carp\n(--> 1\n    (- 10)\n    (/ 45)\n) ; => 5\n```"
+    },
+    "->": {
+      "source": "core/ControlMacros.carp",
+      "line": 35,
+      "original": "threads the first form through the following ones, making it the first\nargument.\n\nExample:\n\n```\n(-> 1\n    (- 10)\n    (* 5)\n) ; => -45\n```",
+      "source_html_sha256": "80ebbcfc89a9d57b49b74e8eec348781eff7638b7c0c31e9b190d448b6bd72ac",
+      "translation": "最初の形式を、後続の各形式の最初の引数として順に渡します。\n\n例えば、次のように記述します。\n\n```carp\n(-> 1\n    (- 10)\n    (* 5)\n) ; => -45\n```"
+    },
+    "==>": {
+      "source": "core/ControlMacros.carp",
+      "line": 32,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "=>": {
+      "source": "core/ControlMacros.carp",
+      "line": 28,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "as->": {
+      "source": "core/ControlMacros.carp",
+      "line": 63,
+      "original": "threads an expression through the following forms by binding it to the specified `name`.\nThis allows the threaded value to be used in any position (or multiple times) within each form, unlike `->` or `-->`.\n\nExample:\n```\n(as-> [1 2 3] it\n      (Array.length &it)\n      (+ it 10)\n      (Vector2.init it it))\n```",
+      "source_html_sha256": "127594f739968cb61ac5c4452b1753874af80388bde89bc665ef0a46e1e7a3ad",
+      "translation": "式を指定された `name` に束縛 (binding) し、後続の各形式へ順に渡します。`->` や `-->` と異なり、各形式内の任意の位置で、また複数回、その値を使用できます。\n\n例えば、次のように記述します。\n\n```carp\n(as-> [1 2 3] it\n      (Array.length &it)\n      (+ it 10)\n      (Vector2.init it it))\n```"
+    },
+    "case": {
+      "source": "core/ControlMacros.carp",
+      "line": 194,
+      "original": "takes a form and a list of branches which are value and operation\npairs. If a value matches (or any in a list of values preced by `:or`), the\noperation is executed. It takes a catch-all else branch that is executed if\nnothing matches.\n\nExample:\n```\n(case (+ 10 1)\n  10 (println* \"nope\")\n  11 (println* \"yup\")\n  (:or 12 13) (println* \"multibranch, but nope\")\n  (println* \"else branch\")\n)\n```",
+      "source_html_sha256": "df11c5ea86dbcd57c7d4063a0d4947cb28da0cc745a118434c1069d123114aad",
+      "translation": "形式と、値・操作のペアで構成される分岐のリストを受け取ります。値が一致した場合、または `:or` を先頭に付けた値のリストのいずれかに一致した場合に、その操作を実行します。どれにも一致しない場合に実行する、すべてを受け入れる else 分岐を取ります。\n\n例えば、次のように記述します。\n\n```carp\n(case (+ 10 1)\n  10 (println* \"nope\")\n  11 (println* \"yup\")\n  (:or 12 13) (println* \"multibranch, but nope\")\n  (println* \"else branch\")\n)\n```"
+    },
+    "comp": {
+      "source": "core/ControlMacros.carp",
+      "line": 85,
+      "original": "Composes the functions `fns` into one `fn`.",
+      "source_html_sha256": "445394c45b2e9ea5baf52a04806eedcab154ade0cf13f62213e6bcaef569c459",
+      "translation": "関数 `fns` を合成し、1 つの `fn` にします。"
+    },
+    "cond-->": {
+      "source": "core/ControlMacros.carp",
+      "line": 343,
+      "original": "Threads an expression through a series of forms as the last argument, but only executes the form if the corresponding condition is true.\n\nExample:\n\n```\n(cond--> 10\n  true (- 20)\n  false (/ 2)\n  true (+ 5)) ; => 15 (i.e. (+ (- 20 10) 5))\n```",
+      "source_html_sha256": "69774cc43bd8a04440714667d8963344387ea538e35d7b1bc4a9b0f36c96bdd8",
+      "translation": "式を一連の形式の最後の引数として順に渡します。ただし、対応する条件が `true` の場合にだけ、その形式を実行します。\n\n例えば、次のように記述します。\n\n```carp\n(cond--> 10\n  true (- 20)\n  false (/ 2)\n  true (+ 5)) ; => 15 (i.e. (+ (- 20 10) 5))\n```"
+    },
+    "cond->": {
+      "source": "core/ControlMacros.carp",
+      "line": 324,
+      "original": "Threads an expression through a series of forms, but only executes the form if the corresponding condition is true.\n\nExample:\n\n```\n(cond-> 10\n  true (+ 5)\n  false (* 2)\n  true (- 3)) ; => 12\n```",
+      "source_html_sha256": "f032f026fd0aa0cc008afb7205fa812a14b2379e42de80a9e42de827d08e43ab",
+      "translation": "式を一連の形式へ順に渡します。ただし、対応する条件が `true` の場合にだけ、その形式を実行します。\n\n例えば、次のように記述します。\n\n```carp\n(cond-> 10\n  true (+ 5)\n  false (* 2)\n  true (- 3)) ; => 12\n```"
+    },
+    "cond-thread-binds": {
+      "source": "core/ControlMacros.carp",
+      "line": 311,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "defn-do": {
+      "source": "core/ControlMacros.carp",
+      "line": 144,
+      "original": "is a `defn` with an implicit `do` body.",
+      "source_html_sha256": "a82f3d31459dec142e91b6799e7491a5fd9f86be2a5a4b3e93837e14583057a3",
+      "translation": "本体が暗黙の `do` になっている `defn` です。"
+    },
+    "doto": {
+      "source": "core/ControlMacros.carp",
+      "line": 90,
+      "original": "Evaluates `thing`, then calls all of the functions on it and\nreturns it. Useful for chaining mutating, imperative functions, and thus\nsimilar to `->`. If you need `thing` to be passed as a `ref` into `expressions`\nfunctions, use [`doto-ref`](#doto-ref) instead.\n\n```\n(let [x @\"hi\"]\n  @(doto &x\n    (string-set! 0 \\o)\n    (string-set! 1 \\y)))\n```",
+      "source_html_sha256": "956b7be7b10f96d40398f0a11e5aea09feea4eeeb65f20e9d596c9c7a881f103",
+      "translation": "`thing` を評価し、その値にすべての関数を呼び出して、その値を返します。値を変更する命令的な関数を連結するのに便利で、その点で `->` に似ています。`thing` を `ref` として `expressions` の関数に渡す必要がある場合は、[`doto-ref`](#doto-ref) を使用してください。\n\n例えば、次のように記述します。\n\n```carp\n(let [x @\"hi\"]\n  @(doto &x\n    (string-set! 0 \\o)\n    (string-set! 1 \\y)))\n```"
+    },
+    "doto-ref": {
+      "source": "core/ControlMacros.carp",
+      "line": 109,
+      "original": "Evaluates `thing`, then calls all of the functions on it and\nreturns it. Useful for chaining mutating, imperative functions, and thus\nsimilar to `->`. If you need `thing` not to be passed as a `ref` into\n`expressions` functions, use [`doto`](#doto) instead.\n\n```\n(doto-ref @\"hi\"\n  (string-set! 0 \\o)\n  (string-set! 1 \\y))\n```",
+      "source_html_sha256": "d0677af78fc951274a6e7351ebb17f74f06badb1aa4d9f10a5c75a02d02a3df8",
+      "translation": "`thing` を評価し、その値にすべての関数を呼び出して、その値を返します。値を変更する命令的な関数を連結するのに便利で、その点で `->` に似ています。`thing` を `ref` として `expressions` の関数に渡す必要がない場合は、[`doto`](#doto) を使用してください。\n\n例えば、次のように記述します。\n\n```carp\n(doto-ref @\"hi\"\n  (string-set! 0 \\o)\n  (string-set! 1 \\y))\n```"
+    },
+    "forever-do": {
+      "source": "core/ControlMacros.carp",
+      "line": 148,
+      "original": "is a `forever` with an implicit `do` body.",
+      "source_html_sha256": "c95c653c71cd5185d46fdc3424454fc04427a8bb572aba2097970e03143c1b18",
+      "translation": "本体が暗黙の `do` になっている `forever` です。"
+    },
+    "ignore-do": {
+      "source": "core/ControlMacros.carp",
+      "line": 152,
+      "original": "Wraps side-effecting `forms` in a `do`, ignoring all of their results.\nIn other words, executes `forms` only for their side effects.",
+      "source_html_sha256": "ac48782659ef8164a31d175db66ad3822da448e03b62f642e886b9891e5c1a8e",
+      "translation": "副作用のある `forms` を `do` で囲み、その結果をすべて無視します。つまり、副作用だけを目的として `forms` を実行します。"
+    },
+    "let-do": {
+      "source": "core/ControlMacros.carp",
+      "line": 134,
+      "original": "is a `let` with an implicit `do` body.",
+      "source_html_sha256": "6c484477255f78f3a679fe34600b619e12d39decfb88f980c03d132dcdc16f39",
+      "translation": "本体が暗黙の `do` になっている `let` です。"
+    },
+    "unless": {
+      "source": "core/ControlMacros.carp",
+      "line": 167,
+      "original": "is an `if` without a then branch.",
+      "source_html_sha256": "8a1359f5f8bae1e3b32ed8f76317966398c17a1aecec768625eaca30fc3f543a",
+      "translation": "then 分岐のない `if` です。"
+    },
+    "unless-do": {
+      "source": "core/ControlMacros.carp",
+      "line": 171,
+      "original": "is a `unless` with an implicit `do` body.",
+      "source_html_sha256": "ccf9bf45ddcd4387297754b9fca306c84535f5dfbdfa41131659f13073a2d2ec",
+      "translation": "本体が暗黙の `do` になっている `unless` です。"
+    },
+    "until": {
+      "source": "core/ControlMacros.carp",
+      "line": 129,
+      "original": "Executes `body` until the condition `cnd` is true.",
+      "source_html_sha256": "82ad6489f810222fe607a4d48452422b75d3536adc00f5e4447ec68d442ff589",
+      "translation": "条件 `cnd` が `true` になるまで `body` を実行します。"
+    },
+    "when": {
+      "source": "core/ControlMacros.carp",
+      "line": 159,
+      "original": "is an `if` without an else branch.",
+      "source_html_sha256": "0e96cb5e15df32ef60da557bec94eebeff7b1236a5a1b8ae62d042ddbe586eab",
+      "translation": "else 分岐のない `if` です。"
+    },
+    "when-do": {
+      "source": "core/ControlMacros.carp",
+      "line": 163,
+      "original": "is a `when` with an implicit `do` body.",
+      "source_html_sha256": "200542d57f57101623b5aeadc1c9ae4093fe1a6cf321d676742d947a5d959ead",
+      "translation": "本体が暗黙の `do` になっている `when` です。"
+    },
+    "while-do": {
+      "source": "core/ControlMacros.carp",
+      "line": 139,
+      "original": "is a `while` with an implicit `do` body.",
+      "source_html_sha256": "06757c00e03d21d94c055a843a9ffc8e8c2e6abea48bb92fc483912f38dbd023",
+      "translation": "本体が暗黙の `do` になっている `while` です。"
+    }
+  }
+}

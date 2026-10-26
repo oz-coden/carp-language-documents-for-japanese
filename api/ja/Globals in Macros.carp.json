@@ -1,0 +1,272 @@
+{
+  "module": "Globals in Macros.carp",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Macros.carp",
+    "line": 1,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "*=": {
+      "source": "core/Macros.carp",
+      "line": 349,
+      "original": "Sets the value of a variable to its current value multiplied by `val`.",
+      "source_html_sha256": "33fb5a3469a5cf85d0ff250f394b697417e4557861bb0a7b5eff77f0c50327b6",
+      "translation": "変数の値を、現在の値に `val` を乗算した値に設定します。"
+    },
+    "++": {
+      "source": "core/Macros.carp",
+      "line": 329,
+      "original": "Sets the value of a variable to its current value incremented by one.",
+      "source_html_sha256": "b8f98908afc000019d94e0ff0671516b58cce97dcfcee999886875056416ccec",
+      "translation": "変数の値を、現在の値に 1 を加えた値に設定します。"
+    },
+    "+=": {
+      "source": "core/Macros.carp",
+      "line": 339,
+      "original": "Sets the value of a variable to its current value plus `val`.",
+      "source_html_sha256": "f10c0b6e724a44bf4e33a1f0e451e2954154af74d5989e444690560a5ac9a7b6",
+      "translation": "変数の値を、現在の値に `val` を加算した値に設定します。"
+    },
+    "--": {
+      "source": "core/Macros.carp",
+      "line": 334,
+      "original": "Sets the value of a variable to its current value decremented by one.",
+      "source_html_sha256": "56e6310147b9efa3531ce8c3f87ba8eebeac26f27b7e96648b2dded572e123ec",
+      "translation": "変数の値を、現在の値から 1 を引いた値に設定します。"
+    },
+    "-=": {
+      "source": "core/Macros.carp",
+      "line": 344,
+      "original": "Sets the value of a variable to its current value minus `val`.",
+      "source_html_sha256": "7d767d8ed5600a54059ab9816c4869e9207beb55efba2c423bd2234ca3a2f332",
+      "translation": "変数の値を、現在の値から `val` を減算した値に設定します。"
+    },
+    "and": {
+      "source": "core/Macros.carp",
+      "line": 136,
+      "original": "evaluates the forms `xs` one at a time, from left to right. If a form\nevaluates to `false`, `and` returns that value and doesn't evaluate any of the\nother expressions, otherwise it returns the value of the last form in `xs`.\n`(and)` returns `true`.",
+      "source_html_sha256": "d1d9913646ee9ea8e1056591dc1c63ffa7cdd2c92d770a1a51a8275be76374af",
+      "translation": "形式 `xs` を、左から右へ 1 つずつ評価します。ある形式の評価結果が `false` なら、`and` はその値を返し、ほかの式を評価しません。そうでなければ、`xs` の最後の形式の値を返します。`(and)` は `true` を返します。"
+    },
+    "annotate": {
+      "source": "core/Macros.carp",
+      "line": 177,
+      "original": "Add an annotation to this binding.",
+      "source_html_sha256": "ba31880ea26ec3af3d7f39d43bd18a52df0b2973ec3b48abfed61a8ba4e34f70",
+      "translation": "この束縛 (binding) に注釈を追加します。"
+    },
+    "c-name": {
+      "source": "core/Macros.carp",
+      "line": 115,
+      "original": "Override the identifiers Carp generates for a given symbol in C output.\n\n```\n(defn foo-bar [] 1)\n(c-name foo-bar \"foo_bar\")\n```",
+      "source_html_sha256": "ca70c1f48c72f7763fbbdb9b86f03e8e910199360e74d2621aad18ad26274c2f",
+      "translation": "指定されたシンボルに対して Carp が C 出力内に生成する識別子を上書きします。\n\n例えば、次のように記述します。\n\n```carp\n(defn foo-bar [] 1)\n(c-name foo-bar \"foo_bar\")\n```"
+    },
+    "comment": {
+      "source": "core/Macros.carp",
+      "line": 263,
+      "original": "ignores `forms`.",
+      "source_html_sha256": "a03dc38125343c481280b2325de3f217453418ae5b8f44b07a538c4423de1716",
+      "translation": "`forms` を無視します。"
+    },
+    "cond": {
+      "source": "core/Macros.carp",
+      "line": 214,
+      "original": "Executes a block of code if a specified condition is true. Multiple\nsuch blocks can be chained.\n\n```\n(cond\n  (< 10 1) (println \"Condition 1 is true\")\n  (> 10 1) (println \"Condition 2 is true\")\n  (println \"Else branch\"))\n```",
+      "source_html_sha256": "15ec3fb8d51971ec2f2ecb16d17976b62b9a88687cc85f367608b7b4a42fed9e",
+      "translation": "指定された条件が `true` なら、コードブロックを実行します。このようなブロックを複数つなげることができます。\n\n例えば、次のように記述します。\n\n```carp\n(cond\n  (< 10 1) (println \"Condition 1 is true\")\n  (> 10 1) (println \"Condition 2 is true\")\n  (println \"Else branch\"))\n```"
+    },
+    "const-assert": {
+      "source": "core/Macros.carp",
+      "line": 283,
+      "original": "Asserts that the expression `expr` is true at compile time.\nOtherwise it will fail with the message `msg`.\n\nThe expression must be evaluable at compile time.",
+      "source_html_sha256": "9f76fa13d269f123e561965fcdec0dbfa57767dd238354b234cafb5c7077d84f",
+      "translation": "式 `expr` がコンパイル時に `true` であることを表明します。そうでなければ、メッセージ `msg` を出して失敗します。\n\n式はコンパイル時に評価可能である必要があります。"
+    },
+    "def-": {
+      "source": "core/Macros.carp",
+      "line": 193,
+      "original": "Declares a variable while marking it as private and hidden.",
+      "source_html_sha256": "39a441a57cbd25973fd6e915b37fe1919b770b11a48d739c81b9f3b8990a08e7",
+      "translation": "変数を宣言し、非公開かつ非表示としてマークします。"
+    },
+    "defdynamic-once": {
+      "source": "core/Macros.carp",
+      "line": 291,
+      "original": "Creates a dynamic variable and sets its value if it's not already defined.",
+      "source_html_sha256": "749049f52470d13d788aa318466ce3be24bb46d662c3492f7f9b29ccf3e8f979",
+      "translation": "動的変数がまだ定義されていなければ、作成して値を設定します。"
+    },
+    "defn-": {
+      "source": "core/Macros.carp",
+      "line": 186,
+      "original": "Declares a function while marking it as private and hidden.",
+      "source_html_sha256": "8459077532a9571836b8c69759f214d40740f89188cffdc35c2dc692f8137248",
+      "translation": "関数を宣言し、非公開かつ非表示としてマークします。"
+    },
+    "deprecated": {
+      "source": "core/Macros.carp",
+      "line": 181,
+      "original": "Declares that a binding is deprecated, using an optional explanation.",
+      "source_html_sha256": "a65b7366ae5f0f3670871c0567fc4b7fbc4111e5129be5bd074155a4cb6c3eac",
+      "translation": "束縛が非推奨であることを宣言します。理由を省略可能な引数として指定できます。"
+    },
+    "doc": {
+      "source": "core/Macros.carp",
+      "line": 74,
+      "original": "Set documentation for a binding.",
+      "source_html_sha256": "cbb93c3002c27df9645a0b6f96432bdb22b5a27a6b6d09f978f051b9ce99f892",
+      "translation": "束縛にドキュメントを設定します。"
+    },
+    "docexample": {
+      "source": "core/Macros.carp",
+      "line": 99,
+      "original": "Annotate a binding with a code example.",
+      "source_html_sha256": "35ba6349fdad2daeddcaa9a9ea6082cd5417a79ac4350db412ad811c426c89ff",
+      "translation": "束縛にコード例を注釈として付けます。"
+    },
+    "hidden": {
+      "source": "core/Macros.carp",
+      "line": 107,
+      "original": "Mark a binding as hidden, this will make it not print with the 'info' command.",
+      "source_html_sha256": "95a6abec12f47467755f1b1694d83c2e2f496503b49b3840b647d23dd20610de",
+      "translation": "束縛を非表示としてマークします。これにより、`info` コマンドで表示されなくなります。"
+    },
+    "hidden?": {
+      "source": "core/Macros.carp",
+      "line": 169,
+      "original": "Is this binding hidden?",
+      "source_html_sha256": "2662aeb26aaa442684b49a2ca221ef58f7e7f9c9d3e33e301b9e1dad948cae08",
+      "translation": "この束縛が非表示かどうかを調べます。"
+    },
+    "ignore": {
+      "source": "core/Macros.carp",
+      "line": 275,
+      "original": "ignores the return value of the expression `form`.",
+      "source_html_sha256": "2f6b18a1998545c0b69c50f661691a9eab2af87957724e22f7c3bde8152aae50",
+      "translation": "式 `form` の返り値を無視します。"
+    },
+    "ignore*": {
+      "source": "core/Macros.carp",
+      "line": 279,
+      "original": "Wraps all forms passed as an argument in a call to [`ignore`](#ignore).",
+      "source_html_sha256": "73faaa5ec01cf2ca95e616026af9563e242417542015713d730b5b4fe1924d8a",
+      "translation": "引数として渡されたすべての形式を、それぞれ [`ignore`](#ignore) の呼び出しで囲みます。"
+    },
+    "implements-all": {
+      "source": "core/Macros.carp",
+      "line": 323,
+      "original": "Declares functions in mod with names matching `interfaces` as implementations\nof those interfaces.",
+      "source_html_sha256": "12832c7ad7ee2b6ce57080c27657f64460bfab800b01d7977367594e5ef9c984",
+      "translation": "`mod` 内で `interfaces` と名前が一致する関数を、それらのインターフェースの実装として宣言します。"
+    },
+    "inline-c": {
+      "source": "core/Macros.carp",
+      "line": 297,
+      "original": "Inlines some custom C code.",
+      "source_html_sha256": "e555dd975a0c34d329069184594b42d1d58a89b28d13fa1254ef391c3200fa3b",
+      "translation": "独自の C コードをインラインで挿入します。"
+    },
+    "load-and-use": {
+      "source": "core/Macros.carp",
+      "line": 256,
+      "original": "loads a file and uses the module with in it. Assumes that\nthe filename and module name are the same.",
+      "source_html_sha256": "5dec5f1825187313adcc38c00d8a75bf0a3559324c726186ee1fe24a5a48cc77",
+      "translation": "ファイルを読み込み、その中のモジュールを使用します。ファイル名とモジュール名が同じであることを前提とします。"
+    },
+    "or": {
+      "source": "core/Macros.carp",
+      "line": 153,
+      "original": "evaluates the forms `xs` one at a time, from left to right. If a form\nevaluates to `true`, `or` returns that value and doesn't evaluate any of the\nother expressions, otherwise it returns the value of the last form in `xs`.\n`(or)` returns `false`.",
+      "source_html_sha256": "d4223167b7a18624b2725614448059c183dec51f7f1ecf0c08ed3bd0c85a5ea0",
+      "translation": "形式 `xs` を、左から右へ 1 つずつ評価します。ある形式の評価結果が `true` なら、`or` はその値を返し、ほかの式を評価しません。そうでなければ、`xs` の最後の形式の値を返します。`(or)` は `false` を返します。"
+    },
+    "print-doc": {
+      "source": "core/Macros.carp",
+      "line": 87,
+      "original": "Print the documentation for a binding.",
+      "source_html_sha256": "ef74897a6df46444bc7636dab667461fd9ef5a3f318fa7975d6b8d0ecd1a9ff9",
+      "translation": "束縛のドキュメントを表示します。"
+    },
+    "print-docexample": {
+      "source": "core/Macros.carp",
+      "line": 103,
+      "original": "Print the annotated example for a binding.",
+      "source_html_sha256": "24faea9c60b3e700cc50229a0918a5236fc7a672037ccef0d7af6cae210b9b7f",
+      "translation": "束縛に注釈として付けられたコード例を表示します。"
+    },
+    "print-sig": {
+      "source": "core/Macros.carp",
+      "line": 95,
+      "original": "Print the annotated signature for a binding.",
+      "source_html_sha256": "f7689cb54aa831ad83bbd50bc232a688f3ca7e31d37805530de887cc23d5538b",
+      "translation": "束縛に注釈として付けられた型シグネチャを表示します。"
+    },
+    "private": {
+      "source": "core/Macros.carp",
+      "line": 111,
+      "original": "Mark a binding as private, this will make it inaccessible from other modules.",
+      "source_html_sha256": "574731c454099a9375dd212556bc8f8d7d0e7b1e8e89eacfa2d55670bbfc5c1a",
+      "translation": "束縛を非公開としてマークします。これにより、ほかのモジュールからアクセスできなくなります。"
+    },
+    "private?": {
+      "source": "core/Macros.carp",
+      "line": 165,
+      "original": "Is this binding private?",
+      "source_html_sha256": "b157c0127f1bfed2aa3fa10e91c0636c7cd5124e774178a83cc081c87aa3d5ef",
+      "translation": "この束縛が非公開かどうかを調べます。"
+    },
+    "refstr": {
+      "source": "core/Macros.carp",
+      "line": 227,
+      "original": "stringifies `x` and takes the reference of that string.",
+      "source_html_sha256": "eb286fe6ad8ece8e90229a94d11ca218a84649368af08b50db618f55350fb0a8",
+      "translation": "`x` を文字列に変換し、その文字列の参照を取得します。"
+    },
+    "sig": {
+      "source": "core/Macros.carp",
+      "line": 91,
+      "original": "Annotate a binding with the desired signature.",
+      "source_html_sha256": "f1891a38e67b8250288805f21e789685bf06bf518b421348c9e4e452fe2aad58",
+      "translation": "束縛に、目的の型シグネチャを注釈として付けます。"
+    },
+    "swap!": {
+      "source": "core/Macros.carp",
+      "line": 232,
+      "original": "swaps its arguments `x` and `y` in place.\n\n*Note*: Unhygienic!",
+      "source_html_sha256": "0d7825155b3cff04f5291e105aa82954d7d367e267dac3597dce9b6eaed48eeb",
+      "translation": "引数 `x` と `y` をその場で入れ替えます。\n\n*注意:* 衛生的ではありません (unhygienic)。"
+    },
+    "todo": {
+      "source": "core/Macros.carp",
+      "line": 161,
+      "original": "sets the todo property for a binding.",
+      "source_html_sha256": "7cf0fb11940c9fee59eb82fbd4dfe68667a3d9eddd9dfbafbafd1c6070cc1668",
+      "translation": "束縛に `todo` プロパティを設定します。"
+    },
+    "unreachable": {
+      "source": "core/Macros.carp",
+      "line": 304,
+      "original": "Asserts that a block of code will never be reached. If it is\nthe program will be aborted with an error message.",
+      "source_html_sha256": "11f9d2a15edafedd68f593a36ada385e8a7ffbdeec2bded8ee5409e7b7262cdb",
+      "translation": "コードブロックに決して到達しないことを表明します。到達した場合、エラーメッセージを出してプログラムを中止します。"
+    },
+    "update!": {
+      "source": "core/Macros.carp",
+      "line": 238,
+      "original": "updates `x` in place using the function `f`.",
+      "source_html_sha256": "5a8b358fcd90aa41e98f2344c436841fdb1a7b8070f956a5be3be139ddc6c295",
+      "translation": "関数 `f` を使って、`x` をその場で更新します。"
+    },
+    "use-all": {
+      "source": "core/Macros.carp",
+      "line": 252,
+      "original": "is a variadic version of `use`.",
+      "source_html_sha256": "100a81b6544db4dec4b7cc271b51d27e487ed6af45ca48789f556ab12600f309",
+      "translation": "可変長引数を取る `use` です。"
+    }
+  }
+}
