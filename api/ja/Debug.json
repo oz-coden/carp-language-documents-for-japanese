@@ -1,0 +1,79 @@
+{
+  "module": "Debug",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Debug.carp",
+    "line": 3,
+    "original": "is a module that provides functions and commands to debug faulty\nprograms and functions.",
+    "source_html_sha256": "8eafa4ad350a979186fe1a09e5e50ec4211ccf2de2b214459efa562b6df9529e",
+    "translation": "不具合のあるプログラムや関数をデバッグするための関数とコマンドを提供するモジュールです。"
+  },
+  "entries": {
+    "assert-balanced": {
+      "source": "core/Debug.carp",
+      "line": 32,
+      "original": "raises an error if the memory balance (number of `alloc`s - number of `free`s) isn't `0`. Requires the flag `--log-memory` to be passed durng compilation.",
+      "source_html_sha256": "3015c0096cbfdb905df1f672b2bc13ffc7df1642bd89981c7578413ddea80495",
+      "translation": "メモリ収支 (`alloc` の回数から `free` の回数を引いた値) が `0` でない場合にエラーを発生させます。コンパイル時に `--log-memory` フラグを渡す必要があります。",
+      "notes": [
+        "原文はメモリ収支が `0` かどうかで説明していますが、固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Debug.carp#L33) は、`form` の評価前後のメモリ収支が等しいかどうかを検査します。この注記はソースの確認に基づきます。"
+      ]
+    },
+    "check-allocations": {
+      "source": "core/Debug.carp",
+      "line": 16,
+      "original": "will check the allocations made by the program\nimmediately, raising a `SIGABRT` if it fails.",
+      "source_html_sha256": "f467d604baf54dea61416dec900b2fef6a9756f7047dc56cc3cc6a7ab5323e00",
+      "translation": "プログラムが行うメモリの割り当てを直ちに検査し、失敗した場合は `SIGABRT` を発生させます。"
+    },
+    "leak-array": {
+      "source": "core/Debug.carp",
+      "line": 59,
+      "original": "leaks some memory. This function is useful for testing tools that detect leaks.",
+      "source_html_sha256": "38453275f07f0dd8d48582eb39fa6f649dedf0b6f0f7853ef801cf89cc70a928",
+      "translation": "メモリをリークさせます。メモリリークを検出するツールのテストに便利です。"
+    },
+    "log-memory-balance!": {
+      "source": "core/Debug.carp",
+      "line": 23,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "memory-balance": {
+      "source": "core/Debug.carp",
+      "line": 21,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "memory-logged": {
+      "source": "core/Debug.carp",
+      "line": 25,
+      "original": "logs all calls to memory allocation within the form. Requires the flag `--log-memory` to be passed during compilation.",
+      "source_html_sha256": "f8867f4d23bc83b83a916e02bf86177961c6def64706a850cec916f800db34e7",
+      "translation": "形式 (form) の中で行われる、メモリを割り当てるすべての呼び出しを記録します。コンパイル時に `--log-memory` フラグを渡す必要があります。"
+    },
+    "reset-memory-balance!": {
+      "source": "core/Debug.carp",
+      "line": 22,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "sanitize-addresses": {
+      "source": "core/Debug.carp",
+      "line": 7,
+      "original": "instructs the compiler to sanitize addresses.\n\nThis might not work on all compilers, but reasonably new versions of GCC and Clang are supported.\nOn Windows, this is disabled by default due to runtime library issues.",
+      "source_html_sha256": "11320f9d4071b3c57a8f915c7c3ae50e59da142f0666bd97ce26e70223b26a9c",
+      "translation": "アドレスのサニタイズを行うようコンパイラに指示します。\n\nすべてのコンパイラで動作するとは限りませんが、比較的新しい GCC と Clang は対応しています。Windows では実行時ライブラリの問題により、既定で無効になっています。"
+    },
+    "trace": {
+      "source": "core/Debug.carp",
+      "line": 42,
+      "original": "prints the value of an expression to `stdout`, then returns its value.",
+      "source_html_sha256": "347a7fae4c14347c04a367048e49579bad07ff16709ad74c0add22c728d4bee7",
+      "translation": "式の値を `stdout` に出力してから、その値を返します。"
+    }
+  }
+}

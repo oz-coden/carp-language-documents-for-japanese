@@ -1,0 +1,27 @@
+{
+  "module": "Bench",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Bench.carp",
+    "line": 5,
+    "original": "is a module for benchmarking. The most important function of the\nmodule is [`Bench.bench`](#bench), which takes a function, benchmarks it, and\nprints the results.",
+    "source_html_sha256": "4baeda10c67089c9bc9a896d1f8603bc3803ffa35053157e6c892eb66eb999d7",
+    "translation": "ベンチマークを行うためのモジュールです。主要な関数は [`Bench.bench`](#bench) で、関数を受け取ってベンチマークを行い、結果を出力します。"
+  },
+  "entries": {
+    "bench": {
+      "source": "core/Bench.carp",
+      "line": 62,
+      "original": "benchmarks the function `f` and prints the results to `stdout`.",
+      "source_html_sha256": "51201506706268d879fa6f2761306ab13b906a52b4f7bc19dcc647e22baec582",
+      "translation": "関数 `f` のベンチマークを行い、結果を `stdout` に出力します。"
+    },
+    "set-min-runs!": {
+      "source": "core/Bench.carp",
+      "line": 15,
+      "original": "sets the minimum number of runs to `n`.\n\nIf your functions takes a large amount of time, experimenting with this might make sense. The default value is `50`, which means that your function runs at least `50` times before even hitting a timeout.",
+      "source_html_sha256": "fde97b3d2526b7cf3d7a14457a71bc6d71717f9c22647cab6a210c4457cd59a9",
+      "translation": "最小実行回数を `n` に設定します。\n\n関数の実行に長い時間がかかる場合は、この値を調整してみるとよいかもしれません。既定値は `50` で、タイムアウトに達するまでに関数が少なくとも `50` 回実行されることを意味します。"
+    }
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "module": "Vector3",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Vector.carp",
+    "line": 111,
+    "original": "is a three-dimensional vector data type.",
+    "source_html_sha256": "6c70e5be668c0f8e51118274f2a2415f4d109f2e9e48267edba1a3e9cee30c94",
+    "translation": "3 次元のベクトルのデータ型です。"
+  },
+  "entries": {
+    "=": {
+      "source": "core/Vector.carp",
+      "line": 109,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "add": {
+      "source": "core/Vector.carp",
+      "line": 134,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "angle-between": {
+      "source": "core/Vector.carp",
+      "line": 189,
+      "original": "Get the angle between two vectors a and b.",
+      "source_html_sha256": "23fdaf86c6c123e600b5e1cff8189f7c0c73643a31972d873b33da36f724bdc6",
+      "translation": "2 つのベクトル `a` と `b` のなす角を取得します。"
+    },
+    "anti-parallel?": {
+      "source": "core/Vector.carp",
+      "line": 194,
+      "original": "Check whether the two vectors a and b are anti-parallel.",
+      "source_html_sha256": "3043992677c93904838c3692252bbaa188e69b494f7251a85e6232cf553cd1e2",
+      "translation": "2 つのベクトル `a` と `b` が反平行 (anti-parallel) かどうかを調べます。"
+    },
+    "cmul": {
+      "source": "core/Vector.carp",
+      "line": 140,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "copy": {
+      "source": "src/Deftype.hs",
+      "line": 259,
+      "original": "copies a `Vector3`.",
+      "source_html_sha256": "1975ccda5b3eaae2f719d9dcb95c2c3deacb5d3f979c4ac5066bcbf4eac173ff",
+      "translation": "`Vector3` をコピーします。"
+    },
+    "cross": {
+      "source": "core/Vector.carp",
+      "line": 179,
+      "original": "Compute the cross product of the two vectors x and y.",
+      "source_html_sha256": "576683798e27ac89961c0c23847c8acd63c4d30fbe2239ffc69947bfe5009b8a",
+      "translation": "2 つのベクトル `x` と `y` の外積を計算します。"
+    },
+    "delete": {
+      "source": "src/Deftype.hs",
+      "line": 249,
+      "original": "deletes a `Vector3`. Should usually not be called manually.",
+      "source_html_sha256": "bd231f6a5de99fb7841fb4c9a05bf7cc95ca85414d2ee5db5094ac7cce49041d",
+      "translation": "`Vector3` を削除します。通常、手動で呼び出す必要はありません。"
+    },
+    "dist": {
+      "source": "core/Vector.carp",
+      "line": 174,
+      "original": "Get the distance between the vectors a and b.",
+      "source_html_sha256": "d4fc9eca2d503c803c4e382700ae9f6854ca6c3f70ea955651ce623d4ae3d6f9",
+      "translation": "ベクトル `a` と `b` の間の距離を取得します。"
+    },
+    "div": {
+      "source": "core/Vector.carp",
+      "line": 149,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "dot": {
+      "source": "core/Vector.carp",
+      "line": 155,
+      "original": "Get the dot product of the two vectors x and y.",
+      "source_html_sha256": "73ebae7f343f78dbe0aecd850d8ded344d9fc2355195b82144578095e80ab7ed",
+      "translation": "2 つのベクトル `x` と `y` の内積を取得します。"
+    },
+    "init": {
+      "source": "src/Deftype.hs",
+      "line": 228,
+      "original": "creates a `Vector3`.",
+      "source_html_sha256": "fb307ae1378a9fc13ace86419202998bce39e0bce86f7e311e1e100b7894d11c",
+      "translation": "`Vector3` を作成します。"
+    },
+    "mag": {
+      "source": "core/Vector.carp",
+      "line": 163,
+      "original": "Get the magnitude of a vector.",
+      "source_html_sha256": "d7a936628bc9468a10827c284f70f96a505b246c58fe5bfe826b399acaf53a6a",
+      "translation": "ベクトルの大きさを取得します。"
+    },
+    "mag-sq": {
+      "source": "core/Vector.carp",
+      "line": 159,
+      "original": "Get the squared magnitude of a vector.",
+      "source_html_sha256": "2f3357916400e2b57d41944308211d9054da2253d324790af78355f31dcf40ec",
+      "translation": "ベクトルの大きさの 2 乗を取得します。"
+    },
+    "map": {
+      "source": "core/Vector.carp",
+      "line": 113,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "mul": {
+      "source": "core/Vector.carp",
+      "line": 146,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "neg": {
+      "source": "core/Vector.carp",
+      "line": 143,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "normalize": {
+      "source": "core/Vector.carp",
+      "line": 167,
+      "original": "Normalize a vector.",
+      "source_html_sha256": "b449dcab4d669db0ce56274aebbaee76a79cb0f56856b77c3c1d548464fbf2a8",
+      "translation": "ベクトルを正規化 (normalize) します。"
+    },
+    "parallel?": {
+      "source": "core/Vector.carp",
+      "line": 198,
+      "original": "Check whether the two vectors a and b are parallel.",
+      "source_html_sha256": "14cc21ab862b2a19de388ddfe2b2eb67fd5517f489785c967fe07b489d34c304",
+      "translation": "2 つのベクトル `a` と `b` が平行かどうかを調べます。"
+    },
+    "perpendicular?": {
+      "source": "core/Vector.carp",
+      "line": 202,
+      "original": "Check whether the two vectors a and b are perpendicular.",
+      "source_html_sha256": "3a85e6f17c337cde0410f3cef254d4e3d5d3fa0b3674ea600a866b8f54a9fb57",
+      "translation": "2 つのベクトル `a` と `b` が垂直かどうかを調べます。"
+    },
+    "prn": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Vector3` to a string.",
+      "source_html_sha256": "748378fea633aed26ff4884af4c9b70ab5298f53f660052e5dfd22ed77578584",
+      "translation": "`Vector3` を文字列に変換します。"
+    },
+    "random": {
+      "source": "core/Vector.carp",
+      "line": 126,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "set-x": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `x` property of a `Vector3`.",
+      "source_html_sha256": "d6dba5a4af56299ae6a500a75a2b360a0b0e288a1bf0dc091a2b5a9d1c5409d7",
+      "translation": "`Vector3` の `x` プロパティを設定します。"
+    },
+    "set-x!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `x` property of a `Vector3` in place.",
+      "source_html_sha256": "ce5d6abdf66b2bdce106a8c08a4b626f45720b847f96aa03d667c4df63dd6d78",
+      "translation": "`Vector3` の `x` プロパティをその場で設定します。"
+    },
+    "set-y": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `y` property of a `Vector3`.",
+      "source_html_sha256": "6443d5ac513e229537a7a3f644bcf5aebc235ad7f1788ff089bc47ea67a03e24",
+      "translation": "`Vector3` の `y` プロパティを設定します。"
+    },
+    "set-y!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `y` property of a `Vector3` in place.",
+      "source_html_sha256": "5618b7bc3925f01c4be7878a7d728238add2fdce2ee4004b441760fe698df6aa",
+      "translation": "`Vector3` の `y` プロパティをその場で設定します。"
+    },
+    "set-z": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `z` property of a `Vector3`.",
+      "source_html_sha256": "8f6d2e1d41e6845208cdad0a6fa5d541278efe8ed32db1b586fc34cca9199626",
+      "translation": "`Vector3` の `z` プロパティを設定します。"
+    },
+    "set-z!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `z` property of a `Vector3` in place.",
+      "source_html_sha256": "3c4c317a890e3809307ee0a8847930c77b720b267613eab4112fecbab3f4682e",
+      "translation": "`Vector3` の `z` プロパティをその場で設定します。"
+    },
+    "str": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Vector3` to a string.",
+      "source_html_sha256": "748378fea633aed26ff4884af4c9b70ab5298f53f660052e5dfd22ed77578584",
+      "translation": "`Vector3` を文字列に変換します。"
+    },
+    "sub": {
+      "source": "core/Vector.carp",
+      "line": 137,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "sum": {
+      "source": "core/Vector.carp",
+      "line": 152,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "update-x": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `x` property of a `(Vector3 f)` using a function `f`.",
+      "source_html_sha256": "0ae21a6c8adfd324634ab74c0cbc0fccc4b9b78738dacabbce32c5a36b35b356",
+      "translation": "関数 `f` を使って、`(Vector3 f)` の `x` プロパティを更新します。"
+    },
+    "update-y": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `y` property of a `(Vector3 f)` using a function `f`.",
+      "source_html_sha256": "063b3a5913c861b7b3912eaaaf24953b16a0866216137a2e1e9933e51aedc87e",
+      "translation": "関数 `f` を使って、`(Vector3 f)` の `y` プロパティを更新します。"
+    },
+    "update-z": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `z` property of a `(Vector3 f)` using a function `f`.",
+      "source_html_sha256": "7b74945d199d81900cb0559420c68251eacab2b838ee7739b59f1ed4c4210eb3",
+      "translation": "関数 `f` を使って、`(Vector3 f)` の `z` プロパティを更新します。"
+    },
+    "vapprox": {
+      "source": "core/Vector.carp",
+      "line": 130,
+      "original": "Check whether the vectors a and b are approximately equal.",
+      "source_html_sha256": "f6351d8e4196dca3370ca6c7659d2a43ac954eaf2cd58ccf79e70eb18fd9ed1f",
+      "translation": "ベクトル `a` と `b` が近似的に等しいかどうかを調べます。"
+    },
+    "vlerp": {
+      "source": "core/Vector.carp",
+      "line": 206,
+      "original": "Linearly interpolate between the two vectors a and b by amnt (between 0 and 1).",
+      "source_html_sha256": "ea1daf458d9175384859cc7c2cee6d643d9f5b3ab5913fe2951ea99cdf05daec",
+      "translation": "`amnt` (`0` から `1` の間) を使って、2 つのベクトル `a` と `b` の間を線形補間 (linear interpolation) します。"
+    },
+    "vreduce": {
+      "source": "core/Vector.carp",
+      "line": 123,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "x": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `x` property of a `Vector3`.",
+      "source_html_sha256": "c41e4043e22014f392d31534368e4d6298b838366eb981c406f857c66ed9eda0",
+      "translation": "`Vector3` の `x` プロパティを取得します。"
+    },
+    "y": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `y` property of a `Vector3`.",
+      "source_html_sha256": "f9e5cdc13bdaf38cf2141ff1b6b4cf999243bcdf9fc63d05bc89f709ea5fbea4",
+      "translation": "`Vector3` の `y` プロパティを取得します。"
+    },
+    "z": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `z` property of a `Vector3`.",
+      "source_html_sha256": "a84b268e52564a995dae3abcba3d2ff202b65091b81427bf966d48e01afea3b7",
+      "translation": "`Vector3` の `z` プロパティを取得します。"
+    },
+    "zero": {
+      "source": "core/Vector.carp",
+      "line": 108,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "zip": {
+      "source": "core/Vector.carp",
+      "line": 118,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}

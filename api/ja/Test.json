@@ -1,0 +1,135 @@
+{
+  "module": "Test",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Test.carp",
+    "line": 3,
+    "original": "is the standard test framework.\n\nExample:\n```\n(load-and-use Test)\n\n(deftest test\n  (assert-equal test\n                2\n                (+ 1 1)\n                \"addition works\"\n  )\n)\n```",
+    "source_html_sha256": "d283ca7216c4e9f0b9c45db6c2f6fb0b2f12cdf5e66d1524edb8a9f485c5ea56",
+    "translation": "標準のテストフレームワークです。\n\n例えば、次のように記述します。\n\n```carp\n(load-and-use Test)\n\n(deftest test\n  (assert-equal test\n                2\n                (+ 1 1)\n                \"addition works\"\n  )\n)\n```"
+  },
+  "entries": {
+    "assert-dynamic-equal": {
+      "source": "core/Test.carp",
+      "line": 92,
+      "original": "Assert that the dynamic expressions `x` and `y` are equal.",
+      "source_html_sha256": "14713c595df3163aac1baa04daf42926ef054f7928dd8b583a90184e74237477",
+      "translation": "動的な式 `x` と `y` が等しいことを表明します。"
+    },
+    "assert-dynamic-op": {
+      "source": "core/Test.carp",
+      "line": 88,
+      "original": "Assert that the dynamic expressions `x` and `y` are equal.",
+      "source_html_sha256": "14713c595df3163aac1baa04daf42926ef054f7928dd8b583a90184e74237477",
+      "translation": "動的な式 `x` と `y` が等しいことを表明します。",
+      "notes": [
+        "原文は等価性の検査と説明していますが、固定版の[定義(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Test.carp#L89) は、`x` と `y` を評価してから、引数 `op` で指定された演算を使います。この注記はソースの確認に基づきます。"
+      ]
+    },
+    "assert-equal": {
+      "source": "core/Test.carp",
+      "line": 48,
+      "original": "Assert that x and y are equal. Equality needs to be implemented for their type.",
+      "source_html_sha256": "bb680ad287ef865cd915a66bd6f9f893d6f15a974670af9c73d22710514b9eda",
+      "translation": "`x` と `y` が等しいことを表明します。それらの型に対して等価性が実装されている必要があります。"
+    },
+    "assert-error": {
+      "source": "core/Test.carp",
+      "line": 84,
+      "original": "Assert that x is an `Error`.",
+      "source_html_sha256": "2fbb32c29c5bd10becea55d2ee4617ab9e778e4450de65745e4595e3d83ccc7c",
+      "translation": "`x` が `Error` であることを表明します。"
+    },
+    "assert-exit": {
+      "source": "core/Test.carp",
+      "line": 133,
+      "original": "Assert that function f exits with exit code exit-code.",
+      "source_html_sha256": "364dd24133d2c2d1fd6a932361cc3e31e084822dec60e94f205286a7f5a62124",
+      "translation": "関数 `f` が終了コード `exit-code` で終了することを表明します。"
+    },
+    "assert-false": {
+      "source": "core/Test.carp",
+      "line": 60,
+      "original": "Assert that x is false.",
+      "source_html_sha256": "3d7c56a1eb03b6d373ee55dd940a8d51db4ff491d7a66cb79b138ddfd53ae13d",
+      "translation": "`x` が `false` であることを表明します。"
+    },
+    "assert-just": {
+      "source": "core/Test.carp",
+      "line": 72,
+      "original": "Assert that x is a `Just`.",
+      "source_html_sha256": "7ea3dfbe20f1835d8c83695517c43a9206b43db36bb3ecfb93a9ed0fdbf4d33d",
+      "translation": "`x` が `Just` であることを表明します。"
+    },
+    "assert-near": {
+      "source": "core/Test.carp",
+      "line": 68,
+      "original": "Assert that x and y are approximately equal within a specified margin.",
+      "source_html_sha256": "2d9928aba21e467aeb6676efebc299dac9f998e0fbe9533cab6037d724eb859e",
+      "translation": "`x` と `y` が、指定した許容誤差の範囲内で近似的に等しいことを表明します。"
+    },
+    "assert-not-equal": {
+      "source": "core/Test.carp",
+      "line": 52,
+      "original": "Assert that x and y are not equal. Equality needs to be implemented for their type.",
+      "source_html_sha256": "a46ab5ba046f6fcdb557f8a45c18f9ce7644a9094c7a4fc2460f93e0048ed990",
+      "translation": "`x` と `y` が等しくないことを表明します。それらの型に対して等価性が実装されている必要があります。"
+    },
+    "assert-nothing": {
+      "source": "core/Test.carp",
+      "line": 76,
+      "original": "Assert that x is a `Nothing`.",
+      "source_html_sha256": "ec9705dfe892a1d32107b8e8593a8e98eec51ef387eff37cea440810ebb3ec63",
+      "translation": "`x` が `Nothing` であることを表明します。"
+    },
+    "assert-op": {
+      "source": "core/Test.carp",
+      "line": 44,
+      "original": "Assert that op returns true when given x and y.",
+      "source_html_sha256": "932ce3c19ff96566dfa383e8278a1e9cb67e640c13561e29d3c41c3985b73bc4",
+      "translation": "`x` と `y` を渡したときに、`op` が `true` を返すことを表明します。"
+    },
+    "assert-ref-equal": {
+      "source": "core/Test.carp",
+      "line": 64,
+      "original": "Assert that x and y are equal by reference. Reference equality needs to be implemented for their type.",
+      "source_html_sha256": "85a20ef9869dad17a0566cd1429c2a1dd9b154c3e653ec47805bf2398e722d88",
+      "translation": "`x` と `y` が、参照による比較で等しいことを表明します。それらの型に対して参照の等価性が実装されている必要があります。"
+    },
+    "assert-signal": {
+      "source": "core/Test.carp",
+      "line": 137,
+      "original": "Assert that function f aborts with OS signal signal.",
+      "source_html_sha256": "58950a5c97d46003d83d11fd0dfbe6bd90616efef9195820a2b5dc0252bd0938",
+      "translation": "関数 `f` が OS のシグナル `signal` によって異常終了することを表明します。"
+    },
+    "assert-success": {
+      "source": "core/Test.carp",
+      "line": 80,
+      "original": "Assert that x is a `Success`.",
+      "source_html_sha256": "3dd6455473a2f832e22d5606317c372458739fdf33fa87d16c870d293f0848bf",
+      "translation": "`x` が `Success` であることを表明します。"
+    },
+    "assert-true": {
+      "source": "core/Test.carp",
+      "line": 56,
+      "original": "Assert that x is true.",
+      "source_html_sha256": "a00398a80b1e40be066d46092d00433ec635710308e0c51b7c2bb58b21acd395",
+      "translation": "`x` が `true` であることを表明します。"
+    },
+    "print-test-results": {
+      "source": "core/Test.carp",
+      "line": 148,
+      "original": "Print test results.",
+      "source_html_sha256": "3e139ab47f5dcdd57d03af056aae69adfe934c2e715715732df6352aeeecdfd1",
+      "translation": "テスト結果を出力します。"
+    },
+    "reset": {
+      "source": "core/Test.carp",
+      "line": 96,
+      "original": "Reset test state.",
+      "source_html_sha256": "e863934c016d73896d252007302a03c2eec77953b14ff3ec5c9f6a4a436c4201",
+      "translation": "テストの状態をリセットします。"
+    }
+  }
+}

@@ -12,6 +12,7 @@
   "source_files": {
     "core/Array.carp": "6d36c2d2ee0e4cb6f97cdc7cdabd1ff7533edf9c",
     "core/ArrayExt.carp": "a802e284376983d60d6e0ef6a1a2b6f26eb1a540",
+    "core/Bench.carp": "e6705cbd4d0a549790d7840897e7628b94a2d4c7",
     "core/Binary.carp": "ea33d6873d59f4b8ca93295e067db3feabd831a1",
     "core/Blitable.carp": "50c3836afefa793d504b6c1e0fa21d77abfcf31d",
     "core/Bool.carp": "6d6a816b75b0d7edd3bbd78d3162676aa921760f",
@@ -20,26 +21,36 @@
     "core/Char.carp": "25adfd6756a5dc30dd12e26bfcc7bc6754c136ab",
     "core/Color.carp": "cd0ae661da4713b5f20fea60c1302c76165bf036",
     "core/Control.carp": "8de7ddc08fb5cb0b63e388f26a4b8f89d5f4e736",
+    "core/Debug.carp": "a32b1affe1ba1014d84fbab61aee48316e4d1163",
+    "core/Derive.carp": "b830bc3cdad638dcee1903d844e12065cf06d59e",
     "core/Double.carp": "4e0f1fae514b7f73b3581493d0d765dc3aa24af7",
     "core/Float.carp": "d6b988c9ecfa6ea262d1a2cb3e5eb6c7c21e2cc2",
     "core/Function.carp": "75acae7db397a9be0509ce8bd39a2595f3e2dc4f",
+    "core/Geometry.carp": "07f429cce5a70f78591b781cca6397940a9354d0",
     "core/IO.carp": "7307d77ef0a4c024239bb3f326b54201bf57e402",
     "core/Int.carp": "695b30771e5af4aa5f0b6c61b57fb4e7ed1756ff",
+    "core/Introspect.carp": "8d9b3e5608bee9b5931dc3abc901e72d8b715d0d",
     "core/Long.carp": "1e16cd891d79af094baf538c9f36bf9ffa168e83",
     "core/Map.carp": "859f4ca860d11051269537293416be40193ffb50",
     "core/Maybe.carp": "e73cae51252b8100e4378c66086c50130aea1b43",
+    "core/Opaque.carp": "eaef1103d494eef50c4411df09dd3fd8e577d5e2",
     "core/Pattern.carp": "d8cfdfd5939ea3d0aca61b0021d5ea1a7d6f3869",
+    "core/Phantom.carp": "b26c0d5d76de5f352d476ec8cf4ba7678148ae76",
     "core/Pointer.carp": "3e223ee16b2a3eb3e408f25d34888fdf5b495d21",
+    "core/Quasiquote.carp": "b8e212b07478af958f8e0fae6b141b10bc63b3b1",
     "core/Random.carp": "68ecb0cd895755592fea702210e2431a6d15ac47",
     "core/Result.carp": "4a402f185a76c16d981204d8595d959b570dca4e",
     "core/SafeInt.carp": "97cf0796c93f25ade633a562699a42ad31b9c3b5",
     "core/Sort.carp": "813de0dd3e72eb8a53a1fc097fc230730cd80029",
     "core/StaticArray.carp": "7fca9e063ea717521bec2b673ba71c6675ebd28b",
+    "core/Statistics.carp": "ac57a05c7aca77e9bbdcfd758acfb93f10a36378",
     "core/String.carp": "29691bb9fadfbf899ded4dd0e30b49baa43e7407",
     "core/System.carp": "8cb09df4bbeadeb58a3ea6a4c7e332fd61c75659",
+    "core/Test.carp": "8592bdd989123e3ff17cb501c9862ce0e8cae15e",
     "core/Tuples.carp": "754754ce054b10a5d32d7cc35fe022f633849f05",
     "core/Unit.carp": "5320ffee50a10500a484d81500b7b96d07376b99",
     "core/Unsafe.carp": "267242688858879233f13c86584fb6d364fa0081",
+    "core/Vector.carp": "90e77b579e41302ad6fe16fec9b0c65a6111c46a",
     "core/carp_system.h": "fadb5cd128fb9260f77ce409289d9007fb260910",
     "docs/core/carp_style.css": "0ed34680f8e0c08dba0d6a30f4a5aba53dc03366",
     "docs/core/generate_core_docs.carp": "26c20d0f1a032ce4d6b5f6fb3bee0873d112958f",
@@ -59,6 +70,11 @@
       "anchor_aliases": {
         "aset-uninitialized": "aset-uninitialized!"
       }
+    },
+    "Bench": {
+      "snapshot": "api/upstream/Bench.html",
+      "snapshot_sha256": "ece6eccdcec57aa4b5d7702bb69810f35d66fb9fc27592c2c091095459bfa29b",
+      "translation": "api/ja/Bench.json"
     },
     "Bool": {
       "snapshot": "api/upstream/Bool.html",
@@ -80,6 +96,19 @@
       "snapshot_sha256": "d766cfcc9f6bc21b432dcedb9e8db35dd59a249f71cd740e38f1264b8cfcf55c",
       "translation": "api/ja/Control.json"
     },
+    "Debug": {
+      "snapshot": "api/upstream/Debug.html",
+      "snapshot_sha256": "c15b71eb23806514a33e2a07a88b183e89a8fa23e837bb86dc4abd05986f3842",
+      "translation": "api/ja/Debug.json"
+    },
+    "Derive": {
+      "snapshot": "api/upstream/Derive.html",
+      "snapshot_sha256": "511cec6a6e55933a13c3d01a23cef70d39c1e3770ee52cca2348a9dada51fd17",
+      "translation": "api/ja/Derive.json",
+      "link_rewrites": {
+        "https://github.com/carp-lang/Carp/blob/master/docs/Derive.md": "https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Derive.md"
+      }
+    },
     "Double": {
       "snapshot": "api/upstream/Double.html",
       "snapshot_sha256": "5088dcf1ee45acb9f89b7b71e3174f2b7a7acc616cacffc2c4cb4de1ce3f0294",
@@ -94,6 +123,11 @@
       "snapshot": "api/upstream/Function.html",
       "snapshot_sha256": "1bdcc073393efb9fa1bc35dc8ac13f2eed386adead809de98573bb90749abf56",
       "translation": "api/ja/Function.json"
+    },
+    "Geometry": {
+      "snapshot": "api/upstream/Geometry.html",
+      "snapshot_sha256": "f40044e34ccd3707bd2fa63c2789fb813af6c7ba150e60630851fb0b07d88a00",
+      "translation": "api/ja/Geometry.json"
     },
     "IO": {
       "snapshot": "api/upstream/IO.html",
@@ -128,6 +162,11 @@
       "snapshot_sha256": "cf8da083b9f19eb46d80b59e5ad03c9656aca21a594c5f1f8a4ba0f2d85d79ab",
       "translation": "api/ja/Int.json"
     },
+    "Introspect": {
+      "snapshot": "api/upstream/Introspect.html",
+      "snapshot_sha256": "91493e2e889f206942518ebff440dedcf240b14910f57b8880961edec3338a6c",
+      "translation": "api/ja/Introspect.json"
+    },
     "Long": {
       "snapshot": "api/upstream/Long.html",
       "snapshot_sha256": "c413bc63d123727d326b4c1e7ab279465c4c5f838e1023213e4c71ec7bebba46",
@@ -143,10 +182,33 @@
       "snapshot_sha256": "8cc3b79621143fedd909afb3c8f664bd47c54adb05df5f03999a1a73fffa14cb",
       "translation": "api/ja/Maybe.json"
     },
+    "Opaque": {
+      "snapshot": "api/upstream/Opaque.html",
+      "snapshot_sha256": "cb0faf05aa7c1a18480fa602755c372f00b777801c2819136487efd32afade1f",
+      "translation": "api/ja/Opaque.json"
+    },
     "Pair": {
       "snapshot": "api/upstream/Pair.html",
       "snapshot_sha256": "8af9436ed6350de9050a6c4fc41e17a231cb9e3714096307314fa7c8e2e67b6e",
       "translation": "api/ja/Pair.json"
+    },
+    "Pattern": {
+      "snapshot": "api/upstream/Pattern.html",
+      "snapshot_sha256": "c05227f731cadb1aafed82a124a5983b13630f82ba972e76fc6cc48e51553ebd",
+      "translation": "api/ja/Pattern.json",
+      "link_rewrites": {
+        "../LanguageGuide.html#patterns": "https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/LanguageGuide.md#patterns"
+      }
+    },
+    "Pattern.MatchResult": {
+      "snapshot": "api/upstream/Pattern.MatchResult.html",
+      "snapshot_sha256": "02daed4f42b24bad253590e46e6f23a8ac13bb2682fc77776808e122f30a70f2",
+      "translation": "api/ja/Pattern.MatchResult.json"
+    },
+    "Phantom": {
+      "snapshot": "api/upstream/Phantom.html",
+      "snapshot_sha256": "ffbe3e9417563ce928714cac4dfc3fa1a6b520772a1235674518f2f12e427830",
+      "translation": "api/ja/Phantom.json"
     },
     "Pointer": {
       "snapshot": "api/upstream/Pointer.html",
@@ -158,6 +220,14 @@
       "snapshot_sha256": "8933a67ff99007d7dd656de642ef26d502568d3b94cbb52701c13f1b746482dd",
       "translation": "api/ja/Quadruple.json"
     },
+    "Quasiquote": {
+      "snapshot": "api/upstream/Quasiquote.html",
+      "snapshot_sha256": "2b11a3ca6cc7662ac49a658156b1582ade186bcdba6fbc03f257c627054e3a8d",
+      "translation": "api/ja/Quasiquote.json",
+      "link_rewrites": {
+        "https://github.com/carp-lang/Carp/blob/master/docs/Quasiquotation.md": "https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/Quasiquotation.md"
+      }
+    },
     "Result": {
       "snapshot": "api/upstream/Result.html",
       "snapshot_sha256": "6e244e82b4dd51798d0552b60581e3dde74ded3f74862322234fe9b793b2d119",
@@ -167,6 +237,11 @@
       "snapshot": "api/upstream/StaticArray.html",
       "snapshot_sha256": "e15630f76607e5e6b9e52dccf43ced588aedb23f82316b54110d10cd973244b2",
       "translation": "api/ja/StaticArray.json"
+    },
+    "Statistics": {
+      "snapshot": "api/upstream/Statistics.html",
+      "snapshot_sha256": "781a2f35d8666a90a925333b57ba9ea5f6357d231739eff1a568e33abbff3005",
+      "translation": "api/ja/Statistics.json"
     },
     "String": {
       "snapshot": "api/upstream/String.html",
@@ -178,6 +253,11 @@
       "snapshot_sha256": "8017344ca3f7f6d4b699eeb2f83443a2bba23e964a5442fa669c8bf7e16175dc",
       "translation": "api/ja/System.json"
     },
+    "Test": {
+      "snapshot": "api/upstream/Test.html",
+      "snapshot_sha256": "92a3b388f14e0e0f663add39caafd641d2cedf0191096302f157bcd9a922bfc9",
+      "translation": "api/ja/Test.json"
+    },
     "Triple": {
       "snapshot": "api/upstream/Triple.html",
       "snapshot_sha256": "05c1e96a75437f669057c2bdb8d60891e6a58ad2afe47aed2257d706e83de017",
@@ -187,6 +267,21 @@
       "snapshot": "api/upstream/Unit.html",
       "snapshot_sha256": "5c550ace335c0c8305b79de4e2b1f7c5583751d88cf6f8fd32e2071c3cac8d01",
       "translation": "api/ja/Unit.json"
+    },
+    "Vector2": {
+      "snapshot": "api/upstream/Vector2.html",
+      "snapshot_sha256": "3875d9de7e9e9eacc651e35b9263abbd2f6dbd670f1ad891aee338bf5a96bea6",
+      "translation": "api/ja/Vector2.json"
+    },
+    "Vector3": {
+      "snapshot": "api/upstream/Vector3.html",
+      "snapshot_sha256": "8d69e03a9b5d861f6c83b16ef67b7092414c0538c9ce8629d57270d86732534a",
+      "translation": "api/ja/Vector3.json"
+    },
+    "VectorN": {
+      "snapshot": "api/upstream/VectorN.html",
+      "snapshot_sha256": "8f0e2ec821e114ffff2b1d6a75304d491852ab5206aa00b44de6303bc860f77c",
+      "translation": "api/ja/VectorN.json"
     }
   },
   "stylesheet": {

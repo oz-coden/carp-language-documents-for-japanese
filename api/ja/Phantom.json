@@ -1,0 +1,61 @@
+{
+  "module": "Phantom",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Phantom.carp",
+    "line": 1,
+    "original": "is a type without inhabitants and a free type variable, which is\na fancy way of saying that it has no runtime representation.\n\nWhen trying to mark types programmatically using something like `the` but\nwithout the need for a special form, `Phantom` comes in handy.\n\nExample:\n\n```\n(defn test [a]\n  (Phantom.ensure a (the (Phantom Int) (Phantom.init))))\n\n(println* (test 123l)) ; this will not compile\n```",
+    "source_html_sha256": "ec7f62dda17e416894a24dbbc9e07b3f740c68a5927d4cbeefe62338be4747e4",
+    "translation": "値を持たず、自由型変数 (free type variable) を持つ型です。これは、実行時の表現を持たないことを表しています。\n\n特殊形式を必要とせず、`the` のような仕組みを使ってプログラムから型を指定したい場合に、`Phantom` が便利です。\n\n例えば、次のように記述します。\n\n```carp\n(defn test [a]\n  (Phantom.ensure a (the (Phantom Int) (Phantom.init))))\n\n(println* (test 123l)) ; これはコンパイルできない\n```",
+    "code_comment_translations": {
+      "; this will not compile": "; これはコンパイルできない"
+    },
+    "notes": [
+      "原文は「値を持たない」と説明していますが、固定版の[型定義(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Phantom.carp#L15) にはメンバーを持たない `Phantom` 型と、その値を作る `init` が存在します。値の構築が不可能という意味に読み替えないでください。本文は原文の説明を保持しています。"
+    ]
+  },
+  "entries": {
+    "copy": {
+      "source": "src/Deftype.hs",
+      "line": 259,
+      "original": "copies a `Phantom`.",
+      "source_html_sha256": "2202fb0e73b5a352a6b64258fa5a970105d7f81bb6b8d107de9b4969ad77dc58",
+      "translation": "`Phantom` をコピーします。"
+    },
+    "delete": {
+      "source": "src/Deftype.hs",
+      "line": 249,
+      "original": "deletes a `Phantom`. Should usually not be called manually.",
+      "source_html_sha256": "59fe7a98ce352b18381975cf76745ae8382afff5d563cf4cbd0b0a31c469995e",
+      "translation": "`Phantom` を削除します。通常、手動で呼び出す必要はありません。"
+    },
+    "ensure": {
+      "source": "core/Phantom.carp",
+      "line": 18,
+      "original": "is a function that takes anything and a `Phantom`, ensuring that\nthe type contained by the `Phantom` and the type of the first parameter match.",
+      "source_html_sha256": "5636876b24a818c388a5aba657cc3445ab3c5c840591587577b116113b8ff868",
+      "translation": "任意の値と `Phantom` を受け取り、`Phantom` に含まれる型と第 1 引数の型が一致することを保証する関数です。"
+    },
+    "init": {
+      "source": "src/Deftype.hs",
+      "line": 228,
+      "original": "creates a `Phantom`.",
+      "source_html_sha256": "5d449de9b0b2900e791be66598a19fb32420dd5cf21a1e7946c43c115d4f8bde",
+      "translation": "`Phantom` を作成します。"
+    },
+    "prn": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Phantom` to a string.",
+      "source_html_sha256": "3e81aefc4a8951991aed2a20e295747424dd409de27754f2273901caedeb7a38",
+      "translation": "`Phantom` を文字列に変換します。"
+    },
+    "str": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Phantom` to a string.",
+      "source_html_sha256": "3e81aefc4a8951991aed2a20e295747424dd409de27754f2273901caedeb7a38",
+      "translation": "`Phantom` を文字列に変換します。"
+    }
+  }
+}

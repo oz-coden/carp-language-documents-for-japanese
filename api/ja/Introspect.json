@@ -1,0 +1,133 @@
+{
+  "module": "Introspect",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Introspect.carp",
+    "line": 1,
+    "original": "Dynamic functions that return information about the s-expressions associated\n  to a binding.",
+    "source_html_sha256": "9aa8f12842db2282a691d9d85abd20fc203e156a36120b0f76d9323de49e79ad",
+    "translation": "束縛 (binding) に関連付けられた S 式 (s-expression) の情報を返す動的関数です。"
+  },
+  "entries": {
+    "arguments": {
+      "source": "core/Introspect.carp",
+      "line": 100,
+      "original": "What are the arguments to this binding?\n\n- When `binding` is a function, returns the argument array.\n- When `binding` is a command, returns the argument array.\n- When `binding` is a primitive, returns the argument array.\n- When `binding` is an interface, returns the argument array.\n- When `binding` is a struct, returns the fields.\n- When `binding` is a sumtype, returns a list of the type arguments of each\n  constructor.\n- Otherwise it returns an empty list.",
+      "source_html_sha256": "9da95120b1a2b5625f18cb0529e57f38a32f333a8ee34f3fe446a868bfc97a31",
+      "translation": "この束縛の引数を返します。\n\n- `binding` が関数の場合は、引数の配列を返します。\n- `binding` がコマンドの場合は、引数の配列を返します。\n- `binding` がプリミティブ (primitive) の場合は、引数の配列を返します。\n- `binding` がインターフェースの場合は、引数の配列を返します。\n- `binding` が構造体の場合は、フィールドを返します。\n- `binding` が直和型 (sumtype) の場合は、各コンストラクタの型引数のリストを返します。\n- それ以外の場合は、空のリストを返します。"
+    },
+    "arity": {
+      "source": "core/Introspect.carp",
+      "line": 83,
+      "original": "What's the arity of this binding?\n\n- When `binding` is a function, returns the number of arguments.\n- When `binding` is a command, returns the number of arguments.\n- When `binding` is a primitive, returns the number of arguments.\n- When `binding` is an interface, returns the number of arguments.\n- When `binding` is a struct, returns the number of fields.\n- When `binding` is a sumtype, returns a list of the number of type\n  arguments of each constructor.\n- Otherwise it returns 0.",
+      "source_html_sha256": "922d71e2b76bd50b9e5b4753eccbe245e1eb707c0f3629eb26696ed109fe43aa",
+      "translation": "この束縛の引数の数 (arity) を返します。\n\n- `binding` が関数の場合は、引数の数を返します。\n- `binding` がコマンドの場合は、引数の数を返します。\n- `binding` がプリミティブの場合は、引数の数を返します。\n- `binding` がインターフェースの場合は、引数の数を返します。\n- `binding` が構造体の場合は、フィールドの数を返します。\n- `binding` が直和型の場合は、各コンストラクタの型引数の数のリストを返します。\n- それ以外の場合は、`0` を返します。"
+    },
+    "command?": {
+      "source": "core/Introspect.carp",
+      "line": 21,
+      "original": "Is this binding a command?",
+      "source_html_sha256": "f5d5fd57395c11bf62e94861d0d3c0b8a24b8bb975d2650a0a1a3d1f835625da",
+      "translation": "この束縛がコマンドかどうかを調べます。"
+    },
+    "dynamic?": {
+      "source": "core/Introspect.carp",
+      "line": 139,
+      "original": "Is this binding a dynamic binding?",
+      "source_html_sha256": "f26b4b96f0c927241e321240bb2f118dbec9dcd82f439606a7cfe7716f525b66",
+      "translation": "この束縛が動的な束縛かどうかを調べます。"
+    },
+    "external?": {
+      "source": "core/Introspect.carp",
+      "line": 37,
+      "original": "Is this binding external?",
+      "source_html_sha256": "6a06f87dd94550b42e6c46a364b8bae05bb33f3f8694d08de1cdc9a1756de49b",
+      "translation": "この束縛が外部のものかどうかを調べます。"
+    },
+    "function?": {
+      "source": "core/Introspect.carp",
+      "line": 13,
+      "original": "Is this binding a function?",
+      "source_html_sha256": "9bbb0c28d3ac81ed85c74106c07e3cf443b9feda8d2893fa24e3f69750fbdbcf",
+      "translation": "この束縛が関数かどうかを調べます。"
+    },
+    "implements?": {
+      "source": "core/Introspect.carp",
+      "line": 77,
+      "original": "Does `function` implement `interface`?",
+      "source_html_sha256": "cdfde4c5a0b9831bd66b29cf5197c53e225896360441e97092c4fa956365367a",
+      "translation": "`function` が `interface` を実装しているかどうかを調べます。"
+    },
+    "interface?": {
+      "source": "core/Introspect.carp",
+      "line": 148,
+      "original": "Is this binding an interface?",
+      "source_html_sha256": "428ed193312fcbafc824cd541356815a5b8398cab96b76b28951dd0e3fb9671c",
+      "translation": "この束縛がインターフェースかどうかを調べます。"
+    },
+    "macro?": {
+      "source": "core/Introspect.carp",
+      "line": 131,
+      "original": "Is this binding a macro?",
+      "source_html_sha256": "2d246a1adcf037101677fb76ef0b057618119f24ad0fa1db86397e786c4869ea",
+      "translation": "この束縛がマクロかどうかを調べます。"
+    },
+    "module?": {
+      "source": "core/Introspect.carp",
+      "line": 5,
+      "original": "Is this binding a module?",
+      "source_html_sha256": "98bc0b3480860cf2ae715d7eb4ca88b184fe541585dae64959c019f32b62f0ac",
+      "translation": "この束縛がモジュールかどうかを調べます。"
+    },
+    "primitive?": {
+      "source": "core/Introspect.carp",
+      "line": 29,
+      "original": "Is this binding a primitive?",
+      "source_html_sha256": "a9c4849ba16d5d9c31be1c5d3178433f4ee04cfc087db0414a719445234e389e",
+      "translation": "この束縛がプリミティブかどうかを調べます。"
+    },
+    "struct?": {
+      "source": "core/Introspect.carp",
+      "line": 61,
+      "original": "Is this binding a struct?",
+      "source_html_sha256": "f1c0880a309ddbc86df1a7a9940dff33177810edb0dc9ab865f4920e3752bca9",
+      "translation": "この束縛が構造体かどうかを調べます。"
+    },
+    "sumtype?": {
+      "source": "core/Introspect.carp",
+      "line": 69,
+      "original": "Is this binding a sumtype?",
+      "source_html_sha256": "cd836379325c8f72b6e6b05dbba65bfb66208d89dff1edbbd0546123733624de",
+      "translation": "この束縛が直和型かどうかを調べます。"
+    },
+    "type?": {
+      "source": "core/Introspect.carp",
+      "line": 53,
+      "original": "Is this binding a type?",
+      "source_html_sha256": "c846fa04ceaa842e7a2ebfec61059032a345ebfec80c0bf8e70ca0901e79df31",
+      "translation": "この束縛が型かどうかを調べます。"
+    },
+    "variable?": {
+      "source": "core/Introspect.carp",
+      "line": 45,
+      "original": "Is this binding a variable?",
+      "source_html_sha256": "b82479e142d0116d4b8784033aa6983b28df998d76eea04a341d395a3f9ebc4d",
+      "translation": "この束縛が変数かどうかを調べます。"
+    },
+    "with-copy": {
+      "source": "core/Introspect.carp",
+      "line": 156,
+      "original": "Returns a reference to an anonymous 'proxied' variant of `function` in\n  which the argument in position `arg` (indexed from 0) is *copied* from a\n  reference before being passed to `function`:\n\n  ```\n  ;; Array.reduce expects a function that takes a *ref* in its second argument:\n  ;;   (Fn [a (Ref b c)] ...)\n  ;; so we can't use a function like `+` directly; enter proxy\n  (reduce (with-copy + 2) 0 &[1 2 3])\n  => 6\n  ;; compare this with an inline anonymous function that achieves the same thing:\n  (reduce &(fn [x y] (+ x @y)) 0 &[1 2 3]) === (reduce (with-copy + 2) 0 &[1 2 3])\n  ```\n\n  This is useful when using higher-order functions that operate over structures that\n  return *references* to their inhabitants, such as arrays or structs. It allows\n  you to use a function over values without writing a custom anonymous function\n  to handle copying.\n\n  Furthermore, one can define bespoke variants for working with particular\n  higher-order functions. For instace, `reduce` always expacts a reference in the\n  second positon:\n\n  ```\n  (defmacro reducer [function]\n    (eval (list with-copy function 2)))\n  (reduce (reducer +) 0 &[1 2 3])\n  => 6\n  ```",
+      "source_html_sha256": "e51b94c729eaa1772223cf63ba9587a9dab779f4f712792868b1302d106c7a1e",
+      "translation": "`function` の無名の「プロキシ版」への参照を返します。このプロキシ版では、`arg` の位置 (インデックスは `0` から始まります) にある引数を参照から**コピー**してから、`function` に渡します。\n\n```carp\n;; Array.reduce は第 2 引数に参照を受け取る関数を要求する\n;;   (Fn [a (Ref b c)] ...)\n;; そのため `+` のような関数を直接使えない。ここでプロキシを使う\n(reduce (with-copy + 2) 0 &[1 2 3])\n=> 6\n;; 同じ処理を行うインラインの無名関数と比較する\n(reduce &(fn [x y] (+ x @y)) 0 &[1 2 3]) === (reduce (with-copy + 2) 0 &[1 2 3])\n```\n\nこれは、配列や構造体のように、中の値への**参照**を返す構造を扱う高階関数 (higher-order function) を使う場合に便利です。コピーを処理するための独自の無名関数を書かずに、値を受け取る関数を使用できます。\n\nさらに、特定の高階関数に合わせた専用の版を定義することもできます。例えば、`reduce` は常に第 2 引数の位置に参照を要求します。\n\n```carp\n(defmacro reducer [function]\n  (eval (list with-copy function 2)))\n(reduce (reducer +) 0 &[1 2 3])\n=> 6\n```",
+      "code_comment_translations": {
+        ";; Array.reduce expects a function that takes a *ref* in its second argument:": ";; Array.reduce は第 2 引数に参照を受け取る関数を要求する",
+        ";; so we can't use a function like `+` directly; enter proxy": ";; そのため `+` のような関数を直接使えない。ここでプロキシを使う",
+        ";; compare this with an inline anonymous function that achieves the same thing:": ";; 同じ処理を行うインラインの無名関数と比較する"
+      },
+      "notes": [
+        "原文のコード例は `with-copy` に引数位置 `2` を渡しています。固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Introspect.carp#L187) は、指定した位置に `1` を加えた値と関数の引数の数を比較するため、2 引数の関数に位置 `2` を指定すると範囲外のエラー分岐に入ります。本文とコード例は原文を保持しています。この注記はソースの確認に基づき、実行確認は行っていません。"
+      ]
+    }
+  }
+}

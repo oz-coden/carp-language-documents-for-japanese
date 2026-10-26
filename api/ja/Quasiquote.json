@@ -1,0 +1,43 @@
+{
+  "module": "Quasiquote",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Quasiquote.carp",
+    "line": 1,
+    "original": "is a mechanism for quotation with code interspersed. See\nthe documentation of [`quasiquote`](#quasiquote) or the [high level\noverview](https://github.com/carp-lang/Carp/blob/master/docs/Quasiquotation.md)\nfor details.",
+    "source_html_sha256": "381e29085e3d28c40eeb8a5fac7bd134a1057c0d8bb5997b99e522c2a1f124c7",
+    "translation": "コードを差し込めるクォートの仕組みです。詳しくは [`quasiquote`](#quasiquote) の説明または[概要](../../docs/Quasiquotation-JP.html)を参照してください。"
+  },
+  "entries": {
+    "quasiquote": {
+      "source": "core/Quasiquote.carp",
+      "line": 75,
+      "original": "is a quotation that may have expressions inside it in the\nform of [`unquote`](#unquote) and [`unquote-splicing`](#unquote-splicing).\n\nExample:\n```\n(defdynamic x 1)\n(defdynamic y '(2 3 4))\n\n(quasiquote (1 (unquote x) (unquote-splicing y))) ; => (1 1 2 3 4)\n; using the reader macros\n`(1 %x %@y)) ; => (1 1 2 3 4)\n```",
+      "source_html_sha256": "5228e4ffcbb82408ef3c81a098b048d9bc9d0a11414f69d6921e9e2013bbff18",
+      "translation": "内部に [`unquote`](#unquote) や [`unquote-splicing`](#unquote-splicing) の形式で式を含めることができるクォートです。\n\n例えば、次のように記述します。\n\n```carp\n(defdynamic x 1)\n(defdynamic y '(2 3 4))\n\n(quasiquote (1 (unquote x) (unquote-splicing y))) ; => (1 1 2 3 4)\n; リーダーマクロを使う場合\n`(1 %x %@y)) ; => (1 1 2 3 4)\n```",
+      "code_comment_translations": {
+        "; using the reader macros": "; リーダーマクロを使う場合"
+      },
+      "notes": [
+        "原文のリーダーマクロを使ったコード例は、末尾に閉じ括弧 `)` が 1 つ多い形で掲載されています。コード例は原文を保持しています。"
+      ]
+    },
+    "unquote": {
+      "source": "core/Quasiquote.carp",
+      "line": 6,
+      "original": "unquotes (i.e. evaluates) an expression `form` inside a\nquasiquote. It will generate an error message when used outside a\n`quasiquote` form.\n\nExample:\n\n```\n(defdynamic x 2)\n\n(quasiquote (+ (unquote x) 1)) ; => (+ 2 1)\n```",
+      "source_html_sha256": "1dabd30ec319705efd6d76a10445867f08696733089a616762e255f4bf86399d",
+      "translation": "準クォート (quasiquote) の内部で、式 `form` をアンクォート (unquote)、つまり評価します。`quasiquote` 形式の外で使用すると、エラーメッセージを生成します。\n\n例えば、次のように記述します。\n\n```carp\n(defdynamic x 2)\n\n(quasiquote (+ (unquote x) 1)) ; => (+ 2 1)\n```"
+    },
+    "unquote-splicing": {
+      "source": "core/Quasiquote.carp",
+      "line": 20,
+      "original": "unquotes (i.e. evaluates) an expression `form` inside a\nquasiquote and splices it in, i.e. flattens the expression. It will\ngenerate an error message when used outside a `quasiquote` form.\n\nExample:\n\n```\n(defdynamic x '(1 2)\n\n(quasiquote (+ (unquote-splicing x))) ; => (+ 1 2)\n```",
+      "source_html_sha256": "614572e49b8e0b1b937759ecfc3779cf3a5b0681ee12db7f79f39682e8617403",
+      "translation": "準クォートの内部で、式 `form` をアンクォート、つまり評価し、その結果をスプライシング (splicing)、つまり式を平坦化して差し込みます。`quasiquote` 形式の外で使用すると、エラーメッセージを生成します。\n\n例えば、次のように記述します。\n\n```carp\n(defdynamic x '(1 2)\n\n(quasiquote (+ (unquote-splicing x))) ; => (+ 1 2)\n```",
+      "notes": [
+        "原文の `(defdynamic x '(1 2)` には、その定義を閉じる `)` がありません。コード例は原文を保持しています。"
+      ]
+    }
+  }
+}

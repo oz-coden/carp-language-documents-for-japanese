@@ -3,36 +3,51 @@
 [日本語 API リファレンス](https://github.oz-coden.com/carp-language-documents-for-japanese/api/core/index.html) は、Carp の固定コミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` を対象としています。
 翻訳対象の版・用語・訳注は、[翻訳方針](../TRANSLATION.md) と [用語集](../GLOSSARY.md) に従います。
 
-Core の索引の案内文と、次の 23 モジュールの概要・説明文を翻訳しています。
+Core の索引の案内文と、次の 38 モジュールの概要・説明文を翻訳しています。
 
 | モジュール | 掲載項目 | 説明文の翻訳 |
 | --- | --- | --- |
 | `Array` | 87 | 86 |
+| `Bench` | 2 | 2 |
 | `Bool` | 11 | 2 |
 | `Byte` | 33 | 4 |
 | `Char` | 23 | 10 |
 | `Control` | 6 | 6 |
+| `Debug` | 9 | 6 |
+| `Derive` | 5 | 5 |
 | `Double` | 61 | 55 |
 | `Float` | 55 | 50 |
 | `Function` | 2 | 2 |
+| `Geometry` | 2 | 2 |
 | `IO` | 16 | 16 |
 | `IO.Raw` | 31 | 31 |
 | `Int` | 44 | 39 |
+| `Introspect` | 16 | 16 |
 | `Long` | 43 | 12 |
 | `Map` | 53 | 52 |
 | `Maybe` | 30 | 28 |
+| `Opaque` | 5 | 5 |
 | `Pair` | 20 | 15 |
+| `Pattern` | 22 | 11 |
+| `Pattern.MatchResult` | 12 | 11 |
+| `Phantom` | 6 | 6 |
 | `Pointer` | 21 | 17 |
 | `Quadruple` | 27 | 23 |
+| `Quasiquote` | 3 | 3 |
 | `Result` | 28 | 28 |
 | `StaticArray` | 34 | 31 |
+| `Statistics` | 14 | 13 |
 | `String` | 65 | 63 |
 | `System` | 40 | 9 |
+| `Test` | 17 | 17 |
 | `Triple` | 23 | 19 |
 | `Unit` | 4 | 2 |
-| 合計 | 757 | 600 |
+| `Vector2` | 39 | 28 |
+| `Vector3` | 42 | 29 |
+| `VectorN` | 32 | 23 |
+| 合計 | 983 | 777 |
 
-原文に説明文がない 157 項目は、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、説明文に含まれるコード例 15 件も保持しています。
+原文に説明文がない 206 項目は、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、概要・説明文に含まれるコード例 24 件の実行コードと出力例も保持しています。英語の説明コメントは日本語に翻訳しています。
 
 ## 原典と生成元 (Sources and Generation)
 
@@ -61,8 +76,8 @@ Core の索引の案内文と、次の 23 モジュールの概要・説明文�
 ## 訳文の更新と検査 (Updating and Checking Translations)
 
 1. `api/ja/<モジュール名>.json` の対象項目を確認します。`source` と `line` が原典を示します。
-2. `translation` を Markdown として修正します。補足は `notes` に記載し、原文と区別します。
-3. 原文に含まれるコード例を保持し、原典を変更する場合は固定版と対応関係を再確認します。
+2. `translation` を Markdown として修正します。補足は `notes` に記載し、原文と区別します。概要にも同じ形式で訳注を記載できます。
+3. 原文に含まれるコード例を保持し、原典を変更する場合は固定版と対応関係を再確認します。説明コメントを翻訳する場合は、`code_comment_translations` に元の行コメントと訳文を対応付けます。セミコロンの数を維持し、コード・文字列・文字リテラル・出力例は変更しません。
 4. 次の検査を実行します。
 
 ```bash

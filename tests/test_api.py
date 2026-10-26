@@ -13,6 +13,33 @@ spec.loader.exec_module(api)
 
 
 class APIReferenceTests(unittest.TestCase):
+    def test_comment_translations_preserve_strings_characters_and_code(self):
+        code = '(print "; note") ; note\n(str \\;) ; note\n(print "say \\"hi\\"; note")'
+        record = {'original': '```carp\n' + code + '\n```',
+                  'code_comment_translations': {'; note': '; 説明'}}
+        expected = '(print "; note") ; 説明\n(str \\;) ; 説明\n(print "say \\"hi\\"; note")'
+        self.assertEqual([expected], api.translated_examples(record))
+
+    def test_comment_translation_cannot_target_code_or_output(self):
+        for source, replacements in (
+                ('(print "; note")', {'; note': '; 説明'}),
+                ('(+ 1 2)', {'(+ 1 2)': '(+ 2 2)'}),
+                ('; note', {'; note': '; 説明\n(+ 2 2)'}),
+                ('; note', {'; note': '(+ 2 2)'}),
+                ('; => 3', {'; => 3': '; => 4'})):
+            with self.subTest(source=source), self.assertRaises(ValueError):
+                api.translated_examples({'original': '```\n' + source + '\n```',
+                                         'code_comment_translations': replacements})
+
+    def test_real_comment_translation_still_rejects_changed_executable_code(self):
+        path = self.root / 'api/ja/Introspect.json'
+        data = json.loads(path.read_text())
+        data['entries']['with-copy']['translation'] = data['entries']['with-copy']['translation'].replace(
+            '(with-copy + 2)', '(with-copy + 1)')
+        path.write_text(json.dumps(data))
+        with self.assertRaisesRegex(ValueError, 'code example differs'):
+            api.load(self.root)
+
     def test_rendered_examples_normalize_common_indentation_as_a_block(self):
         page = ('<div class="module-description"></div><section class="binder">'
                 '<h3 id="sample">sample</h3><div class="description">defn</div>'
@@ -80,7 +107,7 @@ class APIReferenceTests(unittest.TestCase):
         manifest['english_source_fallbacks']['StaticArray.html'] = 'core/StaticArray.carp'
         manifest_path.write_text(json.dumps(manifest))
         output = self.root / 'pages'
-        self.assertEqual(24, api.stage(self.root, output, '/test'))
+        self.assertEqual(39, api.stage(self.root, output, '/test'))
         page = (output / 'api/core/Array.html').read_text()
         self.assertIn('/test/GLOSSARY.html', page)
         self.assertIn('id="aset-uninitialized"', page)
@@ -99,14 +126,18 @@ class APIReferenceTests(unittest.TestCase):
     def test_batch_coverage_and_core_index_source_are_complete(self):
         manifest, modules = api.load(self.root)
         self.assertEqual(
-            {'Array', 'Bool', 'Byte', 'Char', 'Control', 'Double', 'Float', 'Function',
-             'IO', 'IO.Raw', 'Int', 'Long', 'Map', 'Maybe', 'Pair', 'Pointer', 'Quadruple',
-             'Result', 'StaticArray', 'String', 'System', 'Triple', 'Unit'}, set(modules))
-        self.assertEqual(757, sum(len(data[2]) for data in modules.values()))
-        self.assertEqual(600, sum(bool(record['translation']) for data in modules.values()
+            {'Array', 'Bench', 'Bool', 'Byte', 'Char', 'Control', 'Debug',
+             'Derive', 'Double', 'Float', 'Function', 'Geometry', 'IO', 'IO.Raw',
+             'Int', 'Introspect', 'Long', 'Map', 'Maybe', 'Opaque', 'Pair',
+             'Pattern', 'Pattern.MatchResult', 'Phantom', 'Pointer', 'Quadruple', 'Quasiquote', 'Result',
+             'StaticArray', 'Statistics', 'String', 'System', 'Test', 'Triple', 'Unit',
+             'Vector2', 'Vector3', 'VectorN'}, set(modules))
+        self.assertEqual(983, sum(len(data[2]) for data in modules.values()))
+        self.assertEqual(777, sum(bool(record['translation']) for data in modules.values()
                                   for record in data[3]['entries'].values()))
-        self.assertEqual(15, sum(len(api.examples(record['original'])) for data in modules.values()
-                                 for record in data[3]['entries'].values()))
+        self.assertEqual(24, sum(len(api.examples(record['original'])) for data in modules.values()
+                                 for record in [data[3]['module_documentation'],
+                                                *data[3]['entries'].values()]))
         record, _ = api.load_index(self.root, manifest)
         self.assertIn('標準ライブラリ', record['translation'])
         record['upstream_commit'] = 'a' * 40
@@ -119,15 +150,21 @@ class APIReferenceTests(unittest.TestCase):
         api.stage(self.root, output, '/test')
         index = (output / 'api/core/index.html').read_text()
         self.assertIn('Core — 標準ライブラリ API リファレンス', index)
-        for name in ('Array', 'Bool', 'Byte', 'Char', 'Control', 'Double', 'Float', 'Function',
-                     'IO', 'IO.Raw', 'Int', 'Long', 'Map', 'Maybe', 'Pair', 'Pointer', 'Quadruple',
-                     'Result', 'StaticArray', 'String', 'System', 'Triple', 'Unit'):
+        for name in ('Array', 'Bench', 'Bool', 'Byte', 'Char', 'Control',
+                     'Debug', 'Derive', 'Double', 'Float', 'Function', 'Geometry',
+                     'IO', 'IO.Raw', 'Int', 'Introspect', 'Long', 'Map',
+                     'Maybe', 'Opaque', 'Pair', 'Pattern', 'Pattern.MatchResult', 'Phantom',
+                     'Pointer', 'Quadruple', 'Quasiquote', 'Result', 'StaticArray', 'Statistics',
+                     'String', 'System', 'Test', 'Triple', 'Unit', 'Vector2',
+                     'Vector3', 'VectorN'):
             self.assertIn(f'href="{name}.html"', index)
             self.assertTrue((output / f'api/core/{name}.html').is_file())
         maybe = (output / 'api/core/Maybe.html').read_text()
         result = (output / 'api/core/Result.html').read_text()
         self.assertIn('(./Result.html)', maybe)
         self.assertIn('(./Maybe.html)', result)
+        self.assertNotIn('モジュール概要の原文',
+                         (output / 'api/core/Pattern.MatchResult.html').read_text())
 
     def test_io_references_reach_the_correct_module_or_pinned_type_source(self):
         output = self.root / 'pages'

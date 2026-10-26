@@ -1,0 +1,97 @@
+{
+  "module": "Pattern.MatchResult",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Pattern.carp",
+    "line": 7,
+    "original": "",
+    "source_html_sha256": "2f0f1d263f1326a141a5e035640e6da3d6169fcb023d392aa4e4b4c43a5a55a0",
+    "translation": ""
+  },
+  "entries": {
+    "end": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `end` property of a `MatchResult`.",
+      "source_html_sha256": "7bf5585592ab50733908be7913f424d134e58c176bc10ff36ccf888d01607037",
+      "translation": "`MatchResult` の `end` プロパティを取得します。"
+    },
+    "init": {
+      "source": "src/Deftype.hs",
+      "line": 228,
+      "original": "creates a `MatchResult`.",
+      "source_html_sha256": "f772ff0f361f14afce0749080b9adab9a9cf8a36513ac2d41b6b6e5d465cef97",
+      "translation": "`MatchResult` を作成します。"
+    },
+    "prn": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `MatchResult` to a string.",
+      "source_html_sha256": "749a2e464487c3df699d5caa9b4a32bea34a38598e498839493c8d5903c3ed76",
+      "translation": "`MatchResult` を文字列に変換します。"
+    },
+    "ref-str": {
+      "source": "core/Pattern.carp",
+      "line": 9,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "set-end": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `end` property of a `MatchResult`.",
+      "source_html_sha256": "f387dcd59617b858ef81319c1bbfc14dfa3cd6aa76395ad0f9e804790f68f4b5",
+      "translation": "`MatchResult` の `end` プロパティを設定します。"
+    },
+    "set-end!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `end` property of a `MatchResult` in place.",
+      "source_html_sha256": "7b6ce85fa38dd5f4a8a04813a05daebf9171ad3568c75265844803d35a972133",
+      "translation": "`MatchResult` の `end` プロパティをその場で設定します。"
+    },
+    "set-start": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `start` property of a `MatchResult`.",
+      "source_html_sha256": "3c865f8425563da2bacdc814d6707cd2bbd35776feab7f6e11933c057b72e9d2",
+      "translation": "`MatchResult` の `start` プロパティを設定します。"
+    },
+    "set-start!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `start` property of a `MatchResult` in place.",
+      "source_html_sha256": "a1285659de339eba09bb9692f5b8a35ea41c7aef00df8ee6b6c2054547f71d24",
+      "translation": "`MatchResult` の `start` プロパティをその場で設定します。"
+    },
+    "start": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `start` property of a `MatchResult`.",
+      "source_html_sha256": "bbf32eb5acae8ceb84e78642907c81262eae85683817673a988d18712432872b",
+      "translation": "`MatchResult` の `start` プロパティを取得します。"
+    },
+    "str": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `MatchResult` to a string.",
+      "source_html_sha256": "749a2e464487c3df699d5caa9b4a32bea34a38598e498839493c8d5903c3ed76",
+      "translation": "`MatchResult` を文字列に変換します。"
+    },
+    "update-end": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `end` property of a `Pattern.MatchResult` using a function `f`.",
+      "source_html_sha256": "211ae48751dad3cf4915e903df4c2bcc6c6f1c57d93e330b656957e95dd8110d",
+      "translation": "関数 `f` を使って、`Pattern.MatchResult` の `end` プロパティを更新します。"
+    },
+    "update-start": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `start` property of a `Pattern.MatchResult` using a function `f`.",
+      "source_html_sha256": "f527098b77bff423bf8b5e814077921bf3b0a97d5f81eacac5848063ce697893",
+      "translation": "関数 `f` を使って、`Pattern.MatchResult` の `start` プロパティを更新します。"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "module": "Statistics",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Statistics.carp",
+    "line": 5,
+    "original": "is a module for providing various statistical analyses on a\ncollection of values.",
+    "source_html_sha256": "16ecb67d06770c7875dea3bedd21324eaf072b8bfee16c81f62f76b26e4b2fb0",
+    "translation": "値のコレクションに対して、さまざまな統計解析を行うためのモジュールです。"
+  },
+  "entries": {
+    "grouped-median": {
+      "source": "core/Statistics.carp",
+      "line": 80,
+      "original": "Compute the grouped median of the samples data.",
+      "source_html_sha256": "d5eeb6c8f4e0504cc57adea30ffd3c4e24fd72826720b8ceb9b3efe471326d55",
+      "translation": "グループ化された標本データの中央値 (grouped median) を計算します。",
+      "notes": [
+        "固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Statistics.carp#L81) は、整列済み配列 `sorted` を作成する一方で、中央値を求める要素は元の `data` から取得しています。本文は原文を保持しています。この注記はソースの確認に基づき、未整列データに対する実行確認は行っていません。"
+      ]
+    },
+    "high-median": {
+      "source": "core/Statistics.carp",
+      "line": 72,
+      "original": "Compute the high median of the samples data.",
+      "source_html_sha256": "8850043265dead082f51ba1711a2c18780e1701b6fa578f714196c8dcfb8aaa7",
+      "translation": "標本データの上側の中央値 (high median) を計算します。",
+      "notes": [
+        "固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Statistics.carp#L73) は、整列済み配列 `sorted` を作成する一方で、中央値を求める要素は元の `data` から取得しています。本文は原文を保持しています。この注記はソースの確認に基づき、未整列データに対する実行確認は行っていません。"
+      ]
+    },
+    "iqr": {
+      "source": "core/Statistics.carp",
+      "line": 160,
+      "original": "Compute the interquartile range.",
+      "source_html_sha256": "02bab32de5a02bdbf876bf0c4b9226b3381cfdcb2883d6b3c141379b9773c4eb",
+      "translation": "四分位範囲 (interquartile range) を計算します。"
+    },
+    "low-median": {
+      "source": "core/Statistics.carp",
+      "line": 64,
+      "original": "Compute the low median of the samples data.",
+      "source_html_sha256": "3af10b0a726196cfafe17fe44458625e0253172a427efe160e0946c02d9cfb47",
+      "translation": "標本データの下側の中央値 (low median) を計算します。",
+      "notes": [
+        "固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Statistics.carp#L65) は、整列済み配列 `sorted` を作成する一方で、中央値を求める要素は元の `data` から取得しています。本文は原文を保持しています。この注記はソースの確認に基づき、未整列データに対する実行確認は行っていません。"
+      ]
+    },
+    "mean": {
+      "source": "core/Statistics.carp",
+      "line": 24,
+      "original": "Compute the mean of the samples data.",
+      "source_html_sha256": "651632dc51ebb9e253c334b70d1885fd0379a0415c48e77d47aa33cede78eb0b",
+      "translation": "標本データの平均値を計算します。"
+    },
+    "median": {
+      "source": "core/Statistics.carp",
+      "line": 53,
+      "original": "Compute the median of the samples data.",
+      "source_html_sha256": "93c2303719e2967eace78b638e0968841fd5a842c02bbd139ebb61ff97a35f52",
+      "translation": "標本データの中央値を計算します。",
+      "notes": [
+        "固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Statistics.carp#L54) は、整列済み配列 `sorted` を作成する一方で、中央値を求める要素は元の `data` から取得しています。本文は原文を保持しています。この注記はソースの確認に基づき、未整列データに対する実行確認は行っていません。"
+      ]
+    },
+    "pstdev": {
+      "source": "core/Statistics.carp",
+      "line": 109,
+      "original": "Compute the population standard deviation of the samples data.",
+      "source_html_sha256": "c1767683a9f2ae0eb5b3239615f0bc8aee17712245f63f82052ba97b2d1829b8",
+      "translation": "標本データの母標準偏差を計算します。"
+    },
+    "pstdev-pct": {
+      "source": "core/Statistics.carp",
+      "line": 113,
+      "original": "Compute the standard deviation of the samples data as a percentile.",
+      "source_html_sha256": "df65172ff7eef1a82c71c0fb560840e5d4c5f9fc4e49c55ed653910b99a58875",
+      "translation": "標本データの標準偏差を、パーセンタイル (percentile) として計算します。",
+      "notes": [
+        "固定版では、この説明文は `pstdev-pct` に付いていますが、[直後の定義(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Statistics.carp#L113) の名前は `stdev-pct` です。`stdev-pct` は `(stdev data) / (mean data) * 100.0` を計算しており、パーセンタイルの順位計算を行う関数ではありません。本文と説明文の配置は原文を保持しています。この注記はソースの確認に基づきます。"
+      ]
+    },
+    "pvariance": {
+      "source": "core/Statistics.carp",
+      "line": 99,
+      "original": "Compute the population variance of the samples data.",
+      "source_html_sha256": "5c25bd4fba70139c5024d8ad5849e410068c4e2d127e6b3c5e0e183f028a2380",
+      "translation": "標本データの母分散を計算します。"
+    },
+    "quartiles": {
+      "source": "core/Statistics.carp",
+      "line": 149,
+      "original": "Compute the quartiles of the samples data.",
+      "source_html_sha256": "b2c7d4a472075bb3df9d59414448a09de6077bb55482e6698df7aef84f4c69d7",
+      "translation": "標本データの四分位数を計算します。"
+    },
+    "stdev": {
+      "source": "core/Statistics.carp",
+      "line": 105,
+      "original": "Compute the standard deviation of the samples data.",
+      "source_html_sha256": "181278e715e8dfeea7c5c08309741dff442cd88ce1bfc1ef7bfcc9ba424aca2e",
+      "translation": "標本データの標準偏差を計算します。"
+    },
+    "stdev-pct": {
+      "source": "core/Statistics.carp",
+      "line": 114,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "summary": {
+      "source": "core/Statistics.carp",
+      "line": 179,
+      "original": "Compute a variety of statistical values from a list of samples.",
+      "source_html_sha256": "d17a5d4cb2a06913e4336e37681a9b5093d093773d9be0b1a6168d151fd8a1f6",
+      "translation": "標本のリストから、さまざまな統計値を計算します。"
+    },
+    "variance": {
+      "source": "core/Statistics.carp",
+      "line": 93,
+      "original": "Compute the variance of the samples data.",
+      "source_html_sha256": "93ff86f20a5d9070aeaccfa2b6eae5bc92183fffc6435c7b306717c1e8eb78fe",
+      "translation": "標本データの分散を計算します。"
+    }
+  }
+}

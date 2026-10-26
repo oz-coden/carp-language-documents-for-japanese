@@ -123,6 +123,62 @@ def examples(markdown):
         r'^\s*`{3,}[^\n]*\n(.*?)^\s*`{3,}\s*$', markdown, re.M | re.S)]
 
 
+def html_examples(fragment):
+    document = Document(fragment)
+    return [textwrap.dedent(text(document.inner(node), strip=False)).strip('\n')
+            for node in document.root.all() if node.tag == 'pre']
+
+
+def translated_examples(record):
+    """Apply only explicitly recorded translations of Carp line comments."""
+    replacements = record.get('code_comment_translations', {})
+    if not isinstance(replacements, dict):
+        raise ValueError('code comment translations must be a mapping')
+    seen = set()
+    result = []
+    for code in examples(record['original']):
+        output = []
+        i = 0
+        while i < len(code):
+            start = i
+            if code[i] == '"':
+                i += 1
+                while i < len(code):
+                    if code[i] == '\\':
+                        i += 2
+                    elif code[i] == '"':
+                        i += 1
+                        break
+                    else:
+                        i += 1
+            elif code[i] == '\\':
+                # A Carp character literal may itself contain a semicolon or quote.
+                i += 2
+            elif code[i] == ';':
+                end = code.find('\n', i)
+                i = len(code) if end < 0 else end
+                comment = code[start:i]
+                if comment in replacements:
+                    replacement = replacements[comment]
+                    prefix = re.match(r';+', comment).group()
+                    if (not isinstance(replacement, str) or '\n' in replacement or '\r' in replacement
+                            or not replacement.startswith(prefix)
+                            or re.match(r';+', replacement).group() != prefix
+                            or not replacement[len(prefix):].strip()
+                            or re.match(r';+\s*=>', comment)):
+                        raise ValueError('invalid code comment translation')
+                    seen.add(comment)
+                    output.append(replacement)
+                    continue
+            else:
+                i += 1
+            output.append(code[start:i])
+        result.append(''.join(output))
+    if seen != replacements.keys():
+        raise ValueError('code comment translation does not match a source comment')
+    return result
+
+
 def load_index(root, manifest):
     info = manifest['index']
     snapshot = (root / info['snapshot']).read_bytes()
@@ -140,7 +196,7 @@ def load_index(root, manifest):
         raise ValueError('Core index: original description checksum mismatch')
     if record['source'] not in manifest['source_files'] or not record['translation']:
         raise ValueError('Core index: missing source or translation')
-    if examples(record['original']) != examples(record['translation']):
+    if translated_examples(record) != examples(record['translation']):
         raise ValueError('Core index: a translated code example differs from its source')
     return record, original
 
@@ -173,7 +229,7 @@ def load(root):
                 raise ValueError(f'{name}: missing or invented translated description')
             if record['source'] not in manifest['source_files']:
                 raise ValueError(f'{name}: unregistered original source')
-            if examples(record['original']) != examples(record['translation']):
+            if translated_examples(record) != examples(record['translation']):
                 raise ValueError(f'{name}: a translated code example differs from its source')
         modules[name] = (info, overview, entries, translations)
     asset = manifest['stylesheet']
@@ -259,8 +315,9 @@ def stage(root, destination, baseurl):
         for note_index, note in enumerate(translations['module_documentation'].get('notes', [])):
             body += '<aside class="translator-note">' + markdown(
                 '**訳注:** ' + note, f'overview_note_{note_index}') + '</aside>'
-        body += ('<details class="original" lang="en"><summary lang="ja">モジュール概要の原文</summary>'
-                 + literal(rewrite(overview, info)) + '</details>')
+        if text(overview):
+            body += ('<details class="original" lang="en"><summary lang="ja">モジュール概要の原文</summary>'
+                     + literal(rewrite(overview, info)) + '</details>')
         body += ('<nav class="api-members" aria-label="API 一覧">' + ' · '.join(
             f'<a href="#{quote(key, safe="")}">{html.escape(key)}</a>' for key in entries) + '</nav>')
         for number, (key, entry) in enumerate(entries.items()):
@@ -313,8 +370,12 @@ def check_built(root, destination):
         page = (destination / f'api/core/{name}.html').read_text()
         _, generated = parse_reference(page)
         check_metadata(name, original, generated)
+        overview = Document(page)
+        if examples(translations['module_documentation']['translation']) != html_examples(
+                overview.inner(overview.root.by_class('module-description'))):
+            raise ValueError(f'{name}: published overview code example changed')
         for key in original:
-            if examples(translations['entries'][key]['original']) != generated[key]['code_examples']:
+            if examples(translations['entries'][key]['translation']) != generated[key]['code_examples']:
                 raise ValueError(f'{name}.{key}: published code example changed')
         document = Document(page)
         meta = next(n for n in document.root.all()

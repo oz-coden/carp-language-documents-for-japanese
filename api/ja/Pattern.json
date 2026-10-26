@@ -1,0 +1,167 @@
+{
+  "module": "Pattern",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Pattern.carp",
+    "line": 3,
+    "original": "is a data type for pattern matching, similar to, but not the same\nas, Regular Expressions. [See the docs for more\ninformation](../LanguageGuide.html#patterns).",
+    "source_html_sha256": "7d48ab278cdb050860215f0861924f4ec573d895432cd49fd74b3a1eb36aa16f",
+    "translation": "パターンマッチングのためのデータ型です。正規表現に似ていますが、同じものではありません。詳しくは[ドキュメント](../../docs/patterns-JP.html)を参照してください。"
+  },
+  "entries": {
+    "=": {
+      "source": "core/Pattern.carp",
+      "line": 95,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "MatchResult": {
+      "source": "core/Pattern.carp",
+      "line": 7,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "copy": {
+      "source": "core/Pattern.carp",
+      "line": 99,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "delete": {
+      "source": "core/Pattern.carp",
+      "line": 97,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "extract": {
+      "source": "core/Pattern.carp",
+      "line": 24,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "find": {
+      "source": "core/Pattern.carp",
+      "line": 36,
+      "original": "finds the index of a pattern in a string.\n\nReturns `-1` if it doesn’t find a matching pattern.",
+      "source_html_sha256": "6b3c9fa7a1b2996954953b5e30622c821d5f4c89f8e73f358835a173c371e585",
+      "translation": "文字列内でパターンが見つかるインデックスを返します。\n\n一致するパターンが見つからない場合は `-1` を返します。"
+    },
+    "find-all": {
+      "source": "core/Pattern.carp",
+      "line": 42,
+      "original": "finds all indices of a pattern in a string. The patterns may _not_ overlap.\n\nReturns `[]` if it doesn’t find a matching pattern.",
+      "source_html_sha256": "87a086beb68ca85f14f58298aaf3d216db460ab1a9c2c8392e7d3d74b5257847",
+      "translation": "文字列内でパターンが見つかるすべてのインデックスを返します。一致部分同士は重なりません。\n\n一致するパターンが見つからない場合は `[]` を返します。"
+    },
+    "find-all-matches": {
+      "source": "core/Pattern.carp",
+      "line": 45,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "from-chars": {
+      "source": "core/Pattern.carp",
+      "line": 102,
+      "original": "creates a pattern that matches a group of characters from a\nlist of those characters.",
+      "source_html_sha256": "41427d4abe15e9bb174da862de15ef57871d84da7d7e818cebb94dcd6cc56673",
+      "translation": "文字のリストから、その文字のグループに一致するパターンを作成します。"
+    },
+    "global-match-str": {
+      "source": "core/Pattern.carp",
+      "line": 107,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "init": {
+      "source": "core/Pattern.carp",
+      "line": 94,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "match": {
+      "source": "core/Pattern.carp",
+      "line": 32,
+      "original": "returns start and end indizes of the first match after the start of the string. Note that the end index points to the 1st character _after_ the match (like all slice functions).",
+      "source_html_sha256": "7f07902f5dd055d9fd12e943278a267f452713025265fb05c26ac5b088920714",
+      "translation": "文字列の先頭以降で最初に一致する部分の、開始と終了のインデックスを返します。終了インデックスは、すべてのスライス関数と同様に、一致部分の**直後**の文字を指すことに注意してください。"
+    },
+    "match-all-groups": {
+      "source": "core/Pattern.carp",
+      "line": 73,
+      "original": "finds all match groups of a pattern in a string as a nested\narray.\n\nReturns `[]` if it doesn’t find a matching pattern.",
+      "source_html_sha256": "6bec4892056c3d17787b455221ab46b504c0da6ef3b8cdfece8434aeb506747f",
+      "translation": "文字列内でパターンに一致するすべてのグループを、入れ子の配列として返します。\n\n一致するパターンが見つからない場合は `[]` を返します。"
+    },
+    "match-from": {
+      "source": "core/Pattern.carp",
+      "line": 30,
+      "original": "returns start and end indizes of the first match after start-pos. Note that the end index points to the 1st character _after_ the match (like all slice functions).",
+      "source_html_sha256": "44952be20860991f821897a31cd001be3e52336e6cbc25904f862ff1201c54e3",
+      "translation": "`start-pos` 以降で最初に一致する部分の、開始と終了のインデックスを返します。終了インデックスは、すべてのスライス関数と同様に、一致部分の**直後**の文字を指すことに注意してください。"
+    },
+    "match-groups": {
+      "source": "core/Pattern.carp",
+      "line": 62,
+      "original": "finds the match groups of the first match of a pattern in\na string.\n\nReturns `[]` if it doesn’t find a matching pattern.",
+      "source_html_sha256": "507c1d9fb5c4d66d8288627dd07393e6c81eb50cf92a1d1443725712761ce482",
+      "translation": "文字列内でパターンに最初に一致する部分のグループを返します。\n\n一致するパターンが見つからない場合は `[]` を返します。"
+    },
+    "match-str": {
+      "source": "core/Pattern.carp",
+      "line": 67,
+      "original": "finds the first match of a pattern in a string.\n\nReturns an empty string if it doesn’t find a matching pattern.",
+      "source_html_sha256": "1d284d78cbfea40d8663774ba721f19318d5c44a2768f50ff1931d6c6d7373e9",
+      "translation": "文字列内でパターンに最初に一致する部分を返します。\n\n一致するパターンが見つからない場合は、空文字列を返します。"
+    },
+    "matches?": {
+      "source": "core/Pattern.carp",
+      "line": 86,
+      "original": "checks whether a pattern matches a string.",
+      "source_html_sha256": "c06cf081a608c943bd025d07a937e451a4ca7ba3de5a06ba2332b6a577f1f9ba",
+      "translation": "パターンが文字列に一致するかどうかを調べます。"
+    },
+    "non-match?": {
+      "source": "core/Pattern.carp",
+      "line": 21,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "prn": {
+      "source": "core/Pattern.carp",
+      "line": 91,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "split": {
+      "source": "core/Pattern.carp",
+      "line": 113,
+      "original": "splits a string by a pattern.",
+      "source_html_sha256": "15ee07dd2e65535f0e89781200443975694c5ee185f66684012f619e413b18d5",
+      "translation": "パターンを使って文字列を分割します。"
+    },
+    "str": {
+      "source": "core/Pattern.carp",
+      "line": 89,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "substitute": {
+      "source": "core/Pattern.carp",
+      "line": 78,
+      "original": "finds all matches of a pattern in a string and replaces it\nby another pattern `n` times.\n\nThe substitute pattern can reference the original pattern by match group\nindices, such as `\\1`. This means that backslashes need to be double escaped.\n\nIf you want to replace all occurrences of the pattern, use `-1`.",
+      "source_html_sha256": "1340daeed1011cf5bb46bbda9fafafbad9f465bdf46e1140dc7199c64a2ce2c4",
+      "translation": "文字列内でパターンに一致する部分をすべて見つけ、別のパターンで `n` 回置き換えます。\n\n置換パターンからは、`\\1` のような一致グループのインデックスを使って、元のパターンを参照できます。そのため、バックスラッシュを二重にエスケープする必要があります。\n\n一致する部分をすべて置き換える場合は、`-1` を使ってください。"
+    }
+  }
+}

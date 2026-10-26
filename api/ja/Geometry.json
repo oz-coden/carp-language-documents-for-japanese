@@ -1,0 +1,27 @@
+{
+  "module": "Geometry",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Geometry.carp",
+    "line": 1,
+    "original": "provides numerical geometrical operations.",
+    "source_html_sha256": "81daa3d67c0f4e8f7c8d6b30ac4837ea07dd0b1531453692b5144256f2647d6c",
+    "translation": "数値を扱う幾何学的な演算を提供します。"
+  },
+  "entries": {
+    "degree-to-radians": {
+      "source": "core/Geometry.carp",
+      "line": 3,
+      "original": "converts degrees expressed as a double `n` into radians.",
+      "source_html_sha256": "0a5c5a58c0631d8362fde86b4228b88ab36741319267dbec2ac5b18853d50024",
+      "translation": "度単位の `Double` 値 `n` をラジアン単位に変換します。"
+    },
+    "radians-to-degree": {
+      "source": "core/Geometry.carp",
+      "line": 7,
+      "original": "converts radians expressed as a double `n` into degrees.",
+      "source_html_sha256": "d20d5507f6272345a05f5068a2fd0054776096dbec00ec6a269b879f56d25e18",
+      "translation": "ラジアン単位の `Double` 値 `n` を度単位に変換します。"
+    }
+  }
+}

@@ -558,8 +558,11 @@
       "original": "creates an array by producing values using `step` until they\nno longer satisfy `test`. The initial value is `start`.\n\nExample:\n```\n; if we didn’t have Array.range, we could define it like this:\n(defn range [start end step]\n  (unreduce start &(fn [x] (< x (+ step end))) &(fn [x] (+ x step)))\n)\n```",
       "source": "core/Array.carp",
       "line": 341,
-      "translation": "`start` を初期値とし、`step` で値を生成して、`test` の条件を満たさなくなるまで配列を作成します。\n\n例を示します。\n\n```\n; if we didn’t have Array.range, we could define it like this:\n(defn range [start end step]\n  (unreduce start &(fn [x] (< x (+ step end))) &(fn [x] (+ x step)))\n)\n```",
-      "source_html_sha256": "83df3d79c838007c8affe9bd13481ba79f7adb9d84761cf8f0b3cd919fb25559"
+      "translation": "`start` を初期値とし、`step` で値を生成して、`test` の条件を満たさなくなるまで配列を作成します。\n\n例を示します。\n\n```\n; Array.range がなければ、次のように定義できる\n(defn range [start end step]\n  (unreduce start &(fn [x] (< x (+ step end))) &(fn [x] (+ x step)))\n)\n```",
+      "source_html_sha256": "83df3d79c838007c8affe9bd13481ba79f7adb9d84761cf8f0b3cd919fb25559",
+      "code_comment_translations": {
+        "; if we didn’t have Array.range, we could define it like this:": "; Array.range がなければ、次のように定義できる"
+      }
     },
     "unsafe-first": {
       "original": "takes the first element of an array.\n\nGenerates a runtime error if the array is empty.",

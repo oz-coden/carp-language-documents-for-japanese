@@ -1,0 +1,54 @@
+{
+  "module": "Derive",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Derive.carp",
+    "line": 6,
+    "original": "is a mechanism for deriving interfaces automatically.\n\nPlease reference [the documentation](https://github.com/carp-lang/Carp/blob/master/docs/Derive.md)\nfor more information.",
+    "source_html_sha256": "ad4072d8eddecd55c920e4947ce6e3bae33e125888d48fc5e590fd8e6d6ad70f",
+    "translation": "インターフェースを自動導出 (automatic derivation) する仕組みです。\n\n詳しくは[ドキュメント](../../docs/Derive-JP.html)を参照してください。"
+  },
+  "entries": {
+    "derivable?": {
+      "source": "core/Derive.carp",
+      "line": 55,
+      "original": "checks whether a quoted interface name `f` is currently\nderivable.",
+      "source_html_sha256": "4d314df397b4c207ca5b3d6e91d6552c853f4f312e4d2f09118d4b799bcb62a5",
+      "translation": "クォートされたインターフェース名 `f` が、現在導出可能かどうかを調べます。"
+    },
+    "derivables": {
+      "source": "core/Derive.carp",
+      "line": 61,
+      "original": "returns the list of currently derivable interfaces.",
+      "source_html_sha256": "da1e186921f83918bcc4c29af9dfbfe9aa5db84b20c63ccbc9375c9972e99bcc",
+      "translation": "現在導出可能なインターフェースのリストを返します。"
+    },
+    "derive": {
+      "source": "core/Derive.carp",
+      "line": 65,
+      "original": "derives an interface function `f` for a type `t`.\n\nOptionally, it also takes an argument `overrride` that overrides the name of\nthe generated function to avoid collisions.",
+      "source_html_sha256": "dcdb83cc43fcaab9033a91b42c725be51e535decfe6a56957a44c0d67d1d43d1",
+      "translation": "型 `t` に対して、インターフェース関数 `f` を導出します。\n\n任意で引数 `overrride` も受け取ります。これは、名前の衝突を避けるために、生成する関数の名前を上書きします。",
+      "notes": [
+        "原文の引数名 `overrride` は、固定版の[定義(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Derive.carp#L69) にある `override` を指すと考えられます。本文の表記は原文を保持しています。"
+      ]
+    },
+    "make-deriver": {
+      "source": "core/Derive.carp",
+      "line": 14,
+      "original": "is a mechanism for providing your own deriver by providing\nthe interface name `f`, the arguments it takes `args`, and a function that can\ngenerate a body when given a type `body`.\n\nExample:\n```\n(make-deriver 'zero []\n  (fn [t]\n    (cons 'init\n      (map (fn [_] '(zero)) (eval `(members %t)))))\n```",
+      "source_html_sha256": "a342adee668b1d2062f412830185d07275f2386852de3925af18891a58c23912",
+      "translation": "インターフェース名 `f`、その関数が受け取る引数 `args`、型 `body` を渡すと本体を生成できる関数を指定して、独自の導出器 (deriver) を提供する仕組みです。\n\n例えば、次のように記述します。\n\n```carp\n(make-deriver 'zero []\n  (fn [t]\n    (cons 'init\n      (map (fn [_] '(zero)) (eval `(members %t)))))\n```",
+      "notes": [
+        "原文は「型 `body`」と記していますが、固定版の[定義(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Derive.carp#L25) では、`body` は型 `t` を受け取る生成関数を指定する引数です。この注記はソースの確認に基づきます。"
+      ]
+    },
+    "make-update-deriver": {
+      "source": "core/Derive.carp",
+      "line": 36,
+      "original": "is a convenience function for creating a deriver\nfor functions that you could pass into `update-<member>` style functions.",
+      "source_html_sha256": "218d05003e7000bd8b393aa43c6166ae04ac5cb772644386ceb34cdc612bdf21",
+      "translation": "`update-<member>` 形式の関数に渡せるような関数に対し、導出器を作成するための補助関数です。"
+    }
+  }
+}
