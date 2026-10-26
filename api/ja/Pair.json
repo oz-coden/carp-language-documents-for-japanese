@@ -1,0 +1,153 @@
+{
+  "module": "Pair",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Tuples.carp",
+    "line": 33,
+    "original": "is a tuple of length 2.",
+    "source_html_sha256": "9686c3c8bd900d4d0cb468c7d21c0c52cbecc8baa1732f59c7ddf21f4db91d96",
+    "translation": "長さ 2 のタプル (tuple) です。"
+  },
+  "entries": {
+    "<": {
+      "source": "core/Tuples.carp",
+      "line": 41,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "=": {
+      "source": "core/Tuples.carp",
+      "line": 64,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    ">": {
+      "source": "core/Tuples.carp",
+      "line": 45,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "a": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `a` property of a `Pair`.",
+      "source_html_sha256": "b0ba493a1ce81b1475b2deb3daf984456fd15cbb10483126068f9dbefe39ff68",
+      "translation": "`Pair` の `a` プロパティを取得します。"
+    },
+    "b": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `b` property of a `Pair`.",
+      "source_html_sha256": "d68c3d4ca0840b12d40e0832957622469de999f4ad6d020639ec13d4533b1adb",
+      "translation": "`Pair` の `b` プロパティを取得します。"
+    },
+    "copy": {
+      "source": "src/Deftype.hs",
+      "line": 259,
+      "original": "copies a `Pair`.",
+      "source_html_sha256": "3dbdcc3caa3796ccf336342c5df5365e8da2a80d9557763aa1bbbce18c9a16d3",
+      "translation": "`Pair` をコピーします。"
+    },
+    "delete": {
+      "source": "src/Deftype.hs",
+      "line": 249,
+      "original": "deletes a `Pair`. Should usually not be called manually.",
+      "source_html_sha256": "fc81ce20e20f3efc3121143a59f09cde9cd3b38d0a34b1f56cf8fbd401dcff93",
+      "translation": "`Pair` を削除します。通常、手動で呼び出す必要はありません。"
+    },
+    "hash": {
+      "source": "core/Map.carp",
+      "line": 89,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "init": {
+      "source": "src/Deftype.hs",
+      "line": 228,
+      "original": "creates a `Pair`.",
+      "source_html_sha256": "25afe8431fa8daff076ef4527113f1fe51401244ec3321f79470febdfe06c77b",
+      "translation": "`Pair` を作成します。"
+    },
+    "init-from-refs": {
+      "source": "core/Tuples.carp",
+      "line": 35,
+      "original": "initializes a `Pair` from member references.",
+      "source_html_sha256": "afa5c25490af6716f01d848cd2112bbc7792fa6b5af91552d61b6d993f03e3e2",
+      "translation": "各メンバーへの参照から `Pair` を初期化します。"
+    },
+    "prn": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Pair` to a string.",
+      "source_html_sha256": "678d8930daf92812a43459ac5227b5353604d2ef201cff0b446b2f079cf33cdb",
+      "translation": "`Pair` を文字列に変換します。"
+    },
+    "reverse": {
+      "source": "core/Tuples.carp",
+      "line": 49,
+      "original": "reverses a `Pair` by reversing its member positions.",
+      "source_html_sha256": "3d65daee233c0cbe901ccc74e000cb4af3eed2bd6c9bfe0fa4c26daa2008166e",
+      "translation": "メンバーの位置を入れ替えて、`Pair` を反転します。"
+    },
+    "set-a": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `a` property of a `Pair`.",
+      "source_html_sha256": "c791824f306e5c6b6faede7d1a8db744939e139c8b18308a4e660cfb33051a23",
+      "translation": "`Pair` の `a` プロパティを設定します。"
+    },
+    "set-a!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `a` property of a `Pair` in place.",
+      "source_html_sha256": "3319182cadbecbc6dfb2046fcbd424eccb2857907c9b5f0a74695a1d250c8fe3",
+      "translation": "`Pair` の `a` プロパティをその場で設定します。"
+    },
+    "set-b": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `b` property of a `Pair`.",
+      "source_html_sha256": "2025434293ff5338de2e55e38ba5b59a3f3308339fffaa4a053aba2404a7c878",
+      "translation": "`Pair` の `b` プロパティを設定します。"
+    },
+    "set-b!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `b` property of a `Pair` in place.",
+      "source_html_sha256": "b0d698a310ada328cd4d7b59fede90db09ada4c201255ab2308773f0928c0a34",
+      "translation": "`Pair` の `b` プロパティをその場で設定します。"
+    },
+    "str": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Pair` to a string.",
+      "source_html_sha256": "678d8930daf92812a43459ac5227b5353604d2ef201cff0b446b2f079cf33cdb",
+      "translation": "`Pair` を文字列に変換します。"
+    },
+    "update-a": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `a` property of a `(Pair a b)` using a function `f`.",
+      "source_html_sha256": "5dd6adb433597aee27d1aa0d02520581f6c62021d1d7b1ae655f090dc81eca76",
+      "translation": "関数 `f` を使って、`(Pair a b)` の `a` プロパティを更新します。"
+    },
+    "update-b": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `b` property of a `(Pair a b)` using a function `f`.",
+      "source_html_sha256": "48df44a437a90e5bd2b016760ccdba38e092e240ee93bf6d79889186056978d0",
+      "translation": "関数 `f` を使って、`(Pair a b)` の `b` プロパティを更新します。"
+    },
+    "zero": {
+      "source": "core/Tuples.carp",
+      "line": 56,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}

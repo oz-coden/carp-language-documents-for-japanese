@@ -1,0 +1,384 @@
+{
+  "module": "Map",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Map.carp",
+    "line": 160,
+    "original": "is a hashmap datatype, i.e. a key-value structure. It allows you to put in \npairs of keys and values and look them up by key.\n\nImplementation notes: it is an open-addressing table with linear probing.\nEach slot keeps its key’s hash next to the entry, so probing compares\nintegers and only compares keys when the hashes match. Removal shifts\nlater entries back instead of leaving tombstones. The table grows and\nshrinks based on load, and its capacity is always a power of two.",
+    "source_html_sha256": "ba6d6fbde12dc35de1ed7216c37b48e50f5d7e3cb9ac1ed0386a2bfcf536b4b0",
+    "translation": "ハッシュマップ (hashmap)、つまりキーと値を対応付けるデータ型です。キーと値のペアを格納し、キーを使って検索できます。\n\n実装上の注意: 線形プロービング (linear probing) を使うオープンアドレス法 (open addressing) のテーブルです。各スロットでは、キーのハッシュ値をエントリの隣に保持します。そのため、探索では整数を比較し、ハッシュ値が一致した場合にだけキーを比較します。削除時には削除済みを示す印 (tombstone) を残す代わりに、後続のエントリを前方へ移動します。テーブルは負荷に応じて拡大・縮小し、容量は常に 2 の累乗です。"
+  },
+  "entries": {
+    "=": {
+      "source": "core/Map.carp",
+      "line": 374,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "all?": {
+      "source": "core/Map.carp",
+      "line": 362,
+      "original": "Do all key-value pairs pass the given predicate (of two arguments)?",
+      "source_html_sha256": "c8427b5eeea667e1387e4e3582235751e90ef9c61c3f2978c73d4a274c4c3de0",
+      "translation": "すべてのキーと値のペアが、指定した 2 引数の述語 (predicate) を満たすかどうかを調べます。"
+    },
+    "contains?": {
+      "source": "core/Map.carp",
+      "line": 240,
+      "original": "Check whether the map m contains the key k.",
+      "source_html_sha256": "6c0bc843009ea9ed0dc923724c9fe9d65aa9d61e8943ec8ec3a426741da88869",
+      "translation": "マップ `m` にキー `k` が含まれているかどうかを調べます。"
+    },
+    "copy": {
+      "source": "src/Deftype.hs",
+      "line": 259,
+      "original": "copies a `Map`.",
+      "source_html_sha256": "a40d954624373cf0a0d09a032c68abb84c3255f731d81a567f4e6eb1422f595b",
+      "translation": "`Map` をコピーします。"
+    },
+    "create": {
+      "source": "core/Map.carp",
+      "line": 178,
+      "original": "Create an empty map.",
+      "source_html_sha256": "d4acde0fef7ac0ec9ac4eff2fcbd0066bacfbbef3b92f4bb41677b0016ca1dc6",
+      "translation": "空のマップを作成します。"
+    },
+    "delete": {
+      "source": "src/Deftype.hs",
+      "line": 249,
+      "original": "deletes a `Map`. Should usually not be called manually.",
+      "source_html_sha256": "43a439a09a5a8422fa2d94f6a04343c7a954aed639a398d52a0b92b27ede3c54",
+      "translation": "`Map` を削除します。通常、手動で呼び出す必要はありません。"
+    },
+    "empty?": {
+      "source": "core/Map.carp",
+      "line": 342,
+      "original": "Check whether the map m is empty.",
+      "source_html_sha256": "28b2ee9879274100a50391284e85da2c8978118f93b7991302a7f7d2a3a219d3",
+      "translation": "マップ `m` が空かどうかを調べます。"
+    },
+    "endo-map": {
+      "source": "core/Map.carp",
+      "line": 386,
+      "original": "Transform values of the given map in place. f gets two arguments, key and value, and should return new value",
+      "source_html_sha256": "c419d331a9f0a42ed855de690247559e8f2259b8858dd7dd501dacb8a7dabc11",
+      "translation": "指定したマップの値をその場で変換します。`f` はキーと値の 2 つの引数を受け取り、新しい値を返す必要があります。"
+    },
+    "entries": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `entries` property of a `Map`.",
+      "source_html_sha256": "e8a49bf1527a7d55be02bd93c023f59f9e3529967d529887087dc3a738d17206",
+      "translation": "`Map` の `entries` プロパティを取得します。"
+    },
+    "for-each": {
+      "source": "core/Map.carp",
+      "line": 379,
+      "original": "Execute the binary function f for all keys and values in the map m.",
+      "source_html_sha256": "7772a1d571e6d91f3c82760585fa17f59843a454ab7fdf67bd8a8f8791648e43",
+      "translation": "マップ `m` のすべてのキーと値に対して、2 引数の関数 `f` を実行します。"
+    },
+    "from-array": {
+      "source": "core/Map.carp",
+      "line": 420,
+      "original": "Create a map from the array a containing key-value pairs.",
+      "source_html_sha256": "4ec6d8b6ee8c504e9bdd88442e27463161d18bf664f80dbe1a16ed8b918b8207",
+      "translation": "キーと値のペアを含む配列 `a` からマップを作成します。"
+    },
+    "get": {
+      "source": "core/Map.carp",
+      "line": 274,
+      "original": "Get the value for the key k from map m. If it isn’t found, a zero element for the value type is returned.",
+      "source_html_sha256": "fcfe32c5ce48bad49f135c26a2640f2a8c4dcd595460cedaa3f09fe96f82f4ca",
+      "translation": "マップ `m` から、キー `k` に対応する値を取得します。見つからない場合は、その値の型の `zero` 要素を返します。"
+    },
+    "get-maybe": {
+      "source": "core/Map.carp",
+      "line": 278,
+      "original": "Get the value for the key k from map m. It returns a Maybe type, meaning that if nothing is found, Nothing is returned.",
+      "source_html_sha256": "5ac9e069d4d836153ee064071de0bca0241241d6795a2ac1788d28f8273cedd6",
+      "translation": "マップ `m` から、キー `k` に対応する値を取得します。[`Maybe`](./Maybe.html) 型を返し、見つからない場合は `Nothing` を返します。"
+    },
+    "get-with-default": {
+      "source": "core/Map.carp",
+      "line": 265,
+      "original": "Get the value for the key k from map m. If it isn’t found, the default is returned.",
+      "source_html_sha256": "45e24b4acf51efb29d0b331d3601e4e1efbcecec9b3d55278b5983bdb7680483",
+      "translation": "マップ `m` から、キー `k` に対応する値を取得します。見つからない場合は `default` を返します。"
+    },
+    "grow": {
+      "source": "core/Map.carp",
+      "line": 231,
+      "original": "Grow a map `m`. Should usually be handled automatically.",
+      "source_html_sha256": "ac7f05b897f22b3bbb39822299b9915b40a0e2e6f39b4c71924872007a40fcc8",
+      "translation": "マップ `m` を拡大します。通常は自動的に処理されます。"
+    },
+    "hashes": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `hashes` property of a `Map`.",
+      "source_html_sha256": "e97382acd2ed1418dc3e28cd6a2ea8f28ef5934df0605ff63797a6ce0621d2c6",
+      "translation": "`Map` の `hashes` プロパティを取得します。"
+    },
+    "init": {
+      "source": "src/Deftype.hs",
+      "line": 228,
+      "original": "creates a `Map`.",
+      "source_html_sha256": "54f766831896e90ecfb20b6588eb9feadffd47fb5e332c0b69954586e37cb1db",
+      "translation": "`Map` を作成します。"
+    },
+    "keys": {
+      "source": "core/Map.carp",
+      "line": 414,
+      "original": "Return an array of the keys of the map. Order corresponds to order of (vals m)",
+      "source_html_sha256": "322e29eb51ffd8f1d1ade3565a95623312633500cee56bca5302fe3a79903f10",
+      "translation": "マップのキーの配列を返します。順序は `(vals m)` の順序に対応します。"
+    },
+    "kv-reduce": {
+      "source": "core/Map.carp",
+      "line": 395,
+      "original": "Reduce a map with a function of three arguments: state, key and value. Reduction order is not guaranteed.",
+      "source_html_sha256": "20a7485a0058e0b4e79b48ff9af5d090b0e8b1f3d79647b6241b8a48341d7f45",
+      "translation": "状態、キー、値の 3 つの引数を受け取る関数を使って、マップを畳み込みます。畳み込みの順序は保証されません。"
+    },
+    "len": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `len` property of a `Map`.",
+      "source_html_sha256": "a5129c76dc7b20bc4b2ed77c89aa01c7d886b6db588af272889ce3bddd915733",
+      "translation": "`Map` の `len` プロパティを取得します。"
+    },
+    "length": {
+      "source": "core/Map.carp",
+      "line": 338,
+      "original": "Get the length of the map m.",
+      "source_html_sha256": "d1f775814b8783f82d36658af7cd439a5f250b75970bd0a244fef15720acac46",
+      "translation": "マップ `m` の長さを取得します。"
+    },
+    "max-load": {
+      "source": "core/Map.carp",
+      "line": 175,
+      "original": "The load a map needs to reach in order to grow.",
+      "source_html_sha256": "5029ce0d88cbdb5e3c32e9c5188c0348352019e002a086234adbfad13c4a1935",
+      "translation": "マップの拡大が必要になる負荷です。"
+    },
+    "merge": {
+      "source": "core/Map.carp",
+      "line": 404,
+      "original": "Merge two maps `m1` and `m2`. On collision the value from `m2` is preferred.",
+      "source_html_sha256": "5343dffbf21f2416feb03a51e691788bf5e02d15a9de666948d32086fc7f5822",
+      "translation": "2 つのマップ `m1` と `m2` を統合します。キーが衝突した場合は、`m2` の値を優先します。"
+    },
+    "min-load": {
+      "source": "core/Map.carp",
+      "line": 173,
+      "original": "The load a map needs to reach in order to shrink.",
+      "source_html_sha256": "fac055fc987eab78cbfbb8637ea159a6192f10fbb33aa1e60d0a4f016d549f0d",
+      "translation": "マップの縮小が必要になる負荷です。"
+    },
+    "n-buckets": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `n-buckets` property of a `Map`.",
+      "source_html_sha256": "64c45b1cf0ac5eb2ce7b1caa53c87c59c34fde590a8c8646d9481a88aed2829f",
+      "translation": "`Map` の `n-buckets` プロパティを取得します。"
+    },
+    "prn": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Map` to a string.",
+      "source_html_sha256": "abb35e0e51419377dd231a5451d2f90842cd7546e0de87103a26d45a7e3c1585",
+      "translation": "`Map` を文字列に変換します。"
+    },
+    "put": {
+      "source": "core/Map.carp",
+      "line": 259,
+      "original": "Put a value v into map m, using the key k.",
+      "source_html_sha256": "55b0a92e9c805ea78c27eb91bfcae6ff91e05ed2d907c56adf708123c3fc050e",
+      "translation": "キー `k` を使って、マップ `m` に値 `v` を格納します。"
+    },
+    "put!": {
+      "source": "core/Map.carp",
+      "line": 244,
+      "original": "Put a value v into map m, using the key k, in place.",
+      "source_html_sha256": "604196fd8c44f533921f0da70711a847cd6193663f83fc6a8b79a18492606756",
+      "translation": "キー `k` を使って、マップ `m` に値 `v` をその場で格納します。"
+    },
+    "remove": {
+      "source": "core/Map.carp",
+      "line": 356,
+      "original": "Remove the value under the key k from the map m.",
+      "source_html_sha256": "5beffe010957b95836ff2d4a69da54a469e0731d34098808f6eaaa602d645ed5",
+      "translation": "マップ `m` から、キー `k` に対応する値を削除します。"
+    },
+    "remove!": {
+      "source": "core/Map.carp",
+      "line": 347,
+      "original": "Remove the value under the key k from the map m, in place.",
+      "source_html_sha256": "b8a7cab94edc51eccdadafc23febf3284d1f763956de38f768ef02d741e79f44",
+      "translation": "マップ `m` から、キー `k` に対応する値をその場で削除します。"
+    },
+    "resize": {
+      "source": "core/Map.carp",
+      "line": 225,
+      "original": "Resize a map `m` to size `s`, which has to be a power of two that can hold all of its entries.",
+      "source_html_sha256": "53593ebc97f9049faf11dd04c278c40042ddf85cf7de0e32047ab5bb7724d850",
+      "translation": "マップ `m` のサイズを `s` に変更します。`s` は、すべてのエントリを格納できる 2 の累乗である必要があります。"
+    },
+    "reverse": {
+      "source": "core/Map.carp",
+      "line": 451,
+      "original": "reverses they keys and values in a given map `m`.",
+      "source_html_sha256": "d194e89a5c236f70d10fc257069acbc7e5910c2b6b282f0b4c774e7fee9f58dc",
+      "translation": "指定したマップ `m` のキーと値を入れ替えます。"
+    },
+    "set-entries": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `entries` property of a `Map`.",
+      "source_html_sha256": "9f38ab34362637ea7401427850f53f2c9b9b09e831b6659edd75664df2460fc3",
+      "translation": "`Map` の `entries` プロパティを設定します。"
+    },
+    "set-entries!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `entries` property of a `Map` in place.",
+      "source_html_sha256": "fbdc8cf1e745fb345ae079faadadee7fe2fe030ca7c7cd4a2cb6520fd31a402e",
+      "translation": "`Map` の `entries` プロパティをその場で設定します。"
+    },
+    "set-hashes": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `hashes` property of a `Map`.",
+      "source_html_sha256": "23938137b85802da9dae09e20ddea0303fe776f378019ed39266d7348086110d",
+      "translation": "`Map` の `hashes` プロパティを設定します。"
+    },
+    "set-hashes!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `hashes` property of a `Map` in place.",
+      "source_html_sha256": "f8c866b189bede8dc23afa862251d770c1cd4f684576cc41b4856188ebef27ab",
+      "translation": "`Map` の `hashes` プロパティをその場で設定します。"
+    },
+    "set-len": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `len` property of a `Map`.",
+      "source_html_sha256": "1adc906632f1c0fa06bdbdbc51e77862781eab9bb5ea77150194f9e0fe6aebd9",
+      "translation": "`Map` の `len` プロパティを設定します。"
+    },
+    "set-len!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `len` property of a `Map` in place.",
+      "source_html_sha256": "2b914a900d4a350276455363f8d9d1b28754d7ef2dcf4bd1d807e0e9e5295be8",
+      "translation": "`Map` の `len` プロパティをその場で設定します。"
+    },
+    "set-n-buckets": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `n-buckets` property of a `Map`.",
+      "source_html_sha256": "a9688e970b511231270f01e316ac5b139e715b50d7a399638bea77fe496662f9",
+      "translation": "`Map` の `n-buckets` プロパティを設定します。"
+    },
+    "set-n-buckets!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `n-buckets` property of a `Map` in place.",
+      "source_html_sha256": "fc384cc6ab68c23a9e336abc84da9eef1eb2ad0ab72b9311e03db9a42bdb542f",
+      "translation": "`Map` の `n-buckets` プロパティをその場で設定します。"
+    },
+    "shrink": {
+      "source": "core/Map.carp",
+      "line": 233,
+      "original": "Shrink a map `m`. Should usually be handled automatically.",
+      "source_html_sha256": "54eed2da22b5de466bce550cbb6d6ce5e0c0a0a259ec67c5fbf8c30e95569aa3",
+      "translation": "マップ `m` を縮小します。通常は自動的に処理されます。"
+    },
+    "str": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Map` to a string.",
+      "source_html_sha256": "abb35e0e51419377dd231a5451d2f90842cd7546e0de87103a26d45a7e3c1585",
+      "translation": "`Map` を文字列に変換します。"
+    },
+    "to-array": {
+      "source": "core/Map.carp",
+      "line": 430,
+      "original": "Convert Map to Array of Pairs",
+      "source_html_sha256": "648a1c22a5a05ac8ac1ed54ff70ac35c1ea5e115433648debcb48016afb66309",
+      "translation": "`Map` を [`Pair`](./Pair.html) の [`Array`](./Array.html) に変換します。"
+    },
+    "update": {
+      "source": "core/Map.carp",
+      "line": 307,
+      "original": "Update value at key k in map with function f, if it exists.",
+      "source_html_sha256": "25aff9f333cb3ffe77676439b26b8b1343b4cb7dc4f81ad0553efa7c4d97643d",
+      "translation": "マップにキー `k` が存在する場合、関数 `f` を使って対応する値を更新します。"
+    },
+    "update-entries": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `entries` property of a `(Map a b)` using a function `f`.",
+      "source_html_sha256": "6db19ae092d9f77e55f3e5875fac29c9b6513e0ebd7afffb8283d4eebd0a88db",
+      "translation": "関数 `f` を使って、`(Map a b)` の `entries` プロパティを更新します。"
+    },
+    "update-hashes": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `hashes` property of a `(Map a b)` using a function `f`.",
+      "source_html_sha256": "7799cae11fe0eb20db2519ecfbad41ee21cfaf6ab2a7fd50027b29bfd8c425f9",
+      "translation": "関数 `f` を使って、`(Map a b)` の `hashes` プロパティを更新します。"
+    },
+    "update-len": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `len` property of a `(Map a b)` using a function `f`.",
+      "source_html_sha256": "f415d1d7a6dcbbc5f8256b6a0e91938411a665db0db7a89b895f0f1d6d4a4f4b",
+      "translation": "関数 `f` を使って、`(Map a b)` の `len` プロパティを更新します。"
+    },
+    "update-n-buckets": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `n-buckets` property of a `(Map a b)` using a function `f`.",
+      "source_html_sha256": "a0e36defa11643f9e66fb72eb5258c1002d6b1c24f15d769f86171cee1abfe1e",
+      "translation": "関数 `f` を使って、`(Map a b)` の `n-buckets` プロパティを更新します。"
+    },
+    "update-value!": {
+      "source": "core/Map.carp",
+      "line": 287,
+      "original": "calls `f` with a reference to the value at key `k`.\nDoes nothing if the key is not found. The reference allows mutation through\nFFI functions (e.g. reading into a stream's buffer).",
+      "source_html_sha256": "eb6593c02376e77c29636dd63217cb88c7a05f937c33fb128b24d6f09c7e3bcf",
+      "translation": "キー `k` に対応する値への参照を引数として、`f` を呼び出します。\nキーが見つからない場合は何もしません。この参照を使うと、FFI 関数を通じた変更が可能になります。例えば、ストリームのバッファへの読み込みです。"
+    },
+    "update-with-default": {
+      "source": "core/Map.carp",
+      "line": 332,
+      "original": "Update value at key k in map with function f. If k doesn't exist in map, set k to (f v).",
+      "source_html_sha256": "0f1f0def70017c2d10b26cc48cc1c51e19a507a74517fcdb09da67fc8910c8cc",
+      "translation": "関数 `f` を使って、マップのキー `k` に対応する値を更新します。マップに `k` が存在しない場合は、`k` の値を `(f v)` に設定します。"
+    },
+    "update-with-default!": {
+      "source": "core/Map.carp",
+      "line": 317,
+      "original": "Update value at key k in map with function f, in-place. If k doesn't exist in map, set k to (f v).",
+      "source_html_sha256": "33df8f2b38227e95c2c298140e0826e6703b5c12a40683dee8a69ac8dc64f876",
+      "translation": "関数 `f` を使って、マップのキー `k` に対応する値をその場で更新します。マップに `k` が存在しない場合は、`k` の値を `(f v)` に設定します。"
+    },
+    "vals": {
+      "source": "core/Map.carp",
+      "line": 408,
+      "original": "Return an array of the values of the map. Order corresponds to order of (keys m)",
+      "source_html_sha256": "2e358dd0f6f80c178618f081cdfadbe33dcde655725960366964cf0dbefc40ec",
+      "translation": "マップの値の配列を返します。順序は `(keys m)` の順序に対応します。"
+    },
+    "value-ref!": {
+      "source": "core/Map.carp",
+      "line": 297,
+      "original": "calls `f` with a reference to the value at key `k` and\nreturns whatever `f` returns. If the key is missing, returns `default`.",
+      "source_html_sha256": "030a0039c6b62051182e0080f12a0eb0a40a6d68dbd6777b5450fdf3d76fd8dc",
+      "translation": "キー `k` に対応する値への参照を引数として `f` を呼び出し、`f` の返り値をそのまま返します。キーが存在しない場合は `default` を返します。"
+    }
+  }
+}

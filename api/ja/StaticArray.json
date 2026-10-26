@@ -1,0 +1,254 @@
+{
+  "module": "StaticArray",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/StaticArray.carp",
+    "line": 1,
+    "original": "is a data type for static, immutable arrays. They are\nstack-allocated. For a more flexible, heap-allocated version, you might want to look at the [`Array`](./Array.html) module.",
+    "source_html_sha256": "065a96540183519252fe96ad58fe7f09a7740bd11475d8f2daa4d0c7720933ef",
+    "translation": "静的配列 (static array) のデータ型です。配列は変更不可能で、スタックに割り当てられます。より柔軟で、ヒープに割り当てるものが必要な場合は、[`Array`](./Array.html) モジュールを参照してください。",
+    "notes": [
+      "原文は配列を「変更不可能 (immutable)」と説明していますが、この固定版には `map!`・`aset!` など、その場で変更する API もあります。概要の表現は原文を保持しています。各操作の説明と型シグネチャも確認してください。"
+    ]
+  },
+  "entries": {
+    "=": {
+      "source": "core/StaticArray.carp",
+      "line": 49,
+      "original": "compares two static arrays.",
+      "source_html_sha256": "6697f8361f2a42bec13c3b7cb636ee164e530f72c00f14b9d7b562b7aa6098fc",
+      "translation": "2 つの静的配列 (static array) を比較します。"
+    },
+    "all?": {
+      "source": "core/StaticArray.carp",
+      "line": 77,
+      "original": "checks whether all of the elements in `a` match the function `f`.",
+      "source_html_sha256": "8d65fc991d0080b1761590daae2bb4511a649e714c7572342990b2c17d68d051",
+      "translation": "配列 `a` のすべての要素が、関数 `f` の条件を満たすかどうかを調べます。"
+    },
+    "any?": {
+      "source": "core/StaticArray.carp",
+      "line": 67,
+      "original": "checks whether any of the elements in `a` match the function `f`.",
+      "source_html_sha256": "89798b47ebed54eb6b24b4b83f86904571f7296ea327260df02900dc0ebc645d",
+      "translation": "配列 `a` のいずれかの要素が、関数 `f` の条件を満たすかどうかを調べます。"
+    },
+    "aset!": {
+      "source": "src/StaticArrayTemplates.hs",
+      "line": 96,
+      "original": "sets a static array element at the index `n` to a new value in place.",
+      "source_html_sha256": "095f0cb373b60135d0108f0bd43b2efa65993db5fab6ba2db682dc788ebea87b",
+      "translation": "インデックス `n` にある静的配列の要素を、その場で新しい値に設定します。"
+    },
+    "aset-uninitialized!": {
+      "source": "src/StaticArrayTemplates.hs",
+      "line": 129,
+      "original": "sets an uninitialized static array member. The old member will not be deleted.",
+      "source_html_sha256": "8f724deb3cee11ab505b072e19637acda803a75c844aca86e4968e33b38060c0",
+      "translation": "静的配列の未初期化の要素に値を設定します。古い要素は削除されません。"
+    },
+    "aupdate!": {
+      "source": "core/StaticArray.carp",
+      "line": 204,
+      "original": "transmutes (i.e. updates) the element at index `i` of an array `a` using the function `f` in place.",
+      "source_html_sha256": "8b547bdae1686375fcee22aa401947bfc8b512671094f01a8a7ce11c04fab9b3",
+      "translation": "関数 `f` を使って、配列 `a` のインデックス `i` にある要素をその場で変換、つまり更新します。"
+    },
+    "contains?": {
+      "source": "core/StaticArray.carp",
+      "line": 224,
+      "original": "checks wether an element exists in the array.",
+      "source_html_sha256": "e9d557065c364e654b5eb4291efd28fd3700688f0544d6b9d078778ebfef64ea",
+      "translation": "配列に要素が存在するかどうかを調べます。"
+    },
+    "delete": {
+      "source": "src/StaticArrayTemplates.hs",
+      "line": 64,
+      "original": "deletes a static array. This function should not be called manually (there shouldn't be a way to create value types of type StaticArray).",
+      "source_html_sha256": "5817363d9594cf8352b2f3d555ae0ef7b0d23040c26621e5ef638ed096fb21e8",
+      "translation": "静的配列を削除します。この関数を手動で呼び出さないでください (`StaticArray` 型の値を作成する方法は存在しないはずです)。"
+    },
+    "element-count": {
+      "source": "core/StaticArray.carp",
+      "line": 184,
+      "original": "counts the occurrences of element `e` in an array.",
+      "source_html_sha256": "26c65dc103ef763850f868141641ee70f68b0e23ae4efcc7f811af98c23cfba2",
+      "translation": "配列内に要素 `e` が出現する回数を数えます。"
+    },
+    "empty?": {
+      "source": "core/StaticArray.carp",
+      "line": 62,
+      "original": "checks whether the array `a` is empty.",
+      "source_html_sha256": "5dd64b3427ed172d4fa19e7641eb054854210c89698e550022aab59a4dcb478b",
+      "translation": "配列 `a` が空かどうかを調べます。"
+    },
+    "find": {
+      "source": "core/StaticArray.carp",
+      "line": 87,
+      "original": "finds an element in `a` that matches the function `f` and wraps it in a `Just`.\n\nIf it doesn’t find an element, `Nothing` will be returned.",
+      "source_html_sha256": "718bcdbc8b59ec6665cde366a072e8decd617c78f137f916dbc99e6f59532f33",
+      "translation": "配列 `a` から、関数 `f` の条件を満たす要素を探し、`Just` に包んで返します。\n\n要素が見つからなければ、`Nothing` を返します。"
+    },
+    "find-index": {
+      "source": "core/StaticArray.carp",
+      "line": 99,
+      "original": "finds the index of the first element in `a` that matches the function `f` and wraps it in a `Just`.\n\nIf it doesn’t find an index, `Nothing` will be returned.",
+      "source_html_sha256": "62630a8a51ffa408ac964ef39ec1cef8414dd898c40d8f987076425c7be7acb7",
+      "translation": "配列 `a` から、関数 `f` の条件を満たす最初の要素のインデックスを探し、`Just` に包んで返します。\n\nインデックスが見つからなければ、`Nothing` を返します。"
+    },
+    "first": {
+      "source": "core/StaticArray.carp",
+      "line": 117,
+      "original": "takes the first element of an array and returns a `Just`.\n\nReturns `Nothing` if the array is empty.",
+      "source_html_sha256": "aabd58462ce284099acdb7414d02fbbf78c68984687d31b6ac24f995e81bfc2a",
+      "translation": "配列の最初の要素を取り出し、`Just` に包んで返します。\n\n配列が空であれば、`Nothing` を返します。"
+    },
+    "foreach": {
+      "source": "core/StaticArray.carp",
+      "line": 31,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "foreach-internal": {
+      "source": "core/StaticArray.carp",
+      "line": 21,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "index-of": {
+      "source": "core/StaticArray.carp",
+      "line": 172,
+      "original": "gets the index of element `e` in an array and wraps it on a `Just`.\n\n  If the element is not found, returns `Nothing`",
+      "source_html_sha256": "e6af173cd17da11d0902ff2d9bc86d05ce66ac10aa82c5dcf0b792d72b212b71",
+      "translation": "配列内の要素 `e` のインデックスを取得し、`Just` に包んで返します。\n\n要素が見つからない場合は `Nothing` を返します。"
+    },
+    "last": {
+      "source": "core/StaticArray.carp",
+      "line": 132,
+      "original": "takes the last element of an array and returns a `Just`.\n\nReturns `Nothing` if the array is empty.",
+      "source_html_sha256": "ddc2092d717736d8fa66aa1795b772682b44dcd41f5cb360fad809a5579b507d",
+      "translation": "配列の最後の要素を取り出し、`Just` に包んで返します。\n\n配列が空であれば、`Nothing` を返します。"
+    },
+    "length": {
+      "source": "src/StaticArrayTemplates.hs",
+      "line": 46,
+      "original": "gets the length of the static array.",
+      "source_html_sha256": "44c5398c19f8e90c1777c6d1aa9b3f83113f26775792d82352b55957a1a26c40",
+      "translation": "静的配列の長さを取得します。"
+    },
+    "map!": {
+      "source": "core/StaticArray.carp",
+      "line": 5,
+      "original": "Maps a function over the static array `xs`, mutating it in place. The difference to Array.endo-map (which does the same thing internally) is that this function takes a ref (since you can never have static arrays as values) and that it returns ().",
+      "source_html_sha256": "9213480b47c999c6266a353a8a3463265b3cf959ad33b0021da7bdf105ca8615",
+      "translation": "静的配列 `xs` の各要素に関数を適用し、その場で変更します。内部で同じ処理を行う [`Array.endo-map`](./Array.html#endo-map) との違いは、静的配列を値として持つことはできないため参照を受け取る点と、`()` を返す点です。"
+    },
+    "maximum": {
+      "source": "core/StaticArray.carp",
+      "line": 140,
+      "original": "gets the maximum in an array (elements must support `<`) and wraps it in a `Just`.\n\nIf the array is empty, it returns `Nothing`.",
+      "source_html_sha256": "6f6a0822bde1aa9ec8e516225b6f2424748fc998b67d1e8619957851923ef52e",
+      "translation": "配列内の最大値を取得し、`Just` に包んで返します。要素は `<` をサポートしている必要があります。\n\n配列が空であれば、`Nothing` を返します。"
+    },
+    "minimum": {
+      "source": "core/StaticArray.carp",
+      "line": 154,
+      "original": "gets the minimum in an array (elements must support `>`) and wraps it in a `Just`.\n\nIf the array is empty, returns `Nothing`",
+      "source_html_sha256": "c5423033697cd6326ed2a1f96b589b0d772112b2d795f3d4587d95f685bcbe91",
+      "translation": "配列内の最小値を取得し、`Just` に包んで返します。要素は `>` をサポートしている必要があります。\n\n配列が空であれば、`Nothing` を返します。"
+    },
+    "nth": {
+      "source": "core/StaticArray.carp",
+      "line": 216,
+      "original": "gets a reference to the `n`th element from an array `arr` wrapped on a `Maybe`.\n\n  If the `index` is out of bounds, return `Maybe.Nothing`",
+      "source_html_sha256": "ab6abd2fb124764793afe4555767e342eb1442fb8165eff61ca56ba25f572893",
+      "translation": "配列 `arr` の `n` 番目の要素への参照を取得し、`Maybe` に包んで返します。\n\n`index` が範囲外の場合は `Maybe.Nothing` を返します。"
+    },
+    "predicate-count": {
+      "source": "core/StaticArray.carp",
+      "line": 191,
+      "original": "counts the number of elements satisfying the predicate function `pred` in an array.",
+      "source_html_sha256": "f1fa765d457b18c925e02110dea6457416096de4b612c6f3d80f22d1292a0c00",
+      "translation": "配列内で述語関数 (predicate function) `pred` の条件を満たす要素の数を数えます。"
+    },
+    "reduce": {
+      "source": "core/StaticArray.carp",
+      "line": 34,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "reverse!": {
+      "source": "core/StaticArray.carp",
+      "line": 10,
+      "original": "Reverse array in place.",
+      "source_html_sha256": "ae423b8051df6b29f038e88b7471ade944cc200a045ee39a1b038fa753780a32",
+      "translation": "配列の順序をその場で反転します。"
+    },
+    "scan!": {
+      "source": "core/StaticArray.carp",
+      "line": 41,
+      "original": "Scans and replaces the array in-place, using a binary function.\n\nFor example, give `(def numbers [1 1 1])`, a `scan!` using `Int.+` will mutate `numbers` to be `[1 2 3]`.",
+      "source_html_sha256": "a58fb2bbfb7c3a2ed02d9288d1f116d141dc50b1bb9715c7a1fc1868ae7921e1",
+      "translation": "2 引数の関数を使って配列を走査し、その場で置き換えます。\n\n例えば、`(def numbers [1 1 1])` に対して `Int.+` を使った `scan!` を適用すると、`numbers` は `[1 2 3]` に変更されます。"
+    },
+    "str": {
+      "source": "src/StaticArrayTemplates.hs",
+      "line": 180,
+      "original": "converts a static array to a string.",
+      "source_html_sha256": "ac87717589724a58d454f05955dbf46b11361e0be46db4186320fcbd3319acfa",
+      "translation": "静的配列を文字列に変換します。"
+    },
+    "sum": {
+      "source": "core/StaticArray.carp",
+      "line": 168,
+      "original": "sums an array (elements must support `+` and `zero`).",
+      "source_html_sha256": "2d7616bcc07d340073738db16f83aec30cce24687fa276e8d24a44a3f0738e1e",
+      "translation": "配列の要素の合計を求めます。要素は `+` と `zero` をサポートしている必要があります。"
+    },
+    "swap!": {
+      "source": "core/StaticArray.carp",
+      "line": 208,
+      "original": "swaps the indices `i` and `j` of an array `a` in place.",
+      "source_html_sha256": "e8553ce370a8859e6e08eee601daf6f59c7e7ae0330c89de4d8acd4087be44a1",
+      "translation": "配列 `a` のインデックス `i` と `j` にある要素を、その場で入れ替えます。"
+    },
+    "unsafe-first": {
+      "source": "core/StaticArray.carp",
+      "line": 111,
+      "original": "takes the first element of an array.\n\nGenerates a runtime error if the array is empty.",
+      "source_html_sha256": "5449e27fb340f8be48a65498b1a8066349b77d97e605c67058acc4b979e546cf",
+      "translation": "配列の最初の要素を取得します。\n\n配列が空であれば、実行時エラーが発生します。"
+    },
+    "unsafe-last": {
+      "source": "core/StaticArray.carp",
+      "line": 125,
+      "original": "takes the last element of an array.\n\nGenerates a runtime error if the array is empty.",
+      "source_html_sha256": "5c5bdabc6deffb3d3ae31641812244ee2360c6c4ea6fac0767f8f56407dbc9c6",
+      "translation": "配列の最後の要素を取得します。\n\n配列が空であれば、実行時エラーが発生します。"
+    },
+    "unsafe-nth": {
+      "source": "src/StaticArrayTemplates.hs",
+      "line": 24,
+      "original": "gets a reference to the `n`th element from a static array `a`.",
+      "source_html_sha256": "84e2b3d621b542b95e2b69e52ae02bbd6667a84701bcf660b7ad499701201c1e",
+      "translation": "静的配列 `a` の `n` 番目の要素への参照を取得します。"
+    },
+    "unsafe-nth-value": {
+      "source": "core/StaticArray.carp",
+      "line": 199,
+      "original": "returns the value at index `i` of a static array `a` (just like [unsafe-nth](#unsafe-nth)) but does not take its reference, and does *not* copy the value. Should only be used for optimizations and when you know what you're doing, circumvents the borrow checker!",
+      "source_html_sha256": "61a89eb8f9e7a78f1941dde6b42f6377772e70ea5a6f2f6c47252855970da6eb",
+      "translation": "静的配列 `a` のインデックス `i` にある値を返します ([`unsafe-nth`](#unsafe-nth) と同様です)。ただし、参照を取得せず、値のコピーも**行いません**。最適化のために、操作の意味を十分に理解している場合にのみ使用してください。借用チェッカー (borrow checker) の検査を迂回します。"
+    },
+    "unsafe-raw": {
+      "source": "core/StaticArray.carp",
+      "line": 234,
+      "original": "returns an array a as a raw pointer—useful for interacting with C.",
+      "source_html_sha256": "dc919b5905d3e18deee8e70ada785c41f8aaf89a49d29ebbb5d230a3e9422241",
+      "translation": "配列 `a` を生ポインタ (raw pointer) として返します。C とのやり取りに便利です。"
+    }
+  }
+}

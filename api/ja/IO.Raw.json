@@ -1,0 +1,242 @@
+{
+  "module": "IO.Raw",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/IO.carp",
+    "line": 12,
+    "original": "Wrappers for functions from the C standard library. Consider using a more\ncarpesque function from IO when it exists. For detailed documentation please\nconsult the documentation of your system (e.g. under Linux try\n`man fprint`).",
+    "source_html_sha256": "9cb08d6c93e40ad67eb6e847e12f40accaa944e4990f14312d5a97304bf77447",
+    "translation": "C 標準ライブラリの関数のラッパーです。対応する、より Carp らしい関数が [`IO`](./IO.html) に存在する場合は、そちらの使用を検討してください。詳しい説明は、使用しているシステムのドキュメントを参照してください。例えば、Linux では `man fprint` を試してください。"
+  },
+  "entries": {
+    "EOF": {
+      "source": "core/IO.carp",
+      "line": 48,
+      "original": "A signal indicating the End-Of-File has been reached.\nWraps `EOF` from the C standard library",
+      "source_html_sha256": "0c219e9a79f3e9e2ac7297fa8960c7c497d0dd1461bd8033d0c8f514c6656bc7",
+      "translation": "ファイル終端に達したことを示す値です。\nC 標準ライブラリの `EOF` をラップします。"
+    },
+    "O-RDONLY": {
+      "source": "core/IO.carp",
+      "line": 171,
+      "original": "Read-only flag for [`open`](#open).",
+      "source_html_sha256": "9f672d6d0ee2eebd9e87d6c82edfa15df5a27ac9a68dcd803962ca2f705fcd84",
+      "translation": "[`open`](#open) の読み取り専用フラグです。"
+    },
+    "SEEK-CUR": {
+      "source": "core/IO.carp",
+      "line": 197,
+      "original": "When passed to [`fseek`](#fseek) designates the reference position\nas the current position in the file.\nWraps `SEEK_CUR` from the C standard library.",
+      "source_html_sha256": "798d1ffda559ace4ec3eb9ea67ba9f689a4463583ded0681bc53c0b5764f902a",
+      "translation": "[`fseek`](#fseek) に渡すと、基準位置をファイル内の現在位置に指定します。\nC 標準ライブラリの `SEEK_CUR` をラップします。"
+    },
+    "SEEK-END": {
+      "source": "core/IO.carp",
+      "line": 203,
+      "original": "When passed to [`fseek`](#fseek), designates the reference position\nas the end of a [FILE](#file) (EOF).\nWraps `SEEK_END` from the C standard library.",
+      "source_html_sha256": "988f70e5c0abe5a0538b3974d86e641c297f08050887a78e16b68e0d5147ae44",
+      "translation": "[`fseek`](#fseek) に渡すと、基準位置を [`FILE`(英語)](#file) の終端 (EOF) に指定します。\nC 標準ライブラリの `SEEK_END` をラップします。"
+    },
+    "SEEK-SET": {
+      "source": "core/IO.carp",
+      "line": 191,
+      "original": "When passed to [`fseek`](#fseek) designates the reference position\nas the beginning of the file.\nWrpas `SEEK_SET` from the C standard library.",
+      "source_html_sha256": "d742fd923f5260f838886b6a66e0e6a4b31ee5d91c2a7e64c7e8a4471bb3e645",
+      "translation": "[`fseek`](#fseek) に渡すと、基準位置をファイルの先頭に指定します。\nC 標準ライブラリの `SEEK_SET` をラップします。"
+    },
+    "close-fd": {
+      "source": "core/IO.carp",
+      "line": 161,
+      "original": "Closes a raw file descriptor.",
+      "source_html_sha256": "d4152d5dfb03e8e7d6585056c864f72afdd6e934d5ffdd67c3e4f01f3dbb1911",
+      "translation": "生のファイルディスクリプタ (file descriptor) を閉じます。"
+    },
+    "fclose": {
+      "source": "core/IO.carp",
+      "line": 64,
+      "original": "Closes the [FILE](#file) associated with the given file pointer.\nReturns an integer indicating success or failure.\nWraps `fclose` from the C standard library.",
+      "source_html_sha256": "ac6cb7d45f8d36d30f1ceab69c3aeb766cd81b78350c13c34949560f1810eff8",
+      "translation": "指定したファイルポインタに関連付けられた [`FILE`(英語)](#file) を閉じます。\n成功または失敗を示す整数を返します。\nC 標準ライブラリの `fclose` をラップします。"
+    },
+    "fclose!": {
+      "source": "core/IO.carp",
+      "line": 70,
+      "original": "Closes a file via [`fclose`](#fclose), but discards the result,\nmaking this function appropriate for use as a side effect in\n`do` forms",
+      "source_html_sha256": "094fd21654c72ffe5b1c09b364f34530565859bd0fc5f4bd871045c4dcd259e5",
+      "translation": "[`fclose`](#fclose) を使ってファイルを閉じ、結果を破棄します。そのため、`do` 形式の中で副作用として使用するのに適しています。"
+    },
+    "feof": {
+      "source": "core/IO.carp",
+      "line": 214,
+      "original": "Returns true if the position indicator for the given [FILE](#file)\nis at the end of file [`EOF`](#eof).\nWraps `feof` from the C standard library.",
+      "source_html_sha256": "5afa9febe253899219d5525e6758724c967b4a91fd2e5fbb5b90e8b7198b7042",
+      "translation": "指定した [`FILE`(英語)](#file) の位置指示子が、ファイル終端 [`EOF`](#EOF) にある場合に `true` を返します。\nC 標準ライブラリの `feof` をラップします。",
+      "notes": [
+        "原文は位置指示子で説明していますが、ラップ先の `feof` が検査するのはストリームのファイル終端指示子です。詳しくは [POSIX の feof の説明(英語)](https://pubs.opengroup.org/onlinepubs/9799919799/functions/feof.html) を参照してください。"
+      ]
+    },
+    "ferror": {
+      "source": "core/IO.carp",
+      "line": 220,
+      "original": "Returns true if an error indicator is set for the\ngiven [FILE](#file).\nWraps `ferror` from the C standard library.",
+      "source_html_sha256": "48ddeed9e8b302c8738f8ed6b0d877edce0013483ae55b5b1d343296a41a7f21",
+      "translation": "指定した [`FILE`(英語)](#file) にエラー指示子が設定されている場合に `true` を返します。\nC 標準ライブラリの `ferror` をラップします。"
+    },
+    "fflush": {
+      "source": "core/IO.carp",
+      "line": 107,
+      "original": "Flushes buffered data associated with a given [FILE](#file) pointer.\nFor files in write mode, writes all buffered data to the file.\nFor files in read mode, discards all unused data in the buffer.\nIf the FILE pointer is NULL, flushes all open ouput streams.\nReturns an integer indicating success or failure.\nWraps `fflush` from the C standard library.",
+      "source_html_sha256": "6e83cc63ae0219b270b7955a712e49b5f47d77ea506c4f7095be6f7ebf867368",
+      "translation": "指定した [`FILE`(英語)](#file) ポインタに関連付けられた、バッファ内のデータをフラッシュします。\n書き込みモードのファイルでは、バッファ内のすべてのデータをファイルに書き込みます。\n読み取りモードのファイルでは、バッファ内の未使用データをすべて破棄します。\n`FILE` ポインタが `NULL` の場合は、開かれているすべての出力ストリームをフラッシュします。\n成功または失敗を示す整数を返します。\nC 標準ライブラリの `fflush` をラップします。",
+      "notes": [
+        "読み取り用ストリームについての原文の説明には、適用条件が省略されています。[POSIX の fflush の説明(英語)](https://pubs.opengroup.org/onlinepubs/9799919799/functions/fflush.html) では、ファイルがシーク可能で、まだ EOF でない場合などの条件を定めています。入力ストリームで常に同じ処理ができるという保証として扱わないでください。"
+      ]
+    },
+    "fflush!": {
+      "source": "core/IO.carp",
+      "line": 116,
+      "original": "Flushes buffered data via [`fflush`](#fflush)\n, but discards the result, making this function appropraite for use as\na side effect in `do` forms.",
+      "source_html_sha256": "21246a708b88bf853e4fb04ddfcabaf55b9b065698c5fb017c16a186fe31bf9d",
+      "translation": "[`fflush`](#fflush) を使ってバッファ内のデータをフラッシュし、結果を破棄します。そのため、`do` 形式の中で副作用として使用するのに適しています。"
+    },
+    "fgetc": {
+      "source": "core/IO.carp",
+      "line": 38,
+      "original": "Returns a character from a given [FILE](#file).\nWraps `fgetc` from the C standard library.",
+      "source_html_sha256": "112719834e75a3e91c0ffb3a7377ef548bc56dc38543ef50eac0788bec335e1b",
+      "translation": "指定した [`FILE`(英語)](#file) から 1 文字を返します。\nC 標準ライブラリの `fgetc` をラップします。"
+    },
+    "fileno": {
+      "source": "core/IO.carp",
+      "line": 168,
+      "original": "Returns the raw file descriptor underlying a FILE pointer.",
+      "source_html_sha256": "27e0f11eb0211a345b024dce9a4f2aca8c1f1976038166a53a0366f965ab193a",
+      "translation": "`FILE` ポインタの基になる、生のファイルディスクリプタを返します。"
+    },
+    "fopen": {
+      "source": "core/IO.carp",
+      "line": 57,
+      "original": "Low-level routine to open a file for input/output/appending.\nWraps `fopen` from the C standard library.\nConsider using the function [IO.open-file](#open-file) instead.",
+      "source_html_sha256": "f4f48cacde23860ca69fe9c8ae558afed19875310da66cb5909cba8112e03264",
+      "translation": "入力・出力・追加のためにファイルを開く、低水準の処理です。\nC 標準ライブラリの `fopen` をラップします。\n代わりに [`IO.open-file`](./IO.html#open-file) の使用を検討してください。"
+    },
+    "fputc": {
+      "source": "core/IO.carp",
+      "line": 43,
+      "original": "Writes a character to a [FILE](#file)\nWraps `fputc` from the C standard library.",
+      "source_html_sha256": "5187ac3eb1ae40d4017faf2dccbbde903987252daaef8a0a82796da9e7239e75",
+      "translation": "[`FILE`(英語)](#file) に 1 文字を書き込みます。\nC 標準ライブラリの `fputc` をラップします。"
+    },
+    "fread": {
+      "source": "core/IO.carp",
+      "line": 99,
+      "original": "Reads a given numebr of bytes from a file into C-String.\nWraps `fread` from the C standard library.\nConsider using [`read-file`](#read-file) or\n[`unsafe-read-file`](#unsafe-read-file) instead.",
+      "source_html_sha256": "5c23e2e1311eaf431f3068e5efb34d159b2d0dbcfa7aa74b09e93bd78ff424af",
+      "translation": "ファイルから指定したバイト数を C 文字列に読み込みます。\nC 標準ライブラリの `fread` をラップします。\n代わりに [`read-file`](./IO.html#read-file) または [`unsafe-read-file`](./IO.html#unsafe-read-file) の使用を検討してください。",
+      "notes": [
+        "ラップ先の [POSIX の fread の説明(英語)](https://pubs.opengroup.org/onlinepubs/9699919799/functions/fread.html) では、`item-size` に相当する要素サイズと `items-count` に相当する要素数を指定し、読み取った要素数を返します。バイト数との区別に注意してください。固定版の Carp のラッパーはこの返り値をそのまま返します。"
+      ]
+    },
+    "fseek": {
+      "source": "core/IO.carp",
+      "line": 174,
+      "original": "Sets the position indicator of a [FILE](#file) based on a given\nreference position and offset. The position indicator will be set to an\noffset number of bytes from the reference position.\nValid reference positions are [`SEEK-SET`](#seek-set),\n[`SEEK-CUR`](#seek-cur), and [`SEEK-END`](#seek-end).\n\nReturns an integer indicating success or failure.\nWraps `fseek` from the C standard library.",
+      "source_html_sha256": "f553f59950a633a8c7bb81594e8f1c0011cd702ed3df238222c16ef2c77cbac3",
+      "translation": "指定した基準位置とオフセットに基づいて、[`FILE`(英語)](#file) の位置指示子を設定します。位置指示子は、基準位置からオフセットで指定したバイト数だけ離れた位置に設定されます。\n有効な基準位置は、[`SEEK-SET`](#SEEK-SET)、[`SEEK-CUR`](#SEEK-CUR)、[`SEEK-END`](#SEEK-END) です。\n\n成功または失敗を示す整数を返します。\nC 標準ライブラリの `fseek` をラップします。"
+    },
+    "fseek!": {
+      "source": "core/IO.carp",
+      "line": 185,
+      "original": "Sets the position indicator of a [FILE](#file) via `fseek`,\nbut discards the result, making this function appropriate for use\nas a side effect in `do` forms.",
+      "source_html_sha256": "1a3b69a9a7f0a2427134fa543fd080b3652e5ef21ac37141ebc088efaaf25ddc",
+      "translation": "`fseek` を使って [`FILE`(英語)](#file) の位置指示子を設定し、結果を破棄します。そのため、`do` 形式の中で副作用として使用するのに適しています。"
+    },
+    "fstat-size": {
+      "source": "core/IO.carp",
+      "line": 164,
+      "original": "Returns the size in bytes of an open file descriptor, or -1 on error.",
+      "source_html_sha256": "ea9f05d3f0dd7b214c4af197a60816768f74b1ec6198da85ef2e94181c1f8bf8",
+      "translation": "開いているファイルディスクリプタに対応するファイルのサイズをバイト単位で返します。エラーの場合は `-1` を返します。"
+    },
+    "ftell": {
+      "source": "core/IO.carp",
+      "line": 209,
+      "original": "Returns the current value of the position indicator of a [FILE](#file)\nWraps `ftell` from the C standard library.",
+      "source_html_sha256": "8709134866ab0795746433404fed35820d3e81063f8831ad8971523023183522",
+      "translation": "[`FILE`(英語)](#file) の位置指示子の現在の値を返します。\nC 標準ライブラリの `ftell` をラップします。"
+    },
+    "fwrite": {
+      "source": "core/IO.carp",
+      "line": 81,
+      "original": "Writes a C-string to a file and returns the number of written bytes.\nWraps `fwrite` from the C standard library.\nConsider using [`write-file`](#write-file) instead.",
+      "source_html_sha256": "5e8b65c25b023cf9024d7f5920d0f08b59c067b5dc9a355e18391a48091c4e81",
+      "translation": "C 文字列をファイルに書き込み、書き込んだバイト数を返します。\nC 標準ライブラリの `fwrite` をラップします。\n代わりに [`write-file`](./IO.html#write-file) の使用を検討してください。",
+      "notes": [
+        "原文は返り値をバイト数としていますが、ラップ先の [POSIX の fwrite の説明(英語)](https://pubs.opengroup.org/onlinepubs/9799919799/functions/fwrite.html) では、正常に書き込んだ要素数を返します。`item-size` が `1` の場合はバイト数と一致します。固定版の Carp のラッパーはこの返り値をそのまま返します。"
+      ]
+    },
+    "fwrite!": {
+      "source": "core/IO.carp",
+      "line": 88,
+      "original": "Writes a C-string to a file using [`fwrite`](#fwrite), but discards the result,\nmaking this function appropriate for use as a side effect in\n`do` forms.",
+      "source_html_sha256": "6644dead634d5bcaf6f91c5b898fc9f2434100411df2853654a1d18949163a48",
+      "translation": "[`fwrite`](#fwrite) を使って C 文字列をファイルに書き込み、結果を破棄します。そのため、`do` 形式の中で副作用として使用するのに適しています。"
+    },
+    "get-char": {
+      "source": "core/IO.carp",
+      "line": 33,
+      "original": "Returns a character from [`stdin`](#stdin).\nWraps `getchar()` from the C standard library.",
+      "source_html_sha256": "19871727c5210d3421f664184dfb5819d9fe83aa052bb0c6607be3f566092019",
+      "translation": "[`stdin`](#stdin) から 1 文字を返します。\nC 標準ライブラリの `getchar()` をラップします。"
+    },
+    "open": {
+      "source": "core/IO.carp",
+      "line": 156,
+      "original": "Opens a file at `path` with the given flags (e.g. `IO.Raw.O-RDONLY`).\nReturns a raw file descriptor, or -1 on error.",
+      "source_html_sha256": "48cbc921e39fa7c56e7c85cb847193eab80c893c73b254db3d6883a2473c69ed",
+      "translation": "指定したフラグ (例えば `IO.Raw.O-RDONLY`) を使って、`path` にあるファイルを開きます。\n生のファイルディスクリプタを返します。エラーの場合は `-1` を返します。"
+    },
+    "rewind": {
+      "source": "core/IO.carp",
+      "line": 123,
+      "original": "Sets the stream position indicator associated with a [FILE](#file)\npointer back to the beginning of the file.\nWraps `rewind` from the C standard library.\nTo verify that resetting the position succeeded,\nuse [`fseek`](#fseek) instead.",
+      "source_html_sha256": "6138f3351b5b29934720490b5b65987b5ba9136106be18f7f3b291dd6cf88b4d",
+      "translation": "[`FILE`(英語)](#file) ポインタに関連付けられたストリームの位置指示子を、ファイルの先頭に戻します。\nC 標準ライブラリの `rewind` をラップします。\n位置のリセットが成功したかどうかを確認するには、代わりに [`fseek`](#fseek) を使ってください。"
+    },
+    "stderr": {
+      "source": "core/IO.carp",
+      "line": 28,
+      "original": "A FILE pointer to the system's standard error file (wraps the C\nstandard library `stderr`).",
+      "source_html_sha256": "9e832de99e9fd0a8f12e214b578684136115dee3a291205f375ac400b59f7442",
+      "translation": "システムの標準エラーファイルへの `FILE` ポインタです。C 標準ライブラリの `stderr` をラップします。"
+    },
+    "stdin": {
+      "source": "core/IO.carp",
+      "line": 18,
+      "original": "A file pointer to the system's standard input file (wraps the C\nstandard library `stdin`).",
+      "source_html_sha256": "4228b7bcd3455e5344fc5010e599d72883ef45e7e811f142bfd67896acbb4237",
+      "translation": "システムの標準入力ファイルへのファイルポインタです。C 標準ライブラリの `stdin` をラップします。"
+    },
+    "stdout": {
+      "source": "core/IO.carp",
+      "line": 23,
+      "original": "A FILE pointer to the system's standard output file (wraps the C\nstandard library `stdout`).",
+      "source_html_sha256": "6368d72a70f5880178f82f728455242d922afefdabcb03acdee326f44497d131",
+      "translation": "システムの標準出力ファイルへの `FILE` ポインタです。C 標準ライブラリの `stdout` をラップします。"
+    },
+    "unlink": {
+      "source": "core/IO.carp",
+      "line": 138,
+      "original": "Removes the named link to a file from the filesystem.\nIf this is the last link to the file, and no process has the file open,\ndeletes the underlying file.\nIf the argument designates a symbolic link, deletes the link only.\nReturns an integer indicating success or failure.\nWraps `unlink` from the POSIX api in <unistd.h>).\nSee the POSIX API documentation for more information.",
+      "source_html_sha256": "b675201158b30b1ca2ee719b07c77ae56f3de37f12a1e154f37e2c9520e98351",
+      "translation": "ファイルシステムから、指定した名前のファイルへのリンクを削除します。\nそのリンクがファイルへの最後のリンクで、かつ、どのプロセスもそのファイルを開いていない場合は、実体のファイルを削除します。\n引数がシンボリックリンクを指す場合は、リンクだけを削除します。\n成功または失敗を示す整数を返します。\n`<unistd.h>` にある POSIX API の `unlink` をラップします。\n詳しくは POSIX API のドキュメントを参照してください。"
+    },
+    "unlink!": {
+      "source": "core/IO.carp",
+      "line": 149,
+      "original": "Deletes a file link via [`unlink`](#unlink), but discards the result,\nmaking this function appropriate for use as a side effect in\n`do` forms.",
+      "source_html_sha256": "5ef0ccd43968be5a8451ca5bc0f34f95f42462fbc7aabaf31d1914b9e84a04ce",
+      "translation": "[`unlink`](#unlink) を使ってファイルへのリンクを削除し、結果を破棄します。そのため、`do` 形式の中で副作用として使用するのに適しています。"
+    }
+  }
+}

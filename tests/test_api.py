@@ -75,8 +75,12 @@ class APIReferenceTests(unittest.TestCase):
             api.load(self.root)
 
     def test_staging_keeps_types_usage_and_pinned_source_fallbacks(self):
+        manifest_path = self.root / 'api/snapshot.json'
+        manifest = json.loads(manifest_path.read_text())
+        manifest['english_source_fallbacks']['StaticArray.html'] = 'core/StaticArray.carp'
+        manifest_path.write_text(json.dumps(manifest))
         output = self.root / 'pages'
-        self.assertEqual(7, api.stage(self.root, output, '/test'))
+        self.assertEqual(15, api.stage(self.root, output, '/test'))
         page = (output / 'api/core/Array.html').read_text()
         self.assertIn('/test/GLOSSARY.html', page)
         self.assertIn('id="aset-uninitialized"', page)
@@ -94,9 +98,11 @@ class APIReferenceTests(unittest.TestCase):
 
     def test_batch_coverage_and_core_index_source_are_complete(self):
         manifest, modules = api.load(self.root)
-        self.assertEqual({'Array', 'Bool', 'Control', 'Function', 'Maybe', 'Result'}, set(modules))
-        self.assertEqual(164, sum(len(data[2]) for data in modules.values()))
-        self.assertEqual(152, sum(bool(record['translation']) for data in modules.values()
+        self.assertEqual(
+            {'Array', 'Bool', 'Char', 'Control', 'Function', 'IO', 'IO.Raw',
+             'Map', 'Maybe', 'Pair', 'Result', 'StaticArray', 'String', 'System'}, set(modules))
+        self.assertEqual(446, sum(len(data[2]) for data in modules.values()))
+        self.assertEqual(379, sum(bool(record['translation']) for data in modules.values()
                                   for record in data[3]['entries'].values()))
         self.assertEqual(13, sum(len(api.examples(record['original'])) for data in modules.values()
                                  for record in data[3]['entries'].values()))
@@ -112,13 +118,40 @@ class APIReferenceTests(unittest.TestCase):
         api.stage(self.root, output, '/test')
         index = (output / 'api/core/index.html').read_text()
         self.assertIn('Core — 標準ライブラリ API リファレンス', index)
-        for name in ('Array', 'Bool', 'Control', 'Function', 'Maybe', 'Result'):
+        for name in ('Array', 'Bool', 'Char', 'Control', 'Function', 'IO', 'IO.Raw', 'Map', 'Maybe', 'Pair', 'Result', 'StaticArray', 'String', 'System'):
             self.assertIn(f'href="{name}.html"', index)
             self.assertTrue((output / f'api/core/{name}.html').is_file())
         maybe = (output / 'api/core/Maybe.html').read_text()
         result = (output / 'api/core/Result.html').read_text()
         self.assertIn('(./Result.html)', maybe)
         self.assertIn('(./Maybe.html)', result)
+
+    def test_io_references_reach_the_correct_module_or_pinned_type_source(self):
+        output = self.root / 'pages'
+        api.stage(self.root, output, '/test')
+        io = (output / 'api/core/IO.html').read_text()
+        raw = (output / 'api/core/IO.Raw.html').read_text()
+        # Both the translated Markdown and expandable original HTML must resolve.
+        self.assertIn('(./IO.Raw.html#stdout)', io)
+        self.assertIn('href="./IO.Raw.html#stdout"', io)
+        self.assertIn('(./IO.html#open-file)', raw)
+        self.assertIn('href="./IO.html#open-file"', raw)
+        for page in (io, raw):
+            self.assertNotIn('href="#file"', page)
+            self.assertNotIn('](#file)', page)
+            self.assertIn('/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/IO.carp#L3', page)
+        self.assertIn('href="#SEEK-CUR"', raw)
+        self.assertIn('href="#EOF"', raw)
+
+    def test_new_translations_replace_fallbacks_and_show_overview_notes(self):
+        output = self.root / 'pages'
+        api.stage(self.root, output, '/test')
+        array = (output / 'api/core/Array.html').read_text()
+        static = (output / 'api/core/StaticArray.html').read_text()
+        self.assertIn('[`StaticArray`](./StaticArray.html)', array)
+        self.assertNotIn('[`StaticArray`(英語)]', array)
+        self.assertIn('変更不可能 (immutable)', static)
+        self.assertIn('overview_note_0', static)
 
 
 if __name__ == '__main__':

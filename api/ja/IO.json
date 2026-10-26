@@ -1,0 +1,125 @@
+{
+  "module": "IO",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/IO.carp",
+    "line": 8,
+    "original": "A module for performing I/O operations. Most functions found in this\nmodule are wrappers around the C standard library.",
+    "source_html_sha256": "edfd6b2a6dd94daedeb79b459f980f5ecf3898a0516d6997388b9d4ee328a882",
+    "translation": "入出力操作を行うためのモジュールです。このモジュールの多くの関数は、C 標準ライブラリのラッパー (wrapper) です。"
+  },
+  "entries": {
+    "Raw": {
+      "source": "core/IO.carp",
+      "line": 12,
+      "original": "Wrappers for functions from the C standard library. Consider using a more\ncarpesque function from IO when it exists. For detailed documentation please\nconsult the documentation of your system (e.g. under Linux try\n`man fprint`).",
+      "source_html_sha256": "1244e9da905923b86e0516da06e38cd9e6060c8ac80a24db972e551259711d8d",
+      "translation": "C 標準ライブラリの関数のラッパーです。対応する、より Carp らしい関数が [`IO`](./IO.html) に存在する場合は、そちらの使用を検討してください。詳しい説明は、使用しているシステムのドキュメントを参照してください。例えば、Linux では `man fprint` を試してください。"
+    },
+    "append-file": {
+      "source": "core/IO.carp",
+      "line": 334,
+      "original": "Appends a String to a text [FILE](#file), creating it if it does not exist.\n\nReturns a (Result Bool String) indicating success or failure.",
+      "source_html_sha256": "0bb62a11ec143610b75c4a5d2efa0b626e8080ea1c1d2c57c452c2b5213017a1",
+      "translation": "テキストファイル [`FILE`(英語)](#file) に `String` を追加します。ファイルが存在しない場合は作成します。\n\n成功または失敗を示す `(Result Bool String)` を返します。"
+    },
+    "color": {
+      "source": "core/Color.carp",
+      "line": 74,
+      "original": "sets the output color using ANSI coloration based on a color id `cid`.",
+      "source_html_sha256": "eaab165cfe03bfeff3b87f8deb88fedd35827ba82c1ca0cb4b67a9d8322c8329",
+      "translation": "色の ID `cid` に基づいて、ANSI の色指定で出力の色を設定します。"
+    },
+    "colorize": {
+      "source": "core/Color.carp",
+      "line": 78,
+      "original": "wraps a string in ANSI coloration based on a color id `cid` and prints it.",
+      "source_html_sha256": "d67421afb38cf31ead406daf949c5f60def3d091817370386472fa92ea77241b",
+      "translation": "色の ID `cid` に基づいて文字列を ANSI の色指定で囲み、出力します。"
+    },
+    "error": {
+      "source": "core/IO.carp",
+      "line": 239,
+      "original": "Prints a String ref to [`stderr`](#stderr).",
+      "source_html_sha256": "e10f770b58e84e6147f42e9171b9ebb1a3c9593eecb921edb98a201609be715f",
+      "translation": "`String` の参照を [`stderr`](./IO.Raw.html#stderr) に出力します。"
+    },
+    "errorln": {
+      "source": "core/IO.carp",
+      "line": 235,
+      "original": "Prints a String ref to [`stderr`](#stderr), appends a newline.",
+      "source_html_sha256": "01f99b2c37126c59f683c7110495d69c14ad2203058687ea04c608ae1ce40c31",
+      "translation": "`String` の参照を [`stderr`](./IO.Raw.html#stderr) に出力し、末尾に改行を追加します。"
+    },
+    "fgetc": {
+      "source": "core/IO.carp",
+      "line": 246,
+      "original": "Gets a single character from a [FILE](#file) pointer.\nWraps `fgetc` from the C standard library.",
+      "source_html_sha256": "e11a1aa602f67804e373048036068e6d345a66cea768914f6a39087dc7170012",
+      "translation": "[`FILE`(英語)](#file) ポインタから 1 文字を取得します。\nC 標準ライブラリの `fgetc` をラップします。"
+    },
+    "get-line": {
+      "source": "core/IO.carp",
+      "line": 242,
+      "original": "Gets one line of input from [`stdin`](#stdin).",
+      "source_html_sha256": "f26c512b4a2e103604e0b34d483f5fc085c838f073c705861e764d5293528c6c",
+      "translation": "[`stdin`](./IO.Raw.html#stdin) から 1 行の入力を取得します。"
+    },
+    "getenv": {
+      "source": "core/IO.carp",
+      "line": 355,
+      "original": "Returns the value of an environment variable.\nWraps `getenv` from the C standard library.",
+      "source_html_sha256": "693c503aa07776f327dbd985bfa1245f5d36d7e0bd7efd2c662ff7ef9cfec65c",
+      "translation": "環境変数の値を返します。\nC 標準ライブラリの `getenv` をラップします。"
+    },
+    "open-file": {
+      "source": "core/IO.carp",
+      "line": 257,
+      "original": "Opens a [FILE](#file) with the given name using a designated mode\n(e.g. [r]ead, [w]rite, [a]ppend),  [rb] read binary...).\nSee `fopen` from the C standard library for a description of valid mode parameters.",
+      "source_html_sha256": "f58ce1ebd97236621f49c961f2102b0a8ac59a4ecfedb74b64c3b1f3f3d0b796",
+      "translation": "指定した名前の [`FILE`(英語)](#file) を、指定したモードで開きます。例えば、`r` は読み取り (read)、`w` は書き込み (write)、`a` は追加 (append)、`rb` はバイナリ読み取りです。\n有効なモード引数の説明は、C 標準ライブラリの `fopen` を参照してください。"
+    },
+    "print": {
+      "source": "core/IO.carp",
+      "line": 231,
+      "original": "Prints a String ref to [`stdout`](#stdout).",
+      "source_html_sha256": "949865761fe58652385251d748e807b4205dff5731d403c8a6d696ddbc98a7ea",
+      "translation": "`String` の参照を [`stdout`](./IO.Raw.html#stdout) に出力します。"
+    },
+    "println": {
+      "source": "core/IO.carp",
+      "line": 227,
+      "original": "Prints a String ref to [`stdout`](#stdout), appends a newline.",
+      "source_html_sha256": "ebbf2b9026a623df3c73da5fc1d65c9112ffe713a0c97ecdaba9369a85903d6f",
+      "translation": "`String` の参照を [`stdout`](./IO.Raw.html#stdout) に出力し、末尾に改行を追加します。"
+    },
+    "read->EOF": {
+      "source": "core/IO.carp",
+      "line": 267,
+      "original": "Reads bytes from a named [FILE](#file) until the [End-Of-File](#eof) is reached.\nConsider using [read-file](#read-file) instead, even though this works fine for\nUTF-8 encoded input files.",
+      "source_html_sha256": "8e6c191d1187bde8eff09751e82051a970ac782a74ea110f55a49a792520bbe4",
+      "translation": "指定した名前の [`FILE`(英語)](#file) から、[ファイル終端](./IO.Raw.html#EOF) に達するまでバイトを読み取ります。\nUTF-8 で符号化された入力ファイルでも問題なく動作しますが、代わりに [`read-file`](#read-file) の使用を検討してください。"
+    },
+    "read-file": {
+      "source": "core/IO.carp",
+      "line": 291,
+      "original": "Reads the contents of a text [FILE](#file) into a (Result String String).\n\nIf a binary file is passed as input, the resulting string length is\nlikely to be inaccurate.",
+      "source_html_sha256": "2aef9d1729fe0996f0ce3c9f61f30bf36035c0735193d7b68094cb0ef147f1ac",
+      "translation": "テキストファイル [`FILE`(英語)](#file) の内容を読み取り、`(Result String String)` に格納します。\n\nバイナリファイルが入力として渡された場合、結果の文字列の長さは不正確になる可能性があります。"
+    },
+    "unsafe-read-file": {
+      "source": "core/IO.carp",
+      "line": 285,
+      "original": "Returns the contents of a file passed as argument as a string.\nNote: there is no way to distinguish the output for an empty file\nand a nonexistent file!",
+      "source_html_sha256": "dfdbaa8602abbbcb1fb523f0a877610f5ab146879b7cf86795d9730efe1856e0",
+      "translation": "引数で渡されたファイルの内容を文字列として返します。\n注意: 空のファイルの出力と、存在しないファイルの出力を区別する方法はありません。"
+    },
+    "write-file": {
+      "source": "core/IO.carp",
+      "line": 317,
+      "original": "Writes a String into a text [FILE](#file), overwriting it\nif it already exists.\n\nReturns a (Result Bool String) indicating success or failure.",
+      "source_html_sha256": "0a19b485ed7bb3f9aeaafe288658f9f3c91cd7ef7ec17efd2a1b59dcd834155d",
+      "translation": "テキストファイル [`FILE`(英語)](#file) に `String` を書き込みます。すでに存在する場合は上書きします。\n\n成功または失敗を示す `(Result Bool String)` を返します。"
+    }
+  }
+}

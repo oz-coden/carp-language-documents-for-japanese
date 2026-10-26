@@ -1,0 +1,468 @@
+{
+  "module": "String",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/String.carp",
+    "line": 11,
+    "original": "is the string data type for representing text.",
+    "source_html_sha256": "1e9b81b597b981e50a72df374046e69065537a3a8235133a5d267a7d3d814605",
+    "translation": "テキストを表す文字列のデータ型です。"
+  },
+  "entries": {
+    "<": {
+      "source": "core/String.carp",
+      "line": 18,
+      "original": "Checks whether the first string is lexicographically less than the second.",
+      "source_html_sha256": "41d6c0314c1a783bb8ee6ae764ed351ee55581e7de86a0f167787eb97fdee981",
+      "translation": "最初の文字列が、2 番目の文字列より辞書順で小さいかどうかを調べます。"
+    },
+    "=": {
+      "source": "core/String.carp",
+      "line": 14,
+      "original": "Checks whether two strings are equal.",
+      "source_html_sha256": "f54b86f236b3756c822c4b8c4af4da9b1287b5188d66b3ea2d6472821ab85050",
+      "translation": "2 つの文字列が等しいかどうかを調べます。"
+    },
+    ">": {
+      "source": "core/String.carp",
+      "line": 16,
+      "original": "Checks whether the first string is lexicographically greater than the second.",
+      "source_html_sha256": "f3da167ecaf808cf8e55c80389badff4618682ec74cf0336d4037b013ad1eb2e",
+      "translation": "最初の文字列が、2 番目の文字列より辞書順で大きいかどうかを調べます。"
+    },
+    "allocate": {
+      "source": "core/String.carp",
+      "line": 61,
+      "original": "Allocates a string of the specified length with the specified character.",
+      "source_html_sha256": "01b3719581f69ae441af27be46df81aad5db3f9b54b9ea12ab6f8e806fb6544e",
+      "translation": "指定した長さの文字列を割り当て、指定した文字で埋めます。"
+    },
+    "allocated?": {
+      "source": "core/String.carp",
+      "line": 63,
+      "original": "checks if a String returned by String.allocate is not NULL. This is a safeguard against out-of-memory conditions.",
+      "source_html_sha256": "46530664e1db67cff26af62d5015b6099c7c7bc21825ace595f10fdf908d3184",
+      "translation": "`String.allocate` が返した `String` が `NULL` でないかどうかを調べます。メモリ不足に対処するための検査です。"
+    },
+    "alpha?": {
+      "source": "core/Pattern.carp",
+      "line": 152,
+      "original": "checks whether a string contains only alphabetical characters (a-Z).",
+      "source_html_sha256": "2b2533996a257abe8a5a30b88a1f70d972d0a7feeb3c9554bf52e75b33f5649b",
+      "translation": "文字列に英字 (`a-Z`) だけが含まれているかどうかを調べます。"
+    },
+    "alphanum?": {
+      "source": "core/Pattern.carp",
+      "line": 156,
+      "original": "checks whether a string is alphanumerical.",
+      "source_html_sha256": "a153ab07a4234338f8b050ef72052d00fb1e783e12cc4fad1f62a50c2795aa93",
+      "translation": "文字列が英数字で構成されているかどうかを調べます。"
+    },
+    "append": {
+      "source": "core/String.carp",
+      "line": 20,
+      "original": "Append the second string to the first.",
+      "source_html_sha256": "9e13c018a98054d337ef170dd6631ff2afc3d36d9e570ef77551b6f0ea8425f3",
+      "translation": "2 番目の文字列を、最初の文字列の末尾に追加します。"
+    },
+    "ascii-to-lower": {
+      "source": "core/String.carp",
+      "line": 247,
+      "original": "converts each character in this string to lower case using tolower() from standard C library. Note: this will only work for ASCII characters.",
+      "source_html_sha256": "e4072495ff2330f8510135d058b1fb4697009893a350eaca493c1867a5f9bfaf",
+      "translation": "C 標準ライブラリの `tolower()` を使って、この文字列の各文字を小文字に変換します。注意: ASCII 文字に対してのみ動作します。"
+    },
+    "ascii-to-upper": {
+      "source": "core/String.carp",
+      "line": 250,
+      "original": "converts each character in this string to upper case using toupper() from standard C library. Note: this will only work for ASCII characters.",
+      "source_html_sha256": "2dd544e4ebc15a4b4f276a46eeb66de5a7905f90ae544a543c25faf50e48f8cd",
+      "translation": "C 標準ライブラリの `toupper()` を使って、この文字列の各文字を大文字に変換します。注意: ASCII 文字に対してのみ動作します。"
+    },
+    "byte-slice": {
+      "source": "core/String.carp",
+      "line": 120,
+      "original": "Return part of a string, from byte index `a` to byte index `b`.",
+      "source_html_sha256": "09dbf91bb6fac09a57e40b2bb7c447b6dd59c3d1dcbd1b38ed2b29aa21511757",
+      "translation": "文字列のうち、バイト単位のインデックス `a` から `b` までの部分を返します。"
+    },
+    "char-at": {
+      "source": "core/String.carp",
+      "line": 46,
+      "original": "Returns the character at the specified index.",
+      "source_html_sha256": "165ecead2f8c55bdf5ec03863af4d943223b7e2fb167c136bfb82c01c8c4d390",
+      "translation": "指定したインデックスにある文字を返します。"
+    },
+    "chars": {
+      "source": "core/String.carp",
+      "line": 48,
+      "original": "Returns an array of characters in a string.",
+      "source_html_sha256": "90b92f028157e8cc40ac2305210014489145e301d65cb6dc9155c64e4d1ce0ef",
+      "translation": "文字列に含まれる文字の配列を返します。"
+    },
+    "chomp": {
+      "source": "core/Pattern.carp",
+      "line": 197,
+      "original": "trims a newline from the end of a string.",
+      "source_html_sha256": "2b8f89268ae174c6747f8ec8705f06193305ff551bd656d0eb0bc6a151a6c5d2",
+      "translation": "文字列の末尾から改行を取り除きます。"
+    },
+    "collapse-whitespace": {
+      "source": "core/Pattern.carp",
+      "line": 201,
+      "original": "collapses groups of whitespace into single spaces.",
+      "source_html_sha256": "7bf5f950b1c3331bd111e7b8267366ce1e14aeff6fe2ed2f4dbf8e91c4cfc614",
+      "translation": "連続する空白文字を、それぞれ 1 つのスペースにまとめます。"
+    },
+    "concat": {
+      "source": "core/String.carp",
+      "line": 188,
+      "original": "Returns a new string which is the concatenation of the provided `strings`.",
+      "source_html_sha256": "4026dc55faedb8013906e9ec9c124365428a0b7f5db56d823f59f2a1e6e5535c",
+      "translation": "渡された `strings` を連結した、新しい文字列を返します。"
+    },
+    "contains-string?": {
+      "source": "core/String.carp",
+      "line": 244,
+      "original": "Checks whether the string `s` contains the substring `needle`.",
+      "source_html_sha256": "c89545720b46b4183f4fec6262668b5501a9dc100187622d28164ab12ab57fdb",
+      "translation": "文字列 `s` に部分文字列 `needle` が含まれているかどうかを調べます。"
+    },
+    "contains?": {
+      "source": "core/String.carp",
+      "line": 241,
+      "original": "Checks whether the string `s` contains the character `c`.",
+      "source_html_sha256": "3a6ee1de34fac7cb02231f19746d53ee655bad0dce4f319017cb2090232ad142",
+      "translation": "文字列 `s` に文字 `c` が含まれているかどうかを調べます。"
+    },
+    "copy": {
+      "source": "core/String.carp",
+      "line": 24,
+      "original": "Copies a string.",
+      "source_html_sha256": "c548e2f33a11204aa8c55f9acc33c52eba9a31a35dcf8c358c13f73b2b65172e",
+      "translation": "文字列をコピーします。"
+    },
+    "count-char": {
+      "source": "core/String.carp",
+      "line": 102,
+      "original": "Returns the number of occurrences of `c` in the string `s`.",
+      "source_html_sha256": "3a4a451b1efcd8a01ad4e3d1d5ee48a63509f76bc8f1fd7c4211285c21f5219b",
+      "translation": "文字列 `s` に文字 `c` が現れる回数を返します。"
+    },
+    "cstr": {
+      "source": "core/String.carp",
+      "line": 28,
+      "original": "Returns the C string representation of a string.",
+      "source_html_sha256": "f98fc970f87dabd53aa6f4a6c13aee6283f996475d96ba05be20311c6799a028",
+      "translation": "文字列の C 文字列表現を返します。"
+    },
+    "delete": {
+      "source": "core/String.carp",
+      "line": 22,
+      "original": "Deletes a string.",
+      "source_html_sha256": "0fe55e8fd7f884023de57e8bdd99f693cbe915bb30a277ac6f77e1c21586d30f",
+      "translation": "文字列を削除します。"
+    },
+    "empty?": {
+      "source": "core/String.carp",
+      "line": 115,
+      "original": "Check if the string is the empty string.",
+      "source_html_sha256": "9c4bb65594f0a95bf061b5635baf0956313f20aabd6ada5087484351d3e39494",
+      "translation": "文字列が空文字列かどうかを調べます。"
+    },
+    "ends-with?": {
+      "source": "core/String.carp",
+      "line": 163,
+      "original": "Check if the string `s` ends with the string `sub`.",
+      "source_html_sha256": "33f4805074c6e7661899412603d58a29d6ba36ff3c1beb9ddf3a54f425caec1a",
+      "translation": "文字列 `s` が文字列 `sub` で終わるかどうかを調べます。"
+    },
+    "from-bytes": {
+      "source": "core/String.carp",
+      "line": 66,
+      "original": "Creates a string from an array of bytes.",
+      "source_html_sha256": "b321b8fcd7e68cfe0fa269a476b3d3d506cd42300d4dc0388b7261129ac66689",
+      "translation": "バイトの配列から文字列を作成します。"
+    },
+    "from-chars": {
+      "source": "core/String.carp",
+      "line": 50,
+      "original": "Creates a string from an array of characters.",
+      "source_html_sha256": "79d4c285d9dbe955d4dbde92fbe598273f77a9ee4c41a4501693d8f476fc807e",
+      "translation": "文字の配列から文字列を作成します。"
+    },
+    "from-cstr": {
+      "source": "core/String.carp",
+      "line": 30,
+      "original": "Creates a string from a C string.",
+      "source_html_sha256": "2f78ff44c8a823a2110e9724378383ea924e024900b07e2a95f18990e58b6523",
+      "translation": "C 文字列から文字列を作成します。"
+    },
+    "hash": {
+      "source": "core/Map.carp",
+      "line": 4,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "head": {
+      "source": "core/String.carp",
+      "line": 79,
+      "original": "Returns the character at start of string.",
+      "source_html_sha256": "dcf213007db8524e1c6240d043fdc57adc351f9374b1be68b36e171f86431238",
+      "translation": "文字列の先頭の文字を返します。"
+    },
+    "hex?": {
+      "source": "core/Pattern.carp",
+      "line": 160,
+      "original": "checks whether a string is hexadecimal.",
+      "source_html_sha256": "a9a43fe42ed9d3e185e7b47bddb5298eef049bcec092138186914a0941e298bc",
+      "translation": "文字列が 16 進数を表しているかどうかを調べます。"
+    },
+    "in?": {
+      "source": "core/Pattern.carp",
+      "line": 136,
+      "original": "checks whether a string contains another string.",
+      "source_html_sha256": "7ead5ef010a1f6a9d74480b0ae13b9f648d3266b17978fa65bf08d8a81d5aabf",
+      "translation": "文字列に別の文字列が含まれているかどうかを調べます。"
+    },
+    "index-of": {
+      "source": "core/String.carp",
+      "line": 38,
+      "original": "Returns the index of the first occurrence of `c` in `s`, or -1 if not found.",
+      "source_html_sha256": "a87a5edb67fea37d1208db924823795d58aa589ae0e59b3853d6b488a4a17a37",
+      "translation": "`s` の中で `c` が最初に現れるインデックスを返します。見つからない場合は `-1` を返します。"
+    },
+    "index-of-any-from": {
+      "source": "core/String.carp",
+      "line": 36,
+      "original": "Returns the index of the first occurrence of any of `chars` in `s` after index `from`, or -1 if not found.",
+      "source_html_sha256": "b042578dac05690c4a12dbb51f42864bacce1dcaf9659336d602dc9e29e99b23",
+      "translation": "`s` のインデックス `from` より後で、`chars` のいずれかの文字が最初に現れるインデックスを返します。見つからない場合は `-1` を返します。"
+    },
+    "index-of-from": {
+      "source": "core/String.carp",
+      "line": 41,
+      "original": "Returns the index of the first occurrence of `c` in `s` starting from `from`, or -1 if not found.",
+      "source_html_sha256": "34f95a287cca3e0d2fbc6771edaa748777cafd41faec8a52e75c8b98b19a4fd6",
+      "translation": "`s` のインデックス `from` から検索を始め、`c` が最初に現れるインデックスを返します。見つからない場合は `-1` を返します。"
+    },
+    "index-of-string": {
+      "source": "core/String.carp",
+      "line": 44,
+      "original": "Returns the index of the first occurrence of `needle` in `s`, or -1 if not found.",
+      "source_html_sha256": "89c3d1341b1df5cce8683154b992387a35004c5f608c3939753ccb48db99d344",
+      "translation": "`s` の中で `needle` が最初に現れるインデックスを返します。見つからない場合は `-1` を返します。"
+    },
+    "join": {
+      "source": "core/String.carp",
+      "line": 204,
+      "original": "Returns a new string which is the concatenation of the provided `strings` separated by string `sep`.",
+      "source_html_sha256": "96f1efa3ec8f6c6c7020ad245c3c684216a299dd7991563054759174105cfc3f",
+      "translation": "渡された `strings` を文字列 `sep` で区切って連結した、新しい文字列を返します。"
+    },
+    "join-with-char": {
+      "source": "core/String.carp",
+      "line": 223,
+      "original": "Returns a new string which is the concatenation of the provided `strings` separated by char `sep`.",
+      "source_html_sha256": "651d4aeed17448bcdfa1d3f7c58995ee758bdccbc9a751b893ef943f7d941e6b",
+      "translation": "渡された `strings` を文字 `sep` で区切って連結した、新しい文字列を返します。"
+    },
+    "length": {
+      "source": "core/String.carp",
+      "line": 26,
+      "original": "Returns the length of a string.",
+      "source_html_sha256": "48d3df1491dd9dc358ce4637814f84060efdf5c1c2e638a427371f1cf978adf5",
+      "translation": "文字列の長さを返します。"
+    },
+    "lines": {
+      "source": "core/String.carp",
+      "line": 271,
+      "original": "splits a string into lines.",
+      "source_html_sha256": "f018bc3c577fc93564050b7f7642793a6a1c36c9f26d31c5b48dcc4fcc396a9a",
+      "translation": "文字列を行に分割します。"
+    },
+    "lower?": {
+      "source": "core/Pattern.carp",
+      "line": 144,
+      "original": "checks whether a string is all lowercase.",
+      "source_html_sha256": "436c451d28256d0c00c2cc33554425ab3c391e7ba5aa7de7faef05c3340f92a3",
+      "translation": "文字列がすべて小文字かどうかを調べます。"
+    },
+    "num?": {
+      "source": "core/Pattern.carp",
+      "line": 148,
+      "original": "checks whether a string is numerical.",
+      "source_html_sha256": "bdb6b36d75830003d7f7eb089c93c1c4a5cd3dfd3713076cedf9e222d10a7c4c",
+      "translation": "文字列が数字で構成されているかどうかを調べます。"
+    },
+    "pad-left": {
+      "source": "core/String.carp",
+      "line": 92,
+      "original": "Pads the left of a string with len bytes using the padding pad.",
+      "source_html_sha256": "3aaa1ab552c2b610101f5d8d2e0e6aeaeb56c0fbf8730ae665d7e571347dad83",
+      "translation": "埋める文字 `pad` を使って、文字列の左側を `len` バイトまで埋めます。"
+    },
+    "pad-right": {
+      "source": "core/String.carp",
+      "line": 97,
+      "original": "Pads the right of a string with len bytes using the padding pad.",
+      "source_html_sha256": "934ec700d298b9c52d5f01767f1df9232880a7b6f002fc50f3f0438e6921a18c",
+      "translation": "埋める文字 `pad` を使って、文字列の右側を `len` バイトまで埋めます。"
+    },
+    "prefix": {
+      "source": "core/String.carp",
+      "line": 143,
+      "original": "Return the first `a` characters of the string `s`.",
+      "source_html_sha256": "ea45c7cfc85856d03c9835ef158818aadbf84c1355af06cb62552a06bfeb3dfa",
+      "translation": "文字列 `s` の先頭から `a` 文字を返します。"
+    },
+    "prn": {
+      "source": "core/String.carp",
+      "line": 34,
+      "original": "Converts a string to a string for printing.",
+      "source_html_sha256": "5f1ce98f92092d65732b1923f8d3b3717385bb36b80ac21d249ae43735421f8e",
+      "translation": "文字列を、表示用の文字列に変換します。"
+    },
+    "random-sized": {
+      "source": "core/Random.carp",
+      "line": 102,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "repeat": {
+      "source": "core/String.carp",
+      "line": 83,
+      "original": "Returns a new string which is `inpt` repeated `n` times.",
+      "source_html_sha256": "c041630888e5b8a8a47f9b86cea6b798385a0ebca4496412b7425d7f8467fcd0",
+      "translation": "`inpt` を `n` 回繰り返した、新しい文字列を返します。"
+    },
+    "reverse": {
+      "source": "core/String.carp",
+      "line": 111,
+      "original": "Produce a new string which is `s` reversed.",
+      "source_html_sha256": "984bd394225c618df740b7a003602004423c152ee2d1e5feedd291c802bf6226",
+      "translation": "`s` の順序を反転した、新しい文字列を作成します。"
+    },
+    "slice": {
+      "source": "core/String.carp",
+      "line": 123,
+      "original": "Return part of a string, beginning at index `a` and ending at index `b`.",
+      "source_html_sha256": "0f76475f163521462e4805110a6a5848cc5ba27fa5ed4a7b38c83fc7453a9253",
+      "translation": "文字列のうち、インデックス `a` から始まり、インデックス `b` で終わる部分を返します。"
+    },
+    "split-by": {
+      "source": "core/String.carp",
+      "line": 254,
+      "original": "splits a string by separators.",
+      "source_html_sha256": "08d578a76df2dcb2b1ec935726386ff9ec2be4e5fcc752e54be12a30c0c93d70",
+      "translation": "区切り文字を使って文字列を分割します。"
+    },
+    "starts-with?": {
+      "source": "core/String.carp",
+      "line": 151,
+      "original": "Check if the string `s` begins with the string `sub`.",
+      "source_html_sha256": "8585efb746ed2585af3d2fd3615157befe79c1b1675941a4a7084f00c3e48c15",
+      "translation": "文字列 `s` が文字列 `sub` で始まるかどうかを調べます。"
+    },
+    "str": {
+      "source": "core/String.carp",
+      "line": 32,
+      "original": "Converts a string to a string (identity).",
+      "source_html_sha256": "305499c4a954f5446d3402f4c7807f7292c61ca050f6e59bc68d9cf1bd1af14f",
+      "translation": "文字列を文字列に変換します (恒等操作)。"
+    },
+    "string-set!": {
+      "source": "core/String.carp",
+      "line": 57,
+      "original": "Sets the character at the specified index.",
+      "source_html_sha256": "2a5ba28462b6e0e61390e90d97e119634b048d00c9b2b2b2f4b45a1735bcfb09",
+      "translation": "指定したインデックスの文字を設定します。"
+    },
+    "string-set-at!": {
+      "source": "core/String.carp",
+      "line": 59,
+      "original": "Sets the string at the specified index.",
+      "source_html_sha256": "6f7eedca074d41d500dabe0d11f07a01190432fef625a7d169c430d686bd70df",
+      "translation": "指定したインデックスに文字列を設定します。"
+    },
+    "suffix": {
+      "source": "core/String.carp",
+      "line": 147,
+      "original": "Returns the suffix string starting at the `b`th character.",
+      "source_html_sha256": "b18510e2c8b5bc95d5e7cc4d38ffa49db2e9518103a687ade6cb557ff595c67a",
+      "translation": "`b` 番目の文字から始まる末尾の文字列を返します。"
+    },
+    "sum-length": {
+      "source": "core/String.carp",
+      "line": 180,
+      "original": "Returns the sum of lengths from an array of Strings.",
+      "source_html_sha256": "68be251a21a1dd5b79b455ddd0f00ec3718a0591b05b5963d55a6c3e5a116a71",
+      "translation": "`String` の配列に含まれる文字列の長さの合計を返します。"
+    },
+    "tail": {
+      "source": "core/String.carp",
+      "line": 52,
+      "original": "Returns the tail of a string (all characters except the first).",
+      "source_html_sha256": "873e1b8893060e87204c18147b891648a8ade7c926fc891619c66f9ea81ca624",
+      "translation": "文字列の先頭の文字を除いた、残りすべての文字を返します。"
+    },
+    "to-bytes": {
+      "source": "core/String.carp",
+      "line": 68,
+      "original": "Returns an array of bytes from a string.",
+      "source_html_sha256": "9056ea6f4e8801f8adc6e69e4589044a52fd2801e1fa342e9ae6d299f01d20d9",
+      "translation": "文字列からバイトの配列を返します。"
+    },
+    "trim": {
+      "source": "core/Pattern.carp",
+      "line": 186,
+      "original": "trims whitespace from both sides of a string.",
+      "source_html_sha256": "55c68cfb774e108a72dcc58747eacbb8d9a1753959b6c5fc7c896f44c369b489",
+      "translation": "文字列の両端から空白文字を取り除きます。"
+    },
+    "trim-left": {
+      "source": "core/Pattern.carp",
+      "line": 171,
+      "original": "trims whitespace from the left of a string.",
+      "source_html_sha256": "8606d011bc784ef72912275e0d03ce512c14c042fa40d991ddb8ea78d3e8a1f4",
+      "translation": "文字列の左端から空白文字を取り除きます。"
+    },
+    "trim-right": {
+      "source": "core/Pattern.carp",
+      "line": 179,
+      "original": "trims whitespace from the right of a string.",
+      "source_html_sha256": "6fb02e6c5074751e9d3b0ab34abfd78179d985dca74e4cb2d8793036503385fe",
+      "translation": "文字列の右端から空白文字を取り除きます。"
+    },
+    "unsafe-format": {
+      "source": "core/String.carp",
+      "line": 54,
+      "original": "Formats a string. Unchecked: `s` must hold exactly one format directive. Prefer `fmt`, which checks that at compile time.",
+      "source_html_sha256": "e2fb399c043d0579a2e80f8054373ac0fb890175724fb03dc65b85f0d939be6f",
+      "translation": "文字列を書式化します。検査は行いません。`s` には変換指定 (directive) がちょうど 1 つ含まれている必要があります。コンパイル時にこれを検査する [`fmt`](../../docs/Format_Strings-JP.html) の使用を推奨します。"
+    },
+    "upper?": {
+      "source": "core/Pattern.carp",
+      "line": 140,
+      "original": "checks whether a string is all uppercase.",
+      "source_html_sha256": "e1ab9f02b37b0fa489c11fc30de62b5529896f06712396d0817611501b959a99",
+      "translation": "文字列がすべて大文字かどうかを調べます。"
+    },
+    "words": {
+      "source": "core/String.carp",
+      "line": 267,
+      "original": "splits a string into words.",
+      "source_html_sha256": "2796c9492344cc632f681af05f585832ed05fd1f338f67f3546771c7dba5a31b",
+      "translation": "文字列を単語に分割します。"
+    },
+    "zero": {
+      "source": "core/String.carp",
+      "line": 176,
+      "original": "The empty string.",
+      "source_html_sha256": "36163fe2ab620294c1f98d1b5bbc1926becc8fef9ab4c524d0953a85d8f45668",
+      "translation": "空文字列です。"
+    }
+  }
+}

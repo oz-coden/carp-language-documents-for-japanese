@@ -202,10 +202,14 @@ def stage(root, destination, baseurl):
     shutil.copyfile(root / manifest['stylesheet']['path'], target / 'carp_style.css')
     shutil.copyfile(root / 'api/assets/japanese.css', target / 'japanese.css')
 
-    def rewrite(value):
-        for page, source in manifest['english_source_fallbacks'].items():
-            value = value.replace(f'./{page}', github + source)
-        return value
+    def rewrite(value, info=None):
+        targets = {f'./{page}': github + source
+                   for page, source in manifest['english_source_fallbacks'].items()}
+        targets.update((info or {}).get('link_rewrites', {}))
+        value = re.sub(r'(\bhref=[\"\'])([^\"\']+)([\"\'])',
+                       lambda m: m[1] + targets.get(m[2], m[2]) + m[3], value)
+        return re.sub(r'(?<=\]\()([^\s)]+)(?=\))',
+                      lambda m: targets.get(m[0], m[0]), value)
 
     navigation = ('<nav aria-label="ドキュメントの案内">'
                   f'<a href="{prefix}/">ヘルプ索引</a> · '
@@ -250,10 +254,13 @@ def stage(root, destination, baseurl):
 
     for name, (info, overview, entries, translations) in modules.items():
         body = f'<h1>{html.escape(name)}</h1><div class="module-description">'
-        body += markdown(rewrite(translations['module_documentation']['translation']), 'overview')
+        body += markdown(rewrite(translations['module_documentation']['translation'], info), 'overview')
         body += '</div>'
+        for note_index, note in enumerate(translations['module_documentation'].get('notes', [])):
+            body += '<aside class="translator-note">' + markdown(
+                '**訳注:** ' + note, f'overview_note_{note_index}') + '</aside>'
         body += ('<details class="original" lang="en"><summary lang="ja">モジュール概要の原文</summary>'
-                 + literal(rewrite(overview)) + '</details>')
+                 + literal(rewrite(overview, info)) + '</details>')
         body += ('<nav class="api-members" aria-label="API 一覧">' + ' · '.join(
             f'<a href="#{quote(key, safe="")}">{html.escape(key)}</a>' for key in entries) + '</nav>')
         for number, (key, entry) in enumerate(entries.items()):
@@ -270,7 +277,7 @@ def stage(root, destination, baseurl):
                 body += f'<pre class="args">{html.escape(entry["usage"])}</pre>'
             body += '<div class="doc">'
             if record['translation']:
-                body += markdown(rewrite(record['translation']), number)
+                body += markdown(rewrite(record['translation'], info), number)
             else:
                 body += '<p class="undocumented">この項目の原文には説明文がありません。</p>'
             body += '</div>'
@@ -281,7 +288,7 @@ def stage(root, destination, baseurl):
                      '固定版の定義・説明文(英語)</a></p>')
             if text(entry['documentation']):
                 body += ('<details class="original" lang="en"><summary lang="ja">説明文の原文</summary>'
-                         + literal(rewrite(entry['documentation'])) + '</details>')
+                         + literal(rewrite(entry['documentation'], info)) + '</details>')
             body += '</section>'
         body += (f'<footer><a href="https://github.com/oz-coden/carp-language-documents-for-japanese/blob/main/{info["translation"]}">'
                  '日本語訳のデータ</a> · '

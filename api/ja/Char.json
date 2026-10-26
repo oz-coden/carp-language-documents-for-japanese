@@ -1,0 +1,174 @@
+{
+  "module": "Char",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Char.carp",
+    "line": 3,
+    "original": "is the single character data type.",
+    "source_html_sha256": "e26ceee3c1ef76ffd4e41489c870980e3092cdfd9419e8e04d1e691a17420a02",
+    "translation": "1 文字を表すデータ型です。"
+  },
+  "entries": {
+    "<": {
+      "source": "core/Char.carp",
+      "line": 6,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "=": {
+      "source": "core/Char.carp",
+      "line": 5,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    ">": {
+      "source": "core/Char.carp",
+      "line": 7,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "alpha?": {
+      "source": "core/Char.carp",
+      "line": 45,
+      "original": "tests whether a character is alphabetical.",
+      "source_html_sha256": "dfd0c06c703bfc23aaf6cf6c5b5727d1b6b8aaa9480982f015f7fdd1601b8d45",
+      "translation": "文字が英字かどうかを調べます。"
+    },
+    "alphanum?": {
+      "source": "core/Char.carp",
+      "line": 53,
+      "original": "tests whether a character is alphanumerical.",
+      "source_html_sha256": "aedadd5595f081f86bd49b83699302d3a9f4b537188ce82078b75e4fb04dead3",
+      "translation": "文字が英数字かどうかを調べます。"
+    },
+    "blit": {
+      "source": "core/Blitable.carp",
+      "line": 18,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "copy": {
+      "source": "core/Char.carp",
+      "line": 12,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "from-byte": {
+      "source": "core/Char.carp",
+      "line": 11,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "from-int": {
+      "source": "core/Char.carp",
+      "line": 9,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "hash": {
+      "source": "core/Map.carp",
+      "line": 29,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "lower-case?": {
+      "source": "core/Char.carp",
+      "line": 37,
+      "original": "tests whether a character is lower case.",
+      "source_html_sha256": "4dfb66223ec90aaf9000bb7789c3b305d5c277ad0a4f4718f9fddcf5facd8b01",
+      "translation": "文字が小文字かどうかを調べます。"
+    },
+    "meaning": {
+      "source": "core/Char.carp",
+      "line": 21,
+      "original": "converts a numerical char into the appropriate number (e.g. from `\\1` to `1`).",
+      "source_html_sha256": "adda88328379fcf79e9c7739e65c0d1eb06cb56976713ebb4cd8ae557f65dd1a",
+      "translation": "数字を表す文字を、対応する数値に変換します。例えば、`\\1` を `1` に変換します。"
+    },
+    "num?": {
+      "source": "core/Char.carp",
+      "line": 49,
+      "original": "tests whether a character is numerical.",
+      "source_html_sha256": "f3fac63130baaf579f55cad221d5cd847e2749c863b8c58d2d87c2a3006e37a0",
+      "translation": "文字が数字かどうかを調べます。"
+    },
+    "prn": {
+      "source": "core/String.carp",
+      "line": 419,
+      "original": "Converts a character to a string for printing.",
+      "source_html_sha256": "b9b7da9c65b7c744e16c441e20c21949c33d73909f2a9e559547a39347033f2a",
+      "translation": "文字を、表示用の文字列に変換します。"
+    },
+    "random": {
+      "source": "core/Random.carp",
+      "line": 92,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random-between": {
+      "source": "core/Random.carp",
+      "line": 96,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "str": {
+      "source": "core/String.carp",
+      "line": 416,
+      "original": "Converts a character to a string.",
+      "source_html_sha256": "de120161826dd9899a42071eca35e05a68c3ae07b2aa806f788d8f6301c43ceb",
+      "translation": "文字を文字列に変換します。"
+    },
+    "to-byte": {
+      "source": "core/Char.carp",
+      "line": 10,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "to-int": {
+      "source": "core/Char.carp",
+      "line": 8,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "unsafe-format": {
+      "source": "core/String.carp",
+      "line": 422,
+      "original": "Formats a character. Unchecked: `s` must hold exactly one format directive. Prefer `fmt`, which checks that at compile time.",
+      "source_html_sha256": "4e3a1b26be0198968fe48c46effe16e25c10f7857127a885d36684c1e8c4b1b4",
+      "translation": "文字を書式化します。検査は行いません。`s` には変換指定 (directive) がちょうど 1 つ含まれている必要があります。コンパイル時にこれを検査する [`fmt`](../../docs/Format_Strings-JP.html) の使用を推奨します。"
+    },
+    "upper-case?": {
+      "source": "core/Char.carp",
+      "line": 41,
+      "original": "tests whether a character is upper case.",
+      "source_html_sha256": "f7aebf9c0f10d9939f30c214d06febfedef85e166d6276eeec75dcf1e82d9fa1",
+      "translation": "文字が大文字かどうかを調べます。"
+    },
+    "whitespace?": {
+      "source": "core/Char.carp",
+      "line": 57,
+      "original": "tests whether a character is a whitespace character.",
+      "source_html_sha256": "5d61df25938ce0a517bf5b5b23bd33b7ca00cb4905a252ffac78a33020933e3b",
+      "translation": "文字が空白文字かどうかを調べます。"
+    },
+    "zero": {
+      "source": "core/Char.carp",
+      "line": 64,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}

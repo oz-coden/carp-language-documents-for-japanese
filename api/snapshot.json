@@ -16,18 +16,29 @@
     "core/Blitable.carp": "50c3836afefa793d504b6c1e0fa21d77abfcf31d",
     "core/Bool.carp": "6d6a816b75b0d7edd3bbd78d3162676aa921760f",
     "core/BoolExtras.carp": "603965b065f79bd6b7101f57511d79deb1c4896c",
+    "core/Char.carp": "25adfd6756a5dc30dd12e26bfcc7bc6754c136ab",
+    "core/Color.carp": "cd0ae661da4713b5f20fea60c1302c76165bf036",
     "core/Control.carp": "8de7ddc08fb5cb0b63e388f26a4b8f89d5f4e736",
     "core/Function.carp": "75acae7db397a9be0509ce8bd39a2595f3e2dc4f",
+    "core/IO.carp": "7307d77ef0a4c024239bb3f326b54201bf57e402",
     "core/Map.carp": "859f4ca860d11051269537293416be40193ffb50",
     "core/Maybe.carp": "e73cae51252b8100e4378c66086c50130aea1b43",
+    "core/Pattern.carp": "d8cfdfd5939ea3d0aca61b0021d5ea1a7d6f3869",
+    "core/Random.carp": "68ecb0cd895755592fea702210e2431a6d15ac47",
     "core/Result.carp": "4a402f185a76c16d981204d8595d959b570dca4e",
     "core/Sort.carp": "813de0dd3e72eb8a53a1fc097fc230730cd80029",
+    "core/StaticArray.carp": "7fca9e063ea717521bec2b673ba71c6675ebd28b",
     "core/String.carp": "29691bb9fadfbf899ded4dd0e30b49baa43e7407",
+    "core/System.carp": "8cb09df4bbeadeb58a3ea6a4c7e332fd61c75659",
+    "core/Tuples.carp": "754754ce054b10a5d32d7cc35fe022f633849f05",
+    "core/carp_system.h": "fadb5cd128fb9260f77ce409289d9007fb260910",
     "docs/core/carp_style.css": "0ed34680f8e0c08dba0d6a30f4a5aba53dc03366",
     "docs/core/generate_core_docs.carp": "26c20d0f1a032ce4d6b5f6fb3bee0873d112958f",
     "docs/core/logo.png": "44aa36cd7278d90170ae0c3ade124c13fc1fa42d",
     "src/ArrayTemplates.hs": "2927c96296b05666840fdd88ba16c677ed2ac5ca",
+    "src/Deftype.hs": "8e4f4786f5b28c45bb80db83cd65eb4648f2ba7e",
     "src/RenderDocs.hs": "092002e51df8cc2541fe8c3b34960e229eb07cd9",
+    "src/StaticArrayTemplates.hs": "8aa625a8ac1525ad2becd762712c1f4cea7fe169",
     "src/Sumtypes.hs": "d7dbf01921ef6fcf2b674b42ffe99d1ad1640da2"
   },
   "modules": {
@@ -44,6 +55,11 @@
       "snapshot_sha256": "3fbdb124d672b97475c872e82d4c8987643b1666cf417685c3568d720e0b1021",
       "translation": "api/ja/Bool.json"
     },
+    "Char": {
+      "snapshot": "api/upstream/Char.html",
+      "snapshot_sha256": "a535c7c5d58e1d84998b04662ed952a949bb5ce2d952f86d213c27d9284c8b29",
+      "translation": "api/ja/Char.json"
+    },
     "Control": {
       "snapshot": "api/upstream/Control.html",
       "snapshot_sha256": "d766cfcc9f6bc21b432dcedb9e8db35dd59a249f71cd740e38f1264b8cfcf55c",
@@ -54,15 +70,68 @@
       "snapshot_sha256": "1bdcc073393efb9fa1bc35dc8ac13f2eed386adead809de98573bb90749abf56",
       "translation": "api/ja/Function.json"
     },
+    "IO": {
+      "snapshot": "api/upstream/IO.html",
+      "snapshot_sha256": "a0168d949afbf06347e58f6671c29c0fcd9c54fe7bbca6b8e9743d9bf218f554",
+      "translation": "api/ja/IO.json",
+      "link_rewrites": {
+        "#file": "https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/IO.carp#L3",
+        "#stdin": "./IO.Raw.html#stdin",
+        "#stdout": "./IO.Raw.html#stdout",
+        "#stderr": "./IO.Raw.html#stderr",
+        "#eof": "./IO.Raw.html#EOF"
+      }
+    },
+    "IO.Raw": {
+      "snapshot": "api/upstream/IO.Raw.html",
+      "snapshot_sha256": "8956acab99d2b68c704186f21722d9f040187953913fa2286da85c5a2a489e77",
+      "translation": "api/ja/IO.Raw.json",
+      "link_rewrites": {
+        "#file": "https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/IO.carp#L3",
+        "#open-file": "./IO.html#open-file",
+        "#read-file": "./IO.html#read-file",
+        "#unsafe-read-file": "./IO.html#unsafe-read-file",
+        "#write-file": "./IO.html#write-file",
+        "#eof": "#EOF",
+        "#seek-set": "#SEEK-SET",
+        "#seek-cur": "#SEEK-CUR",
+        "#seek-end": "#SEEK-END"
+      }
+    },
+    "Map": {
+      "snapshot": "api/upstream/Map.html",
+      "snapshot_sha256": "6f98d7b84b3a1f7e94d5d7015ee56b2d16431e586aa7b65514c61f036439bd50",
+      "translation": "api/ja/Map.json"
+    },
     "Maybe": {
       "snapshot": "api/upstream/Maybe.html",
       "snapshot_sha256": "8cc3b79621143fedd909afb3c8f664bd47c54adb05df5f03999a1a73fffa14cb",
       "translation": "api/ja/Maybe.json"
     },
+    "Pair": {
+      "snapshot": "api/upstream/Pair.html",
+      "snapshot_sha256": "8af9436ed6350de9050a6c4fc41e17a231cb9e3714096307314fa7c8e2e67b6e",
+      "translation": "api/ja/Pair.json"
+    },
     "Result": {
       "snapshot": "api/upstream/Result.html",
       "snapshot_sha256": "6e244e82b4dd51798d0552b60581e3dde74ded3f74862322234fe9b793b2d119",
       "translation": "api/ja/Result.json"
+    },
+    "StaticArray": {
+      "snapshot": "api/upstream/StaticArray.html",
+      "snapshot_sha256": "e15630f76607e5e6b9e52dccf43ced588aedb23f82316b54110d10cd973244b2",
+      "translation": "api/ja/StaticArray.json"
+    },
+    "String": {
+      "snapshot": "api/upstream/String.html",
+      "snapshot_sha256": "dbb99a362985bf5be53ca9737b36df92d1cbb4f9c7527eb62031ecda73c1df19",
+      "translation": "api/ja/String.json"
+    },
+    "System": {
+      "snapshot": "api/upstream/System.html",
+      "snapshot_sha256": "8017344ca3f7f6d4b699eeb2f83443a2bba23e964a5442fa669c8bf7e16175dc",
+      "translation": "api/ja/System.json"
     }
   },
   "stylesheet": {
@@ -70,9 +139,7 @@
     "sha256": "cc1c99b5555f8d0618d3b70f84bdc43496fefc4a4f7f3c7cbc5404f9ab954d99"
   },
   "logo_url": "https://raw.githubusercontent.com/carp-lang/Carp/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/logo.png",
-  "english_source_fallbacks": {
-    "StaticArray.html": "core/StaticArray.carp"
-  },
+  "english_source_fallbacks": {},
   "index": {
     "snapshot": "api/upstream/core_index.html",
     "snapshot_sha256": "953488fa8c39e2229578733914bafeee83e313b962113e4e343fdacf45b4df2d",

@@ -5,7 +5,7 @@
     "original": "is the indexable collection data structure.\n\nIts literal uses brackets, so an array of integers would look like this:\n`[1 2 3]`. It provides both a functional and an imperative API, and is one of\nthe core data structures of Carp. It is heap-allocated, for a stack-allocated\nvariant you might want to check out [`StaticArray`](./StaticArray.html).",
     "source": "core/Array.carp",
     "line": 21,
-    "translation": "インデックスで要素にアクセスできるコレクション型のデータ構造です。\n\n配列リテラルには角括弧を使います。例えば、整数の配列は `[1 2 3]` と記述します。関数型と命令型の両方の API を備えており、Carp の主要なデータ構造の一つです。ヒープに割り当てられます。スタックに割り当てるものが必要な場合は、[`StaticArray`(英語)](./StaticArray.html) も参照してください。",
+    "translation": "インデックスで要素にアクセスできるコレクション型のデータ構造です。\n\n配列リテラルには角括弧を使います。例えば、整数の配列は `[1 2 3]` と記述します。関数型と命令型の両方の API を備えており、Carp の主要なデータ構造の一つです。ヒープに割り当てられます。スタックに割り当てるものが必要な場合は、[`StaticArray`](./StaticArray.html) も参照してください。",
     "source_html_sha256": "8bf551487ef8f7cc98e3320907de804e45a8a3137962b45fb066eb1042c75ef7"
   },
   "entries": {

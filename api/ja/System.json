@@ -1,0 +1,303 @@
+{
+  "module": "System",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/System.carp",
+    "line": 5,
+    "original": "is a module for wrapping system calls and other OS utilities.",
+    "source_html_sha256": "d7bf1388df94d856991da20116a68bae684147a05ee6eb6c0b292a867c68e4ea",
+    "translation": "システムコールや、その他の OS ユーティリティをラップするモジュールです。"
+  },
+  "entries": {
+    "EACCES": {
+      "source": "core/System.carp",
+      "line": 42,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EEXIST": {
+      "source": "core/System.carp",
+      "line": 43,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EINTR": {
+      "source": "core/System.carp",
+      "line": 58,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EINVAL": {
+      "source": "core/System.carp",
+      "line": 44,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EIO": {
+      "source": "core/System.carp",
+      "line": 45,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EISDIR": {
+      "source": "core/System.carp",
+      "line": 46,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ELOOP": {
+      "source": "core/System.carp",
+      "line": 47,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EMFILE": {
+      "source": "core/System.carp",
+      "line": 48,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ENAMETOOLONG": {
+      "source": "core/System.carp",
+      "line": 49,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ENOENT": {
+      "source": "core/System.carp",
+      "line": 50,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ENOMEM": {
+      "source": "core/System.carp",
+      "line": 51,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ENOSPC": {
+      "source": "core/System.carp",
+      "line": 52,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ENOSR": {
+      "source": "core/System.carp",
+      "line": 53,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ENOTDIR": {
+      "source": "core/System.carp",
+      "line": 54,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ENXIO": {
+      "source": "core/System.carp",
+      "line": 55,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EOVERFLOW": {
+      "source": "core/System.carp",
+      "line": 56,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "EROFS": {
+      "source": "core/System.carp",
+      "line": 57,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "abort": {
+      "source": "core/System.carp",
+      "line": 31,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "args": {
+      "source": "core/System.carp",
+      "line": 19,
+      "original": "Represents the command line arguments.",
+      "source_html_sha256": "786651c0144e4f31c6fe07e8255368843a849115f17647598356b412192fef82",
+      "translation": "コマンドライン引数を表します。"
+    },
+    "carp-init-globals": {
+      "source": "core/System.carp",
+      "line": 7,
+      "original": "Initializes all global variables (in correct order, based on interdependencies). Called automatically by `main` if the project is compiled as an executable. Client code needs to call this function manually when using a library written in Carp.",
+      "source_html_sha256": "dc09a48b571b4bbabe98a181598d367eb2507bf60770e01dfc58c128167b1ea8",
+      "translation": "すべてのグローバル変数を、相互の依存関係に基づく正しい順序で初期化します。プロジェクトを実行ファイルとしてコンパイルした場合は、`main` が自動的に呼び出します。Carp で書かれたライブラリを利用する場合は、利用側のコードでこの関数を手動で呼び出す必要があります。"
+    },
+    "errno": {
+      "source": "core/System.carp",
+      "line": 37,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "error-text": {
+      "source": "core/System.carp",
+      "line": 38,
+      "original": "returns a description for the last function from the C standard library to set System.errno. Please note that System.errno may change if strerror() does not know it (and thus sets it to EINVAL), so consider copying it before, if you should need it. Calling error-text after a successful call will return 'SUCCESS' and leave System.errno unchanged.",
+      "source_html_sha256": "f9e75207162f9b01967c61a12c2fe25b3179e9c85192c6b1aa3a0cb15e8bdec8",
+      "translation": "C 標準ライブラリの関数のうち、最後に `System.errno` を設定した関数についての説明を返します。`strerror()` がその値を認識できない場合、`System.errno` が `EINVAL` に変更される可能性があることに注意してください。その値が必要な場合は、事前にコピーすることを検討してください。呼び出しが成功した後に `error-text` を呼び出すと、`'SUCCESS'` を返し、`System.errno` は変更しません。",
+      "notes": [
+        "固定版の実装は、現在の `System.errno` を `strerror` に渡すだけです。直前の処理が成功したかどうかの検査や、`System.errno` の初期化は行いません。本文の成功後の返り値についての記述は原文を保持しています。この注記は `core/System.carp` のソースの確認に基づきます。"
+      ]
+    },
+    "exit": {
+      "source": "core/System.carp",
+      "line": 60,
+      "original": "exits the program with the supplied exit code (thin wrapper for the C standard library).",
+      "source_html_sha256": "f9ee902c1cfb13717e330306f6f911bfa590c6b427eedbf704ec94832b58b18f",
+      "translation": "指定した終了コードでプログラムを終了します。C 標準ライブラリの薄いラッパーです。"
+    },
+    "fork": {
+      "source": "core/System.carp",
+      "line": 21,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "get-exit-status": {
+      "source": "core/System.carp",
+      "line": 23,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "nanotime": {
+      "source": "core/System.carp",
+      "line": 11,
+      "original": "Gets the current system time in nanoseconds as a uint64_t.",
+      "source_html_sha256": "cb394339f00f4c89dce80d4c0e17497cc3a7fe67fdd0f91452c438d8b0621f2f",
+      "translation": "現在のシステム時刻を、ナノ秒単位の `uint64_t` として取得します。",
+      "notes": [
+        "固定版の [Windows 向け実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/carp_system.h#L18) は `0` を返します。この注記はソースの確認に基づきます。"
+      ]
+    },
+    "signal": {
+      "source": "core/System.carp",
+      "line": 24,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "signal-abort": {
+      "source": "core/System.carp",
+      "line": 25,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "signal-fpe": {
+      "source": "core/System.carp",
+      "line": 26,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "signal-ill": {
+      "source": "core/System.carp",
+      "line": 27,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "signal-int": {
+      "source": "core/System.carp",
+      "line": 28,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "signal-segv": {
+      "source": "core/System.carp",
+      "line": 29,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "signal-term": {
+      "source": "core/System.carp",
+      "line": 30,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "sleep-micros": {
+      "source": "core/System.carp",
+      "line": 16,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "sleep-seconds": {
+      "source": "core/System.carp",
+      "line": 15,
+      "original": "Sleeps for a specified number of microseconds.",
+      "source_html_sha256": "b634654bd099d2aee668007be8858cf2e16f476e778790ca158676998a2835a8",
+      "translation": "指定したマイクロ秒数の間、処理を休止します。",
+      "notes": [
+        "固定版の `core/System.carp` では、マイクロ秒についての説明も `sleep-seconds` に設定され、先の秒単位の説明を上書きしています。非 Windows 向けの[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/carp_system.h#L22) は `sleep-seconds` で `sleep(t)`、`sleep-micros` で `usleep(t)` を呼び出します。本文は生成された原文を保持しています。この注記はソースの確認に基づき、実行確認は行っていません。",
+        "固定版の [Windows 向け実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/carp_system.h#L9) では、`sleep-seconds` と `sleep-micros` の本体は `TODO` のままで空です。"
+      ]
+    },
+    "strerror": {
+      "source": "core/System.carp",
+      "line": 34,
+      "original": "get error description for error code in standard C library (thin wrapper for the C standard library).",
+      "source_html_sha256": "8a7c2cd7980346c77b6f05126f7509d47b617360b37de76a2297497de405bcd6",
+      "translation": "C 標準ライブラリのエラーコードに対応するエラーの説明を取得します。C 標準ライブラリの薄いラッパーです。"
+    },
+    "strerror-": {
+      "source": "core/System.carp",
+      "line": 33,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "system": {
+      "source": "core/System.carp",
+      "line": 17,
+      "original": "Performs a system command.",
+      "source_html_sha256": "f0b831d29f45d38093f0fb41f551a9bf18c08fa7b556037b1e93b793b7cec5b5",
+      "translation": "システムコマンドを実行します。"
+    },
+    "time": {
+      "source": "core/System.carp",
+      "line": 9,
+      "original": "Gets the current system time as an integer.",
+      "source_html_sha256": "8bd763a911ef67ea3463464b8584d2faa48ca8d94b8bef96260c607e8d3f96a5",
+      "translation": "現在のシステム時刻を整数として取得します。"
+    },
+    "wait": {
+      "source": "core/System.carp",
+      "line": 22,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}
