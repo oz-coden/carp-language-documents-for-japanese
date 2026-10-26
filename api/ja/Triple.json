@@ -63,7 +63,7 @@
       "line": 249,
       "original": "deletes a `Triple`. Should usually not be called manually.",
       "source_html_sha256": "763366adbd8ec08309368e45ecf5c8d3c559354fe90c4d6c49bfaf21a5c63469",
-      "translation": "`Triple` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`Triple` を削除します。通常、手動で呼び出さないでください。"
     },
     "init": {
       "source": "src/Deftype.hs",

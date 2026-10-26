@@ -63,7 +63,7 @@
       "line": 249,
       "original": "deletes a `Vector3`. Should usually not be called manually.",
       "source_html_sha256": "bd231f6a5de99fb7841fb4c9a05bf7cc95ca85414d2ee5db5094ac7cce49041d",
-      "translation": "`Vector3` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`Vector3` を削除します。通常、手動で呼び出さないでください。"
     },
     "dist": {
       "source": "core/Vector.carp",

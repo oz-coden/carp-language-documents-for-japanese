@@ -27,7 +27,7 @@
       "line": 249,
       "original": "deletes a `Phantom`. Should usually not be called manually.",
       "source_html_sha256": "59fe7a98ce352b18381975cf76745ae8382afff5d563cf4cbd0b0a31c469995e",
-      "translation": "`Phantom` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`Phantom` を削除します。通常、手動で呼び出さないでください。"
     },
     "ensure": {
       "source": "core/Phantom.carp",

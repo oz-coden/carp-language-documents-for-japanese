@@ -8,6 +8,8 @@
 
 Carp 標準ライブラリのリファレンスは [オンライン(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html) で参照できますが、Carp のインストール先にある `docs/core` ディレクトリにも、ローカルのコピーが含まれているはずです。
 
+> 訳注: この翻訳と同じ対象版の [日本語 API リファレンス](https://github.oz-coden.com/carp-language-documents-for-japanese/api/core/index.html) も参照できます。
+
 [短い Carp プログラム(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/docs/core/generate_core_docs.carp) を実行して、ローカルのコピーを更新できます。このプログラムは、`./docs/core` ではなく Carp のインストール先ディレクトリから実行する必要があることに注意してください。
 
 ```

@@ -121,7 +121,7 @@
       "original": "deletes an array. This function should usually not be called manually.",
       "source": "src/ArrayTemplates.hs",
       "line": 513,
-      "translation": "配列を削除します。通常、この関数を手動で呼び出す必要はありません。",
+      "translation": "配列を削除します。通常、この関数を手動で呼び出さないでください。",
       "source_html_sha256": "9fca57e125398825825dc74ca22f1a3a34ab088a1d4b8c40d62d40e0153b1f1a"
     },
     "drop": {

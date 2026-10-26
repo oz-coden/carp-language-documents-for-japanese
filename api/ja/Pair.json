@@ -56,7 +56,7 @@
       "line": 249,
       "original": "deletes a `Pair`. Should usually not be called manually.",
       "source_html_sha256": "fc81ce20e20f3efc3121143a59f09cde9cd3b38d0a34b1f56cf8fbd401dcff93",
-      "translation": "`Pair` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`Pair` を削除します。通常、手動で呼び出さないでください。"
     },
     "hash": {
       "source": "core/Map.carp",

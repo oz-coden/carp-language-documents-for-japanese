@@ -39,6 +39,8 @@ Carp の主な特徴は、次のとおりです。
 - [Carp 言語ガイド](docs/LanguageGuide-JP.md): 言語の構文と意味論を説明しています。
 - [Core のドキュメント(英語)](http://carp-lang.github.io/carp-docs/core/core_index.html): 標準ライブラリのドキュメントです。
 
+> 訳注: この翻訳と同じ対象版の [日本語 API リファレンス](https://github.oz-coden.com/carp-language-documents-for-japanese/api/core/index.html) も参照できます。
+
 [Gitter のチャットに参加する(英語)](https://gitter.im/eriksvedang/Carp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > 訳注: この Gitter は Carp 本家のチャットです。日本語訳に関する報告・相談は、[このリポジトリの Issue](https://github.com/oz-coden/carp-language-documents-for-japanese/issues) へお願いします。

@@ -98,7 +98,7 @@
       "line": 73,
       "original": "finds all match groups of a pattern in a string as a nested\narray.\n\nReturns `[]` if it doesn’t find a matching pattern.",
       "source_html_sha256": "6bec4892056c3d17787b455221ab46b504c0da6ef3b8cdfece8434aeb506747f",
-      "translation": "文字列内でパターンに一致するすべてのグループを、入れ子の配列として返します。\n\n一致するパターンが見つからない場合は `[]` を返します。"
+      "translation": "文字列内でパターンのすべてのマッチグループを、入れ子の配列として返します。\n\n一致するパターンが見つからない場合は `[]` を返します。"
     },
     "match-from": {
       "source": "core/Pattern.carp",
@@ -112,7 +112,7 @@
       "line": 62,
       "original": "finds the match groups of the first match of a pattern in\na string.\n\nReturns `[]` if it doesn’t find a matching pattern.",
       "source_html_sha256": "507c1d9fb5c4d66d8288627dd07393e6c81eb50cf92a1d1443725712761ce482",
-      "translation": "文字列内でパターンに最初に一致する部分のグループを返します。\n\n一致するパターンが見つからない場合は `[]` を返します。"
+      "translation": "文字列内でパターンに最初に一致する部分のマッチグループを返します。\n\n一致するパターンが見つからない場合は `[]` を返します。"
     },
     "match-str": {
       "source": "core/Pattern.carp",
@@ -161,7 +161,7 @@
       "line": 78,
       "original": "finds all matches of a pattern in a string and replaces it\nby another pattern `n` times.\n\nThe substitute pattern can reference the original pattern by match group\nindices, such as `\\1`. This means that backslashes need to be double escaped.\n\nIf you want to replace all occurrences of the pattern, use `-1`.",
       "source_html_sha256": "1340daeed1011cf5bb46bbda9fafafbad9f465bdf46e1140dc7199c64a2ce2c4",
-      "translation": "文字列内でパターンに一致する部分をすべて見つけ、別のパターンで `n` 回置き換えます。\n\n置換パターンからは、`\\1` のような一致グループのインデックスを使って、元のパターンを参照できます。そのため、バックスラッシュを二重にエスケープする必要があります。\n\n一致する部分をすべて置き換える場合は、`-1` を使ってください。"
+      "translation": "文字列内でパターンに一致する部分をすべて見つけ、別のパターンで `n` 回置き換えます。\n\n置換パターンからは、`\\1` のようなマッチグループのインデックスを使って、元のパターンを参照できます。そのため、バックスラッシュを二重にエスケープする必要があります。\n\n一致する部分をすべて置き換える場合は、`-1` を使ってください。"
     }
   }
 }

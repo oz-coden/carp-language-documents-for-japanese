@@ -70,7 +70,7 @@
       "line": 249,
       "original": "deletes a `Quadruple`. Should usually not be called manually.",
       "source_html_sha256": "c7e1a9fb5d7565ec3d60cc2ac5d8092cd2f2ca8613e51a23f91f9ba6ee5c97e1",
-      "translation": "`Quadruple` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`Quadruple` を削除します。通常、手動で呼び出さないでください。"
     },
     "init": {
       "source": "src/Deftype.hs",

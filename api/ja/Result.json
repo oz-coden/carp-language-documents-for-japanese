@@ -55,7 +55,7 @@
       "original": "deletes a `Result`. This should usually not be called manually.",
       "source": "src/Sumtypes.hs",
       "line": 211,
-      "translation": "`Result` を削除します。通常、この関数を手動で呼び出す必要はありません。",
+      "translation": "`Result` を削除します。通常、この関数を手動で呼び出さないでください。",
       "source_html_sha256": "cc026c28fe5312385cd61bdbd808b62a8b0b4b49bc7c5c9cd1a8268f257afe93"
     },
     "error?": {

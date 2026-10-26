@@ -49,7 +49,7 @@
       "line": 249,
       "original": "deletes a `Map`. Should usually not be called manually.",
       "source_html_sha256": "43a439a09a5a8422fa2d94f6a04343c7a954aed639a398d52a0b92b27ede3c54",
-      "translation": "`Map` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`Map` を削除します。通常、手動で呼び出さないでください。"
     },
     "empty?": {
       "source": "core/Map.carp",

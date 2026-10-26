@@ -55,7 +55,7 @@
       "original": "deletes a `Maybe`. This should usually not be called manually.",
       "source": "src/Sumtypes.hs",
       "line": 211,
-      "translation": "`Maybe` を削除します。通常、この関数を手動で呼び出す必要はありません。",
+      "translation": "`Maybe` を削除します。通常、この関数を手動で呼び出さないでください。",
       "source_html_sha256": "f68f113adf45b054480779b6e12d4e9ad2e77e657485c63d528b510c50b06e3f"
     },
     "expect": {

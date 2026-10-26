@@ -299,12 +299,12 @@ def stage(root, destination, baseurl):
              '<details class="original" lang="en"><summary lang="ja">Core の案内文の原文</summary>'
              + literal(index_original) + '</details>'
              '<h2>日本語で参照できる API 文書</h2>'
-             '<ul>' + ''.join(f'<li><a href="{quote(name)}.html">{html.escape(name)}</a>'
-                             f' — {len(data[2])} 項目（説明文のある項目は翻訳済み）</li>'
-                             for name, data in modules.items()) + '</ul>'
              '<p>固定版の標準生成スクリプトが出力する 48 モジュールと、'
-             'グローバル定義 2 ページの説明文を翻訳しています。'
+             'グローバル定義 2 ページの日本語版です。'
              '原文に説明文がない項目は、その旨を表示します。</p>'
+             '<ul>' + ''.join(f'<li><a href="{quote(name)}.html">{html.escape(name)}</a>'
+                             f' — {len(data[2])} 項目</li>'
+                             for name, data in modules.items()) + '</ul>'
              f'<p class="source-link"><a href="{github}{index_record["source"]}#L{index_record["line"]}">'
              '固定版の案内文・生成対象(英語)</a></p>')
     (target / 'index.html').write_text(wrap('Core API 索引', index))

@@ -136,7 +136,7 @@
       "line": 782,
       "original": "reverses the key-value pairs in the map `m`.",
       "source_html_sha256": "49e57a4b508cddaea3cd938e970d12ec92843059478afd582c099fa360a29300",
-      "translation": "マップ `m` のキーと値のペアを逆にします。"
+      "translation": "マップ `m` のキーと値を入れ替えます。"
     },
     "shrink": {
       "source": "core/Map.carp",

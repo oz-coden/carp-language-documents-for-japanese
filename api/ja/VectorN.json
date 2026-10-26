@@ -49,7 +49,7 @@
       "line": 249,
       "original": "deletes a `VectorN`. Should usually not be called manually.",
       "source_html_sha256": "484f5ee6c95d72da61de093c23d45f81252089cc7ba79de6e137758f1a1f336d",
-      "translation": "`VectorN` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`VectorN` を削除します。通常、手動で呼び出さないでください。"
     },
     "dist": {
       "source": "core/Vector.carp",

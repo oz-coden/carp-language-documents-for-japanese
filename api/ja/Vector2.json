@@ -56,7 +56,7 @@
       "line": 249,
       "original": "deletes a `Vector2`. Should usually not be called manually.",
       "source_html_sha256": "383977ad6407f58030a172029b0090a1540adc8f19e37232b86290d2fd17414f",
-      "translation": "`Vector2` を削除します。通常、手動で呼び出す必要はありません。"
+      "translation": "`Vector2` を削除します。通常、手動で呼び出さないでください。"
     },
     "dist": {
       "source": "core/Vector.carp",
