@@ -1,0 +1,202 @@
+{
+  "module": "Quadruple",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Tuples.carp",
+    "line": 33,
+    "original": "is a tuple of length 4.",
+    "source_html_sha256": "90ca719faf15fe972e2447cf8bc75ad0b72bfcbca23206d522edfe4a8da0b85d",
+    "translation": "長さ 4 のタプル (tuple) です。"
+  },
+  "entries": {
+    "<": {
+      "source": "core/Tuples.carp",
+      "line": 41,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "=": {
+      "source": "core/Tuples.carp",
+      "line": 64,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    ">": {
+      "source": "core/Tuples.carp",
+      "line": 45,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "a": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `a` property of a `Quadruple`.",
+      "source_html_sha256": "ce23d360e1676640a7a81d15c32ca9e2640a10765df42f9e1dcee49b5919048a",
+      "translation": "`Quadruple` の `a` プロパティを取得します。"
+    },
+    "b": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `b` property of a `Quadruple`.",
+      "source_html_sha256": "e57265a829ed37ea7672a2465c534015e495e9999ed70dd389d0f94963dd5ccc",
+      "translation": "`Quadruple` の `b` プロパティを取得します。"
+    },
+    "c": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `c` property of a `Quadruple`.",
+      "source_html_sha256": "a6d6e8fa027dc9ef41e59bb591ef307e9052794e9dc1688b759dc0b41241c483",
+      "translation": "`Quadruple` の `c` プロパティを取得します。"
+    },
+    "copy": {
+      "source": "src/Deftype.hs",
+      "line": 259,
+      "original": "copies a `Quadruple`.",
+      "source_html_sha256": "541b99167bd5d8d973834131f5598517e78c7f48a3ccf0ce841618667fb2d88b",
+      "translation": "`Quadruple` をコピーします。"
+    },
+    "d": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `d` property of a `Quadruple`.",
+      "source_html_sha256": "b584e3155d6e621800e1332daf94bd41c08ad95aa73b9ec98f143ed15451d288",
+      "translation": "`Quadruple` の `d` プロパティを取得します。"
+    },
+    "delete": {
+      "source": "src/Deftype.hs",
+      "line": 249,
+      "original": "deletes a `Quadruple`. Should usually not be called manually.",
+      "source_html_sha256": "c7e1a9fb5d7565ec3d60cc2ac5d8092cd2f2ca8613e51a23f91f9ba6ee5c97e1",
+      "translation": "`Quadruple` を削除します。通常、手動で呼び出す必要はありません。"
+    },
+    "init": {
+      "source": "src/Deftype.hs",
+      "line": 228,
+      "original": "creates a `Quadruple`.",
+      "source_html_sha256": "6923402cb1b1a50da212e46073352f081d26cb29896bda6ee88acf2eb03d7bf2",
+      "translation": "`Quadruple` を作成します。"
+    },
+    "init-from-refs": {
+      "source": "core/Tuples.carp",
+      "line": 35,
+      "original": "initializes a `Quadruple` from member references.",
+      "source_html_sha256": "0e5bdad11ff65f7dde766a6f9513337b7a1910772ed10e8faa00afa15c3e5a05",
+      "translation": "各メンバーへの参照から `Quadruple` を初期化します。"
+    },
+    "prn": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Quadruple` to a string.",
+      "source_html_sha256": "d8d3de95f38163958a360ee5f62167d91eec194718ab43c11a0bc4f98c477eb4",
+      "translation": "`Quadruple` を文字列に変換します。"
+    },
+    "reverse": {
+      "source": "core/Tuples.carp",
+      "line": 49,
+      "original": "reverses a `Quadruple` by reversing its member positions.",
+      "source_html_sha256": "fa1f1e456e54bab0391ed94a6919c77d69bb246ad1043a00727cd2ccc7d672b8",
+      "translation": "メンバーの位置を逆順にして、`Quadruple` を反転します。"
+    },
+    "set-a": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `a` property of a `Quadruple`.",
+      "source_html_sha256": "308f590e32db5842973a3c319cdc3f1183d962d94012087b01fa733d4fe573c3",
+      "translation": "`Quadruple` の `a` プロパティを設定します。"
+    },
+    "set-a!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `a` property of a `Quadruple` in place.",
+      "source_html_sha256": "d243b3fd707e314233b4d5fe29340c48c2ecc66bb2bde286853e3dbce1398e0e",
+      "translation": "`Quadruple` の `a` プロパティをその場で設定します。"
+    },
+    "set-b": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `b` property of a `Quadruple`.",
+      "source_html_sha256": "3c6fe2e68a1a13e6509d37d24136c0b6b33f08a0057c10d865d8ef51e6108da4",
+      "translation": "`Quadruple` の `b` プロパティを設定します。"
+    },
+    "set-b!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `b` property of a `Quadruple` in place.",
+      "source_html_sha256": "80d8e3b24623fd4034bc1f09305b582cb32b4cae342c0afab5b212c43bbbe189",
+      "translation": "`Quadruple` の `b` プロパティをその場で設定します。"
+    },
+    "set-c": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `c` property of a `Quadruple`.",
+      "source_html_sha256": "ea8acaf24ce2e8ea3509f95ac41d88fbfda5772127f7a89196605d5e79b604c0",
+      "translation": "`Quadruple` の `c` プロパティを設定します。"
+    },
+    "set-c!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `c` property of a `Quadruple` in place.",
+      "source_html_sha256": "4864045d1f5a6cd795fc8488098e6e21f974f170e821bfa32f9ca0576eb84ce1",
+      "translation": "`Quadruple` の `c` プロパティをその場で設定します。"
+    },
+    "set-d": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `d` property of a `Quadruple`.",
+      "source_html_sha256": "e7fbe3e88a3d9dead935b7fe32c40348e2c0b4c3a41b95f0caf1a7a35fa4b66c",
+      "translation": "`Quadruple` の `d` プロパティを設定します。"
+    },
+    "set-d!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `d` property of a `Quadruple` in place.",
+      "source_html_sha256": "381e48578813419ef1adfc03d649a0a32f9874c2a4250a4188632063dcfb8263",
+      "translation": "`Quadruple` の `d` プロパティをその場で設定します。"
+    },
+    "str": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Quadruple` to a string.",
+      "source_html_sha256": "d8d3de95f38163958a360ee5f62167d91eec194718ab43c11a0bc4f98c477eb4",
+      "translation": "`Quadruple` を文字列に変換します。"
+    },
+    "update-a": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `a` property of a `(Quadruple a b c d)` using a function `f`.",
+      "source_html_sha256": "0544e9ea9c6f9881537886c488b36d2640aa0e227c38c95d9d4bbb844c4c14ea",
+      "translation": "関数 `f` を使って、`(Quadruple a b c d)` の `a` プロパティを更新します。"
+    },
+    "update-b": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `b` property of a `(Quadruple a b c d)` using a function `f`.",
+      "source_html_sha256": "a319d95d9f922dda88fb6757bfe72ac049ec6c7014f9274ffde09f41ef381341",
+      "translation": "関数 `f` を使って、`(Quadruple a b c d)` の `b` プロパティを更新します。"
+    },
+    "update-c": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `c` property of a `(Quadruple a b c d)` using a function `f`.",
+      "source_html_sha256": "39858f7e374118ef6c1b5f2e53f3a282d1f60ba58521818b63c1ec29d5481853",
+      "translation": "関数 `f` を使って、`(Quadruple a b c d)` の `c` プロパティを更新します。"
+    },
+    "update-d": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `d` property of a `(Quadruple a b c d)` using a function `f`.",
+      "source_html_sha256": "1f5cbdd6cade5135354870b5e568fba8cfccad60e7ae2c5057ab926652c8050b",
+      "translation": "関数 `f` を使って、`(Quadruple a b c d)` の `d` プロパティを更新します。"
+    },
+    "zero": {
+      "source": "core/Tuples.carp",
+      "line": 56,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}

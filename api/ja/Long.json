@@ -1,0 +1,314 @@
+{
+  "module": "Long",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Long.carp",
+    "line": 3,
+    "original": "is a bigger integral data type (its size is 64 bits). Its suffix is\n`l`.",
+    "source_html_sha256": "4684083cd548593c9f3f42f74d1465282bfb2a79ce73ca74c4666b6f6dfc247e",
+    "translation": "より大きな整数のデータ型で、サイズは 64 ビットです。接尾辞は `l` です。"
+  },
+  "entries": {
+    "*": {
+      "source": "core/Long.carp",
+      "line": 12,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "+": {
+      "source": "core/Long.carp",
+      "line": 10,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "-": {
+      "source": "core/Long.carp",
+      "line": 11,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "/": {
+      "source": "core/Long.carp",
+      "line": 13,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "<": {
+      "source": "core/Long.carp",
+      "line": 14,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "=": {
+      "source": "core/Long.carp",
+      "line": 16,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    ">": {
+      "source": "core/Long.carp",
+      "line": 15,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "MAX": {
+      "source": "core/Long.carp",
+      "line": 6,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "MIN": {
+      "source": "core/Long.carp",
+      "line": 8,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "abs": {
+      "source": "core/Long.carp",
+      "line": 61,
+      "original": "The absolute value (removes the negative sign) of a Long.",
+      "source_html_sha256": "37cf80bf9fe05f496e873ac5621a48255ec42810be15f5c47e13be766f862543",
+      "translation": "`Long` の絶対値です。負の符号を取り除きます。"
+    },
+    "add-ref": {
+      "source": "core/Long.carp",
+      "line": 77,
+      "original": "adds two Long values passed as references.",
+      "source_html_sha256": "037daf4b3e4de6a5bbc2487f68b59d8075fdff10e09167ce9c2911ee5cb25231",
+      "translation": "参照として渡された 2 つの `Long` 値を加算します。"
+    },
+    "bit-and": {
+      "source": "core/Long.carp",
+      "line": 22,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-not": {
+      "source": "core/Long.carp",
+      "line": 25,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-or": {
+      "source": "core/Long.carp",
+      "line": 23,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-shift-left": {
+      "source": "core/Long.carp",
+      "line": 20,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-shift-right": {
+      "source": "core/Long.carp",
+      "line": 21,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-xor": {
+      "source": "core/Long.carp",
+      "line": 24,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "blit": {
+      "source": "core/Blitable.carp",
+      "line": 6,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "clamp": {
+      "source": "core/Long.carp",
+      "line": 81,
+      "original": "clamps `val` to the range [`min`, `max`].",
+      "source_html_sha256": "734edb5f21a9cea6404bf272cc153c5994363613f7e0f6bce839cce3576ac023",
+      "translation": "`val` を範囲 [`min`, `max`] 内に収めます。"
+    },
+    "copy": {
+      "source": "core/Long.carp",
+      "line": 32,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "dec": {
+      "source": "core/Long.carp",
+      "line": 27,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "even?": {
+      "source": "core/Long.carp",
+      "line": 64,
+      "original": "returns true if `a` is even.",
+      "source_html_sha256": "5c4aafe54d2a6c1a7bf7797852dc35a2b2e967b266548b92e7198d51594278e9",
+      "translation": "`a` が偶数の場合に `true` を返します。"
+    },
+    "from-int": {
+      "source": "core/Long.carp",
+      "line": 29,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "from-string": {
+      "source": "core/String.carp",
+      "line": 386,
+      "original": "Tries to parse a long from a string.",
+      "source_html_sha256": "83a27a11a6bd1228a950064c7c0191c912177bf51db4bcd3cf776ff3697b3fef",
+      "translation": "文字列を `Long` として解析しようとします。"
+    },
+    "hash": {
+      "source": "core/Map.carp",
+      "line": 19,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "inc": {
+      "source": "core/Long.carp",
+      "line": 26,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "mod": {
+      "source": "core/Long.carp",
+      "line": 18,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "neg": {
+      "source": "core/Long.carp",
+      "line": 17,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "negative?": {
+      "source": "core/Long.carp",
+      "line": 71,
+      "original": "returns true if `a` is negative.",
+      "source_html_sha256": "30c0d12a9f4b293c24ba41f268ae81c831b3c0f82692032ef49f16c402b837e9",
+      "translation": "`a` が負の場合に `true` を返します。"
+    },
+    "odd?": {
+      "source": "core/Long.carp",
+      "line": 66,
+      "original": "returns true if `a` is odd.",
+      "source_html_sha256": "56b3e2000cb840891184977f49ba4b4f7e448e86fc427efcdd6030ffafc545e7",
+      "translation": "`a` が奇数の場合に `true` を返します。"
+    },
+    "positive?": {
+      "source": "core/Long.carp",
+      "line": 69,
+      "original": "returns true if `a` is positive.",
+      "source_html_sha256": "93439c0f8dce9a391626c459dec682e00cfa040489b458d1928261850798616c",
+      "translation": "`a` が正の場合に `true` を返します。"
+    },
+    "prn": {
+      "source": "core/String.carp",
+      "line": 457,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random": {
+      "source": "core/Random.carp",
+      "line": 75,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random-between": {
+      "source": "core/Random.carp",
+      "line": 70,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "safe-add": {
+      "source": "core/Long.carp",
+      "line": 56,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "safe-mul": {
+      "source": "core/Long.carp",
+      "line": 58,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "safe-sub": {
+      "source": "core/Long.carp",
+      "line": 57,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "seed": {
+      "source": "core/Long.carp",
+      "line": 19,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "sign": {
+      "source": "core/Long.carp",
+      "line": 89,
+      "original": "Returns `-1l` if `n` is negative, `0l` if zero, or `1l` if positive.",
+      "source_html_sha256": "40cabcae0734c85919c9be76c93a29cf658e2e0fa709296e373a5d664b6a5427",
+      "translation": "`n` が負の場合は `-1l`、ゼロの場合は `0l`、正の場合は `1l` を返します。"
+    },
+    "str": {
+      "source": "core/String.carp",
+      "line": 376,
+      "original": "Converts a long to a string.",
+      "source_html_sha256": "48f9d0011d62eb900c19699e3419512c4020b1b329fb34e3ed859414105e12a6",
+      "translation": "`Long` を文字列に変換します。"
+    },
+    "to-int": {
+      "source": "core/Long.carp",
+      "line": 28,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "unsafe-format": {
+      "source": "core/String.carp",
+      "line": 379,
+      "original": "Formats a long. Unchecked: `s` must hold exactly one format directive. Prefer `fmt`, which checks that at compile time.",
+      "source_html_sha256": "9ca02a090b2be754564cd4c3b8be1fe3dfdfdbb47cf56c2ea02f76241d82ceeb",
+      "translation": "`Long` を書式化します。検査は行いません。`s` には変換指定 (directive) がちょうど 1 つ含まれている必要があります。コンパイル時にこれを検査する [`fmt`](../../docs/Format_Strings-JP.html) の使用を推奨します。"
+    },
+    "zero": {
+      "source": "core/Long.carp",
+      "line": 74,
+      "original": "returns the zero value for Long (0l), used to implement the `zero` interface.",
+      "source_html_sha256": "75b035e8ee4bc0073256eb6a3a2e10112fb9aa0ea3211f88a86a0b7eb89f67c7",
+      "translation": "`zero` インターフェースの実装に使われる、`Long` のゼロ値 (`0l`) を返します。"
+    }
+  }
+}

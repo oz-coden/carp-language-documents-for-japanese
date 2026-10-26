@@ -1,0 +1,174 @@
+{
+  "module": "Triple",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Tuples.carp",
+    "line": 33,
+    "original": "is a tuple of length 3.",
+    "source_html_sha256": "e483ad682165581cd358e5a142607000ffdc7b63febadfe883bb3c73e21d4b5e",
+    "translation": "長さ 3 のタプル (tuple) です。"
+  },
+  "entries": {
+    "<": {
+      "source": "core/Tuples.carp",
+      "line": 41,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "=": {
+      "source": "core/Tuples.carp",
+      "line": 64,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    ">": {
+      "source": "core/Tuples.carp",
+      "line": 45,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "a": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `a` property of a `Triple`.",
+      "source_html_sha256": "00750413deb5a009f116e218372f1c26bc7156c457dff4cf5ab8b47470144394",
+      "translation": "`Triple` の `a` プロパティを取得します。"
+    },
+    "b": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `b` property of a `Triple`.",
+      "source_html_sha256": "c0d08c526c1e0ce613c9f5fda38cb9a15fae9ec83531285ff4506b657100dce3",
+      "translation": "`Triple` の `b` プロパティを取得します。"
+    },
+    "c": {
+      "source": "src/Deftype.hs",
+      "line": 188,
+      "original": "gets the `c` property of a `Triple`.",
+      "source_html_sha256": "d7db8c278acf6bd310357569f73fe8752f2323e1ed2fe705ccdae169e2aab700",
+      "translation": "`Triple` の `c` プロパティを取得します。"
+    },
+    "copy": {
+      "source": "src/Deftype.hs",
+      "line": 259,
+      "original": "copies a `Triple`.",
+      "source_html_sha256": "6401288347791f1bfb3160e0021f059fd18ed8ce2d6d1d4b4665620832d6bd88",
+      "translation": "`Triple` をコピーします。"
+    },
+    "delete": {
+      "source": "src/Deftype.hs",
+      "line": 249,
+      "original": "deletes a `Triple`. Should usually not be called manually.",
+      "source_html_sha256": "763366adbd8ec08309368e45ecf5c8d3c559354fe90c4d6c49bfaf21a5c63469",
+      "translation": "`Triple` を削除します。通常、手動で呼び出す必要はありません。"
+    },
+    "init": {
+      "source": "src/Deftype.hs",
+      "line": 228,
+      "original": "creates a `Triple`.",
+      "source_html_sha256": "5dbce75aff1626e2a414608e26eca75db1d655cacfbb22f1a128072b1b37e9f3",
+      "translation": "`Triple` を作成します。"
+    },
+    "init-from-refs": {
+      "source": "core/Tuples.carp",
+      "line": 35,
+      "original": "initializes a `Triple` from member references.",
+      "source_html_sha256": "ba8a4ec06c06cce0484522505b4a3d93f22653a6b8a22c4552ada71f1b2892b5",
+      "translation": "各メンバーへの参照から `Triple` を初期化します。"
+    },
+    "prn": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Triple` to a string.",
+      "source_html_sha256": "efeba3ea683bbeb1c7724f4832222b3e207886501ebb0f6021324f0f2f0f95ae",
+      "translation": "`Triple` を文字列に変換します。"
+    },
+    "reverse": {
+      "source": "core/Tuples.carp",
+      "line": 49,
+      "original": "reverses a `Triple` by reversing its member positions.",
+      "source_html_sha256": "cc0c69203524823de8721c4b7f8021acc270803cf0f16446adda386e91da866c",
+      "translation": "メンバーの位置を逆順にして、`Triple` を反転します。"
+    },
+    "set-a": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `a` property of a `Triple`.",
+      "source_html_sha256": "2e1d391b2e4c59893e51aa501308bc1f818d8ca2d343fbfc1aa201713faab366",
+      "translation": "`Triple` の `a` プロパティを設定します。"
+    },
+    "set-a!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `a` property of a `Triple` in place.",
+      "source_html_sha256": "5bf6e22d1db04a9efb717460b06d9dd7dd683cbb06a9aa4a390e2d0dd5c907d0",
+      "translation": "`Triple` の `a` プロパティをその場で設定します。"
+    },
+    "set-b": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `b` property of a `Triple`.",
+      "source_html_sha256": "e3fcb118b3bd58ef5dff644c91546942f5ddd3a465ceab0ce6f828d989333378",
+      "translation": "`Triple` の `b` プロパティを設定します。"
+    },
+    "set-b!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `b` property of a `Triple` in place.",
+      "source_html_sha256": "d79bb0d9c75935baac75e7ed1548898bbd4c04f2bb451791966c3fe6ea121c13",
+      "translation": "`Triple` の `b` プロパティをその場で設定します。"
+    },
+    "set-c": {
+      "source": "src/Deftype.hs",
+      "line": 195,
+      "original": "sets the `c` property of a `Triple`.",
+      "source_html_sha256": "b348a07d15c885d8bcd3e965742b5e50349a36899dc8d64be3ed82e8c66be7e6",
+      "translation": "`Triple` の `c` プロパティを設定します。"
+    },
+    "set-c!": {
+      "source": "src/Deftype.hs",
+      "line": 205,
+      "original": "sets the `c` property of a `Triple` in place.",
+      "source_html_sha256": "a973b5f0615029743d90b8d93125ad5fb204d11115803ee19740533260964e58",
+      "translation": "`Triple` の `c` プロパティをその場で設定します。"
+    },
+    "str": {
+      "source": "src/Deftype.hs",
+      "line": 241,
+      "original": "converts a `Triple` to a string.",
+      "source_html_sha256": "efeba3ea683bbeb1c7724f4832222b3e207886501ebb0f6021324f0f2f0f95ae",
+      "translation": "`Triple` を文字列に変換します。"
+    },
+    "update-a": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `a` property of a `(Triple a b c)` using a function `f`.",
+      "source_html_sha256": "97160019eddada2efedc9c264b1d6a3961e646df85603753b0f66aa585bc2ec6",
+      "translation": "関数 `f` を使って、`(Triple a b c)` の `a` プロパティを更新します。"
+    },
+    "update-b": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `b` property of a `(Triple a b c)` using a function `f`.",
+      "source_html_sha256": "6479e000b4e8b61635d6b6ee5addab53ac81ed18c116310942c6c1849e39be85",
+      "translation": "関数 `f` を使って、`(Triple a b c)` の `b` プロパティを更新します。"
+    },
+    "update-c": {
+      "source": "src/Deftype.hs",
+      "line": 215,
+      "original": "updates the `c` property of a `(Triple a b c)` using a function `f`.",
+      "source_html_sha256": "57162e5b20e2af6fd0f79cc1c8c0c5d5242386fe4f8cc56abec9f29f7291995c",
+      "translation": "関数 `f` を使って、`(Triple a b c)` の `c` プロパティを更新します。"
+    },
+    "zero": {
+      "source": "core/Tuples.carp",
+      "line": 56,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "module": "Byte",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Byte.carp",
+    "line": 3,
+    "original": "is the data type for single bytes. Literals of type `Byte` are\nsuffixed with `b`.",
+    "source_html_sha256": "724465ae606043bc2c2c53ee3702da4aa5e3630383482c7389709b53e56e412e",
+    "translation": "1 バイトを表すデータ型です。`Byte` 型のリテラルには接尾辞 `b` を付けます。"
+  },
+  "entries": {
+    "*": {
+      "source": "core/Byte.carp",
+      "line": 10,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "+": {
+      "source": "core/Byte.carp",
+      "line": 8,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "-": {
+      "source": "core/Byte.carp",
+      "line": 9,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "/": {
+      "source": "core/Byte.carp",
+      "line": 11,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "<": {
+      "source": "core/Byte.carp",
+      "line": 12,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "=": {
+      "source": "core/Byte.carp",
+      "line": 6,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    ">": {
+      "source": "core/Byte.carp",
+      "line": 13,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "add-ref": {
+      "source": "core/Byte.carp",
+      "line": 56,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-and": {
+      "source": "core/Byte.carp",
+      "line": 41,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-not": {
+      "source": "core/Byte.carp",
+      "line": 44,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-or": {
+      "source": "core/Byte.carp",
+      "line": 42,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-shift-left": {
+      "source": "core/Byte.carp",
+      "line": 39,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-shift-right": {
+      "source": "core/Byte.carp",
+      "line": 40,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "bit-xor": {
+      "source": "core/Byte.carp",
+      "line": 43,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "blit": {
+      "source": "core/Blitable.carp",
+      "line": 26,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "clamp": {
+      "source": "core/Byte.carp",
+      "line": 60,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "copy": {
+      "source": "core/Byte.carp",
+      "line": 7,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "dec": {
+      "source": "core/Byte.carp",
+      "line": 16,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "even?": {
+      "source": "core/Byte.carp",
+      "line": 52,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "from-int": {
+      "source": "core/Byte.carp",
+      "line": 18,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "from-string": {
+      "source": "core/String.carp",
+      "line": 346,
+      "original": "Tries to parse a byte from a string.",
+      "source_html_sha256": "18e22c4bd300c090aa31b1aed6bf0878736787970a5c41ae7d93b7468d88630b",
+      "translation": "文字列をバイトとして解析しようとします。"
+    },
+    "hash": {
+      "source": "core/Map.carp",
+      "line": 34,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "inc": {
+      "source": "core/Byte.carp",
+      "line": 15,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "mod": {
+      "source": "core/Byte.carp",
+      "line": 14,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "odd?": {
+      "source": "core/Byte.carp",
+      "line": 53,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "pow": {
+      "source": "core/Byte.carp",
+      "line": 67,
+      "original": "Raise x to the power of y.",
+      "source_html_sha256": "4c6f94520f9d3715a11ce346c495e60967a360a36c709e984f516e1cd662d633",
+      "translation": "`x` の `y` 乗を計算します。"
+    },
+    "prn": {
+      "source": "core/String.carp",
+      "line": 447,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random": {
+      "source": "core/Random.carp",
+      "line": 111,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random-between": {
+      "source": "core/Random.carp",
+      "line": 107,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "str": {
+      "source": "core/String.carp",
+      "line": 336,
+      "original": "Converts a byte to a string.",
+      "source_html_sha256": "8cc6226c0a6701669cf104b1dc838e2c7eeaeeb52ccf37bab8e9b251d0aaa378",
+      "translation": "バイトを文字列に変換します。"
+    },
+    "to-int": {
+      "source": "core/Byte.carp",
+      "line": 17,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "unsafe-format": {
+      "source": "core/String.carp",
+      "line": 339,
+      "original": "Formats a byte. Unchecked: `s` must hold exactly one format directive. Prefer `fmt`, which checks that at compile time.",
+      "source_html_sha256": "60b705ec39b6d7b66723bfee6a07b753d892cbe896d544a268da7f8d187f51f6",
+      "translation": "バイトを書式化します。検査は行いません。`s` には変換指定 (directive) がちょうど 1 つ含まれている必要があります。コンパイル時にこれを検査する [`fmt`](../../docs/Format_Strings-JP.html) の使用を推奨します。"
+    },
+    "zero": {
+      "source": "core/Byte.carp",
+      "line": 19,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    }
+  }
+}

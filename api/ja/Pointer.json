@@ -1,0 +1,166 @@
+{
+  "module": "Pointer",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Pointer.carp",
+    "line": 1,
+    "original": "is a data type for representing C pointers.",
+    "source_html_sha256": "184c65ab273810056f24a0a2610af7d9cb3665c92b358a40a797b0c941b445b8",
+    "translation": "C のポインタを表すデータ型です。"
+  },
+  "entries": {
+    "add": {
+      "source": "core/Pointer.carp",
+      "line": 21,
+      "original": "adds a long integer value to a pointer.",
+      "source_html_sha256": "315583d43f8e494cb8160d1b360d20f8b47748683e2026625c56415332e289e1",
+      "translation": "ポインタに `Long` の整数値を加えます。"
+    },
+    "address": {
+      "source": "core/Pointer.carp",
+      "line": 10,
+      "original": "returns the memory address of a reference. Equivalent to the `&` operator when placed before a variable in C.",
+      "source_html_sha256": "e56d718482c13aaaca4e56873c47fd6812f6e96c3930b1c95ea8f458b050cc24",
+      "translation": "参照のメモリアドレスを返します。C で変数の前に置く `&` 演算子に相当します。"
+    },
+    "blit": {
+      "source": "core/Blitable.carp",
+      "line": 62,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "copy": {
+      "source": "src/StartingEnv.hs",
+      "line": 101,
+      "original": "copies a pointer `p`.",
+      "source_html_sha256": "3f454eaf58f4283ea2b5ea3b64a609389a64f8614b7dd5100aa53c31506f0d6d",
+      "translation": "ポインタ `p` をコピーします。"
+    },
+    "dec": {
+      "source": "core/Pointer.carp",
+      "line": 73,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "eq": {
+      "source": "core/Pointer.carp",
+      "line": 6,
+      "original": "checks two pointer references for equality.",
+      "source_html_sha256": "f2bb3d9842adf0976388a3bcbe0bb31b7dae2952a2cfa09c4374307145016a78",
+      "translation": "2 つのポインタへの参照が等しいかどうかを調べます。",
+      "notes": [
+        "固定版では、`ref-eq` 向けと考えられる説明文も `eq` に設定され、先の説明文を上書きしています。[定義(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Pointer.carp#L3) と型シグネチャでは、`eq` は 2 つの `Ptr`、`ref-eq` はそれらへの参照を受け取ります。本文は生成された原文を保持しています。この注記はソースの確認に基づきます。"
+      ]
+    },
+    "free": {
+      "source": "core/Pointer.carp",
+      "line": 53,
+      "original": "Free a pointer, deallocating the memory associated with it.\nCarp's borrow checker handles deallocation automatically for managed types. The Ptr type is unmanaged, so pointers allocated with functions such as `Pointer.unsafe-alloc` need to be deallocated manually using this function.\nUsers need to manually verify that this operation is safe.\n\n```\n(let-do [x (Pointer.unsafe-alloc @\"c\")]\n  (Pointer.set x @\"carp\")\n  (println* (Pointer.to-value x))\n  (Pointer.free x))\n```",
+      "source_html_sha256": "efc4acba4873d6c60effc6e6edd6fba2852b630d0432fdc31e219e0abdabcf9b",
+      "translation": "ポインタを解放し、関連付けられたメモリを解放します。\nCarp の借用チェッカー (borrow checker) は、メモリ管理の対象となる型 (managed types) の解放を自動的に処理します。`Ptr` 型はメモリ管理の対象外 (unmanaged) なので、`Pointer.unsafe-alloc` などの関数で割り当てたポインタは、この関数を使って手動で解放する必要があります。\nこの操作が安全であることは、利用者が手動で確認する必要があります。\n\n```carp\n(let-do [x (Pointer.unsafe-alloc @\"c\")]\n  (Pointer.set x @\"carp\")\n  (println* (Pointer.to-value x))\n  (Pointer.free x))\n```"
+    },
+    "from-long": {
+      "source": "core/Pointer.carp",
+      "line": 29,
+      "original": "converts a long integer to a pointer.",
+      "source_html_sha256": "df4e77994eba38b4009fe249b1ed353f9c0d3e1e035cdd9c31fa0825762f23b2",
+      "translation": "`Long` の整数をポインタに変換します。"
+    },
+    "inc": {
+      "source": "core/Pointer.carp",
+      "line": 71,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "prn": {
+      "source": "core/String.carp",
+      "line": 641,
+      "original": "Converts a pointer to a string representation of its address for printing.",
+      "source_html_sha256": "df2eb67fa5b42944c88299c896cbc3a5f681f55ba651c776ee0c8c1f05156cb9",
+      "translation": "ポインタを、そのアドレスを表す表示用の文字列に変換します。"
+    },
+    "ref-eq": {
+      "source": "core/Pointer.carp",
+      "line": 7,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "set": {
+      "source": "core/Pointer.carp",
+      "line": 68,
+      "original": "Sets the value of a pointer.",
+      "source_html_sha256": "0414224d2d9d480bd9a5737f9ffb2cc5c757316529958dacc2037ccec95e5f86",
+      "translation": "ポインタが指す値を設定します。"
+    },
+    "str": {
+      "source": "core/String.carp",
+      "line": 637,
+      "original": "Converts a pointer to a string representation of its address.",
+      "source_html_sha256": "2714397d5a19f17d9e7f8e268271c86b1fc17a3aaebd6a6a2fb2f9327ba2107a",
+      "translation": "ポインタを、そのアドレスを表す文字列に変換します。"
+    },
+    "strp": {
+      "source": "core/String.carp",
+      "line": 634,
+      "original": "Converts a pointer to a string representation of its address.",
+      "source_html_sha256": "2714397d5a19f17d9e7f8e268271c86b1fc17a3aaebd6a6a2fb2f9327ba2107a",
+      "translation": "ポインタを、そのアドレスを表す文字列に変換します。"
+    },
+    "sub": {
+      "source": "core/Pointer.carp",
+      "line": 23,
+      "original": "subtracts a long integer value from a pointer.",
+      "source_html_sha256": "a41b9fdc9dd317375832b71ec15f7facc75a892bf080ef65cbc1debafa949c6e",
+      "translation": "ポインタから `Long` の整数値を引きます。"
+    },
+    "to-long": {
+      "source": "core/Pointer.carp",
+      "line": 27,
+      "original": "converts a pointer to a long integer.",
+      "source_html_sha256": "c7fd113340577b5cd62504e043f0b1bbf3468db8a00eb36d0c6dc34c949da5b0",
+      "translation": "ポインタを `Long` の整数に変換します。"
+    },
+    "to-ref": {
+      "source": "core/Pointer.carp",
+      "line": 13,
+      "original": "converts a pointer to a reference type.\n\nThe user will have to ensure themselves that this is a safe operation.",
+      "source_html_sha256": "756b0244df09095bd4085322235bb52d5692b0a6ee3feb5fafd2f0f6ebf6b171",
+      "translation": "ポインタを参照型に変換します。\n\nこの操作が安全であることは、利用者自身が確認する必要があります。"
+    },
+    "to-value": {
+      "source": "core/Pointer.carp",
+      "line": 17,
+      "original": "converts a pointer to a value.\n\nThe user will have to ensure themselves that this is a safe operation.",
+      "source_html_sha256": "e50a22056a8f7c49ce79eb904691d3fbcd7cefc3433018d9408fdf85e0fddf13",
+      "translation": "ポインタを値に変換します。\n\nこの操作が安全であることは、利用者自身が確認する必要があります。"
+    },
+    "unsafe-alloc": {
+      "source": "core/Pointer.carp",
+      "line": 37,
+      "original": "Allocate a new pointer to the value `a`.\nThis pointer won't be managed by Carp's borrow checker and will cause memory leaks unless explicitly freed using `Pointer.free`.\n\nSee `Unsafe.leak` if you want to prevent Carp's automatic memory management from deallocating a value without performing an allocation.\n\n```\n(let-do [x (Pointer.unsafe-alloc @\"c\")]\n  (Pointer.set x @\"carp\")\n  (println* (Pointer.to-value x))\n  (Pointer.free x))\n```",
+      "source_html_sha256": "2e3c54ca48a667c2dcfd7137936b20bdd79a3dcd98888bb95c8d023ff6a57cf5",
+      "translation": "値 `a` を指す新しいポインタを割り当てます。\nこのポインタは Carp の借用チェッカー (borrow checker) によって管理されません。`Pointer.free` を使って明示的に解放しない限り、メモリリークが発生します。\n\n割り当てを行わずに、Carp の自動的なメモリ管理が値を解放するのを防ぎたい場合は、[`Unsafe.leak`(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Unsafe.carp#L7) を参照してください。\n\n```carp\n(let-do [x (Pointer.unsafe-alloc @\"c\")]\n  (Pointer.set x @\"carp\")\n  (println* (Pointer.to-value x))\n  (Pointer.free x))\n```"
+    },
+    "unsafe-set": {
+      "source": "core/Pointer.carp",
+      "line": 32,
+      "original": "Sets the value of a pointer to a value of any type.\nThe user will have to ensure this operation is safe.",
+      "source_html_sha256": "fab2d8d4e57e4d87b477b0f7c3b6b78b43d585d22f7d00e709d25e9734432003",
+      "translation": "ポインタが指す値を、任意の型の値に設定します。\nこの操作が安全であることは、利用者自身が確認する必要があります。"
+    },
+    "width": {
+      "source": "core/Pointer.carp",
+      "line": 25,
+      "original": "gets the byte size of a pointer.",
+      "source_html_sha256": "49e1ce7e2aa82ce9a46a510e08a56119bd3cd7f59f17469a4b81ceaa45e3278b",
+      "translation": "ポインタのサイズをバイト単位で取得します。",
+      "notes": [
+        "原文はポインタのサイズと説明していますが、固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Pointer.carp#L26) が返すのは `sizeof(*p)` です。ポインタ自身ではなく、ポインタが指す型のサイズを返します。この注記は C コード生成用のテンプレートの確認に基づき、実行確認は行っていません。"
+      ]
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "module": "Double",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Double.carp",
+    "line": 3,
+    "original": "is the default floating point number type.",
+    "source_html_sha256": "4866b566eed4d6babc48ac7cf804d4f5a35434cd6ddc93b40a2c2938ac882201",
+    "translation": "既定の浮動小数点数型です。"
+  },
+  "entries": {
+    "*": {
+      "source": "core/Double.carp",
+      "line": 25,
+      "original": "multiplies two doubles.",
+      "source_html_sha256": "e9c7ca11ff5987a7186845376b6a7da6a11732edcbd4ebbde36b75e0f68e5e19",
+      "translation": "2 つの `Double` 値を乗算します。"
+    },
+    "+": {
+      "source": "core/Double.carp",
+      "line": 21,
+      "original": "adds two doubles.",
+      "source_html_sha256": "76bad395a00dd6774a3bdafafc5bbd7956cdb988b977d696f1556b9c3efdf735",
+      "translation": "2 つの `Double` 値を加算します。"
+    },
+    "-": {
+      "source": "core/Double.carp",
+      "line": 23,
+      "original": "subtracts `b` from `a`.",
+      "source_html_sha256": "4edc509b1c552a27fe2adb9bd0604e043ffd2d19bb93464941f69c514b184dee",
+      "translation": "`a` から `b` を減算します。"
+    },
+    "/": {
+      "source": "core/Double.carp",
+      "line": 27,
+      "original": "divides `a` by `b`.",
+      "source_html_sha256": "f2e3fb134b8f13dc2abbcca651ee2fa6f9b96769cf6bb6d703f06ffb7a5b770d",
+      "translation": "`a` を `b` で除算します。"
+    },
+    "<": {
+      "source": "core/Double.carp",
+      "line": 15,
+      "original": "returns true if `a` is less than `b`.",
+      "source_html_sha256": "9ed6a2e3a8a98edd8d9bee1c990d8a950ee62019f4dfdf4d33f63da4c146eef9",
+      "translation": "`a` が `b` より小さい場合に `true` を返します。"
+    },
+    "=": {
+      "source": "core/Double.carp",
+      "line": 13,
+      "original": "returns true if `a` equals `b`.",
+      "source_html_sha256": "f23544931ff98bbeb9174b72cad6a0c766284d2a7a097a9d79c87374ce1dca08",
+      "translation": "`a` と `b` が等しい場合に `true` を返します。"
+    },
+    ">": {
+      "source": "core/Double.carp",
+      "line": 17,
+      "original": "returns true if `a` is greater than `b`.",
+      "source_html_sha256": "20d7e5bb31d7e4333092b35e627d4e02d92afde0a0a452521e0859c9e211734e",
+      "translation": "`a` が `b` より大きい場合に `true` を返します。"
+    },
+    "MAX": {
+      "source": "core/Double.carp",
+      "line": 10,
+      "original": "the maximum value a Double can hold.",
+      "source_html_sha256": "53e7be160d160d2af1b09c463b142a3614e09290cf5890390a5f9d2effa5bcd4",
+      "translation": "`Double` が保持できる最大値です。"
+    },
+    "abs": {
+      "source": "core/Double.carp",
+      "line": 62,
+      "original": "returns the absolute value of `a`.",
+      "source_html_sha256": "1be6be05b8ca16a533a3c5c7850950ad0a546e5ad425349927bc29617b4ca56d",
+      "translation": "`a` の絶対値を返します。"
+    },
+    "acos": {
+      "source": "core/Double.carp",
+      "line": 64,
+      "original": "returns the arc cosine of `a` in radians.",
+      "source_html_sha256": "86b8ee81eb60a53b41c81fd91b9202028bae4fe83c42befb59918a81fc053638",
+      "translation": "`a` の逆余弦をラジアン単位で返します。"
+    },
+    "add-ref": {
+      "source": "core/Double.carp",
+      "line": 170,
+      "original": "adds two Double values passed as references.",
+      "source_html_sha256": "dec6886bc81ed6e107ff860ca3d1a3272665594710d4a19edf74e65ab294c166",
+      "translation": "参照として渡された 2 つの `Double` 値を加算します。"
+    },
+    "approx": {
+      "source": "core/Double.carp",
+      "line": 142,
+      "original": "checks whether `x` and `y` are approximately equal.\n\nThe margin of error is `0.00001`.",
+      "source_html_sha256": "605c7664c2095bdc86654f6c942e7138a514bdd58a2d6a632645f742a86269ca",
+      "translation": "`x` と `y` が近似的に等しいかどうかを調べます。\n\n許容誤差は `0.00001` です。"
+    },
+    "asin": {
+      "source": "core/Double.carp",
+      "line": 66,
+      "original": "returns the arc sine of `a` in radians.",
+      "source_html_sha256": "5c5c78ba34cf8ca75f95e13f5c70c966d402a411b56be53360d67133a9ad35de",
+      "translation": "`a` の逆正弦をラジアン単位で返します。"
+    },
+    "atan": {
+      "source": "core/Double.carp",
+      "line": 68,
+      "original": "returns the arc tangent of `a` in radians.",
+      "source_html_sha256": "861f5717ee071aaaa69252565c5c324a784c0b010d017d763b1a182000c8fc28",
+      "translation": "`a` の逆正接をラジアン単位で返します。"
+    },
+    "atan2": {
+      "source": "core/Double.carp",
+      "line": 70,
+      "original": "returns the arc tangent of `y`/`x`, using the signs of both to determine the quadrant.",
+      "source_html_sha256": "4265af8b2e336a969cf2356a73981dba63ffc70358a83ae0cfa34bd257bc1a23",
+      "translation": "`y` / `x` の逆正接を返します。両方の符号を使って象限を決定します。"
+    },
+    "blit": {
+      "source": "core/Blitable.carp",
+      "line": 14,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "ceil": {
+      "source": "core/Double.carp",
+      "line": 72,
+      "original": "rounds `a` up to the nearest integer.",
+      "source_html_sha256": "5c9039abb1e158a97a73c7e8f17a9201feb689dba30cafee81bbd5f40da36882",
+      "translation": "`a` を、それ以上の最も近い整数に切り上げます。"
+    },
+    "clamp": {
+      "source": "core/Double.carp",
+      "line": 148,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "copy": {
+      "source": "core/Double.carp",
+      "line": 47,
+      "original": "copies a Double.",
+      "source_html_sha256": "44faaa6d993bee126880a1ecdaba1e6a079b75a578aba178b3ce0b0921735819",
+      "translation": "`Double` をコピーします。"
+    },
+    "cos": {
+      "source": "core/Double.carp",
+      "line": 74,
+      "original": "returns the cosine of `a` (in radians).",
+      "source_html_sha256": "a1c2c5e07cf4b96ada1170c2531c4d4356efca0ef2b64a521e41336637cc64fc",
+      "translation": "`a` の余弦を返します (`a` はラジアン単位です)。"
+    },
+    "cosh": {
+      "source": "core/Double.carp",
+      "line": 76,
+      "original": "returns the hyperbolic cosine of `a`.",
+      "source_html_sha256": "d18c4b24b9040bb4a0424efbc21af4d63eca35b0f9db651ede55e24e72444e53",
+      "translation": "`a` の双曲線余弦を返します。"
+    },
+    "dec": {
+      "source": "core/Double.carp",
+      "line": 165,
+      "original": "decrements a Double by 1.0.",
+      "source_html_sha256": "786a0ff05824e57149e1bf49285b7f77b8878a2decb644332743bbcc2bf6597d",
+      "translation": "`Double` を `1.0` 減らします。"
+    },
+    "e": {
+      "source": "core/Double.carp",
+      "line": 8,
+      "original": "the mathematical constant e (2.718281828459045).",
+      "source_html_sha256": "670a7d8034a86019d9cd180b8626310cc61324af3d3f46fefafbd0faad6707b1",
+      "translation": "数学定数 `e` (`2.718281828459045`) です。"
+    },
+    "exp": {
+      "source": "core/Double.carp",
+      "line": 78,
+      "original": "returns e raised to the power of `a`.",
+      "source_html_sha256": "19dba32cba2e9eab65da1839cea8455d5b15832807ac99ec4b94da31b289d942",
+      "translation": "`e` の `a` 乗を返します。"
+    },
+    "floor": {
+      "source": "core/Double.carp",
+      "line": 80,
+      "original": "rounds `a` down to the nearest integer.",
+      "source_html_sha256": "48715cea549a3e73ca3bb613243a9b8e0184f70fefc1dbe3fe0b937ab90f7a39",
+      "translation": "`a` を、それ以下の最も近い整数に切り下げます。"
+    },
+    "frexp": {
+      "source": "core/Double.carp",
+      "line": 82,
+      "original": "splits `a` into a normalized fraction and an exponent, storing the exponent in `exp`.",
+      "source_html_sha256": "371a6b171a0851d314a6365f2aa8f3722ba57fa055bc101ff634bc5bd8878547",
+      "translation": "`a` を正規化された仮数部 (normalized fraction) と指数に分解し、指数を `exp` に格納します。"
+    },
+    "from-float": {
+      "source": "core/Double.carp",
+      "line": 35,
+      "original": "converts a Float to a Double.",
+      "source_html_sha256": "084c2d77c5afa2e18bff9c7c839d3134a23a92d7e3484888f9adf8819040f0d8",
+      "translation": "`Float` を `Double` に変換します。"
+    },
+    "from-int": {
+      "source": "core/Double.carp",
+      "line": 31,
+      "original": "converts an Int to a Double.",
+      "source_html_sha256": "0ecd60e6c37772da830200369f1d53a591f1eb088fce4425d05aa47e3aef8d56",
+      "translation": "`Int` を `Double` に変換します。"
+    },
+    "from-long": {
+      "source": "core/Double.carp",
+      "line": 39,
+      "original": "converts a Long to a Double.",
+      "source_html_sha256": "93eeae39706069be9cabfd79abbcbdc2f8cb27e8b37eba882ff1aeeb4e935f3c",
+      "translation": "`Long` を `Double` に変換します。"
+    },
+    "from-string": {
+      "source": "core/String.carp",
+      "line": 406,
+      "original": "Tries to parse a double from a string.",
+      "source_html_sha256": "15231ff1e9a63c6029dd2376b5b5d6000e70fae88ffac7b67e14689319d404e5",
+      "translation": "文字列を `Double` として解析しようとします。"
+    },
+    "from-uint64": {
+      "source": "core/Double.carp",
+      "line": 43,
+      "original": "converts a Uint64 to a Double.",
+      "source_html_sha256": "bb67b3f0bca53ddaeca8b248e4424dfb68703077ecd0250bc6657d787e3dfcb0",
+      "translation": "`Uint64` を `Double` に変換します。"
+    },
+    "hash": {
+      "source": "core/Map.carp",
+      "line": 44,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "inc": {
+      "source": "core/Double.carp",
+      "line": 160,
+      "original": "increments a Double by 1.0.",
+      "source_html_sha256": "6618632f29104b438f0db6f408e0683b141327f7999598243fe25cfa6b61a50e",
+      "translation": "`Double` を `1.0` 増やします。"
+    },
+    "ldexp": {
+      "source": "core/Double.carp",
+      "line": 84,
+      "original": "returns `a` multiplied by 2 raised to the power of `exp`.",
+      "source_html_sha256": "407312d0b736b27222e9b29defe4a7d4e783c6ed435425cdbaca52af337cf640",
+      "translation": "`a` に `2` の `exp` 乗を掛けた値を返します。"
+    },
+    "lerp": {
+      "source": "core/Double.carp",
+      "line": 175,
+      "original": "Linearly interpolates between `a` and `b` by factor `t`.\nReturns `a` when `t` is `0.0` and `b` when `t` is `1.0`.",
+      "source_html_sha256": "5a755467edce8c0be3bec7244401c9eeb25d854d9d2cdadba9906382aacaba38",
+      "translation": "係数 `t` を使って、`a` と `b` の間を線形補間 (linear interpolation) します。\n`t` が `0.0` の場合は `a`、`1.0` の場合は `b` を返します。"
+    },
+    "log": {
+      "source": "core/Double.carp",
+      "line": 86,
+      "original": "returns the natural logarithm of `a`.",
+      "source_html_sha256": "11cdf3c43c4df68c4c15be0834b89ee21388dda01748ab5029c1816f6b75d0cf",
+      "translation": "`a` の自然対数を返します。"
+    },
+    "log10": {
+      "source": "core/Double.carp",
+      "line": 88,
+      "original": "returns the base-10 logarithm of `a`.",
+      "source_html_sha256": "d7723fe609c0e9be27cd6c489de12d8ab319ffa7aa8b012d60d3ba06ecfeed8d",
+      "translation": "`a` の底が `10` の対数を返します。"
+    },
+    "mod": {
+      "source": "core/Double.carp",
+      "line": 90,
+      "original": "returns the floating-point remainder of dividing `a` by `b`.",
+      "source_html_sha256": "e23486ec4eadba9a213d164c536e52e623a5a7e0ccd48d5dc866a5246c1cfa05",
+      "translation": "`a` を `b` で除算した、浮動小数点数の余りを返します。"
+    },
+    "modf": {
+      "source": "core/Double.carp",
+      "line": 92,
+      "original": "splits `a` into integer and fractional parts, storing the integer part in `int-part`.",
+      "source_html_sha256": "b436fc06fdfbb309eab6762528341b831eac6f3934e33ba0ce5d0d778527ac18",
+      "translation": "`a` を整数部と小数部に分解し、整数部を `int-part` に格納します。"
+    },
+    "neg": {
+      "source": "core/Double.carp",
+      "line": 19,
+      "original": "negates a Double.",
+      "source_html_sha256": "ba8cf875779242a66ac7b517f2124adb7010bc6a6ca8d65f2f7bbcea288e0d40",
+      "translation": "`Double` の符号を反転します。"
+    },
+    "negative?": {
+      "source": "core/Double.carp",
+      "line": 139,
+      "original": "returns true if `a` is negative.",
+      "source_html_sha256": "30c0d12a9f4b293c24ba41f268ae81c831b3c0f82692032ef49f16c402b837e9",
+      "translation": "`a` が負の場合に `true` を返します。"
+    },
+    "pi": {
+      "source": "core/Double.carp",
+      "line": 5,
+      "original": "the mathematical constant π (3.141592653589793).",
+      "source_html_sha256": "1fcf4748742dd942c83d0911cc1cf93746f7966eee87f5234ebc50283c953970",
+      "translation": "数学定数 π (`3.141592653589793`) です。"
+    },
+    "positive?": {
+      "source": "core/Double.carp",
+      "line": 137,
+      "original": "returns true if `a` is positive.",
+      "source_html_sha256": "93439c0f8dce9a391626c459dec682e00cfa040489b458d1928261850798616c",
+      "translation": "`a` が正の場合に `true` を返します。"
+    },
+    "pow": {
+      "source": "core/Double.carp",
+      "line": 94,
+      "original": "returns `a` raised to the power of `b`.",
+      "source_html_sha256": "84300568cc22d5601238253163125c2f3db2a4e50bdd4faf7e567a46206c0541",
+      "translation": "`a` の `b` 乗を返します。"
+    },
+    "prn": {
+      "source": "core/String.carp",
+      "line": 477,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random": {
+      "source": "core/Random.carp",
+      "line": 86,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random-between": {
+      "source": "core/Random.carp",
+      "line": 81,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "sign": {
+      "source": "core/Double.carp",
+      "line": 131,
+      "original": "Returns `-1.0` if `x` is negative, `0.0` if zero, or `1.0` if positive.\n\nNote: returns `0.0` for NaN inputs.",
+      "source_html_sha256": "f8dceb05d43ba8ef5518fc6a2af1ef2a594fedad0b6822f237f2474f8228140f",
+      "translation": "`x` が負の場合は `-1.0`、ゼロの場合は `0.0`、正の場合は `1.0` を返します。\n\n注意: NaN が入力された場合は `0.0` を返します。"
+    },
+    "sin": {
+      "source": "core/Double.carp",
+      "line": 96,
+      "original": "returns the sine of `a` (in radians).",
+      "source_html_sha256": "90eba98236b36cb4a5de916b50dfbb832409f8f17282ce3bd4358ea926d1ac31",
+      "translation": "`a` の正弦を返します (`a` はラジアン単位です)。"
+    },
+    "sinh": {
+      "source": "core/Double.carp",
+      "line": 98,
+      "original": "returns the hyperbolic sine of `a`.",
+      "source_html_sha256": "d5c602ff1fbfd1638473366942555908078b4c7494d13ae187ff491227aac83f",
+      "translation": "`a` の双曲線正弦を返します。"
+    },
+    "sqrt": {
+      "source": "core/Double.carp",
+      "line": 100,
+      "original": "returns the square root of `a`.",
+      "source_html_sha256": "864a18636bbd093ba534ce2ec76817c505740c7350a8e7dd2795848483f5a7a7",
+      "translation": "`a` の平方根を返します。"
+    },
+    "str": {
+      "source": "core/String.carp",
+      "line": 396,
+      "original": "Converts a double to a string.",
+      "source_html_sha256": "98e03b08040eca1e26c2e3e7515e5447c0a25b9f8467e6dc7b1bcd05ce457e46",
+      "translation": "`Double` を文字列に変換します。"
+    },
+    "tan": {
+      "source": "core/Double.carp",
+      "line": 102,
+      "original": "returns the tangent of `a` (in radians).",
+      "source_html_sha256": "9e40ad2aaa93a56b2cc63f9f44742a78286cf44bc629ef91798d351495c6f7f7",
+      "translation": "`a` の正接を返します (`a` はラジアン単位です)。"
+    },
+    "tanh": {
+      "source": "core/Double.carp",
+      "line": 104,
+      "original": "returns the hyperbolic tangent of `a`.",
+      "source_html_sha256": "99638360480e24329c2facbb61987a6c7ccdf3c6c97e880142e4a9531c9266a9",
+      "translation": "`a` の双曲線正接を返します。"
+    },
+    "to-bytes": {
+      "source": "core/Double.carp",
+      "line": 45,
+      "original": "returns the raw bit representation of a Double as a Long.",
+      "source_html_sha256": "f2e67aa419f0f1f68cc5cd3a2dc7e6ea50457a580b670249d64a6b7c7d2664e7",
+      "translation": "`Double` の生のビット表現を `Long` として返します。"
+    },
+    "to-float": {
+      "source": "core/Double.carp",
+      "line": 33,
+      "original": "converts a Double to a Float (may lose precision).",
+      "source_html_sha256": "cdda64c3b82dbb2b82282078782990a0d7ef42939ba352221dfd9fc529129e38",
+      "translation": "`Double` を `Float` に変換します。精度が失われる場合があります。"
+    },
+    "to-int": {
+      "source": "core/Double.carp",
+      "line": 29,
+      "original": "converts a Double to an Int by truncating toward zero.",
+      "source_html_sha256": "1bdc8227e477bc093cea23a34f283b3df66dd7c4e81a717b74293ce84d51964a",
+      "translation": "ゼロに向かって小数部を切り捨て、`Double` を `Int` に変換します。"
+    },
+    "to-long": {
+      "source": "core/Double.carp",
+      "line": 37,
+      "original": "converts a Double to a Long by truncating toward zero.",
+      "source_html_sha256": "80550c6060fdb6c0547b750788d38d438002cbb6c8360b374a3ba3c279b5fc0c",
+      "translation": "ゼロに向かって小数部を切り捨て、`Double` を `Long` に変換します。"
+    },
+    "to-uint64": {
+      "source": "core/Double.carp",
+      "line": 41,
+      "original": "converts a Double to a Uint64 by truncating toward zero.",
+      "source_html_sha256": "dfc7f3b4adf6364be63e891c30900ca08df79aa2253e47a80253dfce5e809288",
+      "translation": "ゼロに向かって小数部を切り捨て、`Double` を `Uint64` に変換します。"
+    },
+    "unsafe-format": {
+      "source": "core/String.carp",
+      "line": 399,
+      "original": "Formats a double. Unchecked: `s` must hold exactly one format directive. Prefer `fmt`, which checks that at compile time.",
+      "source_html_sha256": "edde4a9dd62705d7cec0af85249dacdb597ab7a39ffc6a87a783394314407f31",
+      "translation": "`Double` を書式化します。検査は行いません。`s` には変換指定 (directive) がちょうど 1 つ含まれている必要があります。コンパイル時にこれを検査する [`fmt`](../../docs/Format_Strings-JP.html) の使用を推奨します。"
+    },
+    "zero": {
+      "source": "core/Double.carp",
+      "line": 155,
+      "original": "returns the value `0.0`.",
+      "source_html_sha256": "3ecb72166a5d3cf291fd7ac716be30664381a82145e5e366a9acf20782ca7e31",
+      "translation": "`0.0` を返します。"
+    }
+  }
+}

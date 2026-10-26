@@ -3,27 +3,36 @@
 [日本語 API リファレンス](https://github.oz-coden.com/carp-language-documents-for-japanese/api/core/index.html) は、Carp の固定コミット `9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5` を対象としています。
 翻訳対象の版・用語・訳注は、[翻訳方針](../TRANSLATION.md) と [用語集](../GLOSSARY.md) に従います。
 
-Core の索引の案内文と、次の 14 モジュールの概要・説明文を翻訳しています。
+Core の索引の案内文と、次の 23 モジュールの概要・説明文を翻訳しています。
 
 | モジュール | 掲載項目 | 説明文の翻訳 |
 | --- | --- | --- |
 | `Array` | 87 | 86 |
 | `Bool` | 11 | 2 |
+| `Byte` | 33 | 4 |
 | `Char` | 23 | 10 |
 | `Control` | 6 | 6 |
+| `Double` | 61 | 55 |
+| `Float` | 55 | 50 |
 | `Function` | 2 | 2 |
 | `IO` | 16 | 16 |
 | `IO.Raw` | 31 | 31 |
+| `Int` | 44 | 39 |
+| `Long` | 43 | 12 |
 | `Map` | 53 | 52 |
 | `Maybe` | 30 | 28 |
 | `Pair` | 20 | 15 |
+| `Pointer` | 21 | 17 |
+| `Quadruple` | 27 | 23 |
 | `Result` | 28 | 28 |
 | `StaticArray` | 34 | 31 |
 | `String` | 65 | 63 |
 | `System` | 40 | 9 |
-| 合計 | 446 | 379 |
+| `Triple` | 23 | 19 |
+| `Unit` | 4 | 2 |
+| 合計 | 757 | 600 |
 
-原文に説明文がない 67 項目は、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、説明文に含まれるコード例 13 件も保持しています。
+原文に説明文がない 157 項目は、その旨を表示します。型シグネチャ・API 名・使用形式を保持し、説明文に含まれるコード例 15 件も保持しています。
 
 ## 原典と生成元 (Sources and Generation)
 

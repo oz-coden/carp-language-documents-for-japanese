@@ -1,0 +1,44 @@
+{
+  "module": "Unit",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Unit.carp",
+    "line": 1,
+    "original": "is the empty type, also represented as `()` and equivalent to `void`\nin C.",
+    "source_html_sha256": "8623a4f6d0de641e9a2a7ca9253e4493d46e78ac962fd0ae3093e4340b365578",
+    "translation": "空の型 (empty type) です。`()` とも表され、C の `void` に相当します。",
+    "notes": [
+      "「空の型 (empty type)」は原文の表現です。固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Unit.carp#L9) では `()` を `Unit` の値として扱い、`copy` と `zero` も `()` を返します。値が存在しないという意味に読み替えないでください。この注記はソースの確認に基づきます。"
+    ]
+  },
+  "entries": {
+    "=": {
+      "source": "core/Unit.carp",
+      "line": 26,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "copy": {
+      "source": "core/Unit.carp",
+      "line": 9,
+      "original": "'copies' a reference to a Unit value.\nThis function just returns a fresh value of type Unit.",
+      "source_html_sha256": "bca214691d15adbefd60372d768a9d17fef3105e281f37fc1fbc1858d76c655d",
+      "translation": "`Unit` 値への参照を「コピー」します。\nこの関数は、新しい `Unit` 型の値を返すだけです。"
+    },
+    "prn": {
+      "source": "core/Unit.carp",
+      "line": 6,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "zero": {
+      "source": "core/Unit.carp",
+      "line": 17,
+      "original": "Returns a fresh value of type Unit (this value performs no side-effects).",
+      "source_html_sha256": "4637c965048d5a97593d624eb2eaef44ef3a0c5823378ff06c1927b5e6721641",
+      "translation": "新しい `Unit` 型の値を返します。この値は副作用を起こしません。"
+    }
+  }
+}

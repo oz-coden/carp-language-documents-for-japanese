@@ -80,7 +80,7 @@ class APIReferenceTests(unittest.TestCase):
         manifest['english_source_fallbacks']['StaticArray.html'] = 'core/StaticArray.carp'
         manifest_path.write_text(json.dumps(manifest))
         output = self.root / 'pages'
-        self.assertEqual(15, api.stage(self.root, output, '/test'))
+        self.assertEqual(24, api.stage(self.root, output, '/test'))
         page = (output / 'api/core/Array.html').read_text()
         self.assertIn('/test/GLOSSARY.html', page)
         self.assertIn('id="aset-uninitialized"', page)
@@ -99,12 +99,13 @@ class APIReferenceTests(unittest.TestCase):
     def test_batch_coverage_and_core_index_source_are_complete(self):
         manifest, modules = api.load(self.root)
         self.assertEqual(
-            {'Array', 'Bool', 'Char', 'Control', 'Function', 'IO', 'IO.Raw',
-             'Map', 'Maybe', 'Pair', 'Result', 'StaticArray', 'String', 'System'}, set(modules))
-        self.assertEqual(446, sum(len(data[2]) for data in modules.values()))
-        self.assertEqual(379, sum(bool(record['translation']) for data in modules.values()
+            {'Array', 'Bool', 'Byte', 'Char', 'Control', 'Double', 'Float', 'Function',
+             'IO', 'IO.Raw', 'Int', 'Long', 'Map', 'Maybe', 'Pair', 'Pointer', 'Quadruple',
+             'Result', 'StaticArray', 'String', 'System', 'Triple', 'Unit'}, set(modules))
+        self.assertEqual(757, sum(len(data[2]) for data in modules.values()))
+        self.assertEqual(600, sum(bool(record['translation']) for data in modules.values()
                                   for record in data[3]['entries'].values()))
-        self.assertEqual(13, sum(len(api.examples(record['original'])) for data in modules.values()
+        self.assertEqual(15, sum(len(api.examples(record['original'])) for data in modules.values()
                                  for record in data[3]['entries'].values()))
         record, _ = api.load_index(self.root, manifest)
         self.assertIn('標準ライブラリ', record['translation'])
@@ -118,7 +119,9 @@ class APIReferenceTests(unittest.TestCase):
         api.stage(self.root, output, '/test')
         index = (output / 'api/core/index.html').read_text()
         self.assertIn('Core — 標準ライブラリ API リファレンス', index)
-        for name in ('Array', 'Bool', 'Char', 'Control', 'Function', 'IO', 'IO.Raw', 'Map', 'Maybe', 'Pair', 'Result', 'StaticArray', 'String', 'System'):
+        for name in ('Array', 'Bool', 'Byte', 'Char', 'Control', 'Double', 'Float', 'Function',
+                     'IO', 'IO.Raw', 'Int', 'Long', 'Map', 'Maybe', 'Pair', 'Pointer', 'Quadruple',
+                     'Result', 'StaticArray', 'String', 'System', 'Triple', 'Unit'):
             self.assertIn(f'href="{name}.html"', index)
             self.assertTrue((output / f'api/core/{name}.html').is_file())
         maybe = (output / 'api/core/Maybe.html').read_text()

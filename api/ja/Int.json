@@ -1,0 +1,324 @@
+{
+  "module": "Int",
+  "upstream_commit": "9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5",
+  "module_documentation": {
+    "source": "core/Int.carp",
+    "line": 3,
+    "original": "is the default integral data type.",
+    "source_html_sha256": "622cbf91b8cd841763adb43df609cb809a687efca82bab6a722451b0b17ac213",
+    "translation": "既定の整数データ型です。"
+  },
+  "entries": {
+    "*": {
+      "source": "core/Int.carp",
+      "line": 9,
+      "original": "multiplies two integers.",
+      "source_html_sha256": "24c94e54557345b8e2d377dd375a2b73d7b6d9656914d9fea77cc934394165ee",
+      "translation": "2 つの整数を乗算します。"
+    },
+    "+": {
+      "source": "core/Int.carp",
+      "line": 5,
+      "original": "adds two integers.",
+      "source_html_sha256": "d72f98f6bde2c3d2e33ee59bce2642cb2054289e1c96dc33f62afb7230da9a85",
+      "translation": "2 つの整数を加算します。"
+    },
+    "-": {
+      "source": "core/Int.carp",
+      "line": 7,
+      "original": "subtracts `b` from `a`.",
+      "source_html_sha256": "4edc509b1c552a27fe2adb9bd0604e043ffd2d19bb93464941f69c514b184dee",
+      "translation": "`a` から `b` を減算します。"
+    },
+    "/": {
+      "source": "core/Int.carp",
+      "line": 11,
+      "original": "divides `a` by `b`.",
+      "source_html_sha256": "f2e3fb134b8f13dc2abbcca651ee2fa6f9b96769cf6bb6d703f06ffb7a5b770d",
+      "translation": "`a` を `b` で除算します。"
+    },
+    "<": {
+      "source": "core/Int.carp",
+      "line": 13,
+      "original": "returns true if `a` is less than `b`.",
+      "source_html_sha256": "9ed6a2e3a8a98edd8d9bee1c990d8a950ee62019f4dfdf4d33f63da4c146eef9",
+      "translation": "`a` が `b` より小さい場合に `true` を返します。"
+    },
+    "=": {
+      "source": "core/Int.carp",
+      "line": 17,
+      "original": "returns true if `a` equals `b`.",
+      "source_html_sha256": "f23544931ff98bbeb9174b72cad6a0c766284d2a7a097a9d79c87374ce1dca08",
+      "translation": "`a` と `b` が等しい場合に `true` を返します。"
+    },
+    ">": {
+      "source": "core/Int.carp",
+      "line": 15,
+      "original": "returns true if `a` is greater than `b`.",
+      "source_html_sha256": "20d7e5bb31d7e4333092b35e627d4e02d92afde0a0a452521e0859c9e211734e",
+      "translation": "`a` が `b` より大きい場合に `true` を返します。"
+    },
+    "MAX": {
+      "source": "core/Int.carp",
+      "line": 55,
+      "original": "the maximum value an Int can hold.",
+      "source_html_sha256": "516e6cad7bb451643f72bac86fd9725d67ed13dc823f8e5e200a3e6d9875a6b9",
+      "translation": "`Int` が保持できる最大値です。"
+    },
+    "MIN": {
+      "source": "core/Int.carp",
+      "line": 58,
+      "original": "the minimum value an Int can hold.",
+      "source_html_sha256": "3c634ce9923aa25c2834fc281517ec82b13e7a68bed3213f4fe54c763df81d2d",
+      "translation": "`Int` が保持できる最小値です。"
+    },
+    "abs": {
+      "source": "core/Int.carp",
+      "line": 80,
+      "original": "The absolute value (removes the negative sign) of an Int.",
+      "source_html_sha256": "8ee34c7b3310f94f0e0139c995bec118a2441f050dc5bc3503b1e3fda2dd7282",
+      "translation": "`Int` の絶対値です。負の符号を取り除きます。"
+    },
+    "add-ref": {
+      "source": "core/Int.carp",
+      "line": 99,
+      "original": "adds two Int values passed as references.",
+      "source_html_sha256": "d2e004dbe788d09fd5ce2dbdadd6d54ee42962efa74ea6a21eae8140500f3281",
+      "translation": "参照として渡された 2 つの `Int` 値を加算します。"
+    },
+    "bit-and": {
+      "source": "core/Int.carp",
+      "line": 65,
+      "original": "bitwise AND of `a` and `b`.",
+      "source_html_sha256": "8d1470c3ec32874005ab7aacb123b299fad175b6cd60bdcac7b389f6d76c49c2",
+      "translation": "`a` と `b` のビット単位の AND です。"
+    },
+    "bit-not": {
+      "source": "core/Int.carp",
+      "line": 71,
+      "original": "bitwise NOT of `a`.",
+      "source_html_sha256": "effe264b090da7d0a0a70544edf67c52d7690276d3dda700e40a59ea1f632509",
+      "translation": "`a` のビット単位の NOT です。"
+    },
+    "bit-or": {
+      "source": "core/Int.carp",
+      "line": 67,
+      "original": "bitwise OR of `a` and `b`.",
+      "source_html_sha256": "0134a621d0a1b037e46f04cf04a353e1275c8d1437de088f576bc8180e0eafa9",
+      "translation": "`a` と `b` のビット単位の OR です。"
+    },
+    "bit-shift-left": {
+      "source": "core/Int.carp",
+      "line": 61,
+      "original": "shifts `a` left by `b` bits.",
+      "source_html_sha256": "a9241833b1117fd7356b509efe97271bd30b42b052da784b508c5010934e0e77",
+      "translation": "`a` を `b` ビット左にシフトします。"
+    },
+    "bit-shift-right": {
+      "source": "core/Int.carp",
+      "line": 63,
+      "original": "shifts `a` right by `b` bits.",
+      "source_html_sha256": "e71da847e5275092b79ffad9dd3793fccd19b48ae3792a775aada18dd8e2b911",
+      "translation": "`a` を `b` ビット右にシフトします。"
+    },
+    "bit-xor": {
+      "source": "core/Int.carp",
+      "line": 69,
+      "original": "bitwise XOR of `a` and `b`.",
+      "source_html_sha256": "9b6a8634551002f579da97152d82a4a28e2c51468acf7e29fabaeaf875a07e78",
+      "translation": "`a` と `b` のビット単位の XOR です。"
+    },
+    "blit": {
+      "source": "core/Blitable.carp",
+      "line": 2,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "clamp": {
+      "source": "core/Int.carp",
+      "line": 104,
+      "original": "clamps `val` to the range [`min`, `max`].",
+      "source_html_sha256": "734edb5f21a9cea6404bf272cc153c5994363613f7e0f6bce839cce3576ac023",
+      "translation": "`val` を範囲 [`min`, `max`] 内に収めます。"
+    },
+    "copy": {
+      "source": "core/Int.carp",
+      "line": 19,
+      "original": "copies an Int.",
+      "source_html_sha256": "c576d16c89e2accd1a5bdf0d06d9374d7f06cd4accc04b3fdfbc88ac29d40ea1",
+      "translation": "`Int` をコピーします。"
+    },
+    "dec": {
+      "source": "core/Int.carp",
+      "line": 23,
+      "original": "decrements an Int by 1.",
+      "source_html_sha256": "7a1d15a146975e5fa332ee5027e3fbb505cd48d32b1e9537e51f97f40c4c70a4",
+      "translation": "`Int` を `1` 減らします。"
+    },
+    "even?": {
+      "source": "core/Int.carp",
+      "line": 84,
+      "original": "returns true if `a` is even.",
+      "source_html_sha256": "5c4aafe54d2a6c1a7bf7797852dc35a2b2e967b266548b92e7198d51594278e9",
+      "translation": "`a` が偶数の場合に `true` を返します。"
+    },
+    "from-int": {
+      "source": "core/Int.carp",
+      "line": 34,
+      "original": "acts as the identity function to implement the interface.",
+      "source_html_sha256": "171237ed373c71ac417e0e4b17a18c1514606a47ec46384f4dcffa57cb726408",
+      "translation": "インターフェースを実装するための恒等関数として動作します。"
+    },
+    "from-string": {
+      "source": "core/String.carp",
+      "line": 326,
+      "original": "Tries to parse an integer from a string.",
+      "source_html_sha256": "80d2d1ab903295ccf87d5228171aebe1c9b683cfbc2e17fd8bfa9468b499e036",
+      "translation": "文字列を整数として解析しようとします。"
+    },
+    "hash": {
+      "source": "core/Map.carp",
+      "line": 14,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "inc": {
+      "source": "core/Int.carp",
+      "line": 21,
+      "original": "increments an Int by 1.",
+      "source_html_sha256": "5bf9603beed6bbb9cb2131157ea3829355a39ff2f01bca1167b95750cb5740cf",
+      "translation": "`Int` を `1` 増やします。"
+    },
+    "mod": {
+      "source": "core/Int.carp",
+      "line": 27,
+      "original": "returns the remainder of dividing `a` by `b`.",
+      "source_html_sha256": "8e826976b3c922c417497f89551e4d16e3c5463819a5ffd39d5a3b267480cd6d",
+      "translation": "`a` を `b` で除算した余りを返します。"
+    },
+    "neg": {
+      "source": "core/Int.carp",
+      "line": 25,
+      "original": "negates an Int.",
+      "source_html_sha256": "44f2dd5ef0f1596cd68b95f954bfbc1db93113cd08082f0a9d096258383a845f",
+      "translation": "`Int` の符号を反転します。"
+    },
+    "negative?": {
+      "source": "core/Int.carp",
+      "line": 91,
+      "original": "returns true if `a` is negative.",
+      "source_html_sha256": "30c0d12a9f4b293c24ba41f268ae81c831b3c0f82692032ef49f16c402b837e9",
+      "translation": "`a` が負の場合に `true` を返します。"
+    },
+    "odd?": {
+      "source": "core/Int.carp",
+      "line": 86,
+      "original": "returns true if `a` is odd.",
+      "source_html_sha256": "56b3e2000cb840891184977f49ba4b4f7e448e86fc427efcdd6030ffafc545e7",
+      "translation": "`a` が奇数の場合に `true` を返します。"
+    },
+    "positive-mod": {
+      "source": "core/Int.carp",
+      "line": 123,
+      "original": "Like mod but always returns a positive answer.",
+      "source_html_sha256": "6fb90f2297d6729eb0f5264840622c9637b469d4fa43d555010e235c0f77c0b2",
+      "translation": "`mod` と同様ですが、常に正の結果を返します。",
+      "notes": [
+        "原文は「常に正」と説明していますが、固定版の[実装(英語)](https://github.com/carp-lang/Carp/blob/9f6fa9c11989eadc272ec8b10eab6eb873ae0aa5/core/Int.carp#L123) は、余りが `0` の場合は `0` を返します。また、引数 `n` が正かどうかの検査は行いません。本文は原文を保持しています。この注記はソースの確認に基づきます。"
+      ]
+    },
+    "positive?": {
+      "source": "core/Int.carp",
+      "line": 89,
+      "original": "returns true if `a` is positive.",
+      "source_html_sha256": "93439c0f8dce9a391626c459dec682e00cfa040489b458d1928261850798616c",
+      "translation": "`a` が正の場合に `true` を返します。"
+    },
+    "pow": {
+      "source": "core/Int.carp",
+      "line": 112,
+      "original": "Raise x to the power of y.",
+      "source_html_sha256": "4c6f94520f9d3715a11ce346c495e60967a360a36c709e984f516e1cd662d633",
+      "translation": "`x` の `y` 乗を計算します。"
+    },
+    "prn": {
+      "source": "core/String.carp",
+      "line": 427,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random": {
+      "source": "core/Random.carp",
+      "line": 51,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "random-between": {
+      "source": "core/Random.carp",
+      "line": 46,
+      "original": "",
+      "source_html_sha256": "f816d4182b015c08e269830f389c13591296296f5cebbca432aaa89d04db5c00",
+      "translation": ""
+    },
+    "safe-add": {
+      "source": "core/SafeInt.carp",
+      "line": 4,
+      "original": "Performs an addition and checks whether it overflowed.",
+      "source_html_sha256": "147b73aad4a07ca32a027bfe565bce2856912af1a9be4145954af9a09d314e45",
+      "translation": "加算を行い、オーバーフローが発生したかどうかを検査します。"
+    },
+    "safe-mul": {
+      "source": "core/SafeInt.carp",
+      "line": 8,
+      "original": "Performs an multiplication and checks whether it overflowed.",
+      "source_html_sha256": "64705926603bddc11c4be1c863233488fb2f8687147d9a8a896cf1cfb8446c35",
+      "translation": "乗算を行い、オーバーフローが発生したかどうかを検査します。"
+    },
+    "safe-sub": {
+      "source": "core/SafeInt.carp",
+      "line": 6,
+      "original": "Performs an substraction and checks whether it overflowed.",
+      "source_html_sha256": "d465579b0351041ebcafd89046fc8f0781ad54a9654234a4c2c4c6a02073dc22",
+      "translation": "減算を行い、オーバーフローが発生したかどうかを検査します。"
+    },
+    "sign": {
+      "source": "core/Int.carp",
+      "line": 130,
+      "original": "Returns `-1` if `n` is negative, `0` if zero, or `1` if positive.",
+      "source_html_sha256": "56a092dbe7e4b39480e1b8420c97a59aef78606a9a29f863e5facd050d687c1a",
+      "translation": "`n` が負の場合は `-1`、ゼロの場合は `0`、正の場合は `1` を返します。"
+    },
+    "str": {
+      "source": "core/String.carp",
+      "line": 316,
+      "original": "Converts an integer to a string.",
+      "source_html_sha256": "aa54e3a79bbe1189ea4d26ad81e36eea1c1b8de31eb7528353c509032d34f56a",
+      "translation": "整数を文字列に変換します。"
+    },
+    "to-int": {
+      "source": "core/Int.carp",
+      "line": 30,
+      "original": "acts as the identity function to implement the interface.",
+      "source_html_sha256": "171237ed373c71ac417e0e4b17a18c1514606a47ec46384f4dcffa57cb726408",
+      "translation": "インターフェースを実装するための恒等関数として動作します。"
+    },
+    "unsafe-format": {
+      "source": "core/String.carp",
+      "line": 319,
+      "original": "Formats an integer. Unchecked: `s` must hold exactly one format directive. Prefer `fmt`, which checks that at compile time.",
+      "source_html_sha256": "3cc783c8a43284d54e74d2e7d389e74bc30658ddfb1856c59452be15ca6a332f",
+      "translation": "整数を書式化します。検査は行いません。`s` には変換指定 (directive) がちょうど 1 つ含まれている必要があります。コンパイル時にこれを検査する [`fmt`](../../docs/Format_Strings-JP.html) の使用を推奨します。"
+    },
+    "zero": {
+      "source": "core/Int.carp",
+      "line": 94,
+      "original": "returns the zero value for Int (0), used to implement the `zero` interface.",
+      "source_html_sha256": "11113dd66b704a70182631a81b96da18f1e63fbc36ee1fd1f69e03ccf36cb0a4",
+      "translation": "`zero` インターフェースの実装に使われる、`Int` のゼロ値 (`0`) を返します。"
+    }
+  }
+}

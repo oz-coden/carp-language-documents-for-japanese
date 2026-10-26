@@ -16,21 +16,30 @@
     "core/Blitable.carp": "50c3836afefa793d504b6c1e0fa21d77abfcf31d",
     "core/Bool.carp": "6d6a816b75b0d7edd3bbd78d3162676aa921760f",
     "core/BoolExtras.carp": "603965b065f79bd6b7101f57511d79deb1c4896c",
+    "core/Byte.carp": "8a53e8fdac21d7733e44d5b92cb9244602f41685",
     "core/Char.carp": "25adfd6756a5dc30dd12e26bfcc7bc6754c136ab",
     "core/Color.carp": "cd0ae661da4713b5f20fea60c1302c76165bf036",
     "core/Control.carp": "8de7ddc08fb5cb0b63e388f26a4b8f89d5f4e736",
+    "core/Double.carp": "4e0f1fae514b7f73b3581493d0d765dc3aa24af7",
+    "core/Float.carp": "d6b988c9ecfa6ea262d1a2cb3e5eb6c7c21e2cc2",
     "core/Function.carp": "75acae7db397a9be0509ce8bd39a2595f3e2dc4f",
     "core/IO.carp": "7307d77ef0a4c024239bb3f326b54201bf57e402",
+    "core/Int.carp": "695b30771e5af4aa5f0b6c61b57fb4e7ed1756ff",
+    "core/Long.carp": "1e16cd891d79af094baf538c9f36bf9ffa168e83",
     "core/Map.carp": "859f4ca860d11051269537293416be40193ffb50",
     "core/Maybe.carp": "e73cae51252b8100e4378c66086c50130aea1b43",
     "core/Pattern.carp": "d8cfdfd5939ea3d0aca61b0021d5ea1a7d6f3869",
+    "core/Pointer.carp": "3e223ee16b2a3eb3e408f25d34888fdf5b495d21",
     "core/Random.carp": "68ecb0cd895755592fea702210e2431a6d15ac47",
     "core/Result.carp": "4a402f185a76c16d981204d8595d959b570dca4e",
+    "core/SafeInt.carp": "97cf0796c93f25ade633a562699a42ad31b9c3b5",
     "core/Sort.carp": "813de0dd3e72eb8a53a1fc097fc230730cd80029",
     "core/StaticArray.carp": "7fca9e063ea717521bec2b673ba71c6675ebd28b",
     "core/String.carp": "29691bb9fadfbf899ded4dd0e30b49baa43e7407",
     "core/System.carp": "8cb09df4bbeadeb58a3ea6a4c7e332fd61c75659",
     "core/Tuples.carp": "754754ce054b10a5d32d7cc35fe022f633849f05",
+    "core/Unit.carp": "5320ffee50a10500a484d81500b7b96d07376b99",
+    "core/Unsafe.carp": "267242688858879233f13c86584fb6d364fa0081",
     "core/carp_system.h": "fadb5cd128fb9260f77ce409289d9007fb260910",
     "docs/core/carp_style.css": "0ed34680f8e0c08dba0d6a30f4a5aba53dc03366",
     "docs/core/generate_core_docs.carp": "26c20d0f1a032ce4d6b5f6fb3bee0873d112958f",
@@ -38,6 +47,7 @@
     "src/ArrayTemplates.hs": "2927c96296b05666840fdd88ba16c677ed2ac5ca",
     "src/Deftype.hs": "8e4f4786f5b28c45bb80db83cd65eb4648f2ba7e",
     "src/RenderDocs.hs": "092002e51df8cc2541fe8c3b34960e229eb07cd9",
+    "src/StartingEnv.hs": "efb7309ee8c1f8e7f2f7cab4e4d6912b46da5abb",
     "src/StaticArrayTemplates.hs": "8aa625a8ac1525ad2becd762712c1f4cea7fe169",
     "src/Sumtypes.hs": "d7dbf01921ef6fcf2b674b42ffe99d1ad1640da2"
   },
@@ -55,6 +65,11 @@
       "snapshot_sha256": "3fbdb124d672b97475c872e82d4c8987643b1666cf417685c3568d720e0b1021",
       "translation": "api/ja/Bool.json"
     },
+    "Byte": {
+      "snapshot": "api/upstream/Byte.html",
+      "snapshot_sha256": "2a359dd383236ca1d7ec41749c6705773137357e4fbb376c55476d1127855cd6",
+      "translation": "api/ja/Byte.json"
+    },
     "Char": {
       "snapshot": "api/upstream/Char.html",
       "snapshot_sha256": "a535c7c5d58e1d84998b04662ed952a949bb5ce2d952f86d213c27d9284c8b29",
@@ -64,6 +79,16 @@
       "snapshot": "api/upstream/Control.html",
       "snapshot_sha256": "d766cfcc9f6bc21b432dcedb9e8db35dd59a249f71cd740e38f1264b8cfcf55c",
       "translation": "api/ja/Control.json"
+    },
+    "Double": {
+      "snapshot": "api/upstream/Double.html",
+      "snapshot_sha256": "5088dcf1ee45acb9f89b7b71e3174f2b7a7acc616cacffc2c4cb4de1ce3f0294",
+      "translation": "api/ja/Double.json"
+    },
+    "Float": {
+      "snapshot": "api/upstream/Float.html",
+      "snapshot_sha256": "cff6514e5806007827c66374454ca48055b19feda18a701020894e113d17ce32",
+      "translation": "api/ja/Float.json"
     },
     "Function": {
       "snapshot": "api/upstream/Function.html",
@@ -98,6 +123,16 @@
         "#seek-end": "#SEEK-END"
       }
     },
+    "Int": {
+      "snapshot": "api/upstream/Int.html",
+      "snapshot_sha256": "cf8da083b9f19eb46d80b59e5ad03c9656aca21a594c5f1f8a4ba0f2d85d79ab",
+      "translation": "api/ja/Int.json"
+    },
+    "Long": {
+      "snapshot": "api/upstream/Long.html",
+      "snapshot_sha256": "c413bc63d123727d326b4c1e7ab279465c4c5f838e1023213e4c71ec7bebba46",
+      "translation": "api/ja/Long.json"
+    },
     "Map": {
       "snapshot": "api/upstream/Map.html",
       "snapshot_sha256": "6f98d7b84b3a1f7e94d5d7015ee56b2d16431e586aa7b65514c61f036439bd50",
@@ -112,6 +147,16 @@
       "snapshot": "api/upstream/Pair.html",
       "snapshot_sha256": "8af9436ed6350de9050a6c4fc41e17a231cb9e3714096307314fa7c8e2e67b6e",
       "translation": "api/ja/Pair.json"
+    },
+    "Pointer": {
+      "snapshot": "api/upstream/Pointer.html",
+      "snapshot_sha256": "21c713cd7afcd903c0b76b26be173d6d2bbaeee49af32c9c93d6b2aa53060122",
+      "translation": "api/ja/Pointer.json"
+    },
+    "Quadruple": {
+      "snapshot": "api/upstream/Quadruple.html",
+      "snapshot_sha256": "8933a67ff99007d7dd656de642ef26d502568d3b94cbb52701c13f1b746482dd",
+      "translation": "api/ja/Quadruple.json"
     },
     "Result": {
       "snapshot": "api/upstream/Result.html",
@@ -132,6 +177,16 @@
       "snapshot": "api/upstream/System.html",
       "snapshot_sha256": "8017344ca3f7f6d4b699eeb2f83443a2bba23e964a5442fa669c8bf7e16175dc",
       "translation": "api/ja/System.json"
+    },
+    "Triple": {
+      "snapshot": "api/upstream/Triple.html",
+      "snapshot_sha256": "05c1e96a75437f669057c2bdb8d60891e6a58ad2afe47aed2257d706e83de017",
+      "translation": "api/ja/Triple.json"
+    },
+    "Unit": {
+      "snapshot": "api/upstream/Unit.html",
+      "snapshot_sha256": "5c550ace335c0c8305b79de4e2b1f7c5583751d88cf6f8fd32e2071c3cac8d01",
+      "translation": "api/ja/Unit.json"
     }
   },
   "stylesheet": {
