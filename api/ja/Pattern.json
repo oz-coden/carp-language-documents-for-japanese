@@ -6,7 +6,7 @@
     "line": 3,
     "original": "is a data type for pattern matching, similar to, but not the same\nas, Regular Expressions. [See the docs for more\ninformation](../LanguageGuide.html#patterns).",
     "source_html_sha256": "7d48ab278cdb050860215f0861924f4ec573d895432cd49fd74b3a1eb36aa16f",
-    "translation": "パターンマッチングのためのデータ型です。正規表現に似ていますが、同じものではありません。詳しくは[ドキュメント](../../docs/patterns-JP.html)を参照してください。"
+    "translation": "パターンマッチングのためのデータ型です。正規表現に似ていますが、同じものではありません。詳しくは[ドキュメント](../../docs/LanguageGuide-JP.html#パターン-patterns)を参照してください。"
   },
   "entries": {
     "=": {
